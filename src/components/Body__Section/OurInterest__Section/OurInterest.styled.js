@@ -5,7 +5,7 @@ export const StyleOurInterest = styled.div`
   padding: 0 4rem;
   margin-top: 5rem;
   div.heading {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
     color: #0047af;

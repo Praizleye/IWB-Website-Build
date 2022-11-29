@@ -14,7 +14,7 @@ const Footer = () => {
         <button>Get involved</button>
       </div>
       <div className="links">
-        <img src={images.FooterLogo} alt="" />
+        <img src={images.FooterLogo} alt="iwb-white-logo" />
         <ul>
           Quick links
           <li>

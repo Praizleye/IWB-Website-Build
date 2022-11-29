@@ -8,6 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 line-height: 1.4;
+position: relative;
+width: 100vw;
 }
 
 code {
