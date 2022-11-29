@@ -11,7 +11,7 @@ export const StyleNewsletter = styled.div`
     line-height: 1.1;
     font-weight: 500;
     span {
-      font-size: 64px;
+      font-size: 4rem;
       display: block;
       color: #0047af;
       font-weight: 600;

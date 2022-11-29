@@ -14,15 +14,20 @@ export const StyleTestimonials = styled.div`
     flex-direction: column;
 
     span {
-      font-size: 64px;
+      font-size: 4rem;
       font-weight: 600;
       display: block;
       color: #0047af;
       letter-spacing: normal;
-    }
-    img {
-      align-self: start;
-      margin-left: 16rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        align-self: start;
+        /* margin-left: 1rem; */
+        margin-top: 0.7rem;
+      }
     }
   }
   div.testimonial-cards__container {

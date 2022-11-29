@@ -10,7 +10,7 @@ export const StyleHero = styled.div`
   align-items: center;
   padding: 0 3rem;
   img {
-    height: 30rem;
+    height: 28rem;
     width: auto;
     margin-top: 2rem;
   }
@@ -20,23 +20,21 @@ export const StyleHero = styled.div`
     width: 40%;
     position: relative;
     div:nth-of-type(1) {
-      font-size: 54px;
+      font-size: 3rem;
       font-weight: bold;
-      /* margin: 0.5rem auto; */
     }
     div:nth-of-type(2) {
-      font-size: 54px;
+      font-size: 2.8rem;
       font-weight: bold;
-      /* margin: 0.5rem auto; */
     }
     div:nth-of-type(4) {
-      font-size: 18px;
+      font-size: 1.125rem;
       margin-top: 1.7rem;
     }
     div:nth-of-type(3) {
       position: absolute;
-      right: -80px;
-      top: 110px;
+      right: -5rem;
+      top: 6rem;
       img {
         width: 18rem;
         height: auto;

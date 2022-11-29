@@ -6,7 +6,7 @@ export const StyleWhoWeAre = styled.div`
   padding: 3rem 3rem;
   background-color: #f1f4fb;
   div.heading {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
     position: relative;
     color: #0047af;
@@ -52,24 +52,27 @@ export const StyleWhoWeAre = styled.div`
       }
     }
     div.About__text-content {
-      padding: 0 4rem 0 4rem;
+      padding: 0 1rem 0 4rem;
       display: flex;
       margin-top: 25px;
-      height: 350px;
+      /* height: 21rem; */
+      line-height: 1.5;
+      letter-spacing: 0.05rem;
       justify-content: space-between;
       align-items: flex-start;
       flex-direction: column;
       div.sub-heading {
-        font-size: 40px;
+        font-size: 2.4rem;
         color: #0047af;
       }
 
       div.About__text-description {
-        font-size: 22px;
+        font-size: 1.1rem;
         line-height: 1.8;
         color: #6b6b6b;
       }
       button {
+        margin-top: 1.5rem;
         background: #0047af;
         height: 3rem;
         width: 12rem;
@@ -83,7 +86,7 @@ export const StyleWhoWeAre = styled.div`
       }
     }
     div.partner {
-      padding: 3rem 4rem;
+      padding: 3rem 1rem;
     }
     div.WhoWeAre__img.partner-img {
       img {

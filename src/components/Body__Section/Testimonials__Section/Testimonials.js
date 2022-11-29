@@ -7,8 +7,10 @@ const Testimonials = () => {
     <StyleTestimonials>
       <div className="heading">
         Testimonials
-        <span>What young people are saying</span>
-        <img src={images.Line} alt="text-underline" />
+        <span>
+          What young people are saying
+          <img src={images.Line} alt="text-underline" />
+        </span>
       </div>
 
       <div className="testimonial-cards__container">
