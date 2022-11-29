@@ -2,37 +2,52 @@
 import styled from "styled-components";
 
 export const StyleHero = styled.div`
-  height: 60vh;
-  width: 100%;
-  background: #075aa0;
+  height: 90vh;
+  width: 100vw;
+  background: #1b7aad;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 3rem;
   img {
-    height: 35rem;
+    height: 30rem;
     width: auto;
-    margin-top: 8rem;
+    margin-top: 2rem;
   }
   div.container {
     color: #fafafa;
     margin-top: 5rem;
+    width: 40%;
+    position: relative;
     div:nth-of-type(1) {
-      font-size: 64px;
+      font-size: 54px;
       font-weight: bold;
-      margin: 0.5rem auto;
+      /* margin: 0.5rem auto; */
     }
     div:nth-of-type(2) {
-      font-size: 28px;
-      opacity: 0.7;
-      margin: 0.5rem auto;
+      font-size: 54px;
+      font-weight: bold;
+      /* margin: 0.5rem auto; */
+    }
+    div:nth-of-type(4) {
+      font-size: 18px;
+      margin-top: 1.7rem;
+    }
+    div:nth-of-type(3) {
+      position: absolute;
+      right: -80px;
+      top: 110px;
+      img {
+        width: 18rem;
+        height: auto;
+      }
     }
     button {
       width: 18rem;
       height: 3rem;
-      border-radius: 40px;
-      border: 2px solid #fff;
-      margin: 0.8rem auto 0.8rem 16rem;
-      background: #50b3fb;
+      border: 2px solid #0047af;
+      margin-top: 2.8rem;
+      background: #0047af;
       color: #fff;
       font-size: 1.2rem;
       cursor: pointer;
@@ -42,15 +57,4 @@ export const StyleHero = styled.div`
       }
     }
   }
-`;
-export const OffsetCurve = styled.div`
-  position: absolute;
-  height: 28rem;
-  width: 103%;
-  left: -22px;
-  background: #075aa0;
-  top: 35vh;
-  z-index: -10;
-  border-radius: 80px;
-  transform: rotateZ(5deg);
 `;

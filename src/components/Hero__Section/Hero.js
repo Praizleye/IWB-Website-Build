@@ -1,7 +1,7 @@
 import React from "react";
 
 //? importing Styles
-import { StyleHero, OffsetCurve } from "./Styles/Hero.Styled";
+import { StyleHero } from "./Styles/Hero.Styled";
 import Nav from "./Nav/Nav";
 import images from "../../constants/images";
 
@@ -10,17 +10,20 @@ const Hero = () => {
     <div>
       <Nav />
       <StyleHero>
-        <img src={images.HeroImg} alt="Hero-section-figure" />
         <div className="cta__text container">
-          <div>...Building People. creating solutions</div>
+          <div>...Building People </div>
+          <div> Creating solutions</div>
+          <div>
+            <img src={images.Lineheader} alt="illustration" />
+          </div>
           <div>
             Connecting 500,000,000 young Africans to digital solutions and
             opportunities in 2030.
           </div>
           <button>Get Started</button>
         </div>
+        <img src={images.HeroImg} alt="Hero-section-figure" />
       </StyleHero>
-      <OffsetCurve className="offset__curve"></OffsetCurve>
     </div>
   );
 };

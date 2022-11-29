@@ -1,68 +1,90 @@
 import HeroImg from "../assets/HeroImg.svg";
 import WhoWeAre from "../assets/WhoWeAre.png";
+import PartnerUs from "../assets/PartnerUs.png";
 import Logo from "../assets/Logo.svg";
+import Lineheader from "../assets/Lineheader.svg";
+import Line from "../assets/line.svg";
+
+//? Comp Trust importing Section
+import Mintyn from "../assets/CompTrust__Assets/Mintyn.png";
+import Tekedia from "../assets/CompTrust__Assets/Tekedia.png";
+import Playbooq from "../assets/CompTrust__Assets/Playbooq.png";
 
 //? OurPrograms importing Section
-import OurPrograms__image1 from "../assets/OurPrograms__Section/OurPrograms__image1.png";
-import OurPrograms__image2 from "../assets/OurPrograms__Section/OurPrograms__image2.png";
-import OurPrograms__image3 from "../assets/OurPrograms__Section/OurPrograms__image3.png";
-import Resource__Image from "../assets/OurPrograms__Section/Resource__Image.png";
-import AnimatableObj1 from "../assets/OurPrograms__Section/AnimatableObj1.svg";
-import AnimatableObj2 from "../assets/OurPrograms__Section/AnimatableObj2.svg";
+import Card1 from "../assets/OurPrograms__Section/Card1.png";
+import Card2 from "../assets/OurPrograms__Section/Card2.png";
+import Card3 from "../assets/OurPrograms__Section/Card3.png";
+import Card4 from "../assets/OurPrograms__Section/Card 4.png";
+import Card5 from "../assets/OurPrograms__Section/Card 5.png";
+import Card6 from "../assets/OurPrograms__Section/Card 6.png";
+import Card7 from "../assets/OurPrograms__Section/Card 7.png";
 
 // ? importting assets for Impact Report
-import Dollar from "../assets/ImpactReport__Assets/Dollar.svg";
-import Community from "../assets/ImpactReport__Assets/Community.svg";
-import PeopleTrained from "../assets/ImpactReport__Assets/PeopleTrained.svg";
+import Handshake from "../assets/ImpactReport__Assets/Handshake.svg";
+import TrainingTalents from "../assets/ImpactReport__Assets/TrainingTalents.svg";
 import Resources from "../assets/ImpactReport__Assets/Resources.svg";
-import Startups from "../assets/ImpactReport__Assets/Startups.svg";
+import Community from "../assets/ImpactReport__Assets/Community.svg";
 import Volunteers from "../assets/ImpactReport__Assets/Volunteers.svg";
+import StartupProjects from "../assets/ImpactReport__Assets/StartupProjects.svg";
+import PartnershipFig from "../assets/ImpactReport__Assets/PartnershipFig.png";
 
 // ? importing the Our Interest resource asset
-import BusDev from "../assets/OurInterests__Assets/BusDev.svg";
-import DigitalTech from "../assets/OurInterests__Assets/DigitalTech.svg";
-import LeadershipDev from "../assets/OurInterests__Assets/LeadershipDev.svg";
+import Interests from "../assets/OurInterests__Assets/Interests.png";
+
+// ? importing Resources Assets
+import Book1 from "../assets/Resources__Assets/Book-1.png";
+import Book2 from "../assets/Resources__Assets/Book-2.png";
+import Book3 from "../assets/Resources__Assets/Book-3.png";
+import Book4 from "../assets/Resources__Assets/Book-4.png";
 
 // ? importing Testimonials__Assets
-import Test__Hero from "../assets/Testimonials__Assets/Test__Hero.svg";
-import Testator__1 from "../assets/Testimonials__Assets/Testator__1.png";
-import Animatable__Asset1 from "../assets/Testimonials__Assets/Animatable__Asset1.svg";
-import Animatable__Asset2 from "../assets/Testimonials__Assets/Animatable__Asset2.svg";
-import Animatable__Asset3 from "../assets/Testimonials__Assets/Animatable__Asset3.svg";
+import Star from "../assets/Testimonials__Assets/Star.svg";
+import Testator__1 from "../assets/Testimonials__Assets/Testimonial__img1.png";
 
 // ? importing Footer Assets
-import FooterImg1 from "../assets/Footer__Assets/FooterImg1.png";
-import FooterImg2 from "../assets/Footer__Assets/FooterImg2.png";
-import FooterImg3 from "../assets/Footer__Assets/FooterImg3.svg";
+import FooterLogo from "../assets/Footer__Assets/IWB Logo Project 1.svg";
 import BackToTop from "../assets/Footer__Assets/BackToTop.svg";
+
 const assets = {
   HeroImg,
-  WhoWeAre,
   Logo,
-  Dollar,
-  OurPrograms__image1,
-  OurPrograms__image2,
-  OurPrograms__image3,
-  Resource__Image,
-  Test__Hero,
-  Testator__1,
-  Animatable__Asset1,
-  Animatable__Asset2,
-  Animatable__Asset3,
-  FooterImg1,
-  FooterImg2,
-  FooterImg3,
-  BackToTop,
-  Community,
-  PeopleTrained,
+  Lineheader,
+  Line,
+
+  Mintyn,
+  Tekedia,
+  Playbooq,
+
+  WhoWeAre,
+  PartnerUs,
+
+  Handshake,
+  TrainingTalents,
   Resources,
-  Startups,
+  Community,
   Volunteers,
-  AnimatableObj1,
-  AnimatableObj2,
-  BusDev,
-  DigitalTech,
-  LeadershipDev,
+  StartupProjects,
+  PartnershipFig,
+
+  Card1,
+  Card2,
+  Card3,
+  Card4,
+  Card5,
+  Card6,
+  Card7,
+
+  Interests,
+
+  Book1,
+  Book2,
+  Book3,
+  Book4,
+
+  Star,
+  Testator__1,
+  FooterLogo,
+  BackToTop,
 };
 
 export default assets;

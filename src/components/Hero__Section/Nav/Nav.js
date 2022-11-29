@@ -20,12 +20,13 @@ function Nav() {
           <ul className="app__navbar-links">
             {/* <div></div> */}
             {[
-              "about",
-              "impact report",
-              "our programs",
-              "resources",
-              "blog",
-              "join community",
+              "About",
+              "Impact report",
+              "Our programs",
+              "Resources",
+              "Blog",
+              "Free downloads",
+              "Join community",
             ].map((item, index) => (
               <li className="app__flex" key={index}>
                 <div />
@@ -56,12 +57,12 @@ function Nav() {
             ) : (
               <motion.ul className="app__navbar-links">
                 {[
-                  "about",
-                  "impact report",
-                  "our programs",
-                  "resources",
-                  "blog",
-                  "join community",
+                  "About",
+                  "Impact report",
+                  "Our programs",
+                  "Resources",
+                  "Blog",
+                  "Join community",
                 ].map((item, index) => (
                   <li
                     className="app__navbar-link"

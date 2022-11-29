@@ -1,72 +1,74 @@
 import styled from "styled-components";
 
 export const StyleImpactReport = styled.div`
-  margin-top: 8rem;
+  margin: 6rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   div.ImpactReport__heading {
     font-size: 64px;
     font-weight: 600;
     color: #065a8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
+    img {
+      display: block;
+      align-self: start;
+      margin-left: 8rem;
+    }
+    div {
+      font-size: 24px;
+      color: #595b60;
+      font-weight: 300;
+      margin-top: 0.5rem;
+    }
   }
   div.sectionReport__1,
   div.sectionReport__2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border: 2px solid rgba(132, 132, 132, 0.5);
-
-    /* opacity: 0.5; */
-    border-radius: 7px;
-    width: 80%;
-    /* height: 170px; */
-    padding: 0.5rem;
-    margin: 1rem 0;
-
+    width: 100%;
+    margin: 2rem 1rem;
     div.subSectionReport__1,
     div.subSectionReport__2,
     div.subSectionReport__3 {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-start;
       flex-direction: column;
-      margin: 1rem 0.5rem;
-      border-left: 1px solid rgba(132, 132, 132, 0.5);
-      /* background: blue; */
+      width: 22rem;
+      height: 18rem;
+      box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+        rgba(17, 17, 26, 0.05) 0px 8px 32px;
       div.subSectionReport__icon {
-        background: #50b3fb;
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
+        padding: 1rem 1rem 2rem 2rem;
         img {
-          margin: 0.5rem;
+          height: 4rem;
+          width: auto;
+        }
+        div.subSectionReport__figure {
+          padding-top: 1rem;
+          font-size: 1.3rem;
+          font-weight: 500;
+          img {
+            height: 1.7rem;
+            width: auto;
+          }
         }
       }
-      div.subSectionReport__figure {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: #2b2b2b;
-        margin-top: 0.5rem;
-      }
       div.subSectionReport__text {
-        padding: 0 3rem;
-        color: #2b2b2b;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        margin: 0.3rem 1.5rem;
-        text-align: center;
+        color: #747779;
+        font-size: 18px;
+        padding: 0 1rem 2rem 2rem;
+        justify-self: center;
+        align-self: center;
+        height: 8rem;
       }
-    }
-    div.subSectionReport__1 {
-      border: none;
     }
   }
 `;

@@ -7,9 +7,8 @@ export const NavStyle = styled.div`
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 10;
-  opacity: 0.9;
   .app__navbar {
-    background: #075aa0;
+    background: #fafafa;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,15 +32,18 @@ export const NavStyle = styled.div`
 
     .app__navbar-links {
       display: flex;
-      /* margin-top: 1rem; */
+
       li {
         margin: 0 1rem;
         list-style-type: none;
-
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a {
           text-decoration: none;
-          color: white;
-          text-transform: uppercase;
+          color: #075aa0;
+          /* text-transform: uppercase; */
           &:hover {
             border-bottom: 2px solid white;
           }
@@ -55,11 +57,25 @@ export const NavStyle = styled.div`
   }
 
   ul.app__navbar-links li:nth-last-of-type(1) {
-    background: #50b3fb;
-    height: 1.7rem;
-    border-radius: 20px;
+    background: #0047af;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     a {
+      color: #fafafa;
       padding: 0.11rem 0.5rem 0 0.5rem;
+      text-decoration: none;
+      :hover {
+        border: none;
+      }
+    }
+  }
+  ul.app__navbar-links li:nth-last-of-type(2) {
+    margin-left: 5rem;
+    a {
+      font-weight: bold;
       :hover {
         border: none;
       }
@@ -81,9 +97,6 @@ export const NavMenuBar = styled.div`
     svg {
       height: 2.8rem;
       width: 2.8rem;
-      /* left: 50%;
-      top: 50%;
-      transform: translate(10%, 10%); */
       cursor: pointer;
       background: var(--bgColor);
       border-radius: 50%;
@@ -132,17 +145,3 @@ export const NavMenuBar = styled.div`
     }
   }
 `;
-
-//  div {
-//           height: 5px;
-//           width: 5px;
-//           border-radius: 50%;
-//           /* background: red; */
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           width: 100%;
-//           &:hover {
-//             background: var(--secColor);
-//           }
-//         }

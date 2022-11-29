@@ -1,106 +1,64 @@
 import styled from "styled-components";
 
 export const StyleOurPrograms = styled.div`
-  background: rgba(0, 50, 124, 0.62);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 5rem;
-  position: relative;
+  background-color: #f1f4fb;
+  padding: 2rem 5rem 5rem;
   div.heading {
     font-size: 64px;
-    color: #fafafa;
+    font-weight: bold;
+    position: relative;
+    color: #0047af;
+    letter-spacing: 0.25rem;
+    border-left: 3px solid #ffe401;
+    padding-left: 2rem;
+    z-index: 1;
+    span {
+      position: absolute;
+      padding-left: 2rem;
+      left: -6.5px;
+      color: #fff;
+      z-index: -1;
+      -webkit-text-stroke-width: 0.86px;
+      -webkit-text-stroke-color: #0047af;
+    }
   }
-  div.slider__container {
+  div.Ourprograms.container.cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 3rem auto;
-    div.slide {
-      /* width: 100%; */
-      margin: 2rem 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      /* background-color: blue; */
-      div.slide__image {
-        height: 15rem;
-        width: 17rem;
-        background: #fafafa;
-        position: relative;
-        border-radius: 7px;
+    margin-top: 3rem;
+    div.card {
+      width: 24rem;
+      height: 29rem;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      margin: 0 1rem;
+      /* background-color: #0047af; */
+      div.card-img {
         img {
-          height: 12rem;
-          width: 14rem;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+          width: 23rem;
+          padding: 1rem;
+          height: 14rem;
           object-fit: cover;
-          object-position: top center;
+          object-position: 50% 50%;
         }
       }
-      div.slideText__heading {
-        font-size: 40px;
-        color: #fafafa;
-        text-align: center;
+      div.card-subHeading {
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 400;
       }
-      div.slideText {
-        color: #fafafa;
-        text-align: center;
+      div.card-textDesc {
+        padding: 1rem;
       }
-    }
-  }
-  div.AnimatableObj1,
-  div.AnimatableObj2 {
-    position: absolute;
-  }
-  div.AnimatableObj1 {
-    right: 25px;
-    top: 8px;
-  }
-  div.AnimatableObj2 {
-    left: 25px;
-    top: 85px;
-  }
-`;
-export const StyleResource = styled.div`
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  div.resource__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    div.resource__image {
-      img {
-        height: 15rem;
-        width: auto;
-      }
-    }
-    div.resource__figures {
-      margin-left: 2rem;
-      div.resource__text-heading {
-        font-size: 64px;
-      }
-      div.resource__text {
-        color: #2b2b2b;
-        font-size: 20px;
-      }
-      button.resource__btn {
-        width: 16rem;
-        height: 2.6rem;
-        border-radius: 19px;
-        background: #50b3fb;
+      button {
+        margin: 1rem;
+        width: 21rem;
+        height: 3rem;
+        background: #0047af;
         border: none;
-        color: #fafafa;
-        font-size: 1.1rem;
-        margin-top: 0.5rem;
+        color: #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
       }
     }
   }

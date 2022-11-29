@@ -1,71 +1,93 @@
-import React from "react";
-
 //? importing assets
 import images from "../../../constants/images";
-import { StyleOurPrograms, StyleResource } from "./OurPrograms.styled";
+import { StyleOurPrograms } from "./OurPrograms.styled";
 
 const OurPrograms = () => {
   return (
-    <div>
-      <StyleOurPrograms>
-        <div className="heading">Our Programs</div>
-        <div className="slider__container">
-          <div className="slide">
-            <div className="slide__image">
-              <img src={images.OurPrograms__image1} alt="slider-figure-1" />
-            </div>
-            <div className="slideText__heading">Acceleration Conference</div>
-            <div className="slideText">
-              Exposing young professionals to digital entrepreneurship and
-              monetization. Event features exhibition of projects and more.
-            </div>
+    <StyleOurPrograms>
+      <div className="heading">
+        Our programs<span>Our programs</span>
+      </div>
+      <div className="Ourprograms container cards">
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card1} alt="card-figure" />
           </div>
-          <div className="slide">
-            <div className="slide__image">
-              <img src={images.OurPrograms__image2} alt="slider-figure-2" />
-            </div>
-            <div className="slideText__heading">StartUp Clinic</div>
-            <div className="slideText">
-              A 6weeks course curated for entrepreneurs and intrapreneurs,
-              startups are taught by industry experts on business technology.
-            </div>
+          <div className="card-subHeading">Digital Monetization </div>
+          <div className="card-textDesc">
+            One of the largest Digital Money Summit in Africa. Bringing together
+            industry veterans, exposing secrets on web3, tokenization,
+            metaverse, affiliate marketing, social commerce, social monetization
+            and lots more.
           </div>
-          <div className="slide">
-            <div className="slide__image">
-              <img src={images.OurPrograms__image3} alt="slider-figure-3" />
-            </div>
-            <div className="slideText__heading">School of Champions</div>
-            <div className="slideText">
-              A monthly edition where we talk about emerging technologies
-              digital monetization and social productivity.{" "}
-            </div>
-          </div>
+          <button>Register Now</button>
         </div>
-        <div className="AnimatableObj1">
-          <img src={images.AnimatableObj1} alt="background-objects" />
-        </div>
-        <div className="AnimatableObj2">
-          <img src={images.AnimatableObj2} alt="background-objects" />
-        </div>
-      </StyleOurPrograms>
-
-      <StyleResource>
-        <div className="resource__container">
-          <div className="resource__image">
-            <img src={images.Resource__Image} alt="resource-img" />
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card2} alt="card-figure" />
           </div>
-          <div className="resource__figures">
-            <div className="resource__text-heading">Resources</div>
-            <div className="resource__text">
-              Access over $5000 worth of resources (ebooks, podcasts, videos) on
-              Business, Digotal Technology, Monetization, Leaderhip, and Growth
-              from experts across the globe.{" "}
-            </div>
-            <button className="resource__btn">Free Download</button>
+          <div className="card-subHeading">Startup Clinic</div>
+          <div className="card-textDesc">
+            A 6weeks course curated for entrepreneurs and intrapreneurs.
+            Startups are taught by industry experts on business technology,
+            formalization, product launching and seed funding.
           </div>
+          <button>Register Now</button>
         </div>
-      </StyleResource>
-    </div>
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card3} alt="card-figure" />
+          </div>
+          <div className="card-subHeading">Acceleration conference</div>
+          <div className="card-textDesc">
+            Exposing young professionals to digital enterpreneurship
+            monetization. Event features exhibition of projects and more.{" "}
+          </div>
+          <button>Register Now</button>
+        </div>
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card4} alt="card-figure" />
+          </div>
+          <div className="card-subHeading">Acceleration conference</div>
+          <div className="card-textDesc">
+            For High School Students, CapCon exposes them to Digital
+            Productivity,Social Monetization and Digital Entrepreneurship.{" "}
+          </div>
+          <button>Register Now</button>
+        </div>
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card5} alt="card-figure" />
+          </div>
+          <div className="card-subHeading">Acceleration conference</div>
+          <div className="card-textDesc">
+            For High School Students, CapCon exposes them to Digital
+            Productivity,Social Monetization and Digital Entrepreneurship.{" "}
+          </div>
+          <button>Register Now</button>
+        </div>
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card6} alt="card-figure" />
+          </div>
+          <div className="card-subHeading">Acceleration conference</div>
+          <div className="card-textDesc"></div>
+          <button>Register Now</button>
+        </div>
+        <div className="card">
+          <div className="card-img">
+            <img src={images.Card7} alt="card-figure" />
+          </div>
+          <div className="card-subHeading">Acceleration conference</div>
+          <div className="card-textDesc">
+            For High School Students, CapCon exposes them to Digital
+            Productivity,Social Monetization and Digital Entrepreneurship.{" "}
+          </div>
+          <button>Register Now</button>
+        </div>
+      </div>
+    </StyleOurPrograms>
   );
 };
 

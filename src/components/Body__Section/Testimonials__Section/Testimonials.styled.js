@@ -1,127 +1,90 @@
 import styled from "styled-components";
 
 export const StyleTestimonials = styled.div`
-  margin-top: 5rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  div.Testimonials__container {
-    width: 80%;
-    div.Testimonials__heading {
-      font-size: 64px;
-      color: #fafafa;
-      text-align: center;
-    }
-    div.Testimonials__body {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      div.Testimonial__hero-image {
-        img {
-          height: 30rem;
-          width: auto;
-        }
-      }
-      div.Testimonial__cards {
-        position: relative;
-        div.Testimonial__card {
-          width: 45rem;
-          height: 14rem;
-          border-radius: 7px;
-          background: #fafafa;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          position: absolute;
-          top: -200px;
-          left: -58px;
-          div.Testimonial__card-image {
-            margin: 0 1rem;
-            img {
-              height: 8rem;
-              width: auto;
-              border-radius: 50%;
-            }
-          }
-          div.Testimonial__card-text-container {
-            margin: 0 1rem;
-            div.Testimonial__card-text-container-name {
-              font-size: 30px;
-              font-weight: 400;
-            }
-            div.Testimonial__card-text-container-text {
-              font-size: 22px;
-              font-weight: 300;
-              opacity: 0.9;
-            }
-            div.Testimonial__card-text-container-date {
-              font-size: 18px;
-              opacity: 0.8;
-              margin-top: 1rem;
-              font-style: italic;
-            }
-          }
-        }
-        div.Animatable1 {
-          position: absolute;
-          left: 39rem;
-          top: -5rem;
-          img {
-            height: 12rem;
-            width: auto;
-          }
-        }
-      }
-    }
-  }
-`;
-
-export const StylePartner = styled.div`
   margin-top: 4rem;
-  color: #fafafa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  div.Partner__heading {
-    font-size: 64px;
+  div.heading {
     text-align: center;
-    font-weight: 600;
-  }
-  div.Partner__text {
-    width: 60%;
-    text-align: center;
-    margin-top: 1.5rem;
-    opacity: 0.7;
-    font-size: 1.2rem;
-  }
-  button.support {
-    margin: 1.5rem auto;
-    width: 16rem;
-    height: 2.6rem;
-    border-radius: 19px;
-    background: #50b3fb;
-    border: none;
-    color: #fafafa;
-    font-size: 1.1rem;
-  }
-  div.Animatable2 {
-    position: absolute;
-    left: 53rem;
+    color: #0e63f4;
+    letter-spacing: 0.05rem;
+    line-height: 0.95;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      font-size: 64px;
+      font-weight: 600;
+      display: block;
+      color: #0047af;
+      letter-spacing: normal;
+    }
     img {
-      height: 12rem;
-      width: auto;
+      align-self: start;
+      margin-left: 16rem;
     }
   }
-  div.Animatable3 {
-    position: absolute;
-    left: 10rem;
-    top: -3rem;
-    img {
-      height: 4rem;
-      width: auto;
+  div.testimonial-cards__container {
+    margin: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    div.card {
+      width: 32rem;
+      height: 15rem;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      padding: 1.5rem;
+      display: grid;
+      grid-template-areas:
+        "img cardName"
+        "img cardDate"
+        ". cardStar"
+        ". cardText";
+      margin: 1rem;
+      img {
+        grid-area: img;
+      }
+      div.card-name {
+        grid-area: cardName;
+        padding-left: 1rem;
+        font-weight: bold;
+        color: #1a1a1a;
+      }
+      div.card-date {
+        grid-area: cardDate;
+        padding-left: 1rem;
+        color: #4e6269;
+      }
+      div.card-star {
+        grid-area: cardStar;
+        padding-left: 1rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img:nth-of-type(1) {
+          height: 3.1rem;
+        }
+        img:nth-of-type(2) {
+          height: 2.9rem;
+        }
+        img:nth-of-type(3) {
+          height: 2.6rem;
+        }
+        img:nth-of-type(4) {
+          height: 2.2rem;
+        }
+        img:nth-of-type(5) {
+          height: 1.7rem;
+          align-self: flex-start;
+        }
+      }
+      div.card-textContent {
+        grid-area: cardText;
+        padding-left: 1rem;
+        color: #4e6269;
+      }
     }
   }
 `;
