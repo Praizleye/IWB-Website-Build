@@ -19,10 +19,10 @@ export const NavStyle = styled.div`
       justify-content: flex-start;
       align-items: center;
       img {
-        height: 100%;
+        height: 2rem;
         color: white;
-        width: 100%;
-        margin-top: 10px;
+        width: auto;
+        margin: 0 1rem;
         @media screen and (max-width: 500px) {
           height: 70%;
           width: 70%;

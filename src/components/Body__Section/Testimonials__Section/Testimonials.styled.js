@@ -14,7 +14,7 @@ export const StyleTestimonials = styled.div`
     flex-direction: column;
 
     span {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-weight: 600;
       display: block;
       color: #0047af;
@@ -36,6 +36,7 @@ export const StyleTestimonials = styled.div`
     justify-content: space-between;
     align-items: center;
     width: max-content;
+    position: relative;
     div.card {
       width: 32rem;
       height: 15rem;
@@ -89,6 +90,37 @@ export const StyleTestimonials = styled.div`
         grid-area: cardText;
         padding-left: 1rem;
         color: #4e6269;
+      }
+    }
+    div.splide__arrows {
+      position: absolute;
+      bottom: -3rem;
+      right: 12rem;
+      button.splide__arrow.splide__arrow--prev {
+        height: 3.5rem;
+        width: 3.5rem;
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          width: 1.8rem;
+          color: #fafafa;
+        }
+      }
+      button.splide__arrow.splide__arrow--next {
+        height: 3.5rem;
+        width: 3.5rem;
+        background: #d9e1f4;
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          transform: rotate(180deg);
+          width: 1.8rem;
+          color: #fafafa;
+        }
       }
     }
   }

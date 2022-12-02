@@ -6,7 +6,7 @@ export const StyleWhoWeAre = styled.div`
   padding: 3rem 3rem;
   background-color: #f1f4fb;
   div.heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
     position: relative;
     color: #0047af;
@@ -37,8 +37,8 @@ export const StyleWhoWeAre = styled.div`
       img {
         border-right: 3px solid #ffe401;
         width: auto;
-        height: 400px;
-        width: 400px;
+        height: 25rem;
+        width: 25rem;
         object-fit: cover;
         object-position: center center;
       }
@@ -55,21 +55,23 @@ export const StyleWhoWeAre = styled.div`
       padding: 0 1rem 0 4rem;
       display: flex;
       margin-top: 25px;
-      /* height: 21rem; */
-      line-height: 1.5;
+      line-height: 1.9;
       letter-spacing: 0.05rem;
       justify-content: space-between;
       align-items: flex-start;
       flex-direction: column;
       div.sub-heading {
-        font-size: 2.4rem;
+        font-size: 2rem;
         color: #0047af;
+        background: #fafafa;
+        padding: 0 3rem;
       }
 
       div.About__text-description {
         font-size: 1.1rem;
         line-height: 1.8;
         color: #6b6b6b;
+        line-height: 2.3;
       }
       button {
         margin-top: 1.5rem;

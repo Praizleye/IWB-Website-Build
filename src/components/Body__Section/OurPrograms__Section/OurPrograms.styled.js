@@ -4,7 +4,7 @@ export const StyleOurPrograms = styled.div`
   background-color: #f1f4fb;
   padding: 2rem 5rem 5rem;
   div.heading {
-    font-size: 64px;
+    font-size: 3.5rem;
     font-weight: bold;
     position: relative;
     color: #0047af;
@@ -27,6 +27,8 @@ export const StyleOurPrograms = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    position: relative;
+
     div.card {
       width: 24rem;
       height: 29rem;
@@ -46,9 +48,13 @@ export const StyleOurPrograms = styled.div`
         padding: 1rem;
         font-size: 1.2rem;
         font-weight: 400;
+        color: #0047af;
       }
       div.card-textDesc {
         padding: 1rem;
+        font-size: 0.9rem;
+        height: 7rem;
+        /* background: #ffe401; */
       }
       button {
         margin: 1rem;
@@ -59,6 +65,42 @@ export const StyleOurPrograms = styled.div`
         color: #fff;
         font-size: 1.3rem;
         cursor: pointer;
+      }
+      button.comingSoon {
+        color: #0047af;
+        background: #fafafa;
+        border: 1px solid #0047af;
+      }
+    }
+    div.splide__arrows {
+      position: absolute;
+      top: -5rem;
+      right: 3rem;
+      button.splide__arrow.splide__arrow--prev {
+        height: 3.5rem;
+        width: 3.5rem;
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          width: 1.8rem;
+          color: #fafafa;
+        }
+      }
+      button.splide__arrow.splide__arrow--next {
+        height: 3.5rem;
+        width: 3.5rem;
+        background: #d9e1f4;
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          transform: rotate(180deg);
+          width: 1.8rem;
+          color: #fafafa;
+        }
       }
     }
   }

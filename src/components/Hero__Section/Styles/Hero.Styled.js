@@ -6,7 +6,7 @@ export const StyleHero = styled.div`
   width: 100vw;
   background: #1b7aad;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
   img {

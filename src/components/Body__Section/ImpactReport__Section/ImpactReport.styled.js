@@ -7,7 +7,7 @@ export const StyleImpactReport = styled.div`
   align-items: center;
   flex-direction: column;
   div.ImpactReport__heading {
-    font-size: 64px;
+    font-size: 3.5rem;
     font-weight: 600;
     color: #065a8a;
     display: flex;
@@ -18,7 +18,7 @@ export const StyleImpactReport = styled.div`
     img {
       display: block;
       align-self: start;
-      margin-left: 8rem;
+      margin-left: 10rem;
     }
     div {
       font-size: 24px;
@@ -41,14 +41,14 @@ export const StyleImpactReport = styled.div`
       justify-content: space-between;
       align-items: flex-start;
       flex-direction: column;
-      width: 22rem;
+      width: 23rem;
       height: 18rem;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
         rgba(17, 17, 26, 0.05) 0px 8px 32px;
       div.subSectionReport__icon {
-        padding: 1rem 1rem 2rem 2rem;
+        padding: 1rem 3rem 2rem 3rem;
         img {
-          height: 4rem;
+          height: 3.5rem;
           width: auto;
         }
         div.subSectionReport__figure {
@@ -63,8 +63,8 @@ export const StyleImpactReport = styled.div`
       }
       div.subSectionReport__text {
         color: #747779;
-        font-size: 18px;
-        padding: 0 1rem 2rem 2rem;
+        font-size: 1.2rem;
+        padding: 0 3rem 2rem 3rem;
         justify-self: center;
         align-self: center;
         height: 8rem;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleNewsletter = styled.div`
-  margin: 5rem 0;
+  margin: 10rem 0 5rem;
   padding: 3rem 4rem;
   background: #f1f4fb;
   div.heading {
@@ -11,7 +11,7 @@ export const StyleNewsletter = styled.div`
     line-height: 1.1;
     font-weight: 500;
     span {
-      font-size: 4rem;
+      font-size: 3.5rem;
       display: block;
       color: #0047af;
       font-weight: 600;

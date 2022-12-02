@@ -7,7 +7,7 @@ export const StyleCompTrust = styled.div`
   padding-left: 5rem;
   /* background: #e7e6e6; */
   div.Footer__heading {
-    font-size: 3rem;
+    font-size: 2.5rem;
     /* padding-left: 5rem; */
     color: #fff;
     -webkit-text-stroke-width: 0.86px;
