@@ -4,6 +4,9 @@ import React from "react";
 import { StyleImpactReport } from "./ImpactReport.styled";
 import images from "../../../constants/images";
 
+import { motion } from "framer-motion";
+import { animateCards } from "./animateImpact";
+
 const ImpactReport = () => {
   return (
     <StyleImpactReport>
@@ -16,7 +19,12 @@ const ImpactReport = () => {
       </div>
 
       <div className="sectionReport__1">
-        <div className="subSectionReport__1">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__1"
+        >
           <div className="subSectionReport__icon">
             <img src={images.Handshake} alt="descriptive figure" />
             <div className="subSectionReport__figure">
@@ -30,9 +38,14 @@ const ImpactReport = () => {
             Over 130 young scholars in IWB Community have been sponsored to
             study Business Administration at Tekedia.
           </div>
-        </div>
+        </motion.div>
 
-        <div className="subSectionReport__2">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__2"
+        >
           <div className="subSectionReport__icon">
             <img src={images.TrainingTalents} alt="descriptive figure" />
             <div className="subSectionReport__figure">Training Talents</div>
@@ -41,9 +54,14 @@ const ImpactReport = () => {
             Over 3000 young professionals trained on Business, Digital
             Monetization and Digital Technology.
           </div>
-        </div>
+        </motion.div>
 
-        <div className="subSectionReport__3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__3"
+        >
           <div className="subSectionReport__icon">
             <img src={images.Resources} alt="descriptive figure" />
             <div className="subSectionReport__figure">
@@ -54,11 +72,16 @@ const ImpactReport = () => {
             Over $10,000 worth of resources and opportunties shared with members
             of IWB Community.
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div className="sectionReport__2">
-        <div className="subSectionReport__1">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__1"
+        >
           <div className="subSectionReport__icon">
             <img src={images.Community} alt="descriptive figure" />
             <div className="subSectionReport__figure">
@@ -69,9 +92,14 @@ const ImpactReport = () => {
             Over 4000 community members actively discussing Ideas and solutions
             for global impact.
           </div>
-        </div>
+        </motion.div>
 
-        <div className="subSectionReport__2">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__2"
+        >
           <div className="subSectionReport__icon">
             <img src={images.Volunteers} alt="descriptive figure" />
             <div className="subSectionReport__figure">
@@ -81,9 +109,14 @@ const ImpactReport = () => {
           <div className="subSectionReport__text">
             Over 100 Volunteers in Africa are part of our workstream
           </div>
-        </div>
+        </motion.div>
 
-        <div className="subSectionReport__3">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animateCards}
+          className="subSectionReport__3"
+        >
           <div className="subSectionReport__icon">
             <img src={images.StartupProjects} alt="descriptive figure" />
             <div className="subSectionReport__figure">
@@ -94,7 +127,7 @@ const ImpactReport = () => {
             20 Innovative startup projects profiled for seed funding on IWB
             Capital.
           </div>
-        </div>
+        </motion.div>
       </div>
     </StyleImpactReport>
   );

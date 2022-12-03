@@ -9,8 +9,20 @@ export const StyleHero = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
-  img {
-    height: 28rem;
+  img.heroImg {
+    height: 21rem;
+    width: auto;
+    margin-top: 3rem;
+    align-self: end;
+  }
+  img.illuminate {
+    position: absolute;
+    left: 60%;
+    top: 2rem;
+    width: 25rem;
+  }
+  img.heroImg {
+    height: 23rem;
     width: auto;
     margin-top: 2rem;
   }
@@ -34,8 +46,8 @@ export const StyleHero = styled.div`
     div:nth-of-type(3) {
       position: absolute;
       right: -5rem;
-      top: 6rem;
-      img {
+      top: 8rem;
+      svg {
         width: 18rem;
         height: auto;
       }

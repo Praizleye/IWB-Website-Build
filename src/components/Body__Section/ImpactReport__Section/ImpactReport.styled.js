@@ -33,7 +33,7 @@ export const StyleImpactReport = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 2rem 1rem;
+    margin: 4rem 1rem;
     div.subSectionReport__1,
     div.subSectionReport__2,
     div.subSectionReport__3 {

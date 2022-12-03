@@ -1,4 +1,5 @@
 import HeroImg from "../assets/HeroImg.svg";
+import Light from "../assets/Light.svg";
 import WhoWeAre from "../assets/WhoWeAre.png";
 import PartnerUs from "../assets/PartnerUs.png";
 import Logo from "../assets/Logo.svg";
@@ -50,6 +51,7 @@ const assets = {
   Logo,
   Lineheader,
   Line,
+  Light,
 
   Mintyn,
   Tekedia,
