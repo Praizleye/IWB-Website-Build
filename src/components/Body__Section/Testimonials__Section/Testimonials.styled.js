@@ -14,7 +14,7 @@ export const StyleTestimonials = styled.div`
     flex-direction: column;
 
     span {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 600;
       display: block;
       color: #0047af;

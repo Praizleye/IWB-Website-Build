@@ -38,20 +38,20 @@ const WhoWeAre = () => {
           />
           <div className="img-cover"></div>
         </motion.div>
-        <div className="About__text-content">
+        <motion.div
+          className="About__text-content"
+          initial="hidden"
+          whileInView="visible"
+          variants={animateText}
+        >
           <div className="sub-heading">Our Story</div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={animateText}
-            className="About__text-description"
-          >
+          <div className="About__text-description">
             Ideas Worth Billions is Africa’s fastest growing Human Capacity
             Development Network. Brooding a thriving community of Africa’s
             finest thought leaders, creators, and technopreneurs imbued with
             positive values and in-demand skills for sheer excellence in career,
             leadership, business, tech and everything else.
-          </motion.div>
+          </div>
           <motion.button
             initial="hidden"
             whileInView="visible"
@@ -59,10 +59,16 @@ const WhoWeAre = () => {
           >
             Join Our Community
           </motion.button>
-        </div>
+        </motion.div>
       </div>
 
-      <div className="About-body container" style={{ marginTop: "1.5rem" }}>
+      <motion.div
+        className="About-body container"
+        style={{ marginTop: "1.5rem" }}
+        initial="hidden"
+        whileInView="visible"
+        variants={animateText}
+      >
         <div className="About__text-content partner">
           <div className="sub-heading ">Partner with IWB</div>
           <motion.div
@@ -91,7 +97,7 @@ const WhoWeAre = () => {
             alt="PartnerUs-figure"
           />
         </div>
-      </div>
+      </motion.div>
     </StyleWhoWeAre>
   );
 };

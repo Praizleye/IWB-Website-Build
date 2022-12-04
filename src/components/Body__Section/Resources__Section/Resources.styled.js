@@ -36,7 +36,7 @@ export const StyleResources = styled.div`
       /* background: violet; */
       width: 60%;
       div.heading {
-        font-size: 64px;
+        font-size: 3rem;
         font-weight: bold;
         position: relative;
         color: #0047af;
@@ -47,7 +47,7 @@ export const StyleResources = styled.div`
         span {
           position: absolute;
           padding-left: 2rem;
-          left: -6.5px;
+          left: -4.5px;
           color: #fff;
           z-index: -1;
           -webkit-text-stroke-width: 0.86px;
@@ -65,6 +65,20 @@ export const StyleResources = styled.div`
         color: #fafafa;
         margin-top: 2rem;
         border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.05rem;
+        :hover {
+          transform: scale(1.05);
+        }
+        svg {
+          margin-right: 1rem;
+          font-size: 1.1rem;
+        }
       }
     }
   }

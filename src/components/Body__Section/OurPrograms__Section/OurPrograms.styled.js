@@ -4,7 +4,7 @@ export const StyleOurPrograms = styled.div`
   background-color: #f1f4fb;
   padding: 2rem 5rem 5rem;
   div.heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     position: relative;
     color: #0047af;
@@ -15,7 +15,7 @@ export const StyleOurPrograms = styled.div`
     span {
       position: absolute;
       padding-left: 2rem;
-      left: -6.5px;
+      left: -4.5px;
       color: #fff;
       z-index: -1;
       -webkit-text-stroke-width: 0.86px;
@@ -30,11 +30,10 @@ export const StyleOurPrograms = styled.div`
     position: relative;
 
     div.card {
-      width: 24rem;
+      width: 23rem;
       height: 29rem;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      margin: 0 1rem;
-      /* background-color: #0047af; */
+      background-color: #fff;
       div.card-img {
         img {
           width: 23rem;
@@ -100,6 +99,16 @@ export const StyleOurPrograms = styled.div`
           transform: rotate(180deg);
           width: 1.8rem;
           color: #fafafa;
+        }
+      }
+    }
+    ul.splide__pagination.splide__pagination--ltr {
+      margin-top: 3rem;
+      position: absolute;
+      bottom: -4rem;
+      li {
+        button.is-active {
+          background: #0047af;
         }
       }
     }

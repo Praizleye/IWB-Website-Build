@@ -62,7 +62,7 @@ export const animateText = {
     transformOrigin: "0",
     transition: {
       duration: 0.25,
-      delay: 0.15,
+      delay: 0.65,
       ease: "easeIn",
     },
   },

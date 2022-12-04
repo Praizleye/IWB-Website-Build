@@ -5,8 +5,10 @@ export const StyleWhoWeAre = styled.div`
   margin-top: 5rem;
   padding: 3rem 3rem;
   background-color: #f1f4fb;
+  background: #fafafa;
+
   div.heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     position: relative;
     color: #0047af;
@@ -18,7 +20,7 @@ export const StyleWhoWeAre = styled.div`
     span {
       position: absolute;
       padding-left: 3rem;
-      left: -0.5rem;
+      left: -0.25rem;
       color: #fff;
       /* letter-spacing: ; */
       z-index: -1;
@@ -31,6 +33,7 @@ export const StyleWhoWeAre = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-left: 2rem;
+
     div.WhoWeAre__img {
       margin-top: 3rem;
       position: relative;
@@ -43,7 +46,7 @@ export const StyleWhoWeAre = styled.div`
         object-position: center center;
       }
       div.img-cover {
-        height: 400px;
+        height: 25rem;
         width: 397px;
         position: absolute;
         top: 0;
@@ -52,9 +55,11 @@ export const StyleWhoWeAre = styled.div`
       }
     }
     div.About__text-content {
+      background: #fafafa;
+      height: 25rem;
       padding: 0 1rem 0 4rem;
       display: flex;
-      margin-top: 25px;
+      margin-top: 2.95rem;
       line-height: 1.9;
       letter-spacing: 0.05rem;
       justify-content: space-between;
@@ -63,8 +68,6 @@ export const StyleWhoWeAre = styled.div`
       div.sub-heading {
         font-size: 2rem;
         color: #0047af;
-        background: #fafafa;
-        padding: 0 3rem;
       }
 
       div.About__text-description {
@@ -74,14 +77,16 @@ export const StyleWhoWeAre = styled.div`
         line-height: 2.3;
       }
       button {
-        margin-top: 1.5rem;
+        margin: 1rem 0;
         background: #0047af;
         height: 3rem;
         width: 12rem;
+        border-radius: 4px;
         color: #fafafa;
         font-size: 1.05rem;
         border: none;
         transition: transform 0.5s ease-in-out;
+        cursor: pointer;
         &:hover {
           transform: scale(1.1);
         }

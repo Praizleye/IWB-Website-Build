@@ -4,11 +4,36 @@ import { StyleOurPrograms } from "./OurPrograms.styled";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { motion } from "framer-motion";
+
 const OurPrograms = () => {
+  const animateHeading = {
+    hidden: {
+      opacity: 0,
+      x: 15,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeIn",
+        delay: 0.2,
+      },
+    },
+  };
+
   return (
     <StyleOurPrograms>
       <div className="heading">
-        Our programs<span>Our programs</span>
+        Our programs
+        <motion.span
+          initial="hidden"
+          whileInView="visible"
+          variants={animateHeading}
+        >
+          Our programs
+        </motion.span>
       </div>
 
       <Splide
@@ -17,11 +42,11 @@ const OurPrograms = () => {
         className="Ourprograms container cards"
         options={{
           // type: "loop",
-          rewind: true,
           gap: "1rem",
-          perPage: "3",
-          pagination: false,
-          perMove: "1",
+          pagination: true,
+          width: "100%",
+          fixedWidth: true,
+          fixedHeight: true,
           snap: true,
         }}
       >

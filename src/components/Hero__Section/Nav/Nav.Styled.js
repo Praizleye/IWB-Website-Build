@@ -8,21 +8,23 @@ export const NavStyle = styled.div`
   -webkit-backdrop-filter: blur(8px);
   z-index: 10;
   .app__navbar {
-    background: #fafafa;
+    background: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 5rem;
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     .app__navbar-logo {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      flex: 1;
+      padding-left: 4rem;
+
       img {
         height: 2rem;
+        width: auto;
         color: white;
         width: auto;
         margin: 0 1rem;
+
         @media screen and (max-width: 500px) {
           height: 70%;
           width: 70%;
@@ -30,7 +32,7 @@ export const NavStyle = styled.div`
       }
     }
 
-    .app__navbar-links {
+    ul.app__navbar-links {
       display: flex;
 
       li {
@@ -55,14 +57,20 @@ export const NavStyle = styled.div`
       }
     }
   }
-
+  ul.app__navbar-links li:nth-of-type(1),
+  ul.app__navbar-links li:nth-of-type(2),
+  ul.app__navbar-links li:nth-of-type(3),
+  ul.app__navbar-links li:nth-of-type(4),
+  ul.app__navbar-links li:nth-of-type(5) {
+    margin-right: 3rem;
+  }
   ul.app__navbar-links li:nth-last-of-type(1) {
     background: #0047af;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 4px;
     a {
       color: #fafafa;
       padding: 0.11rem 0.5rem 0 0.5rem;
@@ -73,9 +81,15 @@ export const NavStyle = styled.div`
     }
   }
   ul.app__navbar-links li:nth-last-of-type(2) {
-    margin-left: 5rem;
+    background: #f5f9ff;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
     a {
       font-weight: bold;
+      padding: 0.11rem 0.5rem 0 0.5rem;
       :hover {
         border: none;
       }

@@ -9,7 +9,7 @@ export const animateCards = {
     transition: {
       duration: 0.25,
       ease: "easeInOut",
-      delay: 0.15,
+      delay: 0.45,
     },
   },
 };

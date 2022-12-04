@@ -1,79 +1,100 @@
 import React from "react";
 import { StyleFooter } from "./Footer.styled";
 import images from "../../../constants/images";
-
+import { motion } from "framer-motion";
+import {
+  animateHeading,
+  animateSubheading,
+  animateSubtext,
+} from "./animateFooter";
 const Footer = () => {
   return (
     <StyleFooter>
-      <div className="heading">
-        Create . Connect . Thrive &#62;
-        <div>
+      <motion.div
+        className="heading"
+        initial="hidden"
+        whileInView="visible"
+        variants={animateHeading}
+      >
+        <motion.span variants={animateSubheading}>Create .</motion.span>{" "}
+        <motion.span variants={animateSubheading}>Connect . </motion.span>{" "}
+        <motion.span variants={animateSubheading}>Thrive &#62;</motion.span>
+        <motion.div variants={animateSubtext}>
           We are building a new generation of young professionals leveraging on
           the new economy.
-        </div>
-        <button>Get involved</button>
-      </div>
-      <div className="links">
-        <img src={images.FooterLogo} alt="iwb-white-logo" />
-        <ul>
-          Quick links
-          <li>
+        </motion.div>
+        <button>Get Involved</button>
+      </motion.div>
+      <motion.div
+        className="links"
+        initial="hidden"
+        whileInView="visible"
+        variants={animateHeading}
+      >
+        <motion.img
+          src={images.FooterLogo}
+          alt="iwb-white-logo"
+          variants={animateHeading}
+        />
+        <motion.ul variants={animateHeading}>
+          Quick
+          <motion.li variants={animateSubheading}>
             <a href="#About us">About us</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Impact report">Impact report</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Resources">Resources</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Testimonial">Testimonial</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Blog">Blog</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Community">Community</a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
 
-        <ul>
+        <motion.ul variants={animateHeading}>
           Contact
-          <li>
+          <motion.li variants={animateSubheading}>
             <a href="#email">connect.iwb@gmail.com</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#number">+234 812 0611 858</a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
 
-        <ul>
+        <motion.ul variants={animateHeading}>
           Connect
-          <li>
+          <motion.li variants={animateSubheading}>
             <a href="#About us">LinkedIn</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Impact report">Facebook</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Resources">Telegram</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Testimonial">Twitter</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Blog">Youtube</a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
             <a href="#Community">Spotify</a>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
 
-        <ul>
+        <motion.ul variants={animateHeading}>
           Legal
-          <li>Terms of Service</li>
-        </ul>
-      </div>
+          <motion.li variants={animateSubheading}>Terms of Service</motion.li>
+        </motion.ul>
+      </motion.div>
     </StyleFooter>
   );
 };

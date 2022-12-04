@@ -27,12 +27,14 @@ const Hero = () => {
             Creating solutions
           </motion.div>
           <div>
-            <svg
+            <motion.svg
               width="337"
               height="40"
               viewBox="0 0 337 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              initial="hidden"
+              animate="visible"
             >
               <motion.path
                 initial="hidden"
@@ -52,7 +54,7 @@ const Hero = () => {
                 stroke-width="6"
                 stroke-linecap="round"
               />
-            </svg>
+            </motion.svg>
           </div>
           <motion.div
             initial="hidden"

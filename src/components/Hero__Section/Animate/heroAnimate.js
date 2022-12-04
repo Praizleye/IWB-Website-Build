@@ -45,11 +45,13 @@ export const animateSvgPath = {
 export const animateBtn = {
   hidden: {
     opacity: 0,
-    y: 15,
+    x: 0,
+    y: 0,
   },
   visible: {
     opacity: 1,
-    y: 1,
+    y: [-25, 0],
+    x: [-15, 15, 0],
     transition: {
       duration: 1.5,
       ease: [0.17, 0.67, 0.83, 0.67],

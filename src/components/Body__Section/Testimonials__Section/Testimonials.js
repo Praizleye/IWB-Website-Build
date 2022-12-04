@@ -4,6 +4,8 @@ import images from "../../../constants/images";
 import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { motion } from "framer-motion";
+import { animateStars, animateStar } from "./animateTestimonial";
 
 const Testimonials = () => {
   return (
@@ -36,13 +38,38 @@ const Testimonials = () => {
               <img src={images.Testator__1} alt="testator-pofile" />
               <div className="card-name">Godman, Onahi</div>
               <div className="card-date">November, 2022.</div>
-              <div className="card-star">
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-              </div>
+              <motion.div
+                className="card-star"
+                initial="hidden"
+                whileInView="visible"
+                variants={animateStars}
+              >
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+              </motion.div>
               <div className="card-textContent">
                 IWB is at the centre of building young African minds to provide
                 Solutions to Local Problems. It is the place for everyone with a
@@ -55,13 +82,38 @@ const Testimonials = () => {
               <img src={images.Testator__1} alt="testator-pofile" />
               <div className="card-name">Godman, Onahi</div>
               <div className="card-date">November, 2022.</div>
-              <div className="card-star">
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-              </div>
+              <motion.div
+                className="card-star"
+                initial="hidden"
+                whileInView="visible"
+                variants={animateStars}
+              >
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+              </motion.div>
               <div className="card-textContent">
                 IWB is at the centre of building young African minds to provide
                 Solutions to Local Problems. It is the place for everyone with a
@@ -75,13 +127,38 @@ const Testimonials = () => {
               <img src={images.Testator__1} alt="testator-pofile" />
               <div className="card-name">Godman, Onahi</div>
               <div className="card-date">November, 2022.</div>
-              <div className="card-star">
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-              </div>
+              <motion.div
+                className="card-star"
+                initial="hidden"
+                whileInView="visible"
+                variants={animateStars}
+              >
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+              </motion.div>
               <div className="card-textContent">
                 IWB is at the centre of building young African minds to provide
                 Solutions to Local Problems. It is the place for everyone with a
@@ -94,13 +171,38 @@ const Testimonials = () => {
               <img src={images.Testator__1} alt="testator-pofile" />
               <div className="card-name">Godman, Onahi</div>
               <div className="card-date">November, 2022.</div>
-              <div className="card-star">
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-                <img src={images.Star} alt="ratings" />
-              </div>
+              <motion.div
+                className="card-star"
+                initial="hidden"
+                whileInView="visible"
+                variants={animateStars}
+              >
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+                <motion.img
+                  src={images.Star}
+                  alt="ratings"
+                  variants={animateStar}
+                />
+              </motion.div>
               <div className="card-textContent">
                 IWB is at the centre of building young African minds to provide
                 Solutions to Local Problems. It is the place for everyone with a

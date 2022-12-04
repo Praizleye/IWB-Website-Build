@@ -7,7 +7,7 @@ export const StyleImpactReport = styled.div`
   align-items: center;
   flex-direction: column;
   div.ImpactReport__heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: #065a8a;
     display: flex;
@@ -18,7 +18,7 @@ export const StyleImpactReport = styled.div`
     img {
       display: block;
       align-self: start;
-      margin-left: 10rem;
+      margin-left: 11.5rem;
     }
     div {
       font-size: 24px;
@@ -42,7 +42,7 @@ export const StyleImpactReport = styled.div`
       align-items: flex-start;
       flex-direction: column;
       width: 23rem;
-      height: 18rem;
+      height: 19rem;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
         rgba(17, 17, 26, 0.05) 0px 8px 32px;
       div.subSectionReport__icon {

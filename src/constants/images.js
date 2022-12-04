@@ -46,6 +46,9 @@ import Testator__1 from "../assets/Testimonials__Assets/Testimonial__img1.png";
 import FooterLogo from "../assets/Footer__Assets/IWB Logo Project 1.svg";
 import BackToTop from "../assets/Footer__Assets/BackToTop.svg";
 
+// ?import Newsletter Asset
+import Newsletter from "../assets/NewsLetter__Assets/NewsLetter.png";
+
 const assets = {
   HeroImg,
   Logo,
@@ -87,6 +90,8 @@ const assets = {
   Testator__1,
   FooterLogo,
   BackToTop,
+
+  Newsletter,
 };
 
 export default assets;

@@ -3,23 +3,27 @@ import styled from "styled-components";
 
 export const StyleHero = styled.div`
   height: 90vh;
-  width: 100vw;
   background: #1b7aad;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3rem;
+  padding: 0 5rem;
+  z-index: -2;
   img.heroImg {
     height: 21rem;
     width: auto;
     margin-top: 3rem;
     align-self: end;
+    z-index: 1;
   }
   img.illuminate {
     position: absolute;
-    left: 60%;
-    top: 2rem;
+    left: 57%;
+    top: 4rem;
     width: 25rem;
+    /* z-index: -1; */
+
+    //?Add a media query for when the height is greater than 750px;
   }
   img.heroImg {
     height: 23rem;
