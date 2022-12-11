@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavStyle = styled.div`
   position: fixed;
   width: 100%;
-  height: 5rem;
+  height: 4.5rem;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 10;
@@ -12,22 +12,23 @@ export const NavStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 4.5rem;
     padding: 0 1rem;
     .app__navbar-logo {
       flex: 1;
       padding-left: 4rem;
-
+      @media screen and (max-width: 1200px) {
+        padding-left: 2rem;
+      }
       img {
-        height: 2rem;
+        height: 2.3rem;
         width: auto;
         color: white;
         width: auto;
-        margin: 0 1rem;
+        margin-right: 4rem;
 
-        @media screen and (max-width: 500px) {
-          height: 70%;
-          width: 70%;
+        @media screen and (max-width: 1200px) {
+          height: 2.1rem;
         }
       }
     }
@@ -36,18 +37,23 @@ export const NavStyle = styled.div`
       display: flex;
 
       li {
-        margin: 0 1rem;
+        margin-right: 1rem;
         list-style-type: none;
         height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: 1200px) {
+          margin: 0;
+        }
         a {
           text-decoration: none;
           color: #075aa0;
-          /* text-transform: uppercase; */
+          @media screen and (max-width: 1200px) {
+            font-size: 0.9rem;
+          }
           &:hover {
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid #0047af;
           }
         }
       }
@@ -63,6 +69,9 @@ export const NavStyle = styled.div`
   ul.app__navbar-links li:nth-of-type(4),
   ul.app__navbar-links li:nth-of-type(5) {
     margin-right: 3rem;
+    @media screen and (max-width: 1200px) {
+      margin-right: 2rem;
+    }
   }
   ul.app__navbar-links li:nth-last-of-type(1) {
     background: #0047af;
@@ -71,10 +80,17 @@ export const NavStyle = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    margin-right: 4rem;
+    @media screen and (max-width: 1200px) {
+      margin-right: 2rem;
+      height: 2.5rem;
+      margin-top: 0.25rem;
+    }
     a {
       color: #fafafa;
       padding: 0.11rem 0.5rem 0 0.5rem;
       text-decoration: none;
+      font-weight: 500;
       :hover {
         border: none;
       }
@@ -87,9 +103,15 @@ export const NavStyle = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    margin-right: 2rem;
+    @media screen and (max-width: 1200px) {
+      height: 2.5rem;
+      margin-top: 0.25rem;
+    }
     a {
       font-weight: bold;
       padding: 0.11rem 0.5rem 0 0.5rem;
+      font-weight: 400;
       :hover {
         border: none;
       }

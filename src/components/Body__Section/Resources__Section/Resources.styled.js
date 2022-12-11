@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const StyleResources = styled.div`
-  margin-top: 5rem;
+  margin-top: 4rem;
   background-color: #f1f4fb;
+  /* padding-top: 2rem; */
   div.Resources.container {
-    padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +14,24 @@ export const StyleResources = styled.div`
       grid-template-columns: repeat(2, 15rem);
       grid-template-rows: repeat(2, 15rem);
       grid-gap: 5px;
-
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 12rem);
+        grid-template-rows: repeat(2, 12rem);
+      }
       div.img-container {
         width: 20rem;
         height: 20rem;
         align-self: center;
+        /* @media screen and (max-width: 1200px) {
+          width: 18rem;
+          height: 18rem;
+        } */
         img {
           width: 15rem;
           height: auto;
+          @media screen and (max-width: 1200px) {
+            width: 13rem;
+          }
         }
       }
       div.img-container:nth-of-type(2) {
@@ -33,8 +43,11 @@ export const StyleResources = styled.div`
     }
     div.Resource-text-section {
       padding: 0 5rem;
-      /* background: violet; */
       width: 60%;
+      @media screen and (max-width: 1200px) {
+        padding: 0 2rem;
+        width: 70%;
+      }
       div.heading {
         font-size: 3rem;
         font-weight: bold;
@@ -44,6 +57,9 @@ export const StyleResources = styled.div`
         border-left: 3px solid #ffe401;
         padding-left: 2rem;
         z-index: 1;
+        @media screen and (max-width: 1200px) {
+          font-size: 2.5rem;
+        }
         span {
           position: absolute;
           padding-left: 2rem;

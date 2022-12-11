@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const StyleTestimonials = styled.div`
-  margin-top: 4rem;
+  margin-top: 7rem;
+  padding: 5rem 0 9rem;
+  background: #fff;
   div.heading {
     text-align: center;
     color: #0e63f4;
@@ -23,6 +25,9 @@ export const StyleTestimonials = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      @media screen and (max-width: 1200px) {
+        font-size: 2.5rem;
+      }
       img {
         align-self: start;
         /* margin-left: 1rem; */
@@ -37,6 +42,9 @@ export const StyleTestimonials = styled.div`
     align-items: center;
     width: max-content;
     position: relative;
+    @media screen and (max-width: 1200px) {
+      margin: 2rem 1rem;
+    }
     div.card {
       width: 32rem;
       height: 15rem;
@@ -71,25 +79,49 @@ export const StyleTestimonials = styled.div`
         align-items: center;
         img:nth-of-type(1) {
           height: 3.1rem;
+          @media screen and (max-width: 1200px) {
+            height: 2rem;
+          }
         }
         img:nth-of-type(2) {
           height: 2.9rem;
+          @media screen and (max-width: 1200px) {
+            height: 1.7rem;
+          }
         }
         img:nth-of-type(3) {
           height: 2.6rem;
+          @media screen and (max-width: 1200px) {
+            height: 1.4rem;
+          }
         }
         img:nth-of-type(4) {
           height: 2.2rem;
+          @media screen and (max-width: 1200px) {
+            height: 1.2rem;
+          }
         }
         img:nth-of-type(5) {
           height: 1.7rem;
           align-self: flex-start;
+          @media screen and (max-width: 1200px) {
+            height: 0.9rem;
+          }
         }
       }
       div.card-textContent {
         grid-area: cardText;
         padding-left: 1rem;
         color: #4e6269;
+        @media screen and (max-width: 1200px) {
+          padding-top: 0.5rem;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        width: 25rem;
+        height: 14rem;
+        font-size: 0.85rem;
+        padding: 1rem;
       }
     }
     div.splide__arrows {

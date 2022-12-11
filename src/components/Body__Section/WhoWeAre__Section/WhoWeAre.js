@@ -33,6 +33,7 @@ const WhoWeAre = () => {
             initial="hidden"
             whileInView="visible"
             variants={animateImg}
+            viewport={{ once: true }}
             src={images.WhoWeAre}
             alt="Who-we-are-logo"
           />
@@ -42,6 +43,7 @@ const WhoWeAre = () => {
           className="About__text-content"
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
           variants={animateText}
         >
           <div className="sub-heading">Our Story</div>
@@ -68,6 +70,7 @@ const WhoWeAre = () => {
         initial="hidden"
         whileInView="visible"
         variants={animateText}
+        viewport={{ once: true }}
       >
         <div className="About__text-content partner">
           <div className="sub-heading ">Partner with IWB</div>
@@ -75,6 +78,7 @@ const WhoWeAre = () => {
             initial="hidden"
             whileInView="visible"
             variants={animateText2}
+            viewport={{ once: true }}
             className="About__text-description partner-description"
           >
             Individuals and Organizations around the globe are rooting for us,
@@ -93,6 +97,7 @@ const WhoWeAre = () => {
             initial="hidden"
             whileInView="visible"
             variants={animateImg2}
+            viewport={{ once: true }}
             src={images.PartnerUs}
             alt="PartnerUs-figure"
           />

@@ -5,6 +5,9 @@ export const StyleFooter = styled.div`
   padding: 4rem;
   background-color: #0047af;
   color: #fafafa;
+  @media screen and (max-width: 1200px) {
+    padding: 2rem 1rem;
+  }
   div.heading {
     text-align: center;
     font-size: 2rem;

@@ -11,12 +11,14 @@ const CompTrust = () => {
       <div className="companies__logo">
         <img src={images.Mintyn} alt="An img of company that we partner with" />
       </div>
+      <div></div>
       <div className="companies__logo">
         <img
           src={images.Tekedia}
           alt="An img of company that we partner with"
         />
       </div>
+      <div></div>
       <div className="companies__logo">
         <img
           src={images.Playbooq}

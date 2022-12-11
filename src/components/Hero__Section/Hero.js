@@ -42,8 +42,8 @@ const Hero = () => {
                 variants={animateSvgPath}
                 d="M15.6262 24.1414C136.561 4.35884 205.767 0.0767823 331.963 5.84925"
                 stroke="#FFE600"
-                stroke-width="6"
-                stroke-linecap="round"
+                strokeWidth="6"
+                strokeLinecap="round"
               />
               <motion.path
                 initial="hidden"
@@ -51,8 +51,8 @@ const Hero = () => {
                 variants={animateSvgPath}
                 d="M16.1812 24.2895C138.219 13.1758 207.553 13.8366 333.018 28.5879"
                 stroke="#FFE600"
-                stroke-width="6"
-                stroke-linecap="round"
+                strokeWidth="6"
+                strokeLinecap="round"
               />
             </motion.svg>
           </div>

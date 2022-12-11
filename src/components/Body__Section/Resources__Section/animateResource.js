@@ -79,13 +79,13 @@ export const animateText = {
     opacity: 0,
     scaleX: 0,
     x: 25,
-    transformOrigin: "right 0",
+    // transformOrigin: "right 0",
   },
   visible: {
     opacity: 1,
     scaleX: 1,
     x: 0,
-    transformOrigin: "0",
+    // transformOrigin: "0",
     transition: {
       duration: 0.25,
       delay: 0.35,

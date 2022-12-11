@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 export const StyleOurPrograms = styled.div`
   background-color: #f1f4fb;
-  padding: 2rem 5rem 5rem;
+  padding: 3rem 5rem 5rem;
+  @media screen and (max-width: 1200px) {
+    padding: 3rem 2rem 5rem;
+  }
   div.heading {
     font-size: 3rem;
     font-weight: bold;
@@ -12,6 +15,9 @@ export const StyleOurPrograms = styled.div`
     border-left: 3px solid #ffe401;
     padding-left: 2rem;
     z-index: 1;
+    @media screen and (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
     span {
       position: absolute;
       padding-left: 2rem;
@@ -34,13 +40,24 @@ export const StyleOurPrograms = styled.div`
       height: 29rem;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       background-color: #fff;
+      @media screen and (max-width: 1200px) {
+        width: 20rem;
+        height: 26rem;
+      }
       div.card-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
           width: 23rem;
           padding: 1rem;
           height: 14rem;
           object-fit: cover;
           object-position: 50% 50%;
+          @media screen and (max-width: 1200px) {
+            width: 19rem;
+            height: 14rem;
+          }
         }
       }
       div.card-subHeading {
@@ -48,12 +65,18 @@ export const StyleOurPrograms = styled.div`
         font-size: 1.2rem;
         font-weight: 400;
         color: #0047af;
+        @media screen and (max-width: 1200px) {
+          padding: 0 1.5rem;
+        }
       }
       div.card-textDesc {
         padding: 1rem;
         font-size: 0.9rem;
         height: 7rem;
-        /* background: #ffe401; */
+        @media screen and (max-width: 1200px) {
+          padding: 0.5rem 1.5rem;
+          font-size: 0.8rem;
+        }
       }
       button {
         margin: 1rem;
@@ -64,6 +87,13 @@ export const StyleOurPrograms = styled.div`
         color: #fff;
         font-size: 1.3rem;
         cursor: pointer;
+        border-radius: 4px;
+        @media screen and (max-width: 1200px) {
+          width: 17rem;
+          margin: 0 1rem;
+          height: 2.5rem;
+          font-size: 1.1rem;
+        }
       }
       button.comingSoon {
         color: #0047af;
@@ -73,8 +103,8 @@ export const StyleOurPrograms = styled.div`
     }
     div.splide__arrows {
       position: absolute;
-      top: -5rem;
-      right: 3rem;
+      bottom: -3rem;
+      right: 5rem;
       button.splide__arrow.splide__arrow--prev {
         height: 3.5rem;
         width: 3.5rem;
@@ -107,6 +137,7 @@ export const StyleOurPrograms = styled.div`
       position: absolute;
       bottom: -4rem;
       li {
+        padding: 0 0.5rem;
         button.is-active {
           background: #0047af;
         }

@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const StyleOurInterest = styled.div`
   background-color: #fafcff;
-  padding: 0 4rem;
-  margin-top: 5rem;
+  padding: 4.5rem 4rem 9rem;
+  margin-top: 7rem;
+  @media screen and (max-width: 1200px) {
+    padding: 4.5rem 2rem 9rem;
+  }
   div.heading {
     font-size: 3rem;
     font-weight: bold;
@@ -35,6 +38,10 @@ export const StyleOurInterest = styled.div`
         height: 30rem;
         object-fit: cover;
         object-position: center center;
+        @media screen and (max-width: 1200px) {
+          width: 30rem;
+          height: 30rem;
+        }
       }
     }
     div.Ourinterests-sections.container {
@@ -45,6 +52,9 @@ export const StyleOurInterest = styled.div`
       align-items: center;
       flex-direction: column;
       margin-left: 3rem;
+      @media screen and (max-width: 1200px) {
+        height: 28rem;
+      }
       div.Ourinterest-section.active {
         border-left: 3px solid #2f88ff;
       }
@@ -73,6 +83,9 @@ export const StyleOurInterest = styled.div`
           font-size: 1.1rem;
           color: #676464;
           padding-top: 1rem;
+          @media screen and (max-width: 1200px) {
+            font-size: 1rem;
+          }
         }
       }
     }
