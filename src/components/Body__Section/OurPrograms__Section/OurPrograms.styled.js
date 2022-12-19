@@ -18,6 +18,9 @@ export const StyleOurPrograms = styled.div`
     @media screen and (max-width: 1200px) {
       font-size: 2.5rem;
     }
+    @media screen and (max-width: 590px) {
+      font-size: 2rem;
+    }
     span {
       position: absolute;
       padding-left: 2rem;

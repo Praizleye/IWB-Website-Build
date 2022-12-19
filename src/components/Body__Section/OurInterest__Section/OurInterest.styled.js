@@ -7,6 +7,9 @@ export const StyleOurInterest = styled.div`
   @media screen and (max-width: 1200px) {
     padding: 4.5rem 2rem 9rem;
   }
+  @media screen and (max-width: 850px) {
+    padding: 4.5rem 1rem 7rem;
+  }
   div.heading {
     font-size: 3rem;
     font-weight: bold;
@@ -17,9 +20,16 @@ export const StyleOurInterest = styled.div`
     padding-left: 2rem;
     margin-left: 1rem;
     z-index: 1;
+    @media screen and (max-width: 1200px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 590px) {
+      font-size: 2rem;
+      padding-left: 1rem;
+    }
     span {
       position: absolute;
-      padding-left: 2rem;
+      padding-left: 1rem;
       left: -4.5px;
       color: #fff;
       z-index: -1;
@@ -32,6 +42,10 @@ export const StyleOurInterest = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 590px) {
+      flex-direction: column;
+    }
     div.Ourinterest-img {
       img {
         width: 40rem;
@@ -41,6 +55,27 @@ export const StyleOurInterest = styled.div`
         @media screen and (max-width: 1200px) {
           width: 30rem;
           height: 30rem;
+        }
+        @media screen and (max-width: 930px) {
+          width: 23rem;
+          height: 25rem;
+        }
+        @media screen and (max-width: 760px) {
+          width: 20rem;
+          height: 25rem;
+        }
+        @media screen and (max-width: 650px) {
+          width: 18rem;
+          height: 25rem;
+        }
+        @media screen and (max-width: 620px) {
+          width: 16rem;
+          height: 25rem;
+        }
+        @media screen and (max-width: 590px) {
+          width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
         }
       }
     }
@@ -55,6 +90,13 @@ export const StyleOurInterest = styled.div`
       @media screen and (max-width: 1200px) {
         height: 28rem;
       }
+      @media screen and (max-width: 930px) {
+        height: 23rem;
+        margin-left: 2rem;
+      }
+      @media screen and (max-width: 700px) {
+        margin-left: 1rem;
+      }
       div.Ourinterest-section.active {
         border-left: 3px solid #2f88ff;
       }
@@ -67,17 +109,34 @@ export const StyleOurInterest = styled.div`
         height: 100%;
         margin: 0.2rem 0;
         border-left: 3px solid #b8b8b8;
+        @media screen and (max-width: 700px) {
+          padding-left: 1rem;
+        }
         div.subheading.active {
           color: #fafafa;
           background: #2f88ff;
           height: 2.5rem;
           padding: 0.2rem 0.5rem;
           font-size: 1.5rem;
+          @media screen and (max-width: 930px) {
+            font-size: 1.2rem;
+            padding: 0.2rem 0.25rem;
+            height: 2rem;
+          }
+          @media screen and (max-width: 650px) {
+            font-size: 1rem;
+            padding: 0.2rem 0.25rem;
+            height: 2rem;
+          }
         }
         div.subheading {
           font-size: 1.3rem;
           font-weight: 500;
           color: #676464;
+          @media screen and (max-width: 930px) {
+            font-size: 1rem;
+            padding: 0.1rem 0.15rem;
+          }
         }
         div.textDesc {
           font-size: 1.1rem;
@@ -85,6 +144,18 @@ export const StyleOurInterest = styled.div`
           padding-top: 1rem;
           @media screen and (max-width: 1200px) {
             font-size: 1rem;
+          }
+          @media screen and (max-width: 930px) {
+            font-size: 0.9rem;
+            padding: 0.5rem 0;
+          }
+          @media screen and (max-width: 840px) {
+            font-size: 0.85rem;
+            padding: 0.25rem 0;
+          }
+          @media screen and (max-width: 590px) {
+            font-size: 0.9rem;
+            padding: 0.25rem 0;
           }
         }
       }

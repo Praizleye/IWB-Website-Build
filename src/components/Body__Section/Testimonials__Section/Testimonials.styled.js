@@ -28,6 +28,9 @@ export const StyleTestimonials = styled.div`
       @media screen and (max-width: 1200px) {
         font-size: 2.5rem;
       }
+      @media screen and (max-width: 760px) {
+        font-size: 2rem;
+      }
       img {
         align-self: start;
         /* margin-left: 1rem; */

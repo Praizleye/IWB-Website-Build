@@ -73,14 +73,11 @@ const ImpactReport = () => {
             of IWB Community.
           </div>
         </motion.div>
-      </div>
-
-      <div className="sectionReport__2">
         <motion.div
           initial="hidden"
           whileInView="visible"
           variants={animateCards}
-          className="subSectionReport__1"
+          className="subSectionReport__4"
         >
           <div className="subSectionReport__icon">
             <img src={images.Community} alt="descriptive figure" />
@@ -98,7 +95,7 @@ const ImpactReport = () => {
           initial="hidden"
           whileInView="visible"
           variants={animateCards}
-          className="subSectionReport__2"
+          className="subSectionReport__5"
         >
           <div className="subSectionReport__icon">
             <img src={images.Volunteers} alt="descriptive figure" />
@@ -115,7 +112,7 @@ const ImpactReport = () => {
           initial="hidden"
           whileInView="visible"
           variants={animateCards}
-          className="subSectionReport__3"
+          className="subSectionReport__6"
         >
           <div className="subSectionReport__icon">
             <img src={images.StartupProjects} alt="descriptive figure" />

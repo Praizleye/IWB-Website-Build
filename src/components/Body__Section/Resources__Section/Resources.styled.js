@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleResources = styled.div`
-  margin-top: 4rem;
+  margin-top: 6rem;
   background-color: #f1f4fb;
   /* padding-top: 2rem; */
   div.Resources.container {
@@ -9,27 +9,44 @@ export const StyleResources = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    @media screen and (max-width: 590px) {
+      flex-direction: column;
+    }
     div.Resources-books.imgs-container {
       display: grid;
       grid-template-columns: repeat(2, 15rem);
       grid-template-rows: repeat(2, 15rem);
       grid-gap: 5px;
+      padding-top: 3rem;
       @media screen and (max-width: 1200px) {
         grid-template-columns: repeat(2, 12rem);
         grid-template-rows: repeat(2, 12rem);
       }
+      @media screen and (max-width: 760px) {
+        grid-template-columns: repeat(2, 8rem);
+        grid-template-rows: repeat(2, 8rem);
+        /* row-gap: 25px; */
+      }
+      @media screen and (max-width: 590px) {
+        margin-right: 4.5rem;
+        gap: 5rem;
+      }
+
       div.img-container {
         width: 20rem;
         height: 20rem;
         align-self: center;
-        /* @media screen and (max-width: 1200px) {
-          width: 18rem;
-          height: 18rem;
-        } */
+
         img {
           width: 15rem;
           height: auto;
           @media screen and (max-width: 1200px) {
+            width: 13rem;
+          }
+          @media screen and (max-width: 760px) {
+            width: 10rem;
+          }
+          @media screen and (max-width: 590px) {
             width: 13rem;
           }
         }
@@ -48,6 +65,10 @@ export const StyleResources = styled.div`
         padding: 0 2rem;
         width: 70%;
       }
+      @media screen and (max-width: 590px) {
+        padding: 0 2rem;
+        width: 100%;
+      }
       div.heading {
         font-size: 3rem;
         font-weight: bold;
@@ -59,6 +80,13 @@ export const StyleResources = styled.div`
         z-index: 1;
         @media screen and (max-width: 1200px) {
           font-size: 2.5rem;
+        }
+        @media screen and (max-width: 760px) {
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: 590px) {
+          font-size: 2rem;
+          margin-top: 3rem;
         }
         span {
           position: absolute;
@@ -73,6 +101,14 @@ export const StyleResources = styled.div`
       div.Resource-text-Desc {
         margin-top: 2rem;
         line-height: 1.8;
+        @media screen and (max-width: 760px) {
+          font-size: 0.9rem;
+          line-height: 1.3;
+        }
+        @media screen and (max-width: 590px) {
+          /* font-size: 0.9rem; */
+          line-height: 1.7;
+        }
       }
       button {
         width: 12rem;

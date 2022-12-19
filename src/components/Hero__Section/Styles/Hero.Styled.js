@@ -2,98 +2,224 @@
 import styled from "styled-components";
 
 export const StyleHero = styled.div`
-  height: 90vh;
+  height: max-content;
   background: #1b7aad;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
-  @media screen and (max-width: 1200px) {
-    padding: 0 3rem;
-  }
+  padding: 4rem 5rem 4rem;
   z-index: -2;
+  @media screen and (max-width: 1200px) {
+    padding: 4rem 3rem 4rem;
+  }
+
+  @media screen and (max-width: 850px) {
+    padding: 4rem 2rem 4rem;
+  }
+  @media screen and (max-width: 590px) {
+    padding: 4rem 1rem 4rem;
+  }
+
   img.heroImg {
     height: 21rem;
     width: auto;
-    margin-top: 3rem;
+    margin-top: 6rem;
     align-self: end;
     z-index: 1;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1125px) {
       height: 19rem;
+    }
+    @media screen and (max-width: 970px) {
+      height: 17rem;
+    }
+    @media screen and (max-width: 900px) {
+      height: 16rem;
+    }
+    @media screen and (max-width: 768px) {
+      height: 14rem;
+    }
+    @media screen and (max-width: 590px) {
+      display: none;
     }
   }
   img.illuminate {
     position: absolute;
-    left: 57%;
-    top: 1%;
+    left: 61%;
+    top: 0.5%;
     width: 25rem;
     /* z-index: -1; */
 
     /* //?Add a media query for extra large screens;*/
 
-    @media screen and (max-width: 1200px) {
-      left: 50%;
-      width: 22rem;
-      top: 1.3%;
+    @media screen and (max-width: 1121px) {
+      left: 58%;
+      top: 0.7%;
+      width: 21rem;
+      /* top: %; */
+    }
+    @media screen and (max-width: 940px) {
+      width: 17rem;
+      left: 58%;
+      top: 0.8%;
+    }
+    @media screen and (max-width: 850px) {
+      width: 15rem;
+      left: 54%;
+      top: 0.9%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 13rem;
+      left: 55%;
+      top: 1.2%;
+    }
+    @media screen and (max-width: 590px) {
+      display: none;
     }
   }
-  img.heroImg {
-    height: 23rem;
-    width: auto;
-    margin-top: 2rem;
-  }
+
   div.container {
     color: #fafafa;
     margin-top: 5rem;
-    width: 40%;
+    width: 50%;
+    /* height: 100%; */
+    /* background: yellow; */
     position: relative;
+    @media screen and (max-width: 1121px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 850px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 590px) {
+      width: 100%;
+    }
     div:nth-of-type(1) {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: bold;
-      @media screen and (max-width: 1200px) {
-        font-size: 2.8rem;
+      width: max-content;
+      @media screen and (max-width: 1086px) {
+        font-size: 2.9rem;
       }
-      @media screen and (max-width: 1050px) {
-        font-size: 2.6rem;
+      @media screen and (max-width: 970px) {
+        font-size: 2.7rem;
+      }
+
+      @media screen and (max-width: 850px) {
+        font-size: 2.2rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 590px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 540px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 490px) {
+        font-size: 2.5rem;
+      }
+      @media screen and (max-width: 390px) {
+        font-size: 2rem;
       }
     }
     div:nth-of-type(2) {
-      font-size: 2.8rem;
+      font-size: 3.5rem;
       font-weight: bold;
-      @media screen and (max-width: 1200px) {
-        font-size: 2.6rem;
+      width: max-content;
+      @media screen and (max-width: 1086px) {
+        font-size: 2.9rem;
       }
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 970px) {
+        font-size: 2.7rem;
+      }
+
+      @media screen and (max-width: 850px) {
         font-size: 2.2rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 1.7rem;
+      }
+      @media screen and (max-width: 590px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 540px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 490px) {
+        font-size: 2.5rem;
+      }
+      @media screen and (max-width: 390px) {
+        font-size: 2rem;
       }
     }
     div:nth-of-type(4) {
       font-size: 1.125rem;
-      margin-top: 1.7rem;
-      @media screen and (max-width: 1200px) {
+      margin: 2rem 2rem 0 0;
+      @media screen and (max-width: 1086px) {
         font-size: 1rem;
       }
-      @media screen and (max-width: 1050px) {
-        font-size: 0.9rem;
-        margin-top: 2.3rem;
+      @media screen and (max-width: 1000px) {
+        margin-top: 2.7rem;
+      }
+      @media screen and (max-width: 850px) {
+        padding-right: 1rem;
+        margin-top: 1.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        padding-right: 0.2rem;
+        margin-top: 1.5rem;
+      }
+      @media screen and (max-width: 590px) {
+        font-size: 1rem;
+        margin-top: 2rem;
+        padding-right: 0;
       }
     }
     div:nth-of-type(3) {
       position: absolute;
-      right: -5rem;
-      top: 8rem;
-      @media screen and (max-width: 1050px) {
-        top: 7.5rem;
-        right: -2rem;
+      right: -0.5rem;
+      top: 9.5rem;
+      @media screen and (max-width: 1121px) {
+        top: 10rem;
+        /* right: -2rem; */
+      }
+      @media screen and (max-width: 1086px) {
+        top: 8.1rem;
+      }
+      @media screen and (max-width: 850px) {
+        top: 6.2rem;
+        right: 1.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        top: 5.5rem;
+      }
+      @media screen and (max-width: 650px) {
+        top: 5rem;
+      }
+      @media screen and (max-width: 590px) {
+        top: 10rem;
+      }
+      @media screen and (max-width: 540px) {
+        top: 8rem;
+      }
+      @media screen and (max-width: 390px) {
+        top: 6rem;
       }
       svg {
         width: 18rem;
         height: auto;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1086px) {
           width: 15rem;
         }
-        @media screen and (max-width: 1050px) {
-          width: 12rem;
+        @media screen and (max-width: 850px) {
+          width: 13rem;
+        }
+        @media screen and (max-width: 650px) {
+          width: 10rem;
         }
       }
     }
@@ -110,6 +236,18 @@ export const StyleHero = styled.div`
       transition: transform 0.5s ease-in-out;
       @media screen and (max-width: 1200px) {
         width: 16rem;
+      }
+      @media screen and (max-width: 650px) {
+        width: 10rem;
+        height: 2.6rem;
+        font-size: 1rem;
+        margin-top: 1.9rem;
+      }
+      @media screen and (max-width: 590px) {
+        width: 14rem;
+        height: 2.6rem;
+        font-size: 1rem;
+        margin-top: 1.9rem;
       }
       &:hover {
         transform: scale(1.05);

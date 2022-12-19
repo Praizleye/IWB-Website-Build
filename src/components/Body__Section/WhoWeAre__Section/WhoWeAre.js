@@ -88,6 +88,7 @@ const WhoWeAre = () => {
             initial="hidden"
             whileInView="visible"
             variants={animateBtn}
+            className="partner-btn"
           >
             Support IWB
           </motion.button>

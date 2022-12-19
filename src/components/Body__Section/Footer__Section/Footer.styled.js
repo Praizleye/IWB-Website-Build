@@ -11,10 +11,16 @@ export const StyleFooter = styled.div`
   div.heading {
     text-align: center;
     font-size: 2rem;
+    @media screen and (max-width: 780px) {
+      font-size: 1.5rem;
+    }
     div {
       font-size: 1rem;
       margin-top: 1rem;
       letter-spacing: 0.05rem;
+      @media screen and (max-width: 780px) {
+        font-size: 0.9rem;
+      }
     }
     button {
       font-size: 1.1rem;
@@ -26,6 +32,11 @@ export const StyleFooter = styled.div`
       border-radius: 7px;
       font-weight: bold;
       letter-spacing: 0.03rem;
+      @media screen and (max-width: 780px) {
+        height: 3rem;
+        width: 10rem;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -34,22 +45,52 @@ export const StyleFooter = styled.div`
     display: grid;
     grid-template-columns: repeat(5, auto);
     place-items: center;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+    }
 
     img {
       align-self: start;
+      @media screen and (max-width: 780px) {
+        height: 1.5rem;
+        width: auto;
+        margin-top: 0.25rem;
+      }
+      @media screen and (max-width: 700px) {
+        grid-column: 1 / 5;
+        justify-self: start;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
     }
     ul {
       font-size: 1.8rem;
       align-self: start;
+      @media screen and (max-width: 780px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 660px) {
+        font-size: 1.3rem;
+      }
       li {
         font-size: 1rem;
         list-style: none;
         padding-top: 1rem;
+        @media screen and (max-width: 780px) {
+          font-size: 0.9rem;
+        }
+        @media screen and (max-width: 600px) {
+          font-size: 0.8rem;
+        }
         a {
           text-decoration: none;
           color: #fafafa;
         }
       }
     }
+    /* ul:nth-of-type(1) {
+      display: none;
+    } */
   }
 `;
