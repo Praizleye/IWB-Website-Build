@@ -7,7 +7,7 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import { BsLinkedin, BsTelegram, BsSpotify, BsYoutube } from "react-icons/bs";
+import { BsLinkedin, BsTelegram, BsSpotify } from "react-icons/bs";
 import {
   AiFillTwitterCircle,
   AiFillFacebook,

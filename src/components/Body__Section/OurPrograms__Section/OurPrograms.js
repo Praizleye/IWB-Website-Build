@@ -1,7 +1,7 @@
 //? importing assets
 import images from "../../../constants/images";
 import { StyleOurPrograms } from "./OurPrograms.styled";
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import { BsArrowLeftShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";

@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleTestimonials } from "./Testimonials.styled";
 import images from "../../../constants/images";
-import { BsArrowRightShort, BsArrowLeftShort } from "react-icons/bs";
+import { BsArrowLeftShort } from "react-icons/bs";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
