@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const StyleOurInterest = styled.div`
   background-color: #fafcff;
-  padding: 4.5rem 4rem 9rem;
+  padding: 4.5rem 3rem 9rem;
   margin-top: 7rem;
   @media screen and (max-width: 1200px) {
     padding: 4.5rem 2rem 9rem;
   }
   @media screen and (max-width: 850px) {
-    padding: 4.5rem 1rem 7rem;
+    padding: 4.5rem 0 7rem 2rem;
   }
   div.heading {
     font-size: 3rem;
@@ -17,22 +17,27 @@ export const StyleOurInterest = styled.div`
     color: #0047af;
     letter-spacing: 0.25rem;
     border-left: 3px solid #ffe401;
+    margin-left: 2rem;
     padding-left: 2rem;
-    margin-left: 1rem;
     z-index: 1;
     @media screen and (max-width: 1200px) {
       font-size: 2.5rem;
+      margin-left: 0;
     }
     @media screen and (max-width: 590px) {
       font-size: 2rem;
       padding-left: 1rem;
+      margin-left: 1rem;
     }
     span {
       position: absolute;
-      padding-left: 1rem;
-      left: -4.5px;
+      padding-left: 2rem;
+      left: -0.25rem;
       color: #fff;
       z-index: -1;
+      @media screen and (max-width: 590px) {
+        padding-left: 1rem;
+      }
       -webkit-text-stroke-width: 0.86px;
       -webkit-text-stroke-color: #0047af;
     }

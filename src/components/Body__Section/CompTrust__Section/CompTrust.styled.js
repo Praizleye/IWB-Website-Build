@@ -37,6 +37,9 @@ export const StyleCompTrust = styled.div`
       font-size: 0.9rem;
       padding-right: 1rem;
     }
+    @media screen and (max-width: 380px) {
+      font-size: 0.8rem;
+    }
     span {
       display: block;
       width: max-content;
@@ -50,8 +53,6 @@ export const StyleCompTrust = styled.div`
     justify-self: flex-start;
   }
   div:nth-of-type(3) {
-    /* padding: 0px 60px; */
-
     img {
       height: 11.25rem;
       width: auto;
@@ -63,6 +64,12 @@ export const StyleCompTrust = styled.div`
       }
       @media screen and (max-width: 590px) {
         height: 6.25rem;
+      }
+      @media screen and (max-width: 380px) {
+        height: 5.25rem;
+      }
+      @media screen and (max-width: 337px) {
+        height: 4.75rem;
       }
     }
   }
@@ -88,6 +95,9 @@ export const StyleCompTrust = styled.div`
     @media screen and (max-width: 590px) {
       padding: 0 1.5rem;
     }
+    @media screen and (max-width: 410px) {
+      padding: 0 1rem;
+    }
     img {
       height: 6.875rem;
       width: auto;
@@ -102,6 +112,12 @@ export const StyleCompTrust = styled.div`
       }
       @media screen and (max-width: 590px) {
         height: 2.5rem;
+      }
+      @media screen and (max-width: 380px) {
+        height: 2rem;
+      }
+      @media screen and (max-width: 337px) {
+        height: 1.7rem;
       }
     }
   }

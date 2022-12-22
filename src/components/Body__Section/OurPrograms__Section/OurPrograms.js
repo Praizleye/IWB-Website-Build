@@ -155,11 +155,11 @@ const OurPrograms = () => {
         </SplideTrack>
 
         <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">
+          <button className="splide__arrow splide__arrow--next">
             <BsArrowLeftShort />
           </button>
-          <button className="splide__arrow splide__arrow--next">
-            <BsArrowRightShort />
+          <button className="splide__arrow splide__arrow--prev">
+            <BsArrowLeftShort />
           </button>
         </div>
       </Splide>

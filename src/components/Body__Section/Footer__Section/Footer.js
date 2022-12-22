@@ -7,6 +7,12 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
+import { BsLinkedin, BsTelegram, BsSpotify, BsYoutube } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillFacebook,
+  AiOutlineYoutube,
+} from "react-icons/ai";
 const Footer = () => {
   return (
     <StyleFooter>
@@ -71,22 +77,40 @@ const Footer = () => {
         <motion.ul variants={animateHeading}>
           Connect
           <motion.li variants={animateSubheading}>
-            <a href="#About us">LinkedIn</a>
+            <a href="#About us">
+              <BsLinkedin />
+              LinkedIn
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Impact report">Facebook</a>
+            <a href="#Impact report">
+              <AiFillFacebook />
+              Facebook
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Resources">Telegram</a>
+            <a href="#Resources">
+              <BsTelegram />
+              Telegram
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Testimonial">Twitter</a>
+            <a href="#Testimonial">
+              <AiFillTwitterCircle />
+              Twitter
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Blog">Youtube</a>
+            <a href="#Blog">
+              <AiOutlineYoutube />
+              Youtube
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Community">Spotify</a>
+            <a href="#Community">
+              <BsSpotify />
+              Spotify
+            </a>
           </motion.li>
         </motion.ul>
 

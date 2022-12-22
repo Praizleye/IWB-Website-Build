@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const StyleWhoWeAre = styled.div`
-  /* margin: 3rem auto 0 auto; */
   margin-top: 3rem;
   padding: 2rem 3rem;
   background-color: #f1f4fb;
-  /* background: #fafafa; */
   @media screen and (max-width: 1200px) {
     padding: 2rem 1rem;
   }
@@ -27,14 +25,18 @@ export const StyleWhoWeAre = styled.div`
     }
     @media screen and (max-width: 590px) {
       font-size: 2rem;
+      padding-left: 1rem;
     }
+
     span {
       position: absolute;
       padding-left: 2rem;
       left: -0.25rem;
       color: #fff;
-      /* letter-spacing: ; */
       z-index: -1;
+      @media screen and (max-width: 590px) {
+        padding-left: 1rem;
+      }
       -webkit-text-stroke-width: 0.86px;
       -webkit-text-stroke-color: #0047af;
     }

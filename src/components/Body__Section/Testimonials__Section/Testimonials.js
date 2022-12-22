@@ -25,7 +25,7 @@ const Testimonials = () => {
         options={{
           // rewind: true,
           gap: "1rem",
-          pagination: false,
+          pagination: true,
           width: "100vw",
           fixedWidth: true,
           fixedHeight: true,
@@ -212,11 +212,11 @@ const Testimonials = () => {
           </SplideSlide>
         </SplideTrack>
         <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">
+          <button className="splide__arrow splide__arrow--next">
             <BsArrowLeftShort />
           </button>
-          <button className="splide__arrow splide__arrow--next">
-            <BsArrowRightShort />
+          <button className="splide__arrow splide__arrow--prev">
+            <BsArrowLeftShort />
           </button>
         </div>
       </Splide>

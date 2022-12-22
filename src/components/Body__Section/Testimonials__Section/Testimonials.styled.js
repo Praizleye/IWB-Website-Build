@@ -14,7 +14,12 @@ export const StyleTestimonials = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    @media screen and (max-width: 590px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 0.8rem;
+    }
     span {
       font-size: 3rem;
       font-weight: 600;
@@ -31,9 +36,15 @@ export const StyleTestimonials = styled.div`
       @media screen and (max-width: 760px) {
         font-size: 2rem;
       }
+      @media screen and (max-width: 590px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 1.2rem;
+      }
+
       img {
         align-self: start;
-        /* margin-left: 1rem; */
         margin-top: 0.7rem;
       }
     }
@@ -48,6 +59,9 @@ export const StyleTestimonials = styled.div`
     @media screen and (max-width: 1200px) {
       margin: 2rem 1rem;
     }
+    @media screen and (max-width: 600px) {
+      margin: 2rem 0;
+    }
     div.card {
       width: 32rem;
       height: 15rem;
@@ -60,8 +74,28 @@ export const StyleTestimonials = styled.div`
         ". cardStar"
         ". cardText";
       margin: 1rem;
+      @media screen and (max-width: 612px) {
+        grid-template-areas:
+          "img cardName"
+          "img cardDate"
+          ". cardStar"
+          "cardText cardText";
+        margin: 0.5rem;
+        width: 25rem;
+      }
+      @media screen and (max-width: 470px) {
+        grid-template-areas:
+          "img cardName"
+          "img cardDate"
+          "cardStar cardStar"
+          "cardText cardText";
+        margin: 0.25rem;
+        width: 20rem;
+      }
+
       img {
         grid-area: img;
+        padding-left: 0.75rem;
       }
       div.card-name {
         grid-area: cardName;
@@ -126,14 +160,45 @@ export const StyleTestimonials = styled.div`
         font-size: 0.85rem;
         padding: 1rem;
       }
+      @media screen and (max-width: 612px) {
+        width: 20rem;
+        height: 14rem;
+        font-size: 0.85rem;
+        padding: 1rem 0;
+      }
+      @media screen and (max-width: 470px) {
+        width: 17rem;
+        height: 14rem;
+        font-size: 0.85rem;
+        padding: 1rem 0.5rem;
+      }
     }
     div.splide__arrows {
       position: absolute;
-      bottom: -3rem;
-      right: 12rem;
+      bottom: -3.5rem;
+      left: 6rem;
+      @media screen and (max-width: 612px) {
+        display: none;
+      }
       button.splide__arrow.splide__arrow--prev {
         height: 3.5rem;
         width: 3.5rem;
+
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          transform: rotate(180deg);
+          width: 1.8rem;
+          color: #fafafa;
+        }
+      }
+      button.splide__arrow.splide__arrow--next {
+        height: 3.5rem;
+        width: 3.5rem;
+        background: #d9e1f4;
+
         :hover {
           background: #0047af;
         }
@@ -143,18 +208,15 @@ export const StyleTestimonials = styled.div`
           color: #fafafa;
         }
       }
-      button.splide__arrow.splide__arrow--next {
-        height: 3.5rem;
-        width: 3.5rem;
-        background: #d9e1f4;
-        :hover {
+    }
+    ul.splide__pagination.splide__pagination--ltr {
+      margin-top: 3rem;
+      position: absolute;
+      bottom: -4rem;
+      li {
+        padding: 0 0.5rem;
+        button.is-active {
           background: #0047af;
-        }
-        svg {
-          height: auto;
-          transform: rotate(180deg);
-          width: 1.8rem;
-          color: #fafafa;
         }
       }
     }

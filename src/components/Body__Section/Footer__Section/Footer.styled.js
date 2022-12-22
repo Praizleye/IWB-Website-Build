@@ -49,6 +49,14 @@ export const StyleFooter = styled.div`
       grid-template-columns: repeat(4, auto);
       grid-template-rows: repeat(2, auto);
     }
+    @media screen and (max-width: 590px) {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(3, auto);
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 1rem;
+    }
 
     img {
       align-self: start;
@@ -62,6 +70,9 @@ export const StyleFooter = styled.div`
         justify-self: start;
         margin-left: 1.5rem;
         margin-bottom: 1rem;
+      }
+      @media screen and (max-width: 590px) {
+        grid-column: 1 / 3;
       }
     }
     ul {
@@ -89,8 +100,9 @@ export const StyleFooter = styled.div`
         }
       }
     }
-    /* ul:nth-of-type(1) {
-      display: none;
+    /* ul:nth-of-type(3) {
+      grid-row-start: 2;
+      order: 2;
     } */
   }
 `;

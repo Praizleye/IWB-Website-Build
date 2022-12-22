@@ -6,6 +6,9 @@ export const StyleOurPrograms = styled.div`
   @media screen and (max-width: 1200px) {
     padding: 3rem 2rem 5rem;
   }
+  @media screen and (max-width: 470px) {
+    padding: 3rem 2rem 2rem;
+  }
   div.heading {
     font-size: 3rem;
     font-weight: bold;
@@ -15,11 +18,17 @@ export const StyleOurPrograms = styled.div`
     border-left: 3px solid #ffe401;
     padding-left: 2rem;
     z-index: 1;
+
     @media screen and (max-width: 1200px) {
       font-size: 2.5rem;
     }
     @media screen and (max-width: 590px) {
       font-size: 2rem;
+      padding-left: 1rem;
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 1.8rem;
+      width: max-content;
     }
     span {
       position: absolute;
@@ -29,6 +38,9 @@ export const StyleOurPrograms = styled.div`
       z-index: -1;
       -webkit-text-stroke-width: 0.86px;
       -webkit-text-stroke-color: #0047af;
+      @media screen and (max-width: 590px) {
+        padding-left: 1rem;
+      }
     }
   }
   div.Ourprograms.container.cards {
@@ -46,6 +58,14 @@ export const StyleOurPrograms = styled.div`
       @media screen and (max-width: 1200px) {
         width: 20rem;
         height: 26rem;
+      }
+      @media screen and (max-width: 470px) {
+        width: 17rem;
+        height: 27rem;
+      }
+      @media screen and (max-width: 410px) {
+        width: 15rem;
+        height: 27rem;
       }
       div.card-img {
         display: flex;
@@ -71,6 +91,10 @@ export const StyleOurPrograms = styled.div`
         @media screen and (max-width: 1200px) {
           padding: 0 1.5rem;
         }
+        @media screen and (max-width: 410px) {
+          font-size: 1.05rem;
+          padding: 0 0.5rem;
+        }
       }
       div.card-textDesc {
         padding: 1rem;
@@ -78,6 +102,10 @@ export const StyleOurPrograms = styled.div`
         height: 7rem;
         @media screen and (max-width: 1200px) {
           padding: 0.5rem 1.5rem;
+          font-size: 0.8rem;
+        }
+        @media screen and (max-width: 410px) {
+          padding: 0.5rem 0.5rem;
           font-size: 0.8rem;
         }
       }
@@ -97,6 +125,18 @@ export const StyleOurPrograms = styled.div`
           height: 2.5rem;
           font-size: 1.1rem;
         }
+        @media screen and (max-width: 470px) {
+          width: 15rem;
+          margin: 1rem 1rem;
+          height: 2.5rem;
+          font-size: 1rem;
+        }
+        @media screen and (max-width: 410px) {
+          width: 13rem;
+          margin: 1rem 1rem 0;
+          height: 2rem;
+          font-size: 0.9rem;
+        }
       }
       button.comingSoon {
         color: #0047af;
@@ -106,24 +146,15 @@ export const StyleOurPrograms = styled.div`
     }
     div.splide__arrows {
       position: absolute;
-      bottom: -3rem;
+      bottom: -3.5rem;
       right: 5rem;
+      @media screen and (max-width: 612px) {
+        display: none;
+      }
       button.splide__arrow.splide__arrow--prev {
         height: 3.5rem;
         width: 3.5rem;
-        :hover {
-          background: #0047af;
-        }
-        svg {
-          height: auto;
-          width: 1.8rem;
-          color: #fafafa;
-        }
-      }
-      button.splide__arrow.splide__arrow--next {
-        height: 3.5rem;
-        width: 3.5rem;
-        background: #d9e1f4;
+
         :hover {
           background: #0047af;
         }
@@ -134,13 +165,33 @@ export const StyleOurPrograms = styled.div`
           color: #fafafa;
         }
       }
+      button.splide__arrow.splide__arrow--next {
+        height: 3.5rem;
+        width: 3.5rem;
+        background: #d9e1f4;
+
+        :hover {
+          background: #0047af;
+        }
+        svg {
+          height: auto;
+          width: 1.8rem;
+          color: #fafafa;
+        }
+      }
     }
     ul.splide__pagination.splide__pagination--ltr {
       margin-top: 3rem;
       position: absolute;
       bottom: -4rem;
+      @media screen and (max-width: 470px) {
+        bottom: -2rem;
+      }
       li {
         padding: 0 0.5rem;
+        @media screen and (max-width: 470px) {
+          padding: 0 0.25rem;
+        }
         button.is-active {
           background: #0047af;
         }

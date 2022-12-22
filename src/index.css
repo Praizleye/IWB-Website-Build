@@ -8,12 +8,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 line-height: 1.4;
-position: relative;
-width: 100%;
 background: #f1f4fb;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'monospace';
 }
