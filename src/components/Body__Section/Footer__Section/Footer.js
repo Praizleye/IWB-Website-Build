@@ -79,37 +79,37 @@ const Footer = () => {
           <motion.li variants={animateSubheading}>
             <a href="#About us">
               <BsLinkedin />
-              LinkedIn
+              <span>LinkedIn</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Impact report">
               <AiFillFacebook />
-              Facebook
+              <span>Facebook</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Resources">
               <BsTelegram />
-              Telegram
+              <span>Telegram</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Testimonial">
               <AiFillTwitterCircle />
-              Twitter
+              <span>Twitter</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Blog">
               <AiOutlineYoutube />
-              Youtube
+              <span>Youtube</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Community">
               <BsSpotify />
-              Spotify
+              <span>Spotify</span>
             </a>
           </motion.li>
         </motion.ul>

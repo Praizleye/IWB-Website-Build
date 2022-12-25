@@ -15,6 +15,9 @@ export const StyleImpactReport = styled.div`
   @media screen and (max-width: 760px) {
     padding: 2rem 1rem;
   }
+  @media screen and (max-width: 590px) {
+    padding: 2rem 1rem 6rem;
+  }
   div.ImpactReport__heading {
     font-size: 3rem;
     font-weight: 600;
@@ -108,12 +111,20 @@ export const StyleImpactReport = styled.div`
         height: 16rem;
         width: 15rem;
       }
+      @media screen and (max-width: 590px) {
+        height: 18rem;
+        width: 21rem;
+        margin: 1rem 0;
+      }
       div.subSectionReport__icon {
         padding: 1rem 3rem 2rem 3rem;
         @media screen and (max-width: 1200px) {
           padding: 1rem 2rem 2rem 2rem;
         }
-        @media screen and (max-width: 870px) {
+        @media screen and (max-width: 850px) {
+          padding: 1rem 2rem 2rem 2rem;
+        }
+        @media screen and (max-width: 590px) {
           padding: 1rem 1rem 2rem 1rem;
         }
         img {
@@ -124,6 +135,9 @@ export const StyleImpactReport = styled.div`
           }
           @media screen and (max-width: 970px) {
             height: 2rem;
+          }
+          @media screen and (max-width: 590px) {
+            height: 3rem;
           }
         }
         div.subSectionReport__figure {
@@ -136,6 +150,9 @@ export const StyleImpactReport = styled.div`
           @media screen and (max-width: 970px) {
             font-size: 0.9rem;
           }
+          @media screen and (max-width: 590px) {
+            font-size: 1.3rem;
+          }
           img {
             height: 1.7rem;
             width: auto;
@@ -147,6 +164,10 @@ export const StyleImpactReport = styled.div`
             }
             @media screen and (max-width: 870px) {
               height: 1.5rem;
+            }
+            @media screen and (max-width: 590px) {
+              height: 2rem;
+              width: auto;
             }
           }
         }
@@ -180,6 +201,12 @@ export const StyleImpactReport = styled.div`
         }
         @media screen and (max-width: 650px) {
           font-size: 0.9rem;
+          padding: 0 1rem 2rem 1rem;
+          height: 7rem;
+          margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 590px) {
+          font-size: 1.3rem;
           padding: 0 1rem 2rem 1rem;
           height: 7rem;
           margin-bottom: 2rem;

@@ -20,6 +20,14 @@ export const NavStyle = styled.div`
       @media screen and (max-width: 1200px) {
         padding-left: 2rem;
       }
+      @media screen and (max-width: 960px) {
+        padding-left: 2rem;
+        height: 1.8rem;
+      }
+      @media screen and (max-width: 850px) {
+        padding-left: 1rem;
+        height: 1.8rem;
+      }
       img {
         height: 2.3rem;
         width: auto;
@@ -29,6 +37,9 @@ export const NavStyle = styled.div`
 
         @media screen and (max-width: 1200px) {
           height: 2.1rem;
+        }
+        @media screen and (max-width: 960px) {
+          margin-right: 2.5rem;
         }
       }
     }
@@ -72,6 +83,12 @@ export const NavStyle = styled.div`
     @media screen and (max-width: 1200px) {
       margin-right: 2rem;
     }
+    @media screen and (max-width: 1026px) {
+      margin-right: 1.5rem;
+    }
+    @media screen and (max-width: 780px) {
+      margin-right: 1rem;
+    }
   }
   ul.app__navbar-links li:nth-last-of-type(1) {
     background: #0047af;
@@ -86,11 +103,21 @@ export const NavStyle = styled.div`
       height: 2.5rem;
       margin-top: 0.25rem;
     }
+    @media screen and (max-width: 990px) {
+      margin-right: 1rem;
+    }
+    @media screen and (max-width: 780px) {
+      margin-right: 0.5rem;
+    }
     a {
       color: #fafafa;
       padding: 0.11rem 0.5rem 0 0.5rem;
       text-decoration: none;
       font-weight: 500;
+      @media screen and (max-width: 990px) {
+        font-size: 0.9rem;
+      }
+
       :hover {
         border: none;
       }
@@ -108,6 +135,12 @@ export const NavStyle = styled.div`
       height: 2.5rem;
       margin-top: 0.25rem;
     }
+    @media screen and (max-width: 990px) {
+      margin-right: 1rem;
+    }
+    @media screen and (max-width: 930px) {
+      display: none;
+    }
     a {
       font-weight: bold;
       padding: 0.11rem 0.5rem 0 0.5rem;
@@ -123,16 +156,14 @@ export const NavMenuBar = styled.div`
   .app__navbar-menu {
     position: fixed;
     left: calc(100vw - 70px);
-    /* top: 50%; */
     height: 50px;
     width: 50px;
-    /* border-radius: 50%; */
     z-index: 10;
-    margin-top: 20px;
+    margin-top: 13px;
 
     svg {
-      height: 2.8rem;
-      width: 2.8rem;
+      height: 3rem;
+      width: 3rem;
       cursor: pointer;
       background: var(--bgColor);
       border-radius: 50%;
@@ -146,37 +177,35 @@ export const NavMenuBar = styled.div`
     ul {
       height: 50rem;
       width: 50rem;
-      border-radius: 50%;
       position: absolute;
       left: -50vw;
       top: -70px;
-      /* transform: translateY(-50%); */
       z-index: -10;
-      background: var(--priColor);
-      border: 0.2rem solid white;
       display: flex;
       flex-direction: column;
       padding: 7rem 3rem;
       justify-content: space-evenly;
       backdrop-filter: blur(5px);
-      opacity: 0.99;
+      opacity: 0.97;
+      background: #fff;
       li {
         list-style: none;
         font-size: 1.1rem;
         text-transform: uppercase;
         cursor: pointer;
         margin-left: 3.5rem;
+        color: #075aa0;
         a {
           text-decoration: none;
-          color: var(--offsetBgColor);
+          color: #075aa0;
+
           &:hover {
-            color: var(--secColor);
-            border-bottom: 1px solid var(--secColor);
+            border-bottom: 1px solid #ffe401;
           }
         }
       }
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 761px) {
       display: none;
     }
   }

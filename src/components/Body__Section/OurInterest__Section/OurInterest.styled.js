@@ -8,7 +8,10 @@ export const StyleOurInterest = styled.div`
     padding: 4.5rem 2rem 9rem;
   }
   @media screen and (max-width: 850px) {
-    padding: 4.5rem 0 7rem 2rem;
+    padding: 4.5rem 2rem 7rem 2rem;
+  }
+  @media screen and (max-width: 850px) {
+    padding: 4.5rem 1rem 7rem;
   }
   div.heading {
     font-size: 3rem;

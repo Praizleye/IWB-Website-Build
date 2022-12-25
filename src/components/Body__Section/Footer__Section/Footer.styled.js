@@ -97,6 +97,24 @@ export const StyleFooter = styled.div`
         a {
           text-decoration: none;
           color: #fafafa;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          opacity: 0.8;
+          svg {
+            height: auto;
+            width: 1.5rem;
+            justify-self: flex-start;
+            align-self: flex-start;
+            margin-right: 0.5rem;
+          }
+          /* span {
+            opacity: 0.8;
+          } */
+          &:hover {
+            opacity: 1;
+            color: #ffe401;
+          }
         }
       }
     }

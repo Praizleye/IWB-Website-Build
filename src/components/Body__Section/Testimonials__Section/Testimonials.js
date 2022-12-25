@@ -23,6 +23,7 @@ const Testimonials = () => {
         aria-label="Testimonial Carousel"
         className="testimonial-cards__container"
         options={{
+          type: "loop",
           // rewind: true,
           gap: "1rem",
           pagination: true,
@@ -30,6 +31,11 @@ const Testimonials = () => {
           fixedWidth: true,
           fixedHeight: true,
           padding: { left: "1rem", right: "5rem" },
+          autoplay: true,
+          // pauseOnHover: true,
+          resetProgress: false,
+          easing: "cubic-bezier(.44,.65,.07,1.01)",
+          hasAutoplayProgress: true,
         }}
       >
         <SplideTrack>

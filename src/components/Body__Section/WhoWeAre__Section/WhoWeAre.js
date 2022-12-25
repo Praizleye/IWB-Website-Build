@@ -7,11 +7,11 @@ import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import {
   animateHeading,
-  animateImg,
-  animateImg2,
-  animateText,
+  // animateImg,
+  // animateImg2,
+  // animateText,
   animateBtn,
-  animateText2,
+  // animateText2,
 } from "./animateAbout";
 
 const WhoWeAre = () => {
@@ -30,9 +30,9 @@ const WhoWeAre = () => {
       <div className="About-body container">
         <motion.div className="WhoWeAre__img">
           <motion.img
-            initial="hidden"
-            whileInView="visible"
-            variants={animateImg}
+            // initial="hidden"
+            // whileInView="visible"
+            // variants={animateImg}
             viewport={{ once: true }}
             src={images.WhoWeAre}
             alt="Who-we-are-logo"
@@ -41,10 +41,10 @@ const WhoWeAre = () => {
         </motion.div>
         <motion.div
           className="About__text-content"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={animateText}
+          // initial="hidden"
+          // whileInView="visible"
+          // viewport={{ once: true }}
+          // variants={animateText}
         >
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
@@ -67,18 +67,18 @@ const WhoWeAre = () => {
       <motion.div
         className="About-body container"
         style={{ marginTop: "1.5rem" }}
-        initial="hidden"
-        whileInView="visible"
-        variants={animateText}
-        viewport={{ once: true }}
+        // initial="hidden"
+        // whileInView="visible"
+        // variants={animateText}
+        // viewport={{ once: true }}
       >
         <div className="About__text-content partner">
           <div className="sub-heading ">Partner with IWB</div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={animateText2}
-            viewport={{ once: true }}
+            // initial="hidden"
+            // whileInView="visible"
+            // variants={animateText2}
+            // viewport={{ once: true }}
             className="About__text-description partner-description"
           >
             Individuals and Organizations around the globe are rooting for us,
@@ -95,10 +95,10 @@ const WhoWeAre = () => {
         </div>
         <div className="WhoWeAre__img partner-img">
           <motion.img
-            initial="hidden"
-            whileInView="visible"
-            variants={animateImg2}
-            viewport={{ once: true }}
+            // initial="hidden"
+            // whileInView="visible"
+            // variants={animateImg2}
+            // viewport={{ once: true }}
             src={images.PartnerUs}
             alt="PartnerUs-figure"
           />

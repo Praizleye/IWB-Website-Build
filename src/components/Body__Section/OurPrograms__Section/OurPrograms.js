@@ -3,6 +3,7 @@ import images from "../../../constants/images";
 import { StyleOurPrograms } from "./OurPrograms.styled";
 import { BsArrowLeftShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
 
@@ -41,14 +42,23 @@ const OurPrograms = () => {
         aria-label="Our Programs Carousel"
         className="Ourprograms container cards"
         options={{
-          // type: "loop",
+          type: "loop",
           gap: "1rem",
           pagination: true,
           width: "100%",
           fixedWidth: true,
           fixedHeight: true,
           snap: true,
+          direction: "ltr",
+          hasAutoplayProgress: true,
+          autoScroll: {
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            rewind: false,
+            speed: 1,
+          },
         }}
+        extensions={{ AutoScroll }}
       >
         <SplideTrack>
           <SplideSlide>
