@@ -18,6 +18,7 @@ export const StyleFooter = styled.div`
       font-size: 1rem;
       margin-top: 1rem;
       letter-spacing: 0.05rem;
+      opacity: 0.8;
       @media screen and (max-width: 780px) {
         font-size: 0.9rem;
       }
@@ -36,6 +37,10 @@ export const StyleFooter = styled.div`
         height: 3rem;
         width: 10rem;
         font-size: 1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #0e0d0d;
       }
     }
   }
@@ -73,6 +78,7 @@ export const StyleFooter = styled.div`
       }
       @media screen and (max-width: 590px) {
         grid-column: 1 / 3;
+        margin-left: 0.5rem;
       }
     }
     ul {

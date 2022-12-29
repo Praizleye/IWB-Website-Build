@@ -7,11 +7,12 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import { BsLinkedin, BsTelegram, BsSpotify } from "react-icons/bs";
+import { BsTelegram, BsSpotify } from "react-icons/bs";
 import {
-  AiFillTwitterCircle,
+  AiFillTwitterSquare,
   AiFillFacebook,
-  AiOutlineYoutube,
+  AiFillYoutube,
+  AiFillLinkedin,
 } from "react-icons/ai";
 const Footer = () => {
   return (
@@ -29,7 +30,9 @@ const Footer = () => {
           We are building a new generation of young professionals leveraging on
           the new economy.
         </motion.div>
-        <button>Get Involved</button>
+        <button>
+          <a href="https://forms.gle/2uuebmvMV91kHZ6s7">Get Involved</a>
+        </button>
       </motion.div>
       <motion.div
         className="links"
@@ -77,37 +80,37 @@ const Footer = () => {
         <motion.ul variants={animateHeading}>
           Connect
           <motion.li variants={animateSubheading}>
-            <a href="#About us">
-              <BsLinkedin />
+            <a href="https://www.linkedin.com/company/ideas-worth-billions/">
+              <AiFillLinkedin />
               <span>LinkedIn</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Impact report">
+            <a href="https://web.facebook.com/iwb.official/">
               <AiFillFacebook />
               <span>Facebook</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Resources">
+            <a href="https://t.me/iwb_official">
               <BsTelegram />
               <span>Telegram</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Testimonial">
-              <AiFillTwitterCircle />
+            <a href="https://twitter.com/iwb_official">
+              <AiFillTwitterSquare />
               <span>Twitter</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Blog">
-              <AiOutlineYoutube />
+            <a href="https://www.youtube.com/@ideasworthbillions">
+              <AiFillYoutube />
               <span>Youtube</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Community">
+            <a href="https://anchor.fm/ideasworthbillions">
               <BsSpotify />
               <span>Spotify</span>
             </a>

@@ -131,6 +131,10 @@ export const StyleResources = styled.div`
           margin-right: 1rem;
           font-size: 1.1rem;
         }
+        a {
+          text-decoration: none;
+          color: #fafafa;
+        }
       }
     }
   }

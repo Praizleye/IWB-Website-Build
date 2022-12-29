@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 // importing other dependencies
 import { RiCloseFill } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { RiMenu5Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { NavMenuBar, NavStyle } from "./Nav.Styled";
 import images from "../../../constants/images";
@@ -48,7 +48,7 @@ function Nav() {
             whileTap={{ scale: 0.9 }}
             onClick={() => setToggle(!toggle)}
           >
-            {toggle ? <GiHamburgerMenu /> : <RiCloseFill />}
+            {toggle ? <RiMenu5Fill /> : <RiCloseFill />}
           </motion.div>
           {/* this div is for the nav menu bar .... */}
 

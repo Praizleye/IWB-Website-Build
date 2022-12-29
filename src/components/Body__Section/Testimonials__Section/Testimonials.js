@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleTestimonials } from "./Testimonials.styled";
 import images from "../../../constants/images";
-import { BsArrowLeftShort } from "react-icons/bs";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
@@ -24,7 +24,6 @@ const Testimonials = () => {
         className="testimonial-cards__container"
         options={{
           type: "loop",
-          // rewind: true,
           gap: "1rem",
           pagination: true,
           width: "100vw",
@@ -32,10 +31,10 @@ const Testimonials = () => {
           fixedHeight: true,
           padding: { left: "1rem", right: "5rem" },
           autoplay: true,
-          // pauseOnHover: true,
-          resetProgress: false,
+          resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
+          interval: 4000,
         }}
       >
         <SplideTrack>
@@ -218,11 +217,11 @@ const Testimonials = () => {
           </SplideSlide>
         </SplideTrack>
         <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--next">
-            <BsArrowLeftShort />
-          </button>
           <button className="splide__arrow splide__arrow--prev">
             <BsArrowLeftShort />
+          </button>
+          <button className="splide__arrow splide__arrow--next">
+            <BsArrowRightShort />
           </button>
         </div>
       </Splide>

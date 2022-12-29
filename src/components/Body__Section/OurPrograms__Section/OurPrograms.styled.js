@@ -33,7 +33,7 @@ export const StyleOurPrograms = styled.div`
     span {
       position: absolute;
       padding-left: 2rem;
-      left: -4.5px;
+      left: -0.25rem;
       color: #fff;
       z-index: -1;
       -webkit-text-stroke-width: 0.86px;
@@ -169,7 +169,6 @@ export const StyleOurPrograms = styled.div`
         height: 3.5rem;
         width: 3.5rem;
         background: #d9e1f4;
-
         :hover {
           background: #0047af;
         }
@@ -177,6 +176,7 @@ export const StyleOurPrograms = styled.div`
           height: auto;
           width: 1.8rem;
           color: #fafafa;
+          transform: rotate(180deg);
         }
       }
     }

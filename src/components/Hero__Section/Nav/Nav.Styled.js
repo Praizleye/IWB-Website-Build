@@ -41,6 +41,9 @@ export const NavStyle = styled.div`
         @media screen and (max-width: 960px) {
           margin-right: 2.5rem;
         }
+        @media screen and (max-width: 760px) {
+          height: 1.8rem;
+        }
       }
     }
 
@@ -141,6 +144,9 @@ export const NavStyle = styled.div`
     @media screen and (max-width: 930px) {
       display: none;
     }
+    @media screen and (max-width: 760px) {
+      display: flex;
+    }
     a {
       font-weight: bold;
       padding: 0.11rem 0.5rem 0 0.5rem;
@@ -155,7 +161,7 @@ export const NavStyle = styled.div`
 export const NavMenuBar = styled.div`
   .app__navbar-menu {
     position: fixed;
-    left: calc(100vw - 70px);
+    right: 1rem;
     height: 50px;
     width: 50px;
     z-index: 10;
@@ -165,7 +171,6 @@ export const NavMenuBar = styled.div`
       height: 3rem;
       width: 3rem;
       cursor: pointer;
-      background: var(--bgColor);
       border-radius: 50%;
       border: 0.2rem solid white;
       padding: 0.5rem;
@@ -175,9 +180,11 @@ export const NavMenuBar = styled.div`
       }
     }
     ul {
-      height: 50rem;
+      height: 100vh;
       width: 50rem;
       position: absolute;
+      border: 2.5px solid #ffe401;
+      border-radius: 4px;
       left: -50vw;
       top: -70px;
       z-index: -10;
@@ -195,12 +202,25 @@ export const NavMenuBar = styled.div`
         cursor: pointer;
         margin-left: 3.5rem;
         color: #075aa0;
+        @media screen and (max-width: 570px) {
+          margin-left: 2rem;
+        }
+        @media screen and (max-width: 470px) {
+          margin-left: 1rem;
+        }
+        @media screen and (max-width: 420px) {
+          margin-left: 0.5rem;
+        }
+        @media screen and (max-width: 370px) {
+          margin-left: 0;
+        }
         a {
           text-decoration: none;
           color: #075aa0;
 
           &:hover {
-            border-bottom: 1px solid #ffe401;
+            color: #ffe401;
+            border-bottom: 1px solid #075aa0;
           }
         }
       }

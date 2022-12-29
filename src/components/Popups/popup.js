@@ -1,42 +1,11 @@
-//? importing assets
+import React from "react";
+import { StylePopup } from "./popup.styled";
 import images from "../../../constants/images";
-import { StyleOurPrograms } from "./OurPrograms.styled";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
-import { motion } from "framer-motion";
-
-const OurPrograms = () => {
-  const animateHeading = {
-    hidden: {
-      opacity: 0,
-      x: 15,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeIn",
-        delay: 0.2,
-      },
-    },
-  };
-
+const popup = () => {
   return (
-    <StyleOurPrograms id="ourPrograms">
-      <div className="heading">
-        Our programs
-        <motion.span
-          initial="hidden"
-          whileInView="visible"
-          variants={animateHeading}
-        >
-          Our programs
-        </motion.span>
-      </div>
-
+    <StylePopup>
       <Splide
         hasTrack={false}
         aria-label="Our Programs Carousel"
@@ -158,18 +127,9 @@ const OurPrograms = () => {
             </div>
           </SplideSlide>
         </SplideTrack>
-
-        <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">
-            <BsArrowLeftShort />
-          </button>
-          <button className="splide__arrow splide__arrow--next">
-            <BsArrowRightShort />
-          </button>
-        </div>
       </Splide>
-    </StyleOurPrograms>
+    </StylePopup>
   );
 };
 
-export default OurPrograms;
+export default popup;

@@ -78,6 +78,7 @@ export const StyleImpactReport = styled.div`
       grid-template-columns: repeat(1, auto);
       justify-content: space-evenly;
       grid-gap: 0;
+      margin-top: 2rem;
     }
 
     div.subSectionReport__1,
@@ -113,7 +114,12 @@ export const StyleImpactReport = styled.div`
       }
       @media screen and (max-width: 590px) {
         height: 18rem;
-        width: 21rem;
+        width: 19rem;
+        margin: 1rem 0;
+      }
+      @media screen and (max-width: 416px) {
+        height: 16rem;
+        width: 15rem;
         margin: 1rem 0;
       }
       div.subSectionReport__icon {
@@ -139,6 +145,9 @@ export const StyleImpactReport = styled.div`
           @media screen and (max-width: 590px) {
             height: 3rem;
           }
+          @media screen and (max-width: 416px) {
+            height: 1.5rem;
+          }
         }
         div.subSectionReport__figure {
           padding-top: 1rem;
@@ -152,6 +161,9 @@ export const StyleImpactReport = styled.div`
           }
           @media screen and (max-width: 590px) {
             font-size: 1.3rem;
+          }
+          @media screen and (max-width: 416px) {
+            font-size: 1rem;
           }
           img {
             height: 1.7rem;
@@ -167,6 +179,10 @@ export const StyleImpactReport = styled.div`
             }
             @media screen and (max-width: 590px) {
               height: 2rem;
+              width: auto;
+            }
+            @media screen and (max-width: 416px) {
+              height: 1.5rem;
               width: auto;
             }
           }
@@ -206,7 +222,13 @@ export const StyleImpactReport = styled.div`
           margin-bottom: 2rem;
         }
         @media screen and (max-width: 590px) {
-          font-size: 1.3rem;
+          font-size: 1.15rem;
+          padding: 0 1rem 2rem 1rem;
+          height: 7rem;
+          margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 416px) {
+          font-size: 1rem;
           padding: 0 1rem 2rem 1rem;
           height: 7rem;
           margin-bottom: 2rem;

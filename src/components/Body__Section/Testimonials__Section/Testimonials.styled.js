@@ -206,6 +206,7 @@ export const StyleTestimonials = styled.div`
           height: auto;
           width: 1.8rem;
           color: #fafafa;
+          transform: rotate(180deg);
         }
       }
     }

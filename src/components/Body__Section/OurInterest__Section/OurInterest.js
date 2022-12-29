@@ -1,16 +1,90 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { StyleOurInterest } from "./OurInterest.styled";
 import images from "../../../constants/images";
 
 const OurInterest = () => {
+  const animateHeading = {
+    hidden: {
+      opacity: 0,
+      x: 15,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeIn",
+        delay: 0.2,
+      },
+    },
+  };
+
+  const highLight = () => {
+    //first get all the heading class
+    const getActive = document.querySelectorAll("div.subheading");
+    const getActiveNav = document.querySelectorAll("div.Ourinterest-section");
+
+    //destructure the headingclasses
+    // getActive.forEach((el) => console.log(el.className));
+
+    //loop through them individually
+    for (let i = 0; i < getActive.length; i++) {
+      setTimeout(() => {
+        if (
+          getActive[i].classList.contains("active") ||
+          getActiveNav[i].classList.contains("active")
+        ) {
+          setTimeout(() => {
+            getActive[i].classList.remove("active");
+            getActiveNav[i].classList.remove("active");
+            getActiveNav[i].style.borderLeft = "3px solid #b8b8b8";
+          }, 3000);
+          // console.log(getActive[i]);
+        } else if (
+          !getActive[i].classList.contains("active") ||
+          !getActiveNav[i].classList.contains("active")
+        ) {
+          getActive[i].classList.add("active");
+          getActiveNav[i].style.borderLeft = "3px solid #2f88ff";
+          const getActiveTwo = document.querySelectorAll("div.subheading");
+          const getActiveNavTwo = document.querySelectorAll(
+            "div.Ourinterest-section"
+          );
+
+          if (
+            getActiveTwo[i].classList.contains("active") ||
+            getActiveNavTwo[i].classList.contains("active")
+          ) {
+            setTimeout(() => {
+              getActiveTwo[i].classList.remove("active");
+              getActiveNavTwo[i].classList.remove("active");
+              getActiveNavTwo[i].style.borderLeft = "3px solid #b8b8b8";
+            }, 3000);
+          }
+        }
+      }, i * 3000);
+    }
+  };
+  highLight();
+
   return (
-    <StyleOurInterest>
+    <StyleOurInterest id="ourInterests">
       <div className="heading">
-        Our interest<span>Our interest</span>
+        Our interests
+        <motion.span
+          initial="hidden"
+          whileInView="visible"
+          variants={animateHeading}
+        >
+          Our interests
+        </motion.span>
       </div>
 
-      <div className="Ourinterest-body container">
+      <motion.div
+        className="Ourinterest-body container"
+        whileInView={highLight}
+      >
         <div className="Ourinterest-img">
           <img src={images.Interests} alt="Ourinterst-fig" />
         </div>
@@ -40,7 +114,7 @@ const OurInterest = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </StyleOurInterest>
   );
 };

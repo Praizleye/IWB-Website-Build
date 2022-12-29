@@ -69,7 +69,7 @@ const Resources = () => {
           <button>
             {" "}
             <FaCloudDownloadAlt />
-            Free download
+            <a href="https://t.me/iwb_official">Free download</a>
           </button>
         </motion.div>
       </div>
