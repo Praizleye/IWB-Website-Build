@@ -3,7 +3,6 @@ import images from "../../../constants/images";
 import { StyleOurPrograms } from "./OurPrograms.styled";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
 
