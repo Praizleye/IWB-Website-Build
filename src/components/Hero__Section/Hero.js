@@ -24,7 +24,7 @@ const Hero = () => {
             ...Building People{" "}
           </motion.div>
           <motion.div initial="hidden" animate="visible" variants={animateText}>
-            Creating solutions
+            Creating Solutions
           </motion.div>
           <div>
             <motion.svg
