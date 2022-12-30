@@ -6,6 +6,13 @@ import Logo from "../assets/Logo.svg";
 import Lineheader from "../assets/Lineheader.svg";
 import Line from "../assets/line.svg";
 
+// ?import Popup session
+import Popup1 from "../assets/Popup__Assets/Join-community-popup.png";
+import Popup2 from "../assets/Popup__Assets/Startup-clinic-popup.png";
+import Popup3 from "../assets/Popup__Assets/Digital-monetization-popup.png";
+import Stroke1 from "../assets/Popup__Assets/Community-stroke.svg";
+import Stroke2 from "../assets/Popup__Assets/Monetization-stroke.svg";
+
 //? Comp Trust importing Section
 import Mintyn from "../assets/CompTrust__Assets/Mintyn.png";
 import Tekedia from "../assets/CompTrust__Assets/Tekedia.png";
@@ -50,6 +57,12 @@ import BackToTop from "../assets/Footer__Assets/BackToTop.svg";
 import Newsletter from "../assets/NewsLetter__Assets/NewsLetter.png";
 
 const assets = {
+  Popup1,
+  Popup2,
+  Popup3,
+  Stroke1,
+  Stroke2,
+
   HeroImg,
   Logo,
   Lineheader,

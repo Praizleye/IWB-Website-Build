@@ -180,25 +180,25 @@ export const StyleTestimonials = styled.div`
       @media screen and (max-width: 612px) {
         display: none;
       }
-      button.splide__arrow.splide__arrow--prev {
+      button.splide__arrow--prev {
         height: 3.5rem;
         width: 3.5rem;
-
+        left: -4rem;
         :hover {
           background: #0047af;
         }
         svg {
           height: auto;
-          transform: rotate(180deg);
+          transform: rotate(360deg);
           width: 1.8rem;
           color: #fafafa;
         }
       }
-      button.splide__arrow.splide__arrow--next {
+      button.splide__arrow--next {
         height: 3.5rem;
         width: 3.5rem;
         background: #d9e1f4;
-
+        left: 1rem;
         :hover {
           background: #0047af;
         }
@@ -206,7 +206,6 @@ export const StyleTestimonials = styled.div`
           height: auto;
           width: 1.8rem;
           color: #fafafa;
-          transform: rotate(180deg);
         }
       }
     }

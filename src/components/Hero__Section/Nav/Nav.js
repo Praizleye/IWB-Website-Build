@@ -16,7 +16,7 @@ function Nav() {
       <NavStyle>
         <nav className="app__navbar">
           <div className="app__navbar-logo">
-            <img src={images.Logo} alt="My-Logo" height="2rem" width="auto" />
+            <img src={images.Logo} alt="My-Logo" />
           </div>
           <ul className="app__navbar-links">
             {/* <div></div> */}
@@ -63,6 +63,7 @@ function Nav() {
                   "Our programs",
                   "Resources",
                   "Blog",
+                  "Free downloads",
                   "Join community",
                 ].map((item, index) => (
                   <li

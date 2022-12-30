@@ -9,7 +9,7 @@ import { animateCards } from "./animateImpact";
 
 const ImpactReport = () => {
   return (
-    <StyleImpactReport>
+    <StyleImpactReport id="Impact report">
       <div className="ImpactReport__heading">
         Impact Report
         <img src={images.Line} alt="text-underline" />

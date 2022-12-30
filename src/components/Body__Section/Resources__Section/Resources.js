@@ -12,7 +12,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const Resources = () => {
   return (
-    <StyleResources>
+    <StyleResources id="Resources">
       <div className="Resources container">
         <div className="Resources-books imgs-container">
           <div className="img-container">
@@ -58,7 +58,7 @@ const Resources = () => {
           whileInView="visible"
           variants={animateText}
         >
-          <div className="heading">
+          <div className="heading" id="Free downloads">
             Resources<span>Resources</span>
           </div>
           <div className="Resource-text-Desc">

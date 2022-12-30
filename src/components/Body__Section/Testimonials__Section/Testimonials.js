@@ -9,7 +9,7 @@ import { animateStars, animateStar } from "./animateTestimonial";
 
 const Testimonials = () => {
   return (
-    <StyleTestimonials>
+    <StyleTestimonials id="Testimonial">
       <div className="heading">
         Testimonials
         <span>

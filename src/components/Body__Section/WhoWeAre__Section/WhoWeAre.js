@@ -16,7 +16,7 @@ import {
 
 const WhoWeAre = () => {
   return (
-    <StyleWhoWeAre>
+    <StyleWhoWeAre id="About">
       <div className="heading">
         About us{" "}
         <motion.span
@@ -45,6 +45,7 @@ const WhoWeAre = () => {
           // whileInView="visible"
           // viewport={{ once: true }}
           // variants={animateText}
+          id="Join community"
         >
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
@@ -58,8 +59,15 @@ const WhoWeAre = () => {
             initial="hidden"
             whileInView="visible"
             variants={animateBtn}
+            whileHover={{ scale: 1.1 }}
           >
-            Join Our Community
+            <a
+              href="https://forms.gle/2uuebmvMV91kHZ6s7"
+              target="_self"
+              rel="noopener noreferrer"
+            >
+              Join Our Community
+            </a>
           </motion.button>
         </motion.div>
       </div>
@@ -89,6 +97,7 @@ const WhoWeAre = () => {
             whileInView="visible"
             variants={animateBtn}
             className="partner-btn"
+            whileHover={{ scale: 1.1 }}
           >
             Support IWB
           </motion.button>

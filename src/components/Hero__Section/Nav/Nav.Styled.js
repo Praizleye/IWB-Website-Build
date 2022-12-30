@@ -144,9 +144,7 @@ export const NavStyle = styled.div`
     @media screen and (max-width: 930px) {
       display: none;
     }
-    @media screen and (max-width: 760px) {
-      display: flex;
-    }
+
     a {
       font-weight: bold;
       padding: 0.11rem 0.5rem 0 0.5rem;
@@ -180,25 +178,29 @@ export const NavMenuBar = styled.div`
       }
     }
     ul {
-      height: 100vh;
-      width: 50rem;
+      height: 60vh;
+      width: 25rem;
       position: absolute;
-      border: 2.5px solid #ffe401;
       border-radius: 4px;
-      left: -50vw;
-      top: -70px;
+      right: -27%;
+      top: 50px;
       z-index: -10;
       display: flex;
       flex-direction: column;
-      padding: 7rem 3rem;
+      padding: 4rem 2rem;
       justify-content: space-evenly;
       backdrop-filter: blur(5px);
       opacity: 0.97;
       background: #fff;
+      @media screen and (max-width: 590px) {
+        width: 20rem;
+      }
+      @media screen and (max-width: 480px) {
+        width: 17rem;
+      }
       li {
         list-style: none;
         font-size: 1.1rem;
-        text-transform: uppercase;
         cursor: pointer;
         margin-left: 3.5rem;
         color: #075aa0;

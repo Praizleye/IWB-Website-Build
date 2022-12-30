@@ -24,7 +24,7 @@ const OurPrograms = () => {
   };
 
   return (
-    <StyleOurPrograms id="ourPrograms">
+    <StyleOurPrograms id="Our programs">
       <div className="heading">
         Our programs
         <motion.span

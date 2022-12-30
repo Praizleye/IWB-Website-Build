@@ -194,6 +194,10 @@ export const StyleWhoWeAre = styled.div`
         &:hover {
           transform: scale(1.1);
         }
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
       }
     }
     div.partner {

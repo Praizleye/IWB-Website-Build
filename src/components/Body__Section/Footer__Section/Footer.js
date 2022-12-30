@@ -48,7 +48,7 @@ const Footer = () => {
         <motion.ul variants={animateHeading}>
           Quick
           <motion.li variants={animateSubheading}>
-            <a href="#About us">About us</a>
+            <a href="#About">About us</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Impact report">Impact report</a>
@@ -63,14 +63,16 @@ const Footer = () => {
             <a href="#Blog">Blog</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Community">Community</a>
+            <a href="https://forms.gle/2uuebmvMV91kHZ6s7">Community</a>
           </motion.li>
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
           Contact
           <motion.li variants={animateSubheading}>
-            <a href="#email">connect.iwb@gmail.com</a>
+            <a href="mailto:connect.iwb@gmail.com?subject=Mail from our Website">
+              connect.iwb@gmail.com
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#number">+234 812 0611 858</a>

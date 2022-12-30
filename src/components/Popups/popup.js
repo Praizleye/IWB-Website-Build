@@ -1,11 +1,21 @@
 import React from "react";
-import { StylePopup } from "./popup.styled";
-import images from "../../../constants/images";
+import { StylePopup } from "./Popup.styled";
+import images from "../../constants/images";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-const popup = () => {
+import { AiFillCloseCircle } from "react-icons/ai";
+
+const Popup = () => {
+  const closePopup = () => {
+    document.getElementById("Popup").style.display = "none";
+  };
+
   return (
-    <StylePopup>
+    <StylePopup id="Popup">
+      <div className="close" onClick={closePopup}>
+        Close
+        <AiFillCloseCircle />
+      </div>
       <Splide
         hasTrack={false}
         aria-label="Our Programs Carousel"
@@ -14,39 +24,63 @@ const popup = () => {
           type: "loop",
           gap: "1rem",
           pagination: true,
-          width: "100%",
-          fixedWidth: true,
-          fixedHeight: true,
+          width: "28rem",
           autoplay: true,
           resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
           interval: 4000,
+          perPage: 1,
+          breakpoints: {
+            530: {
+              width: "24rem",
+            },
+            460: {
+              width: "22rem",
+            },
+            380: {
+              width: "20rem",
+            },
+            360: {
+              width: "19rem",
+            },
+          },
         }}
       >
         <SplideTrack>
           <SplideSlide>
-            <div className="card">
+            <div className="card" id="Community">
               <div className="card-img">
-                <img src={images.Card1} alt="card-figure" />
+                <img src={images.Popup1} alt="card-figure" />
               </div>
-              <div className="card-subHeading">Digital Monetization </div>
+              <div className="card-subHeading">
+                Join Our{" "}
+                <span style={{ color: "#FFE401" }}>
+                  Community <img src={images.Stroke1} alt="stroke-1" />
+                </span>{" "}
+              </div>
               <div className="card-textDesc">
-                One of the largest Digital Money Summit in Africa. Bringing
-                together industry veterans, exposing secrets on web3,
-                tokenization, metaverse, affiliate marketing, social commerce,
-                social monetization and lots more.
+                Join over 3000 young professionals, digital creators, and
+                technopreneurs discussing about ideas, opportunities and
+                solutions for the New Economy. Learn from Industry veterans as
+                they share insights, contents, and resources to help you thrive
+                in the marketplace.
               </div>
-              <button>Register Now</button>
+              <button>Join Community</button>
             </div>
           </SplideSlide>
 
           <SplideSlide>
-            <div className="card">
+            <div className="card card2">
               <div className="card-img">
-                <img src={images.Card2} alt="card-figure" />
+                <img src={images.Popup2} alt="card-figure" />
               </div>
-              <div className="card-subHeading">Startup Clinic</div>
+              <div className="card-subHeading">
+                Startup{" "}
+                <span style={{ color: "#FFE401" }}>
+                  Clinic <img src={images.Stroke1} alt="stroke-1" />
+                </span>
+              </div>
               <div className="card-textDesc">
                 A 6 weeks course curated for entrepreneurs and intrapreneurs.
                 Startups are taught by industry experts on business technology,
@@ -57,73 +91,23 @@ const popup = () => {
           </SplideSlide>
 
           <SplideSlide>
-            <div className="card">
+            <div className="card card3">
               <div className="card-img">
-                <img src={images.Card3} alt="card-figure" />
+                <img src={images.Popup3} alt="card-figure" />
               </div>
-              <div className="card-subHeading">Acceleration Conference</div>
+              <div className="card-subHeading">
+                Digital
+                <span style={{ color: "#0047af" }}>
+                  {" "}
+                  Monetization <img src={images.Stroke2} alt="stroke-2" />{" "}
+                </span>{" "}
+                Conference
+              </div>
               <div className="card-textDesc">
                 Exposing young professionals to digital enterpreneurship
                 monetization. Event features exhibition of projects and more.{" "}
               </div>
-              <button className="comingSoon">Coming Soon</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <img src={images.Card4} alt="card-figure" />
-              </div>
-              <div className="card-subHeading">School of Champions</div>
-              <div className="card-textDesc">
-                A monthly edition where we talk about emerging technologies,
-                personal development, and financial growth.
-              </div>
-              <button className="comingSoon">Coming Soon</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <img src={images.Card5} alt="card-figure" />
-              </div>
-              <div className="card-subHeading">Startup Fundbox</div>
-              <div className="card-textDesc">
-                The IWB Capital, supporting innovative and viable startup
-                businesses. The FundBox exists to help businesses scale.
-              </div>
-              <button className="comingSoon">Coming Soon</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <img src={images.Card6} alt="card-figure" />
-              </div>
-              <div className="card-subHeading">Capacity Conference</div>
-              <div className="card-textDesc">
-                For High School Students, CapCon exposes them to Digital
-                Productivity, Social Monetization and Digital Entrepreneurship.
-              </div>
-              <button className="comingSoon">Coming Soon</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <img src={images.Card7} alt="card-figure" />
-              </div>
-              <div className="card-subHeading">Mentor Me Compass</div>
-              <div className="card-textDesc">
-                Tailored menoring provided by industry veterans accepted into
-                the IWB Coaches Council. The compass is a one-one guide for
-                youngsters.
-              </div>
-              <button className="comingSoon">Coming Soon</button>
+              <button>Register Now</button>
             </div>
           </SplideSlide>
         </SplideTrack>
@@ -132,4 +116,4 @@ const popup = () => {
   );
 };
 
-export default popup;
+export default Popup;

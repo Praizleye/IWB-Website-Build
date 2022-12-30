@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <div>
       <Nav />
-      <StyleHero>
+      <StyleHero id="#">
         <div className="cta__text container">
           <motion.div initial="hidden" animate="visible" variants={animateText}>
             ...Building People{" "}
