@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 
 //importing components
-import Popup from "./components/Popups/Popup";
+import Popup from "./components/Body__Section/Popups/Popup";
 import Hero from "./components/Hero__Section/Hero";
 import CompTrust from "./components/Body__Section/CompTrust__Section/CompTrust";
 import WhoWeAre from "./components/Body__Section/WhoWeAre__Section/WhoWeAre";

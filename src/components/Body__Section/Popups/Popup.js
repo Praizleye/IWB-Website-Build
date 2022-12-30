@@ -1,6 +1,6 @@
 import React from "react";
 import { StylePopup } from "./Popup.styled";
-import images from "../../constants/images";
+import images from "../../../constants/images";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { AiFillCloseCircle } from "react-icons/ai";
