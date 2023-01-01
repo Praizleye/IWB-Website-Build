@@ -53,7 +53,7 @@ const WhoWeAre = () => {
             Development Network. Brooding a thriving community of Africa’s
             finest thought leaders, creators, and technopreneurs imbued with
             positive values and in-demand skills for sheer excellence in career,
-            leadership, business, tech and everything else.
+            leadership, business, tech and everything in-between.
           </div>
           <motion.button
             initial="hidden"

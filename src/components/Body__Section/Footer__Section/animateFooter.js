@@ -28,7 +28,7 @@ export const animateSubtext = {
     originX: 0,
   },
   visible: {
-    opacity: 1,
+    opacity: 0.8,
     scaleY: 1,
     originY: 1,
   },

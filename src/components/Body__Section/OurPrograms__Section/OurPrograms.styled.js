@@ -12,8 +12,8 @@ export const StyleOurPrograms = styled.div`
   div.heading {
     font-size: 3rem;
     font-weight: bold;
-    position: relative;
     color: #0047af;
+    position: relative;
     letter-spacing: 0.25rem;
     border-left: 3px solid #ffe401;
     padding-left: 2rem;
@@ -30,17 +30,20 @@ export const StyleOurPrograms = styled.div`
       font-size: 1.8rem;
       width: max-content;
     }
-    span {
-      position: absolute;
-      padding-left: 2rem;
-      left: -0.25rem;
-      color: #fff;
-      z-index: -1;
-      -webkit-text-stroke-width: 0.86px;
-      -webkit-text-stroke-color: #0047af;
-      @media screen and (max-width: 590px) {
-        padding-left: 1rem;
-      }
+  }
+  span {
+    position: absolute;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    padding-left: 2rem;
+    left: -0.25rem;
+    color: #fff;
+    /* background-color: red; */
+    z-index: -1;
+    -webkit-text-stroke-width: 0.86px;
+    -webkit-text-stroke-color: #0047af;
+    @media screen and (max-width: 590px) {
+      padding-left: 1rem;
     }
   }
   div.Ourprograms.container.cards {

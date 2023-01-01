@@ -102,8 +102,9 @@ const OurInterest = () => {
           <div className="Ourinterest-section">
             <div className="section-2 subheading">Digital Technology</div>
             <div className="section-2 textDesc">
-              Digital Productivity, Social Monetization, Marketing, Networking,
-              and other emerging technologies are our key interest.{" "}
+              We share explosive insights on Digital Productivity, Social
+              Monetization, Marketing, Networking, and other emerging
+              technologies.
             </div>
           </div>
           <div className="Ourinterest-section">

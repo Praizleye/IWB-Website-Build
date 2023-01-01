@@ -86,7 +86,7 @@ const ImpactReport = () => {
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 4000 community members actively discussing Ideas and solutions
+            Over 4000 community members actively discussing ideas and solutions
             for global impact.
           </div>
         </motion.div>
@@ -104,7 +104,7 @@ const ImpactReport = () => {
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 100 Volunteers in Africa are part of our workstream
+            Over 100 volunteers in Africa are part of our workstream
           </div>
         </motion.div>
 

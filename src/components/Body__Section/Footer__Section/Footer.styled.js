@@ -18,7 +18,6 @@ export const StyleFooter = styled.div`
       font-size: 1rem;
       margin-top: 1rem;
       letter-spacing: 0.05rem;
-      opacity: 0.8;
       @media screen and (max-width: 780px) {
         font-size: 0.9rem;
       }
@@ -114,9 +113,7 @@ export const StyleFooter = styled.div`
             align-self: flex-start;
             margin-right: 0.5rem;
           }
-          /* span {
-            opacity: 0.8;
-          } */
+
           &:hover {
             opacity: 1;
             color: #ffe401;
@@ -124,9 +121,10 @@ export const StyleFooter = styled.div`
         }
       }
     }
-    /* ul:nth-of-type(3) {
-      grid-row-start: 2;
-      order: 2;
-    } */
+    ul:nth-of-type(4) {
+      @media screen and (max-width: 590px) {
+        justify-self: start;
+      }
+    }
   }
 `;

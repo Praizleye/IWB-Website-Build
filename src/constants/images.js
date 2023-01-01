@@ -48,6 +48,9 @@ import Book4 from "../assets/Resources__Assets/Book-4.png";
 // ? importing Testimonials__Assets
 import Star from "../assets/Testimonials__Assets/Star.svg";
 import Testator__1 from "../assets/Testimonials__Assets/Testimonial__img1.png";
+import Testator__2 from "../assets/Testimonials__Assets/Testimonial__img2.png";
+import Testator__3 from "../assets/Testimonials__Assets/Testimonial__img3.png";
+import Testator__4 from "../assets/Testimonials__Assets/Testimonial__img4.png";
 
 // ? importing Footer Assets
 import FooterLogo from "../assets/Footer__Assets/IWB Logo Project 1.svg";
@@ -101,6 +104,9 @@ const assets = {
 
   Star,
   Testator__1,
+  Testator__2,
+  Testator__3,
+  Testator__4,
   FooterLogo,
   BackToTop,
 

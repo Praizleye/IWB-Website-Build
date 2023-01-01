@@ -121,7 +121,9 @@ const Footer = () => {
 
         <motion.ul variants={animateHeading}>
           Legal
-          <motion.li variants={animateSubheading}>Terms of Service</motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#nothing">Terms of Service</a>
+          </motion.li>
         </motion.ul>
       </motion.div>
     </StyleFooter>

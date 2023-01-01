@@ -93,7 +93,7 @@ const OurPrograms = () => {
               </div>
               <div className="card-subHeading">Acceleration Conference</div>
               <div className="card-textDesc">
-                Exposing young professionals to digital enterpreneurship
+                Exposing young professionals to digital enterpreneurship and
                 monetization. Event features exhibition of projects and more.{" "}
               </div>
               <button className="comingSoon">Coming Soon</button>
@@ -122,7 +122,7 @@ const OurPrograms = () => {
               <div className="card-subHeading">Startup Fundbox</div>
               <div className="card-textDesc">
                 The IWB Capital, supporting innovative and viable startup
-                businesses. The FundBox exists to help businesses scale.
+                businesses. The Fundbox exists to help businesses scale.
               </div>
               <button className="comingSoon">Coming Soon</button>
             </div>
@@ -147,9 +147,9 @@ const OurPrograms = () => {
               <div className="card-img">
                 <img src={images.Card7} alt="card-figure" />
               </div>
-              <div className="card-subHeading">Mentor Me Compass</div>
+              <div className="card-subHeading">Mentor-Me Compass</div>
               <div className="card-textDesc">
-                Tailored menoring provided by industry veterans accepted into
+                Tailored mentoring provided by industry leaders accepted into
                 the IWB Coaches Council. The compass is a one-one guide for
                 youngsters.
               </div>

@@ -63,7 +63,7 @@ const Resources = () => {
           </div>
           <div className="Resource-text-Desc">
             Access over $5000 worth of resources (ebooks, podcasts, videos) on
-            Business, Digotal Technology, Monetization, Leaderhip, and Growth
+            Business, Digital Technology, Monetization, Leadership, and Growth
             from experts across the globe.{" "}
           </div>
           <button>

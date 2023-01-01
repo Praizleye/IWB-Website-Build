@@ -63,8 +63,8 @@ export const StyleTestimonials = styled.div`
       margin: 2rem 0;
     }
     div.card {
-      width: 32rem;
-      height: 15rem;
+      width: 35rem;
+      height: 18rem;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       padding: 1.5rem;
       display: grid;
@@ -155,7 +155,7 @@ export const StyleTestimonials = styled.div`
         }
       }
       @media screen and (max-width: 1200px) {
-        width: 25rem;
+        width: 28rem;
         height: 14rem;
         font-size: 0.85rem;
         padding: 1rem;
