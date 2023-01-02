@@ -83,7 +83,7 @@ export const StyleTestimonials = styled.div`
         margin: 0.5rem;
         width: 25rem;
       }
-      @media screen and (max-width: 470px) {
+      @media screen and (max-width: 480px) {
         grid-template-areas:
           "img cardName"
           "img cardDate"
@@ -160,17 +160,38 @@ export const StyleTestimonials = styled.div`
         font-size: 0.85rem;
         padding: 1rem;
       }
-      @media screen and (max-width: 612px) {
-        width: 20rem;
-        height: 14rem;
-        font-size: 0.85rem;
-        padding: 1rem 0;
-      }
-      @media screen and (max-width: 470px) {
-        width: 17rem;
-        height: 14rem;
+      @media screen and (max-width: 760px) {
+        width: 30rem;
+        height: 17rem;
         font-size: 0.85rem;
         padding: 1rem 0.5rem;
+      }
+      @media screen and (max-width: 660px) {
+        width: 27rem;
+        height: 15rem;
+        font-size: 0.85rem;
+        padding: 1rem 0.75rem;
+      }
+      @media screen and (max-width: 560px) {
+        width: 22rem;
+        height: 19rem;
+        font-size: 0.85rem;
+        padding: 1rem 0.75rem;
+      }
+      @media screen and (max-width: 480px) {
+        width: 20rem;
+        height: 21rem;
+        padding: 0.5rem 0.5rem;
+      }
+      @media screen and (max-width: 380px) {
+        width: 18rem;
+        height: 22rem;
+        padding: 0.5rem 0.5rem;
+      }
+      @media screen and (max-width: 344px) {
+        width: 16rem;
+        height: 24rem;
+        padding: 0.5rem 0.5rem;
       }
     }
     div.splide__arrows {
