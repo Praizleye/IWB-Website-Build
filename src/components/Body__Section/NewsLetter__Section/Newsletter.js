@@ -3,7 +3,7 @@ import { StyleNewsletter } from "./Newsletter.styled";
 import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
-
+import { IoIosNotifications } from "react-icons/io";
 const Newsletter = () => {
   // const [input, setInput] = useState("");
   // const handleSubmit = (e) => {
@@ -34,6 +34,9 @@ const Newsletter = () => {
             variants={subscribeBtn}
             type="submit"
           >
+            <IoIosNotifications />
+            {"        "}
+            {"        "}
             Subscribe
           </motion.button>
         </a>

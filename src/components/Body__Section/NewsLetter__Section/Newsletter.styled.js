@@ -148,7 +148,14 @@ export const StyleNewsletter = styled.div`
     } */
     a {
       text-decoration: none;
+      svg {
+        /* background: white; */
+        color: white;
+      }
       button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 16rem;
         height: 4rem;
         margin: 1.5rem 0 0;
@@ -159,21 +166,21 @@ export const StyleNewsletter = styled.div`
         border: none;
         cursor: pointer;
         @media screen and (max-width: 1200px) {
-          height: 2.7rem;
+          height: 3.5rem;
           font-size: 1.5rem;
           margin: 1rem 0.5rem 1rem 0;
-          width: 10rem;
+          width: 14rem;
         }
         @media screen and (max-width: 900px) {
-          height: 2.7rem;
-          font-size: 1.1rem;
+          height: 3.5rem;
+          font-size: 1.35rem;
           margin: 1rem 0.5rem 1rem 0;
-          width: 8rem;
+          width: 12rem;
         }
         @media screen and (max-width: 590px) {
-          height: 1.5rem;
-          font-size: 0.85rem;
-          width: 6rem;
+          height: 3rem;
+          font-size: 1.25rem;
+          width: 10rem;
         }
       }
     }
