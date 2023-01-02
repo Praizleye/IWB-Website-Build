@@ -69,7 +69,7 @@ export const StyleNewsletter = styled.div`
         padding: 0.5rem 1rem 0 0;
       }
     }
-    div.action {
+    form.action {
       display: flex;
       justify-content: center;
       align-items: center;

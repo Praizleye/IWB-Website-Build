@@ -155,7 +155,7 @@ export const StyleTestimonials = styled.div`
         }
       }
       @media screen and (max-width: 1200px) {
-        width: 28rem;
+        width: 34rem;
         height: 14rem;
         font-size: 0.85rem;
         padding: 1rem;

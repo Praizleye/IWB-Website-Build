@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleNewsletter } from "./Newsletter.styled";
 import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
 
 const Newsletter = () => {
+  const [input, setInput] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(input);
+  };
   return (
     <StyleNewsletter>
       <div className="textContent">
@@ -21,12 +26,28 @@ const Newsletter = () => {
           content shared regularly on the Blue Letters
         </div>
 
-        <div className="action">
-          <input type="text" placeholder="Enter your email address here" />
-          <motion.button whileInView="animate" variants={subscribeBtn}>
+        <form
+          className="action"
+          onSubmit={handleSubmit}
+          id="revue-form"
+          name="revue-form"
+          target="_blank"
+        >
+          <input
+            type="email"
+            placeholder="Enter your email address..."
+            id="member_email"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <motion.button
+            whileInView="animate"
+            variants={subscribeBtn}
+            type="submit"
+          >
             Subscribe
           </motion.button>
-        </div>
+        </form>
       </div>
       <div className="imgContent">
         <img src={images.Newsletter} alt="Newsletter figure" />
