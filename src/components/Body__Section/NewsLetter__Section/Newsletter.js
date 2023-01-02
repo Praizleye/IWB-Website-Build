@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StyleNewsletter } from "./Newsletter.styled";
 import images from "../../../constants/images";
 import { motion } from "framer-motion";
