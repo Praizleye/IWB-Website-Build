@@ -5,14 +5,13 @@ import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
 
 const Newsletter = () => {
-  const [input, setInput] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(input);
-  };
+  // const [input, setInput] = useState("");
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
   return (
     <StyleNewsletter>
-      <div className="textContent">
+      <div className="Content">
         <div className="heading">
           The IWB Newsletter
           <span>
@@ -25,8 +24,20 @@ const Newsletter = () => {
           Career and Leadership, keeping pace with valuable resources and
           content shared regularly on the Blue Letters
         </div>
-
-        <form
+        <a
+          href="https://www.getrevue.co/profile/iwb_official"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <motion.button
+            whileInView="animate"
+            variants={subscribeBtn}
+            type="submit"
+          >
+            Subscribe
+          </motion.button>
+        </a>
+        {/* <form
           className="action"
           onSubmit={handleSubmit}
           id="revue-form"
@@ -47,7 +58,7 @@ const Newsletter = () => {
           >
             Subscribe
           </motion.button>
-        </form>
+        </form> */}
       </div>
       <div className="imgContent">
         <img src={images.Newsletter} alt="Newsletter figure" />

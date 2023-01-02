@@ -13,7 +13,7 @@ export const StyleNewsletter = styled.div`
   @media screen and (max-width: 760px) {
     padding: 5rem 1rem 5rem 2rem;
   }
-  div.textContent {
+  div.Content {
     justify-self: start;
     div.heading {
       color: #0e63f4;
@@ -69,7 +69,7 @@ export const StyleNewsletter = styled.div`
         padding: 0.5rem 1rem 0 0;
       }
     }
-    form.action {
+    /* form.action {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -142,7 +142,37 @@ export const StyleNewsletter = styled.div`
         @media screen and (max-width: 590px) {
           height: 1.5rem;
           font-size: 0.85rem;
-          /* margin: 1rem 0.5rem 1rem 0; */
+          width: 6rem;
+        }
+      }
+    } */
+    a {
+      text-decoration: none;
+      button {
+        width: 16rem;
+        height: 4rem;
+        margin: 1.5rem 0 0;
+        font-size: 1.7rem;
+        background: #478bff;
+        color: #fafafa;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        @media screen and (max-width: 1200px) {
+          height: 2.7rem;
+          font-size: 1.5rem;
+          margin: 1rem 0.5rem 1rem 0;
+          width: 10rem;
+        }
+        @media screen and (max-width: 900px) {
+          height: 2.7rem;
+          font-size: 1.1rem;
+          margin: 1rem 0.5rem 1rem 0;
+          width: 8rem;
+        }
+        @media screen and (max-width: 590px) {
+          height: 1.5rem;
+          font-size: 0.85rem;
           width: 6rem;
         }
       }

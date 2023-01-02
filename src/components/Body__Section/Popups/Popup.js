@@ -10,6 +10,11 @@ const Popup = () => {
     document.getElementById("Popup").style.display = "none";
   };
 
+  const getHeight = () => {
+    var Height = window.innerHeight;
+    console.log(`${Height}px`);
+  };
+  getHeight();
   return (
     <StylePopup id="Popup">
       <div className="close" onClick={closePopup}>
@@ -66,7 +71,13 @@ const Popup = () => {
                 they share insights, contents, and resources to help you thrive
                 in the marketplace.
               </div>
-              <button>Join Community</button>
+              <a
+                href="https://forms.gle/2uuebmvMV91kHZ6s7"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                <button>Join Community</button>
+              </a>
             </div>
           </SplideSlide>
 
