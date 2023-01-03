@@ -156,30 +156,18 @@ export const StyleNewsletter = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 16rem;
-        height: 4rem;
+        width: 12rem;
+        height: 3rem;
         margin: 1.5rem 0 0;
-        font-size: 1.7rem;
+        font-size: 1.25rem;
         background: #478bff;
         color: #fafafa;
         border-radius: 4px;
         border: none;
         cursor: pointer;
-        @media screen and (max-width: 1200px) {
-          height: 3.5rem;
-          font-size: 1.5rem;
-          margin: 1rem 0.5rem 1rem 0;
-          width: 14rem;
-        }
-        @media screen and (max-width: 900px) {
-          height: 3.5rem;
-          font-size: 1.35rem;
-          margin: 1rem 0.5rem 1rem 0;
-          width: 12rem;
-        }
-        @media screen and (max-width: 590px) {
-          height: 3rem;
-          font-size: 1.25rem;
+        @media screen and (max-width: 760px) {
+          height: 2.5rem;
+          font-size: 1rem;
           width: 10rem;
         }
       }

@@ -38,11 +38,15 @@ export const StyleOurInterest = styled.div`
       left: -0.25rem;
       color: #fff;
       z-index: -1;
+      -webkit-text-stroke-width: 0.86px;
+      -webkit-text-stroke-color: #0047af;
+      @media screen and (max-width: 980px) and (min-width: 970px) {
+        display: none;
+      }
+
       @media screen and (max-width: 590px) {
         padding-left: 1rem;
       }
-      -webkit-text-stroke-width: 0.86px;
-      -webkit-text-stroke-color: #0047af;
     }
   }
   div.Ourinterest-body.container {

@@ -34,11 +34,15 @@ export const StyleWhoWeAre = styled.div`
       left: -0.25rem;
       color: #fff;
       z-index: -1;
+      -webkit-text-stroke-width: 0.86px;
+      -webkit-text-stroke-color: #0047af;
+      @media screen and (max-width: 980px) and (min-width: 970px) {
+        display: none;
+      }
+
       @media screen and (max-width: 590px) {
         padding-left: 1rem;
       }
-      -webkit-text-stroke-width: 0.86px;
-      -webkit-text-stroke-color: #0047af;
     }
   }
   div.container {
@@ -166,37 +170,37 @@ export const StyleWhoWeAre = styled.div`
           line-height: 1.7;
         }
       }
-      button {
-        margin: 1rem 0;
-        background: #0047af;
-        height: 3rem;
-        width: 12rem;
-        border-radius: 4px;
-        color: #fafafa;
-        font-size: 1.05rem;
-        border: none;
-        transition: transform 0.5s ease-in-out;
-        cursor: pointer;
-        @media screen and (max-width: 1200px) {
-          margin: 2rem 0;
-        }
-        @media screen and (max-width: 950px) {
-          margin: 1.5rem 0;
-          padding: 0.8rem;
-        }
-        @media screen and (max-width: 768px) {
-          padding: 0.5rem 0 0.5rem;
-          margin-bottom: 0.5rem;
-          height: 2.1rem;
-          width: 10rem;
-          font-size: 0.9rem;
-        }
-        &:hover {
-          transform: scale(1.1);
-        }
-        a {
+      a {
+        button {
+          margin: 1rem 0;
+          background: #0047af;
+          height: 3rem;
+          width: 12rem;
+          border-radius: 4px;
+          color: #fafafa;
+          font-size: 1.05rem;
+          border: none;
+          transition: transform 0.5s ease-in-out;
+          cursor: pointer;
+          @media screen and (max-width: 1200px) {
+            margin: 2rem 0;
+          }
+          @media screen and (max-width: 950px) {
+            margin: 1.5rem 0;
+            padding: 0.8rem;
+          }
+          @media screen and (max-width: 768px) {
+            padding: 0.5rem 0 0.5rem;
+            margin-bottom: 0.5rem;
+            height: 2.1rem;
+            width: 10rem;
+            font-size: 0.9rem;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+
           text-decoration: none;
-          color: #fff;
         }
       }
     }

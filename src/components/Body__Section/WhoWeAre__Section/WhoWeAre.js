@@ -55,20 +55,21 @@ const WhoWeAre = () => {
             positive values and in-demand skills for sheer excellence in career,
             leadership, business, tech and everything in-between.
           </div>
-          <motion.button
-            initial="hidden"
-            whileInView="visible"
-            variants={animateBtn}
-            whileHover={{ scale: 1.1 }}
+
+          <a
+            href="https://forms.gle/2uuebmvMV91kHZ6s7"
+            target="_self"
+            rel="noopener noreferrer"
           >
-            <a
-              href="https://forms.gle/2uuebmvMV91kHZ6s7"
-              target="_self"
-              rel="noopener noreferrer"
+            <motion.button
+              initial="hidden"
+              whileInView="visible"
+              variants={animateBtn}
+              whileHover={{ scale: 1.1 }}
             >
               Join Our Community
-            </a>
-          </motion.button>
+            </motion.button>{" "}
+          </a>
         </motion.div>
       </div>
 
@@ -92,15 +93,17 @@ const WhoWeAre = () => {
             Individuals and Organizations around the globe are rooting for us,
             be a part of the future we are creating. Partner with us.
           </motion.div>
-          <motion.button
-            initial="hidden"
-            whileInView="visible"
-            variants={animateBtn}
-            className="partner-btn"
-            whileHover={{ scale: 1.1 }}
-          >
-            Support IWB
-          </motion.button>
+          <a href="http://" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              initial="hidden"
+              whileInView="visible"
+              variants={animateBtn}
+              className="partner-btn"
+              whileHover={{ scale: 1.1 }}
+            >
+              Support IWB
+            </motion.button>
+          </a>
         </div>
         <div className="WhoWeAre__img partner-img">
           <motion.img

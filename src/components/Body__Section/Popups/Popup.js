@@ -10,11 +10,11 @@ const Popup = () => {
     document.getElementById("Popup").style.display = "none";
   };
 
-  const getHeight = () => {
-    var Height = window.innerHeight;
-    console.log(`${Height}px`);
-  };
-  getHeight();
+  // const getHeight = () => {
+  //   var Height = window.innerHeight;
+  //   console.log(`${Height}px`);
+  // };
+  // getHeight();
   return (
     <StylePopup id="Popup">
       <div className="close" onClick={closePopup}>

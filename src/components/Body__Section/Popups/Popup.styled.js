@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const StylePopup = styled.div`
   position: fixed;
   left: 50%;
-  top: 3.5rem;
-  transform: translateX(-50%);
-  z-index: 10;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
   @media screen and (max-width: 320px) {
     display: none;
   }
