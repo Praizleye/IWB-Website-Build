@@ -19,11 +19,7 @@ const Newsletter = () => {
           The IWB Newsletter
           <span>
             Subscribe to the Blue Letters
-            <LazyLoadImage
-              src={images.Line}
-              alt="small underline"
-              effect="blur"
-            />
+            <img src={images.Line} alt="small underline" />
           </span>
         </div>
         <div className="textContent">
@@ -71,7 +67,11 @@ const Newsletter = () => {
         </form> */}
       </div>
       <div className="imgContent">
-        <img src={images.Newsletter} alt="Newsletter figure" />
+        <LazyLoadImage
+          src={images.Newsletter}
+          alt="Newsletter figure"
+          effect="blur"
+        />
       </div>
     </StyleNewsletter>
   );
