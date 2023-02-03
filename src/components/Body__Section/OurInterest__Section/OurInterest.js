@@ -2,7 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { StyleOurInterest } from "./OurInterest.styled";
 import images from "../../../constants/images";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const OurInterest = () => {
   const animateHeading = {
     hidden: {
@@ -86,7 +87,11 @@ const OurInterest = () => {
         whileInView={highLight}
       >
         <div className="Ourinterest-img">
-          <img src={images.Interests} alt="Ourinterst-fig" />
+          <LazyLoadImage
+            src={images.Interests}
+            alt="Ourinterst-fig"
+            effect="blur"
+          />
         </div>
         <div className="Ourinterests-sections container">
           <div className="Ourinterest-section active">

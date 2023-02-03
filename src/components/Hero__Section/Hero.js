@@ -14,6 +14,9 @@ import {
   animateIlluminate,
 } from "./Animate/heroAnimate";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const Hero = () => {
   return (
     <div>
@@ -80,10 +83,11 @@ const Hero = () => {
           src={images.Light}
           alt="Illumination figure"
         />
-        <img
+        <LazyLoadImage
           className="heroImg"
           src={images.HeroImg}
           alt="Hero-section-figure"
+          effect="blur"
         />
       </StyleHero>
     </div>

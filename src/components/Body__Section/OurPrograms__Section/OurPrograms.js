@@ -5,6 +5,8 @@ import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const OurPrograms = () => {
   const animateHeading = {
@@ -58,7 +60,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card1} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card1}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Digital Monetization </div>
               <div className="card-textDesc">
@@ -74,7 +80,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card2} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card2}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Startup Clinic</div>
               <div className="card-textDesc">
@@ -89,7 +99,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card3} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card3}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Acceleration Conference</div>
               <div className="card-textDesc">
@@ -103,7 +117,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card4} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card4}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">School of Champions</div>
               <div className="card-textDesc">
@@ -117,7 +135,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card5} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card5}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Startup Fundbox</div>
               <div className="card-textDesc">
@@ -131,7 +153,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card6} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card6}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Capacity Conference</div>
               <div className="card-textDesc">
@@ -145,7 +171,11 @@ const OurPrograms = () => {
           <SplideSlide>
             <div className="card">
               <div className="card-img">
-                <img src={images.Card7} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Card7}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">Mentor-Me Compass</div>
               <div className="card-textDesc">

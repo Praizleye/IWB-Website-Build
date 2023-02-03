@@ -4,6 +4,9 @@ import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
 import { IoIosNotifications } from "react-icons/io";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Newsletter = () => {
   // const [input, setInput] = useState("");
   // const handleSubmit = (e) => {
@@ -16,7 +19,11 @@ const Newsletter = () => {
           The IWB Newsletter
           <span>
             Subscribe to the Blue Letters
-            <img src={images.Line} alt="small underline " />
+            <LazyLoadImage
+              src={images.Line}
+              alt="small underline"
+              effect="blur"
+            />
           </span>
         </div>
         <div className="textContent">

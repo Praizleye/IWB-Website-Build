@@ -3,7 +3,8 @@ import React from "react";
 // ? import styles
 import { StyleWhoWeAre } from "./WhoWeAre.styled";
 import images from "../../../constants/images";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import {
   animateHeading,
@@ -29,13 +30,14 @@ const WhoWeAre = () => {
       </div>
       <div className="About-body container">
         <motion.div className="WhoWeAre__img">
-          <motion.img
+          <LazyLoadImage
             // initial="hidden"
             // whileInView="visible"
             // variants={animateImg}
-            viewport={{ once: true }}
+            // viewport={{ once: true }}
             src={images.WhoWeAre}
             alt="Who-we-are-logo"
+            effect="blur"
           />
           <div className="img-cover"></div>
         </motion.div>
@@ -106,13 +108,10 @@ const WhoWeAre = () => {
           </a>
         </div>
         <div className="WhoWeAre__img partner-img">
-          <motion.img
-            // initial="hidden"
-            // whileInView="visible"
-            // variants={animateImg2}
-            // viewport={{ once: true }}
+          <LazyLoadImage
             src={images.PartnerUs}
             alt="PartnerUs-figure"
+            effect="blur"
           />
         </div>
       </motion.div>

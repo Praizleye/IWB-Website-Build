@@ -6,7 +6,8 @@ import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { motion } from "framer-motion";
 import { animateStars, animateStar } from "./animateTestimonial";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Testimonials = () => {
   return (
     <StyleTestimonials id="Testimonial">
@@ -40,7 +41,11 @@ const Testimonials = () => {
         <SplideTrack>
           <SplideSlide>
             <div className="card">
-              <img src={images.Testator__1} alt="testator-pofile" />
+              <LazyLoadImage
+                src={images.Testator__1}
+                alt="testator-pofile"
+                effect="blur"
+              />
               <div className="card-name">Godman, Onahi</div>
               <div className="card-date">November, 2022.</div>
               <motion.div
@@ -84,7 +89,11 @@ const Testimonials = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="card">
-              <img src={images.Testator__2} alt="testator-pofile" />
+              <LazyLoadImage
+                src={images.Testator__2}
+                alt="testator-pofile"
+                effect="blur"
+              />
               <div className="card-name">Patience, Ukange</div>
               <div className="card-date">March, 2022.</div>
               <motion.div
@@ -130,7 +139,11 @@ const Testimonials = () => {
 
           <SplideSlide>
             <div className="card">
-              <img src={images.Testator__3} alt="testator-pofile" />
+              <LazyLoadImage
+                src={images.Testator__3}
+                alt="testator-pofile"
+                effect="blur"
+              />
               <div className="card-name">Chidera, Nweze</div>
               <div className="card-date">November, 2022.</div>
               <motion.div
@@ -175,7 +188,11 @@ const Testimonials = () => {
           </SplideSlide>
           <SplideSlide>
             <div className="card">
-              <img src={images.Testator__4} alt="testator-pofile" />
+              <LazyLoadImage
+                src={images.Testator__4}
+                alt="testator-pofile"
+                effect="blur"
+              />
               <div className="card-name">Precita, Ejiroghene</div>
               <div className="card-date">November, 2022.</div>
               <motion.div

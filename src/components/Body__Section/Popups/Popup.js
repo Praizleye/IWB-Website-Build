@@ -4,7 +4,8 @@ import images from "../../../constants/images";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { AiFillCloseCircle } from "react-icons/ai";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 const Popup = () => {
   const closePopup = () => {
     document.getElementById("Popup").style.display = "none";
@@ -56,12 +57,17 @@ const Popup = () => {
           <SplideSlide>
             <div className="card" id="Community">
               <div className="card-img">
-                <img src={images.Popup1} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Popup1}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">
                 Join Our{" "}
                 <span style={{ color: "#FFE401" }}>
-                  Community <img src={images.Stroke1} alt="stroke-1" />
+                  Community{" "}
+                  <LazyLoadImage src={images.Stroke1} alt="stroke-1" />
                 </span>{" "}
               </div>
               <div className="card-textDesc">
@@ -84,12 +90,16 @@ const Popup = () => {
           <SplideSlide>
             <div className="card card2">
               <div className="card-img">
-                <img src={images.Popup2} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Popup2}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">
                 Startup{" "}
                 <span style={{ color: "#FFE401" }}>
-                  Clinic <img src={images.Stroke1} alt="stroke-1" />
+                  Clinic <LazyLoadImage src={images.Stroke1} alt="stroke-1" />
                 </span>
               </div>
               <div className="card-textDesc">
@@ -104,13 +114,18 @@ const Popup = () => {
           <SplideSlide>
             <div className="card card3">
               <div className="card-img">
-                <img src={images.Popup3} alt="card-figure" />
+                <LazyLoadImage
+                  src={images.Popup3}
+                  alt="card-figure"
+                  effect="blur"
+                />
               </div>
               <div className="card-subHeading">
                 Digital
                 <span style={{ color: "#0047af" }}>
                   {" "}
-                  Monetization <img src={images.Stroke2} alt="stroke-2" />{" "}
+                  Monetization{" "}
+                  <LazyLoadImage src={images.Stroke2} alt="stroke-2" />{" "}
                 </span>{" "}
                 Conference
               </div>
