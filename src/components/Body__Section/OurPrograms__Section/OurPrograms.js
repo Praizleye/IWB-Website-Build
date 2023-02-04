@@ -64,6 +64,8 @@ const OurPrograms = () => {
                   src={images.Card1}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
+                  visibleByDefault={images.Card1}
                 />
               </div>
               <div className="card-subHeading">Digital Monetization </div>

@@ -85,6 +85,14 @@ export const StyleOurPrograms = styled.div`
             width: 19rem;
             height: 14rem;
           }
+          @media screen and (max-width: 470px) {
+            width: 16rem;
+            height: 14rem;
+          }
+          @media screen and (max-width: 410px) {
+            width: 15rem;
+            height: 14rem;
+          }
         }
       }
       div.card-subHeading {
