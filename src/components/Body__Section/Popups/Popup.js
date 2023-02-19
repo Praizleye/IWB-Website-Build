@@ -78,7 +78,7 @@ const Popup = () => {
                 in the marketplace.
               </div>
               <a
-                href="https://forms.gle/2uuebmvMV91kHZ6s7"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
                 target="_self"
                 rel="noopener noreferrer"
               >
@@ -130,8 +130,10 @@ const Popup = () => {
                 Conference
               </div>
               <div className="card-textDesc">
-                Exposing young professionals to digital enterpreneurship
-                monetization. Event features exhibition of projects and more.{" "}
+                Learn from the best at one of Africa's largest Digital Money
+                Summits. Unravelling the secrets behind money in a digital age
+                and the future. Explore opportunities on Web3, tokenization,
+                social commerce, affiliate marketing, metaverse and lots more.{" "}
               </div>
               <button>Register Now</button>
             </div>

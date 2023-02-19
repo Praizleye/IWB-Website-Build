@@ -59,8 +59,8 @@ const WhoWeAre = () => {
           </div>
 
           <a
-            href="https://forms.gle/2uuebmvMV91kHZ6s7"
-            target="_self"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <motion.button
@@ -95,7 +95,11 @@ const WhoWeAre = () => {
             Individuals and Organizations around the globe are rooting for us,
             be a part of the future we are creating. Partner with us.
           </motion.div>
-          <a href="http://" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.button
               initial="hidden"
               whileInView="visible"

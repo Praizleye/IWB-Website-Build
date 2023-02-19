@@ -60,17 +60,33 @@ const Footer = () => {
             <a href="#Testimonial">Testimonial</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Blog">Blog</a>
+            <a
+              href="https://www.linkedin.com/company/ideas-worth-billions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://forms.gle/2uuebmvMV91kHZ6s7">Community</a>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Community
+            </a>
           </motion.li>
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
           Contact
           <motion.li variants={animateSubheading}>
-            <a href="mailto:connect.iwb@gmail.com?subject=Mail from our Website">
+            <a
+              href="mailto:connect.iwb@gmail.com?subject=Mail from our Website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               connect.iwb@gmail.com
             </a>
           </motion.li>
@@ -82,37 +98,61 @@ const Footer = () => {
         <motion.ul variants={animateHeading}>
           Connect
           <motion.li variants={animateSubheading}>
-            <a href="https://www.linkedin.com/company/ideas-worth-billions/">
+            <a
+              href="https://www.linkedin.com/company/ideas-worth-billions/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiFillLinkedin />
               <span>LinkedIn</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://web.facebook.com/iwb.official/">
+            <a
+              href="https://web.facebook.com/iwb.official/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiFillFacebook />
               <span>Facebook</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://t.me/iwb_official">
+            <a
+              href="https://t.me/iwb_official"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsTelegram />
               <span>Telegram</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://twitter.com/iwb_official">
+            <a
+              href="https://twitter.com/iwb_official"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiFillTwitterSquare />
               <span>Twitter</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://www.youtube.com/@ideasworthbillions">
+            <a
+              href="https://www.youtube.com/@ideasworthbillions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiFillYoutube />
               <span>Youtube</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="https://anchor.fm/ideasworthbillions">
+            <a
+              href="https://anchor.fm/ideasworthbillions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsSpotify />
               <span>Spotify</span>
             </a>

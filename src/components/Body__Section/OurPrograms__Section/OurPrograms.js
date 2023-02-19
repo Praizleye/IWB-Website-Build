@@ -31,6 +31,7 @@ const OurPrograms = () => {
         Our programs
         <motion.span
           initial="hidden"
+          n
           whileInView="visible"
           variants={animateHeading}
         >
@@ -75,7 +76,13 @@ const OurPrograms = () => {
                 tokenization, metaverse, affiliate marketing, social commerce,
                 social monetization and lots more.
               </div>
-              <button>Register Now</button>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfdyd-FHTcHou2wHEuaCTD6BDQlJat00C_1UNm_sFk7YfHa7w/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Register Now</button>
+              </a>
             </div>
           </SplideSlide>
 
@@ -86,6 +93,7 @@ const OurPrograms = () => {
                   src={images.Card2}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
                 />
               </div>
               <div className="card-subHeading">Startup Clinic</div>
@@ -94,25 +102,13 @@ const OurPrograms = () => {
                 Startups are taught by industry experts on business technology,
                 formalization, product launching and seed funding.
               </div>
-              <button>Register Now</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <LazyLoadImage
-                  src={images.Card3}
-                  alt="card-figure"
-                  effect="blur"
-                />
-              </div>
-              <div className="card-subHeading">Acceleration Conference</div>
-              <div className="card-textDesc">
-                Exposing young professionals to digital enterpreneurship and
-                monetization. Event features exhibition of projects and more.{" "}
-              </div>
-              <button className="comingSoon">Coming Soon</button>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfSly942H83RvdsP5qY_BfGTCI6kmTYoNbl9IfYqU-GDoHi9g/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Register Now</button>
+              </a>
             </div>
           </SplideSlide>
 
@@ -123,6 +119,7 @@ const OurPrograms = () => {
                   src={images.Card4}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
                 />
               </div>
               <div className="card-subHeading">School of Champions</div>
@@ -130,7 +127,34 @@ const OurPrograms = () => {
                 A monthly edition where we talk about emerging technologies,
                 personal development, and financial growth.
               </div>
-              <button className="comingSoon">Coming Soon</button>
+              <a
+                href="https://t.me/iwb_official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Enter Classroom</button>
+              </a>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className="card">
+              <div className="card-img">
+                <LazyLoadImage
+                  src={images.Card3}
+                  alt="card-figure"
+                  effect="blur"
+                  height={"14rem"}
+                />
+              </div>
+              <div className="card-subHeading">Acceleration Conference</div>
+              <div className="card-textDesc">
+                Exposing young professionals to digital enterpreneurship and
+                monetization. Event features exhibition of projects and more.{" "}
+              </div>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+                <button className="comingSoon">Coming Soon</button>
+              </a>
             </div>
           </SplideSlide>
 
@@ -141,6 +165,7 @@ const OurPrograms = () => {
                   src={images.Card5}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
                 />
               </div>
               <div className="card-subHeading">Startup Fundbox</div>
@@ -159,6 +184,7 @@ const OurPrograms = () => {
                   src={images.Card6}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
                 />
               </div>
               <div className="card-subHeading">Capacity Conference</div>
@@ -177,6 +203,7 @@ const OurPrograms = () => {
                   src={images.Card7}
                   alt="card-figure"
                   effect="blur"
+                  height={"14rem"}
                 />
               </div>
               <div className="card-subHeading">Mentor-Me Compass</div>
