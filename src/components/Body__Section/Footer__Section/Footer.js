@@ -30,9 +30,13 @@ const Footer = () => {
           We are building a new generation of young professionals leveraging on
           the new economy.
         </motion.div>
-        <button>
-          <a href="https://forms.gle/2uuebmvMV91kHZ6s7">Get Involved</a>
-        </button>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"
+          target="_blanK"
+          rel="noopener noreferrer"
+        >
+          <button>Get Involved</button>
+        </a>
       </motion.div>
       <motion.div
         className="links"

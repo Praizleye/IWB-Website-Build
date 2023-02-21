@@ -22,24 +22,25 @@ export const StyleFooter = styled.div`
         font-size: 0.9rem;
       }
     }
-    button {
-      font-size: 1.1rem;
-      background: #ffe401;
-      height: 3.5rem;
-      width: 12rem;
-      border: none;
-      margin-top: 1.5rem;
-      border-radius: 7px;
-      font-weight: bold;
-      letter-spacing: 0.03rem;
-      @media screen and (max-width: 780px) {
-        height: 3rem;
-        width: 10rem;
-        font-size: 1rem;
-      }
-      a {
-        text-decoration: none;
-        color: #0e0d0d;
+    a {
+      color: #0e0d0d;
+      text-decoration: none;
+      button {
+        cursor: pointer;
+        font-size: 1.1rem;
+        background: #ffe401;
+        height: 3.5rem;
+        width: 12rem;
+        border: none;
+        margin-top: 1.5rem;
+        border-radius: 7px;
+        font-weight: bold;
+        letter-spacing: 0.03rem;
+        @media screen and (max-width: 780px) {
+          height: 3rem;
+          width: 10rem;
+          font-size: 1rem;
+        }
       }
     }
   }

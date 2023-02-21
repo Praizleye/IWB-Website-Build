@@ -67,13 +67,15 @@ const Hero = () => {
             Connecting 500,000,000 young Africans to digital solutions and
             opportunities in 2030.
           </motion.div>
-          <motion.button
-            initial="hidden"
-            animate="visible"
-            variants={animateBtn}
-          >
-            Get Started
-          </motion.button>
+          <a href="t.me/iwb_official" target="_blank" rel="noopener noreferrer">
+            <motion.button
+              initial="hidden"
+              animate="visible"
+              variants={animateBtn}
+            >
+              Get Started
+            </motion.button>
+          </a>
         </div>
         <motion.img
           initial="hidden"
