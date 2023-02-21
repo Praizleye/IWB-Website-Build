@@ -12,24 +12,21 @@ import images from "../../../constants/images";
 function Nav() {
   const [toggle, setToggle] = useState(true);
 
-  const [blogClick, setBlogClick] = useState(false);
-
   const handleBlogClick = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     const navLink = document.querySelectorAll("#nav-link");
 
     if (event.target === navLink[4]) {
       const blogNav = navLink[4];
       console.log(blogNav);
       console.log(event.target.innerHTML);
-      window.open(blogNav.href, "_blank");
-
-      blogNav.innerHTML = "Blog";
-      blogNav.setAttribute(
-        "href",
-        "https://www.linkedin.com/company/ideas-worth-billions/"
+      window.open(
+        "https://www.linkedin.com/company/ideas-worth-billions/",
+        "_blank",
+        "noopener,noreferrer"
       );
 
+      blogNav.innerHTML = "Blog";
       return false;
     }
   };
@@ -101,7 +98,13 @@ function Nav() {
                     }}
                   >
                     <div />
-                    <a href={`#${item}`}>{item}</a>
+                    <a
+                      href={`#${item}`}
+                      id="nav-link"
+                      onClick={handleBlogClick}
+                    >
+                      {item}
+                    </a>
                   </li>
                 ))}
               </motion.ul>
