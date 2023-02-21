@@ -30,6 +30,24 @@ function Nav() {
       return false;
     }
   };
+  const handleBlogClickMobile = (event) => {
+    // event.preventDefault();
+    const navLink = document.querySelectorAll("#nav-link-mobile");
+
+    if (event.target === navLink[4]) {
+      const blogNav = navLink[4];
+      console.log(blogNav);
+      console.log(event.target.innerHTML);
+      window.open(
+        "https://www.linkedin.com/company/ideas-worth-billions/",
+        "_blank",
+        "noopener,noreferrer"
+      );
+
+      blogNav.innerHTML = "Blog";
+      return false;
+    }
+  };
 
   return (
     <>
@@ -100,9 +118,10 @@ function Nav() {
                     <div />
                     <a
                       href={`#${item}`}
-                      id="nav-link"
-                      onClick={handleBlogClick}
+                      id="nav-link-mobile"
+                      onClick={handleBlogClickMobile}
                     >
+                      {" "}
                       {item}
                     </a>
                   </li>
