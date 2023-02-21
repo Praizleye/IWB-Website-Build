@@ -4,14 +4,16 @@ import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
 import { IoIosNotifications } from "react-icons/io";
-
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+
 const Newsletter = () => {
-  // const [input, setInput] = useState("");
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
+  // const [signUpForm, setSignUpForm] = React.useState({ content: "" });
+
+  // const handleSignUpForm = () => {
+  //   console.log(setSignUpForm({ content: "Hello" }));
   // };
+
   return (
     <StyleNewsletter>
       <div className="Content">
@@ -28,7 +30,7 @@ const Newsletter = () => {
           content shared regularly on the Blue Letters
         </div>
         <a
-          href="https://www.getrevue.co/profile/iwb_official"
+          href="https://mailchi.mp/e975b61c4013/subscribe-to-our-newsletter"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,6 +38,7 @@ const Newsletter = () => {
             whileInView="animate"
             variants={subscribeBtn}
             type="submit"
+            // onClick={handleSignUpForm}
           >
             <IoIosNotifications />
             {"        "}
@@ -43,6 +46,7 @@ const Newsletter = () => {
             Subscribe
           </motion.button>
         </a>
+        {/* <SignUpForm /> */}
         {/* <form
           className="action"
           onSubmit={handleSubmit}

@@ -31,7 +31,6 @@ const OurPrograms = () => {
         Our programs
         <motion.span
           initial="hidden"
-          n
           whileInView="visible"
           variants={animateHeading}
         >
