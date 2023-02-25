@@ -26,7 +26,7 @@ function Nav() {
         "noopener,noreferrer"
       );
 
-      blogNav.innerHTML = "Blog";
+      blogNav.innerHTML = "LinkedIn";
       return false;
     }
   };
@@ -63,7 +63,7 @@ function Nav() {
               "Impact report",
               "Our programs",
               "Resources",
-              "Blog",
+              "LinkedIn",
               "Free downloads",
               "Join community",
             ].map((item, index) => (
@@ -104,7 +104,7 @@ function Nav() {
                   "Impact report",
                   "Our programs",
                   "Resources",
-                  "Blog",
+                  "LinkedIn",
                   "Free downloads",
                   "Join community",
                 ].map((item, index) => (

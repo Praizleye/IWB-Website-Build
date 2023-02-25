@@ -69,7 +69,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Blog
+              Blog(LinkedIn)
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
