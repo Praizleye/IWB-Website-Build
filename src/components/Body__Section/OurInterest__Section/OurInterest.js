@@ -91,6 +91,7 @@ const OurInterest = () => {
             src={images.Interests}
             alt="Ourinterst-fig"
             effect="blur"
+            height={"25rem"}
           />
         </div>
         <div className="Ourinterests-sections container">

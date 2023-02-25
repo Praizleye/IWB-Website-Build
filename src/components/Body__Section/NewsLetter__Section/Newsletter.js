@@ -46,35 +46,14 @@ const Newsletter = () => {
             Subscribe
           </motion.button>
         </a>
-        {/* <SignUpForm /> */}
-        {/* <form
-          className="action"
-          onSubmit={handleSubmit}
-          id="revue-form"
-          name="revue-form"
-          target="_blank"
-        >
-          <input
-            type="email"
-            placeholder="Enter your email address..."
-            id="member_email"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-          <motion.button
-            whileInView="animate"
-            variants={subscribeBtn}
-            type="submit"
-          >
-            Subscribe
-          </motion.button>
-        </form> */}
       </div>
       <div className="imgContent">
         <LazyLoadImage
           src={images.Newsletter}
           alt="Newsletter figure"
           effect="blur"
+          width={images.height}
+          height={images.width}
         />
       </div>
     </StyleNewsletter>
