@@ -63,7 +63,7 @@ const Footer = () => {
           <motion.li variants={animateSubheading}>
             <a href="#Testimonial">Testimonial</a>
           </motion.li>
-          <motion.li variants={animateSubheading}>
+          {/* <motion.li variants={animateSubheading}>
             <a
               href="https://www.linkedin.com/company/ideas-worth-billions/"
               target="_blank"
@@ -71,7 +71,7 @@ const Footer = () => {
             >
               Blog(LinkedIn)
             </a>
-          </motion.li>
+          </motion.li> */}
           <motion.li variants={animateSubheading}>
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
