@@ -14,12 +14,12 @@
     },
      {
       "src": "Public_IWB.jpg 192",
-      "type": "image/png",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
      {
       "src": "Public_IWB.jpg 512",
-      "type": "image/png",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
    
