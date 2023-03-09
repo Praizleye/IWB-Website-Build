@@ -13,13 +13,13 @@
       "type": "image/x-icon"
     },
      {
-      "src": "Public_IWB.jpg 192",
-      "type": "image/jpg",
+      "src": "IWB192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
      {
-      "src": "Public_IWB.jpg 512",
-      "type": "image/jpg",
+      "src": "IWB512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
    
