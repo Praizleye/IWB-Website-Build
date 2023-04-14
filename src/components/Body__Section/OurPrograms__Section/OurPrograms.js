@@ -202,7 +202,7 @@ const OurPrograms = () => {
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
-                  src={images.Card6}
+                  src={images.Card3}
                   alt="card-figure"
                   effect="blur"
                   height={"14rem"}
