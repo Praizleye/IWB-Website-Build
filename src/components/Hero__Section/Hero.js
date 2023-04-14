@@ -77,7 +77,7 @@ const Hero = () => {
               animate="visible"
               variants={animateBtn}
             >
-              Get Started
+              Join Bridge
             </motion.button>
           </a>
         </div>

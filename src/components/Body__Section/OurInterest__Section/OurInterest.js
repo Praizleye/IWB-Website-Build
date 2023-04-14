@@ -70,15 +70,15 @@ const OurInterest = () => {
   highLight();
 
   return (
-    <StyleOurInterest id="ourInterests">
+    <StyleOurInterest id="Scope">
       <div className="heading">
-        Our interests
+        Our scope
         <motion.span
           initial="hidden"
           whileInView="visible"
           variants={animateHeading}
         >
-          Our interests
+          Our scope
         </motion.span>
       </div>
 
@@ -96,28 +96,24 @@ const OurInterest = () => {
         </div>
         <div className="Ourinterests-sections container">
           <div className="Ourinterest-section active">
-            <div className="section-1 subheading active">
-              Business Development
-            </div>
+            <div className="section-1 subheading active"> Technology</div>
             <div className="section-1 textDesc">
-              We build entrepreneurs in our community, our programs and
-              resources help them grow their businesses for positive social
-              impact.
+              We help young Africans explore tech opportunities and build
+              careers in tech.
             </div>
           </div>
           <div className="Ourinterest-section">
-            <div className="section-2 subheading">Digital Technology</div>
+            <div className="section-2 subheading">Business</div>
             <div className="section-2 textDesc">
-              We share explosive insights on Digital Productivity, Social
-              Monetization, Marketing, Networking, and other emerging
-              technologies.
+              We build entrepreneurs and grow the next generation of
+              industry-leading startups.
             </div>
           </div>
           <div className="Ourinterest-section">
-            <div className="section-3 subheading">Leadership Development</div>
+            <div className="section-3 subheading">Leadership</div>
             <div className="section-3 textDesc">
-              We are building a community of Africa’s finest thought-leaders who
-              are key players of positive change and nation progress.{" "}
+              We provide resourceful leadership content for young leaders and
+              working professionals to thrive in the marketplace.
             </div>
           </div>
         </div>

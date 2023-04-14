@@ -12,42 +12,42 @@ import images from "../../../constants/images";
 function Nav() {
   const [toggle, setToggle] = useState(true);
 
-  const handleBlogClick = (event) => {
-    // event.preventDefault();
-    const navLink = document.querySelectorAll("#nav-link");
+  // const handleBlogClick = (event) => {
+  //   // event.preventDefault();
+  //   const navLink = document.querySelectorAll("#nav-link");
 
-    if (event.target === navLink[4]) {
-      const blogNav = navLink[4];
-      console.log(blogNav);
-      console.log(event.target.innerHTML);
-      window.open(
-        "https://www.linkedin.com/company/ideas-worth-billions/",
-        "_blank",
-        "noopener,noreferrer"
-      );
+  //   if (event.target === navLink[4]) {
+  //     const blogNav = navLink[4];
+  //     console.log(blogNav);
+  //     console.log(event.target.innerHTML);
+  //     window.open(
+  //       "https://www.linkedin.com/company/ideas-worth-billions/",
+  //       "_blank",
+  //       "noopener,noreferrer"
+  //     );
 
-      blogNav.innerHTML = "LinkedIn";
-      return false;
-    }
-  };
-  const handleBlogClickMobile = (event) => {
-    // event.preventDefault();
-    const navLink = document.querySelectorAll("#nav-link-mobile");
+  //     blogNav.innerHTML = "LinkedIn";
+  //     return false;
+  //   }
+  // };
+  // const handleBlogClickMobile = (event) => {
+  //   // event.preventDefault();
+  //   const navLink = document.querySelectorAll("#nav-link-mobile");
 
-    if (event.target === navLink[4]) {
-      const blogNav = navLink[4];
-      console.log(blogNav);
-      console.log(event.target.innerHTML);
-      window.open(
-        "https://www.linkedin.com/company/ideas-worth-billions/",
-        "_blank",
-        "noopener,noreferrer"
-      );
+  //   if (event.target === navLink[4]) {
+  //     const blogNav = navLink[4];
+  //     console.log(blogNav);
+  //     console.log(event.target.innerHTML);
+  //     window.open(
+  //       "https://www.linkedin.com/company/ideas-worth-billions/",
+  //       "_blank",
+  //       "noopener,noreferrer"
+  //     );
 
-      blogNav.innerHTML = "Blog";
-      return false;
-    }
-  };
+  //     blogNav.innerHTML = "Blog";
+  //     return false;
+  //   }
+  // };
 
   return (
     <>
@@ -61,16 +61,15 @@ function Nav() {
             {[
               "About",
               "Impact report",
-              "Our programs",
+              "Programs",
+              "Scope",
               "Resources",
-              "LinkedIn",
-              "Free downloads",
-              "Join community",
+              "Sign Up",
             ].map((item, index) => (
               <li className="app__flex" key={index}>
                 <div />
 
-                <a href={`#${item}`} id="nav-link" onClick={handleBlogClick}>
+                <a href={`#${item}`} id="nav-link">
                   {" "}
                   {item}
                 </a>
@@ -102,11 +101,10 @@ function Nav() {
                 {[
                   "About",
                   "Impact report",
-                  "Our programs",
+                  "Programs",
+                  "Scope",
                   "Resources",
-                  "LinkedIn",
-                  "Free downloads",
-                  "Join community",
+                  "Sign Up",
                 ].map((item, index) => (
                   <li
                     className="app__navbar-link"
@@ -116,11 +114,7 @@ function Nav() {
                     }}
                   >
                     <div />
-                    <a
-                      href={`#${item}`}
-                      id="nav-link-mobile"
-                      onClick={handleBlogClickMobile}
-                    >
+                    <a href={`#${item}`} id="nav-link-mobile">
                       {" "}
                       {item}
                     </a>

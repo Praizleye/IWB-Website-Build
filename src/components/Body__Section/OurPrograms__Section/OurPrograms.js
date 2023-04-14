@@ -26,7 +26,7 @@ const OurPrograms = () => {
   };
 
   return (
-    <StyleOurPrograms id="Our programs">
+    <StyleOurPrograms id="Programs">
       <div className="heading">
         Our programs
         <motion.span
@@ -68,41 +68,15 @@ const OurPrograms = () => {
                   visibleByDefault={images.Card1}
                 />
               </div>
-              <div className="card-subHeading">Digital Monetization </div>
+              <div className="card-subHeading">Digital Money Conference </div>
               <div className="card-textDesc">
-                One of the largest Digital Money Summit in Africa. Bringing
-                together industry veterans, exposing secrets on web3,
-                tokenization, metaverse, affiliate marketing, social commerce,
-                social monetization and lots more.
+                Learn from the best at one of Africa’s largest digital money
+                summits. Explore opportunities on web3, tokenization,
+                social-commerce, affiliate marketing and lots more. Understand
+                the future of money and how to position yourself to earn it.
               </div>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfdyd-FHTcHou2wHEuaCTD6BDQlJat00C_1UNm_sFk7YfHa7w/viewform?usp=sf_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button>Register Now</button>
-              </a>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <LazyLoadImage
-                  src={images.Card2}
-                  alt="card-figure"
-                  effect="blur"
-                  height={"14rem"}
-                />
-              </div>
-              <div className="card-subHeading">Startup Clinic</div>
-              <div className="card-textDesc">
-                A 6 weeks course curated for entrepreneurs and intrapreneurs.
-                Startups are taught by industry experts on business technology,
-                formalization, product launching and seed funding.
-              </div>
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfSly942H83RvdsP5qY_BfGTCI6kmTYoNbl9IfYqU-GDoHi9g/viewform?usp=sf_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -121,10 +95,11 @@ const OurPrograms = () => {
                   height={"14rem"}
                 />
               </div>
-              <div className="card-subHeading">School of Champions</div>
+              <div className="card-subHeading">i-School</div>
               <div className="card-textDesc">
-                A monthly edition where we talk about emerging technologies,
-                personal development, and financial growth.
+                School of the Internet. A monthly series where we bring in tech
+                leaders to teach about emerging technologies, opportunities and
+                tools available on the internet for productivity and profit.
               </div>
               <a
                 href="https://t.me/iwb_official"
@@ -140,19 +115,65 @@ const OurPrograms = () => {
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
-                  src={images.Card3}
+                  src={images.Card7}
                   alt="card-figure"
                   effect="blur"
                   height={"14rem"}
                 />
               </div>
-              <div className="card-subHeading">Acceleration Conference</div>
+              <div className="card-subHeading">Ladder</div>
               <div className="card-textDesc">
-                Exposing young professionals to digital enterpreneurship and
-                monetization. Event features exhibition of projects and more.{" "}
+                Get mentored by experts in the industry with proven results in
+                business, leadership or technology. Ladder is a six month,
+                one-on-one mentoring program tailored to help you rise from 0-1.
               </div>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                <button className="comingSoon">Coming Soon</button>
+              <button className="comingSoon">Coming Soon</button>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className="card">
+              <div className="card-img">
+                <LazyLoadImage
+                  src={images.Card6}
+                  alt="card-figure"
+                  effect="blur"
+                  height={"14rem"}
+                />
+              </div>
+              <div className="card-subHeading">HighTech</div>
+              <div className="card-textDesc">
+                High School Tech Program, empowering thousands of high-school
+                students with in-demand tech skills, making them ready for a
+                technocentric society.
+              </div>
+              <button className="comingSoon">Starts this Summer</button>
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className="card">
+              <div className="card-img">
+                <LazyLoadImage
+                  src={images.Card2}
+                  alt="card-figure"
+                  effect="blur"
+                  height={"14rem"}
+                />
+              </div>
+              <div className="card-subHeading">Startup Clinic</div>
+              <div className="card-textDesc">
+                A 6-week Startup Nursery Program, where startups are admitted to
+                learn the physics of business success in the 21st century. Top
+                performing startups are profiled on the IWB Startup FundBox for
+                potential seed funding.
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfSly942H83RvdsP5qY_BfGTCI6kmTYoNbl9IfYqU-GDoHi9g/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Sign Up</button>
               </a>
             </div>
           </SplideSlide>
@@ -169,10 +190,11 @@ const OurPrograms = () => {
               </div>
               <div className="card-subHeading">Startup Fundbox</div>
               <div className="card-textDesc">
-                The IWB Capital, supporting innovative and viable startup
-                businesses. The Fundbox exists to help businesses scale.
+                IWB Capital invests in early-stage, technology-driven startups
+                that have completed the IWB Startup Clinic program and have been
+                expertly structured for industry success by our team.
               </div>
-              <button className="comingSoon">Coming Soon</button>
+              <button className="comingSoon">Opens Soon</button>
             </div>
           </SplideSlide>
 
@@ -186,32 +208,15 @@ const OurPrograms = () => {
                   height={"14rem"}
                 />
               </div>
-              <div className="card-subHeading">Capacity Conference</div>
+              <div className="card-subHeading">Acceler8t</div>
               <div className="card-textDesc">
-                For High School Students, CapCon exposes them to Digital
-                Productivity, Social Monetization and Digital Entrepreneurship.
+                A campus business program where entrepreneurs in campuses are
+                taught about business success. Event features pitching and
+                exhibition of innovative projects. Top performing entrepreneurs
+                are enlisted into the IWB Startup Clinic, which includes funding
+                opportunities.
               </div>
-              <button className="comingSoon">Coming Soon</button>
-            </div>
-          </SplideSlide>
-
-          <SplideSlide>
-            <div className="card">
-              <div className="card-img">
-                <LazyLoadImage
-                  src={images.Card7}
-                  alt="card-figure"
-                  effect="blur"
-                  height={"14rem"}
-                />
-              </div>
-              <div className="card-subHeading">Mentor-Me Compass</div>
-              <div className="card-textDesc">
-                Tailored mentoring provided by industry leaders accepted into
-                the IWB Coaches Council. The compass is a one-one guide for
-                youngsters.
-              </div>
-              <button className="comingSoon">Coming Soon</button>
+              <button className="comingSoon">Starts Soon</button>
             </div>
           </SplideSlide>
         </SplideTrack>

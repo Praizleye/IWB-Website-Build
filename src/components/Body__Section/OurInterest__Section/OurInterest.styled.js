@@ -61,16 +61,16 @@ export const StyleOurInterest = styled.div`
     div.Ourinterest-img {
       img {
         width: 40rem;
-        height: 30rem;
+        height: 42rem;
         object-fit: cover;
-        object-position: center center;
+        object-position: 50%;
         @media screen and (max-width: 1200px) {
-          width: 30rem;
-          height: 30rem;
+          width: 32rem;
+          height: 35rem;
         }
         @media screen and (max-width: 930px) {
           width: 23rem;
-          height: 25rem;
+          height: 30rem;
         }
         @media screen and (max-width: 760px) {
           width: 20rem;

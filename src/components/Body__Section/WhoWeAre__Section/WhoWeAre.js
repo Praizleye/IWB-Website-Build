@@ -51,11 +51,11 @@ const WhoWeAre = () => {
         >
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
-            Ideas Worth Billions is Africa’s fastest growing Human Capacity
-            Development Network. Brooding a thriving community of Africa’s
-            finest thought leaders, creators, and technopreneurs imbued with
-            positive values and in-demand skills for sheer excellence in career,
-            leadership, business, tech and everything in-between.
+            Ideas Worth Billions is Africa's leading Human Capacity Development
+            Network. Raising a new crop of young Africans and Professionals
+            imbued with value and in-demand skills for global excellence in
+            Business, Technology and Leadership. IWB envisions to connect 500m
+            youths in Africa to Digital Solutions and Opportunities in 2030.
           </div>
 
           <a
@@ -69,7 +69,7 @@ const WhoWeAre = () => {
               variants={animateBtn}
               whileHover={{ scale: 1.1 }}
             >
-              Join Our Community
+              Sign Up
             </motion.button>{" "}
           </a>
         </motion.div>

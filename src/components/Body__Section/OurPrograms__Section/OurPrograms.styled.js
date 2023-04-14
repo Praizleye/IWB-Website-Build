@@ -109,16 +109,16 @@ export const StyleOurPrograms = styled.div`
         }
       }
       div.card-textDesc {
-        padding: 1rem;
+        padding: 0 1rem;
         font-size: 0.9rem;
         height: 7rem;
         @media screen and (max-width: 1200px) {
-          padding: 0.5rem 1.5rem;
+          padding: 0.2rem 1rem;
           font-size: 0.8rem;
         }
         @media screen and (max-width: 410px) {
-          padding: 0.5rem 0.5rem;
-          font-size: 0.8rem;
+          padding: 0 0.5rem;
+          font-size: 0.7rem;
         }
       }
       button {

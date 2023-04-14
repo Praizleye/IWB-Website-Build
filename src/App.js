@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setshowPopup(true);
-    }, 12000);
+    }, 25000);
   }, [showPopup]);
 
   return (

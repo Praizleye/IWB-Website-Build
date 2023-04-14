@@ -101,6 +101,7 @@ export const NavStyle = styled.div`
     align-items: center;
     border-radius: 4px;
     margin-right: 4rem;
+
     @media screen and (max-width: 1200px) {
       margin-right: 2rem;
       height: 2.5rem;
@@ -117,6 +118,7 @@ export const NavStyle = styled.div`
       padding: 0.11rem 0.5rem 0 0.5rem;
       text-decoration: none;
       font-weight: 500;
+      padding: 0 1rem;
       @media screen and (max-width: 990px) {
         font-size: 0.9rem;
       }
@@ -134,6 +136,7 @@ export const NavStyle = styled.div`
     align-items: center;
     border-radius: 4px;
     margin-right: 2rem;
+
     @media screen and (max-width: 1200px) {
       height: 2.5rem;
       margin-top: 0.25rem;
@@ -147,7 +150,7 @@ export const NavStyle = styled.div`
 
     a {
       font-weight: bold;
-      padding: 0.11rem 0.5rem 0 0.5rem;
+      padding: 0.11rem 1rem 0 1rem;
       font-weight: 400;
       :hover {
         border: none;

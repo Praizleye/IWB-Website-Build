@@ -27,8 +27,9 @@ const Footer = () => {
         <motion.span variants={animateSubheading}>Connect . </motion.span>{" "}
         <motion.span variants={animateSubheading}>Thrive &#62;</motion.span>
         <motion.div variants={animateSubtext}>
-          We are building a new generation of young professionals leveraging on
-          the new economy.
+          IWB in synergy with other companies and organizations in public,
+          private and social sectors, is helping millions of youths and
+          professionals leverage on opportunities of the new economy.
         </motion.div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"
@@ -79,6 +80,15 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               Community
+            </a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              i-School
             </a>
           </motion.li>
         </motion.ul>

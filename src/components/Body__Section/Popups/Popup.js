@@ -71,23 +71,45 @@ const Popup = () => {
                 </span>{" "}
               </div>
               <div className="card-textDesc">
-                Join over 3000 young professionals, digital creators, and
-                technopreneurs discussing about ideas, opportunities and
-                solutions for the New Economy. Learn from Industry veterans as
-                they share insights, contents, and resources to help you thrive
-                in the marketplace.
+                Find the right opportunities in tech, stay ahead in the industry
+                with insightful content we share, and connect closely with other
+                youngsters and professionals doing exceptionally in today’s
+                world.
               </div>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
                 target="_self"
                 rel="noopener noreferrer"
               >
-                <button>Join Community</button>
+                <button>Sign Up</button>
               </a>
             </div>
           </SplideSlide>
 
           <SplideSlide>
+            <div className="card card2">
+              <div className="card-img">
+                <LazyLoadImage
+                  src={images.Popup2}
+                  alt="card-figure"
+                  effect="blur"
+                />
+              </div>
+              <div className="card-subHeading">
+                i-
+                <span style={{ color: "#FFE401" }}>
+                  School <LazyLoadImage src={images.Stroke1} alt="stroke-1" />
+                </span>
+              </div>
+              <div className="card-textDesc">
+                School of the Internet. A monthly series where we bring in tech
+                leaders to teach about emerging technologies, opportunities and
+                tools available on the internet for productivity and profit.
+              </div>
+              <button>Enter Classroom</button>
+            </div>
+          </SplideSlide>
+          {/* <SplideSlide>
             <div className="card card2">
               <div className="card-img">
                 <LazyLoadImage
@@ -137,7 +159,7 @@ const Popup = () => {
               </div>
               <button>Register Now</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
         </SplideTrack>
       </Splide>
     </StylePopup>
