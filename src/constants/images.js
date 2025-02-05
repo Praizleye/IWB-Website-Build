@@ -1,6 +1,7 @@
 import HeroImg from "../assets/HeroImg.svg";
 import Light from "../assets/Light.svg";
 import WhoWeAre from "../assets/WhoWeAre.png";
+import WhoWeAreTwo from "../assets/WhoWeAreTwo.png";
 import PartnerUs from "../assets/PartnerUs.png";
 import Logo from "../assets/Logo.svg";
 import Lineheader from "../assets/Lineheader.svg";
@@ -17,6 +18,8 @@ import Stroke2 from "../assets/Popup__Assets/Monetization-stroke.svg";
 import Mintyn from "../assets/CompTrust__Assets/Mintyn.png";
 import Tekedia from "../assets/CompTrust__Assets/Tekedia.png";
 import Playbooq from "../assets/CompTrust__Assets/Playbooq.png";
+import kidoSchool from "../assets/CompTrust__Assets/Kibo-school.png";
+import julieth from "../assets/CompTrust__Assets/julieth-logo.png";
 
 //? OurPrograms importing Section
 import Card1 from "../assets/OurPrograms__Section/Card1.png";
@@ -59,7 +62,28 @@ import BackToTop from "../assets/Footer__Assets/BackToTop.svg";
 // ?import Newsletter Asset
 import Newsletter from "../assets/NewsLetter__Assets/NewsLetter.png";
 
+// import hiring compoanies
+import Amazon from "../assets/HiringCompanies__Assets/Amazon.svg";
+import Flutterwave from "../assets/HiringCompanies__Assets/Flutterwave.svg";
+import Google from "../assets/HiringCompanies__Assets/Google.svg";
+import Stripe from "../assets/HiringCompanies__Assets/Stripe.svg";
+import Apple from "../assets/HiringCompanies__Assets/apple.svg";
+import Meta from "../assets/HiringCompanies__Assets/meta.svg";
+import Microsoft from "../assets/HiringCompanies__Assets/microsoft.svg";
+import Paystack from "../assets/HiringCompanies__Assets/paystack.svg";
+import Andela from "../assets/HiringCompanies__Assets/andela.svg";
+
 const assets = {
+  Amazon,
+  Apple,
+  Flutterwave,
+  Google,
+  Stripe,
+  Meta,
+  Microsoft,
+  Paystack,
+  Andela,
+
   Popup1,
   Popup2,
   Popup3,
@@ -75,8 +99,11 @@ const assets = {
   Mintyn,
   Tekedia,
   Playbooq,
+  kidoSchool,
+  julieth,
 
   WhoWeAre,
+  WhoWeAreTwo,
   PartnerUs,
 
   Handshake,

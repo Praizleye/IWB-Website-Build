@@ -89,6 +89,8 @@ export const StyleImpactReport = styled.div`
     div.subSectionReport__6 {
       width: 23rem;
       height: 19rem;
+      padding-block:1rem;
+      box-sizing:content-box;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
         rgba(17, 17, 26, 0.05) 0px 8px 32px;
       margin: 2rem 0;
@@ -165,27 +167,27 @@ export const StyleImpactReport = styled.div`
           @media screen and (max-width: 416px) {
             font-size: 1rem;
           }
-          img {
-            height: 1.7rem;
-            width: auto;
-            @media screen and (max-width: 1200px) {
-              height: 1.5rem;
-            }
-            @media screen and (max-width: 970px) {
-              height: 1.1rem;
-            }
-            @media screen and (max-width: 870px) {
-              height: 1.5rem;
-            }
-            @media screen and (max-width: 590px) {
-              height: 2rem;
-              width: auto;
-            }
-            @media screen and (max-width: 416px) {
-              height: 1.5rem;
-              width: auto;
-            }
-          }
+          // img {
+          //   height: 1.7rem;
+          //   width: auto;
+          //   @media screen and (max-width: 1200px) {
+          //     height: 1.5rem;
+          //   }
+          //   @media screen and (max-width: 970px) {
+          //     height: 1.1rem;
+          //   }
+          //   @media screen and (max-width: 870px) {
+          //     height: 1.5rem;
+          //   }
+          //   @media screen and (max-width: 590px) {
+          //     height: 2rem;
+          //     width: auto;
+          //   }
+          //   @media screen and (max-width: 416px) {
+          //     height: 1.5rem;
+          //     width: auto;
+          //   }
+          // }
         }
       }
       div.subSectionReport__text {

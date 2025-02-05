@@ -39,7 +39,7 @@ const WhoWeAre = () => {
             alt="Who-we-are-logo"
             effect="blur"
           />
-          <div className="img-cover"></div>
+          {/* <div className="img-cover"></div> */}
         </motion.div>
         <motion.div
           className="About__text-content"
@@ -51,11 +51,21 @@ const WhoWeAre = () => {
         >
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
-            Ideas Worth Billions is Africa's leading Human Capacity Development
+            <span>
+              IWB Africa  is one of Africa’s leading talent development organizations. A non-profit dedicated to upskilling young Africans and professionals for the future.  
+            </span>
+            <span>
+              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips Africa’s top talents with in-demand skills and values to thrive in Business, Leadership, and Technology.
+            </span>
+            <span>
+              We are building a vibrant community of emerging leaders who are driving innovation and shaping the continent’s future. Our vision is to connect 500 million African talents to digital solutions and opportunities by 2030.
+            </span>
+              
+            {/* Ideas Worth Billions is Africa's leading Human Capacity Development
             Network. Raising a new crop of young Africans and Professionals
             imbued with value and in-demand skills for global excellence in
             Business, Technology and Leadership. IWB envisions to connect 500m
-            youths in Africa to Digital Solutions and Opportunities in 2030.
+            youths in Africa to Digital Solutions and Opportunities in 2030. */}
           </div>
 
           <a
@@ -69,7 +79,7 @@ const WhoWeAre = () => {
               variants={animateBtn}
               whileHover={{ scale: 1.1 }}
             >
-              Sign Up
+              Join Community
             </motion.button>{" "}
           </a>
         </motion.div>
@@ -92,8 +102,23 @@ const WhoWeAre = () => {
             // viewport={{ once: true }}
             className="About__text-description partner-description"
           >
-            Individuals and Organizations around the globe are rooting for us,
-            be a part of the future we are creating. Partner with us.
+            <span>
+              Individuals and organizations are rooting for us —supporting our mission to connect millions of talents to digital solutions. You can make an impact by:
+            </span>
+            <ul>
+              <li>
+                💻 Donating laptops to enhance digital access
+              </li>
+              <li>
+                🎓 Providing scholarships to boost digital literacy
+              </li>
+              <li>
+                👩‍💻 Hiring top talents from our community
+              </li>
+            </ul>
+            <span>
+              Be part of a shared future—partner with us today! 
+            </span>
           </motion.div>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"

@@ -7,14 +7,17 @@ export const StyleCompTrust = styled.div`
   margin-bottom: 2rem;
   padding: 1rem 5rem;
   background: #fff;
+  flex-wrap: nowrap;
   @media screen and (max-width: 1200px) {
     padding: 1rem 3rem;
   }
   @media screen and (max-width: 850px) {
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 0.5rem 2rem;
   }
   @media screen and (max-width: 590px) {
-    padding: 0 1rem;
+    padding-inline: 1rem;
   }
 
   div.Footer__heading {
@@ -46,48 +49,47 @@ export const StyleCompTrust = styled.div`
     }
   }
   div:nth-of-type(2) {
-    width: 12rem;
+    max-width: 4rem;
     border-radius: 20px;
-    height: 3px;
+    height: 2.5px;
     background: #e7e6e6;
     justify-self: flex-start;
   }
-  div:nth-of-type(3) {
-    img {
-      height: 11.25rem;
-      width: auto;
-      @media screen and (max-width: 1200px) {
-        height: 9.25rem;
-      }
-      @media screen and (max-width: 910px) {
-        height: 8.25rem;
-      }
-      @media screen and (max-width: 590px) {
-        height: 6.25rem;
-      }
-      @media screen and (max-width: 380px) {
-        height: 5.25rem;
-      }
-      @media screen and (max-width: 337px) {
-        height: 4.75rem;
-      }
-    }
-  }
-  div:nth-of-type(4),
-  div:nth-of-type(6) {
-    width: 4px;
+  // div.companies__logo {
+  //   img {
+  //     height: 11.25rem;
+  //     width: auto;
+  //     @media screen and (max-width: 1200px) {
+  //       height: 9.25rem;
+  //     }
+  //     @media screen and (max-width: 910px) {
+  //       height: 8.25rem;
+  //     }
+  //     @media screen and (max-width: 590px) {
+  //       height: 6.25rem;
+  //     }
+  //     @media screen and (max-width: 380px) {
+  //       height: 5.25rem;
+  //     }
+  //     @media screen and (max-width: 337px) {
+  //       height: 4.75rem;
+  //     }
+  //   }
+  // }
+  div.divider {
+    width: 2.5px;
+    min-width:2.5px;
     height: 8rem;
     border-radius: 12px;
     @media screen and (max-width: 910px) {
       height: 6.5rem;
     }
     @media screen and (max-width: 700px) {
-      height: 5.5rem;
+      height: 3.5rem;
     }
     background: #e7e6e6;
   }
-  div:nth-of-type(5),
-  div:nth-of-type(7) {
+  div.companies__logo {
     padding: 0 3rem;
     @media screen and (max-width: 700px) {
       padding: 0 2rem;
@@ -99,25 +101,25 @@ export const StyleCompTrust = styled.div`
       padding: 0 1rem;
     }
     img {
-      height: 6.875rem;
+      height: 5rem;
       width: auto;
       @media screen and (max-width: 1200px) {
-        height: 4.875rem;
+        height: 4rem;
       }
       @media screen and (max-width: 910px) {
-        height: 3.875rem;
-      }
-      @media screen and (max-width: 700px) {
         height: 3rem;
       }
-      @media screen and (max-width: 590px) {
-        height: 2.5rem;
-      }
-      @media screen and (max-width: 380px) {
+      @media screen and (max-width: 700px) {
         height: 2rem;
       }
+      @media screen and (max-width: 590px) {
+        height: 1.5rem;
+      }
+      @media screen and (max-width: 380px) {
+        height: 1.5rem;
+      }
       @media screen and (max-width: 337px) {
-        height: 1.7rem;
+        height: 1.25rem;
       }
     }
   }

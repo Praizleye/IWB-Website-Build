@@ -2,16 +2,22 @@ import styled from "styled-components";
 
 export const StyleOurInterest = styled.div`
   background-color: #fafcff;
-  padding: 4.5rem 3rem 9rem;
   margin-top: 7rem;
-  @media screen and (max-width: 1200px) {
-    padding: 4.5rem 2rem 9rem;
+
+  div.heading-wrapper, div.Ourinterest-body {
+    padding: 2.5rem 3rem ;
+    @media screen and (max-width: 1200px) {
+      padding-inline:2rem;
+    }
+    @media screen and (max-width: 850px) {
+      padding-inline:2rem ;
+    }
+    @media screen and (max-width: 850px) {
+      padding-inline:1rem;
+    }
   }
-  @media screen and (max-width: 850px) {
-    padding: 4.5rem 2rem 7rem 2rem;
-  }
-  @media screen and (max-width: 850px) {
-    padding: 4.5rem 1rem 7rem;
+  div.heading-wrapper{
+    padding-block:0;
   }
   div.heading {
     font-size: 3rem;
@@ -50,6 +56,7 @@ export const StyleOurInterest = styled.div`
     }
   }
   div.Ourinterest-body.container {
+    background-color: #000000;
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
@@ -121,6 +128,7 @@ export const StyleOurInterest = styled.div`
         height: 100%;
         margin: 0.2rem 0;
         border-left: 3px solid #b8b8b8;
+        transition: ease-in-out all 0.5s;
         @media screen and (max-width: 700px) {
           padding-left: 1rem;
         }
@@ -145,6 +153,7 @@ export const StyleOurInterest = styled.div`
           font-size: 1.3rem;
           font-weight: 500;
           color: #676464;
+          transition: ease-in-out all 0.5s;
           @media screen and (max-width: 930px) {
             font-size: 1rem;
             padding: 0.1rem 0.15rem;
@@ -154,6 +163,7 @@ export const StyleOurInterest = styled.div`
           font-size: 1.1rem;
           color: #676464;
           padding-top: 1rem;
+          transition: ease-in-out all 0.5s;
           @media screen and (max-width: 1200px) {
             font-size: 1rem;
           }
@@ -169,6 +179,9 @@ export const StyleOurInterest = styled.div`
             font-size: 0.9rem;
             padding: 0.25rem 0;
           }
+        }
+        div.textDesc.active{
+          color: #ffffff
         }
       }
     }

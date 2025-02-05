@@ -7,7 +7,7 @@ export const StyleTestimonials = styled.div`
   div.heading {
     text-align: center;
     color: #0e63f4;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
     line-height: 0.95;
     font-weight: 500;
     display: flex;
@@ -30,6 +30,7 @@ export const StyleTestimonials = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin-top: 10px;
       @media screen and (max-width: 1200px) {
         font-size: 2.5rem;
       }

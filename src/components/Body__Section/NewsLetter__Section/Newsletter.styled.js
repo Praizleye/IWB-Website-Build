@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const StyleNewsletter = styled.div`
   /* margin: 8rem 0 5rem; */
-  padding: 6rem 5rem 5rem;
+  padding: 2.5rem 5rem 5rem ;
   /* background: #fff; */
   display: flex;
+  gap:2rem;
   justify-content: space-between;
   align-items: center;
   @media screen and (max-width: 1200px) {
-    padding: 6rem 3rem 5rem;
+    padding: 2.5rem 3rem 5rem;
   }
   @media screen and (max-width: 760px) {
-    padding: 5rem 1rem 5rem 2rem;
+    padding: 2.5rem 1rem 5rem 2rem;
   }
   div.Content {
     justify-self: start;
@@ -146,6 +147,68 @@ export const StyleNewsletter = styled.div`
         }
       }
     } */
+  }
+  div.imgContent{
+    min-width: 40%;
+    // @media screen and (max-width: 1200px) {
+    //   width: 4rem;
+    // }
+    @media screen and (max-width: 1135px) {
+      min-width: 50%;
+    }
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    img {
+      
+      width: 100%;
+      height: 20rem;
+      border-radius: 1rem;
+      object-fit: cover;
+      object-position: center left;
+      filter: grayscale(100%);
+    }
+  }
+
+  div.email-input-wrapper{
+    padding: 1rem;
+    background-color: #F2F5FD;
+    border: solid 1.5px #E8E8E8;
+    border-radius: 0.25rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1rem;
+    margin: 1.5rem 0 0;
+    font-size: 1.25rem;
+
+    @media screen and (max-width: 760px) {
+      font-size: 1rem;
+    }
+
+    input{
+      flex:1;
+      background-color: transparent;
+      color: #2B2B2B;
+      caret-color: #478BFF;
+      border:none;
+      ring:none;
+      outline:none;
+      padding:0.5rem 0;
+      width:100%;
+      font-size: inherit;
+
+      &::focus{
+        border:none;
+        ring:none;
+        outline:none;
+      }
+      
+      &::placeholder{
+        color: B0B8C2;
+      }
+    }
+
     a {
       text-decoration: none;
       svg {
@@ -158,37 +221,71 @@ export const StyleNewsletter = styled.div`
         align-items: center;
         width: 12rem;
         height: 3rem;
-        margin: 1.5rem 0 0;
-        font-size: 1.25rem;
         background: #478bff;
         color: #fafafa;
         border-radius: 4px;
         border: none;
         cursor: pointer;
+        font-size: inherit;
+
         @media screen and (max-width: 760px) {
           height: 2.5rem;
-          font-size: 1rem;
           width: 10rem;
         }
       }
     }
   }
-  div {
-    img {
-      width: 25rem;
-      height: 20rem;
-      object-fit: cover;
-      @media screen and (max-width: 1200px) {
-        width: 20rem;
-        height: 15rem;
-      }
-      @media screen and (max-width: 1135px) {
-        width: 18rem;
-        height: 15rem;
-      }
-      @media screen and (max-width: 800px) {
-        display: none;
-      }
+`;
+
+export const StyleCompany = styled.div`
+  padding: 6rem 5rem 3rem;
+
+  @media screen and (max-width: 1200px) {
+    padding: 6rem 3rem;
+  }
+  @media screen and (max-width: 760px) {
+    padding: 5rem 1rem 5rem 2rem;
+  }
+
+  .header{
+    margin-bottom:2.5rem;
+    text-align:center;
+    font-weight:300;
+    color: #0047AF;
+    letter-spacing: 0.05rem;
+    line-height: 1.1;
+    font-size: 2rem;
+    width: 70%;
+    margin-inline:auto;
+
+    @media screen and (max-width: 870px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (max-width: 760px) {
+      width:100%;
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 590px) {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
   }
-`;
+
+  /* Add padding to the whole slider container */
+  .slider-wrapper {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background */
+  }
+
+  /* Style the slides */
+  .splide__slide img {
+    width: auto;  /* Make images smaller */
+    height: 2.17rem; /* Keep aspect ratio */
+    display: block;
+    margin: auto;
+    @media only screen and (max-width:568px){
+      height: 1.5rem;
+    }
+  }
+
+`

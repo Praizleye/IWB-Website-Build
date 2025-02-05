@@ -7,8 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-line-height: 1.4;
-background: #f1f4fb;
+  line-height: 1.4;
+  background: #FAFCFF;
 }
 
 code {

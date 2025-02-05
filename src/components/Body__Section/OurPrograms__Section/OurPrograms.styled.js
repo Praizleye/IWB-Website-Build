@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyleOurPrograms = styled.div`
   background-color: #f1f4fb;
-  padding: 3rem 5rem 5rem;
+  padding: 3rem 5rem 6rem;
   @media screen and (max-width: 1200px) {
-    padding: 3rem 2rem 5rem;
+    padding: 3rem 2rem 6rem;
   }
   @media screen and (max-width: 470px) {
-    padding: 3rem 2rem 2rem;
+    padding: 3rem 2rem 3rem;
   }
   div.heading {
     font-size: 3rem;
@@ -56,7 +56,7 @@ export const StyleOurPrograms = styled.div`
 
     div.card {
       width: 23rem;
-      height: 29rem;
+      padding-block:0.5rem; 
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       background-color: #fff;
       @media screen and (max-width: 1200px) {
@@ -158,7 +158,7 @@ export const StyleOurPrograms = styled.div`
     }
     div.splide__arrows {
       position: absolute;
-      bottom: -3.5rem;
+      top: -4.8rem;
       right: 5rem;
       @media screen and (max-width: 612px) {
         display: none;

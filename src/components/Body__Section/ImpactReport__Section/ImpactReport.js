@@ -14,7 +14,7 @@ const ImpactReport = () => {
         Impact Report
         <img src={images.Line} alt="text-underline" />
         <div>
-          We are making great strides across digital and local communities
+          We are making great strides across spaces and communities in Africa.
         </div>
       </div>
 
@@ -28,15 +28,17 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.Handshake} alt="descriptive figure" />
             <div className="subSectionReport__figure">
+              $10,000 Scholarships
+            </div>
+            {/* <div className="subSectionReport__figure">
               <img
                 src={images.PartnershipFig}
                 alt="Scholarships via IWB by Tekedia "
               />
-            </div>
+            </div> */}
           </div>
           <div className="subSectionReport__text">
-            Over 130 young scholars in IWB Community have been sponsored to
-            study Business Administration at Tekedia.
+          Through Ladder by IWB, over 210 scholars across the globe have been funded to study Business Innovation at Tekedia.
           </div>
         </motion.div>
 
@@ -48,11 +50,10 @@ const ImpactReport = () => {
         >
           <div className="subSectionReport__icon">
             <img src={images.TrainingTalents} alt="descriptive figure" />
-            <div className="subSectionReport__figure">Training Talents</div>
+            <div className="subSectionReport__figure">5000<sup>+</sup> Talents</div>
           </div>
           <div className="subSectionReport__text">
-            Over 3000 young professionals trained on Business, Digital
-            Monetization and Digital Technology.
+            Our community programs have impacted over 5000 talents in Africa, covering digital technology, leadership and business innovation.
           </div>
         </motion.div>
 
@@ -65,12 +66,11 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.Resources} alt="descriptive figure" />
             <div className="subSectionReport__figure">
-              Resources worth $10,000
+              $25,000 Resources
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over $10,000 worth of resources and opportunties shared with members
-            of IWB Community.
+            Over $25,000 worth of  resources have been shared with our audience via Channels.
           </div>
         </motion.div>
         <motion.div
@@ -82,12 +82,11 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.Community} alt="descriptive figure" />
             <div className="subSectionReport__figure">
-              4,000<sup>+</sup> Community
+              3,000<sup>+</sup> Reach
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 4000 community members actively discussing ideas and solutions
-            for global impact.
+            Over 3000 subscribers available on our mail-list, looking forward to finding the right offers and updates in business and tech.
           </div>
         </motion.div>
 
@@ -104,7 +103,7 @@ const ImpactReport = () => {
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 100 volunteers in Africa are part of our workstream
+            Over 120 youths across Africa have been actively part of our workstream as volunteers.
           </div>
         </motion.div>
 
@@ -117,12 +116,11 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.StartupProjects} alt="descriptive figure" />
             <div className="subSectionReport__figure">
-              20<sup>+</sup> Startup Projects
+              150<sup>+</sup> Bridge Alums
             </div>
           </div>
           <div className="subSectionReport__text">
-            20 Innovative startup projects profiled for seed funding on IWB
-            Capital.
+            Our Bridge Program has upskilled over 150 learners who are shaping the future and steering innovation in Business/Tech.
           </div>
         </motion.div>
       </div>

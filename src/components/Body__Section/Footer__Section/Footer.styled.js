@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyleFooter = styled.div`
   margin-top: 5rem;
   padding: 4rem;
-  background-color: #0047af;
+  background-color: #000000;
   color: #fafafa;
   @media screen and (max-width: 1200px) {
     padding: 2rem 1rem;
@@ -23,24 +23,32 @@ export const StyleFooter = styled.div`
       }
     }
     a {
-      color: #0e0d0d;
       text-decoration: none;
       button {
         cursor: pointer;
         font-size: 1.1rem;
-        background: #ffe401;
+        background: #2F2F2F;
+        color: #FFFFFF;
         height: 3.5rem;
         width: 12rem;
-        border: none;
+        border: 2px solid rgba(4, 9, 33, 0.08);
         margin-top: 1.5rem;
         border-radius: 7px;
         font-weight: bold;
         letter-spacing: 0.03rem;
+        transition: all 0.5s;
         @media screen and (max-width: 780px) {
           height: 3rem;
           width: 10rem;
           font-size: 1rem;
         }
+
+        
+      }
+      button:hover {
+        background-color: #ffe401;
+        border-color: #ffe401;
+        color: #1A1A1A;
       }
     }
   }
@@ -107,6 +115,8 @@ export const StyleFooter = styled.div`
           align-items: center;
           width: 100%;
           opacity: 0.8;
+          transition: all 0.5s;
+
           svg {
             height: auto;
             width: 1.5rem;
@@ -118,6 +128,7 @@ export const StyleFooter = styled.div`
           &:hover {
             opacity: 1;
             color: #ffe401;
+          
           }
         }
       }
@@ -129,3 +140,4 @@ export const StyleFooter = styled.div`
     }
   }
 `;
+

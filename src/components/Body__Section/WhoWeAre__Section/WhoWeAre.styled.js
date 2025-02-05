@@ -45,11 +45,16 @@ export const StyleWhoWeAre = styled.div`
       }
     }
   }
+
+  
+
   div.container {
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
     align-items: center;
     margin-left: 2rem;
+
     @media screen and (max-width: 590px) {
       flex-direction: column;
     }
@@ -61,11 +66,11 @@ export const StyleWhoWeAre = styled.div`
         margin-right: 2rem;
       }
       img {
-        border-right: 3px solid #ffe401;
-        width: auto;
-        height: 25rem;
+        display: block;
+        // width: auto;
+        height: 100%;
         width: 25rem;
-        object-fit: cover;
+        // object-fit: cover;
         object-position: center center;
         @media screen and (max-width: 1200px) {
           height: 22rem;
@@ -110,8 +115,10 @@ export const StyleWhoWeAre = styled.div`
       }
     }
     div.About__text-content {
+      
       background: #fafafa;
       height: 25rem;
+      min-height: fit-content;
       padding: 0 1rem 0 4rem;
       display: flex;
       margin-top: 2.95rem;
@@ -147,28 +154,31 @@ export const StyleWhoWeAre = styled.div`
 
       div.About__text-description {
         font-size: 1.1rem;
-        line-height: 1.8;
         color: #6b6b6b;
-        line-height: 2.3;
+        line-height: 1.5;
         @media screen and (max-width: 1200px) {
           font-size: 1rem;
-          line-height: 1.9;
+          // line-height: 1.9;
           padding-right: 1rem;
         }
         @media screen and (max-width: 950px) {
           font-size: 0.9rem;
-          line-height: 1.7;
+          // line-height: 1.7;
           padding-right: 1rem;
         }
         @media screen and (max-width: 768px) {
           font-size: 0.8rem;
-          line-height: 1.5;
+          // line-height: 1.5;
           padding-right: 0.5rem;
         }
         @media screen and (max-width: 590px) {
           font-size: 0.9rem;
-          line-height: 1.7;
+          // line-height: 1.7;
         }
+      }
+      div.About__text-description > span{
+        display: block;
+        margin-bottom: 1rem;
       }
       a {
         button {
@@ -204,19 +214,62 @@ export const StyleWhoWeAre = styled.div`
         }
       }
     }
+
+  
+    div.About__text-content:nth-child(1){
+      border-right: 3px solid #ffe401;
+      border-top: none;
+
+      @media screen and (max-width: 590px) {
+        border-top: 3px solid #ffe401;
+        border-right: none;
+        order:2;
+      }
+
+      ul{
+        margin-block: 1rem;
+        list-style:none;
+      }
+    }
+    div.About__text-content:nth-child(2){
+      border-left: 3px solid #ffe401;
+
+      @media screen and (max-width: 590px) {
+        border-left: none;
+      }
+    }
+
+
     div.partner {
       padding: 3rem 1rem;
     }
     div.WhoWeAre__img.partner-img {
+      height:100%;
+      
       @media screen and (max-width: 590px) {
-        order: 2;
+        order: 1;
+        width:100%;
         margin: 0 2rem 0 0;
       }
-
+      span{
+        @media screen and (max-width: 590px) {
+          width:100%;
+          margin: 0 2rem 0 0;
+        }
+      }
       img {
+        height: 28.3rem;
+        object-fit:cover;
+        object-position:center;
+        width: 25rem;
         border: none;
-        border-left: 3px solid #ffe401;
+        // border-left: 3px solid #ffe401;
         margin-right: 1rem;
+
+        @media screen and (max-width: 590px) {
+          width:100%;
+          height:auto;
+        }
       }
     }
   }

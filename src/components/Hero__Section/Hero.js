@@ -77,7 +77,7 @@ const Hero = () => {
               animate="visible"
               variants={animateBtn}
             >
-              Join Bridge
+              Join Channels
             </motion.button>
           </a>
         </div>

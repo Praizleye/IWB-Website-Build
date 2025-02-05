@@ -8,6 +8,12 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const OurInterest = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const interests = [
+    {label:"Business Development", body:"We empower entrepreneurs in our community by providing programs and resources that help them scale their businesses and develop impactful products, driving positive social change." },
+    {label:"Digital Technology", body:"Our talents are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape." },
+    {label:"Leadership Development", body:"Our community is home to some of the finest thought leaders  and  change makers in the continent, who are steering innovation and shaping the future." },
+  ]
+
   useEffect(() => {
     const cycle = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % 3);
@@ -33,15 +39,17 @@ const OurInterest = () => {
 
   return (
     <StyleOurInterest id="Scope">
-      <div className="heading">
-        Our scope
-        <motion.span
-          initial="hidden"
-          whileInView="visible"
-          variants={animateHeading}
-        >
+      <div className="heading-wrapper">
+        <div className="heading" >
           Our scope
-        </motion.span>
+          <motion.span
+            initial="hidden"
+            whileInView="visible"
+            variants={animateHeading}
+          >
+            Our scope
+          </motion.span>
+        </div>
       </div>
 
       <motion.div className="Ourinterest-body container">
@@ -54,24 +62,25 @@ const OurInterest = () => {
           />
         </div>
         <div className="Ourinterests-sections container">
-          <div
+          {interests.map(({label, body}, index) =>(<div
             className={`Ourinterest-section ${
-              activeIndex === 0 ? "active" : ""
+              activeIndex === index ? "active" : ""
             }`}
           >
             <div
               className={`section-1 subheading ${
-                activeIndex === 0 ? "active" : ""
+                activeIndex === index ? "active" : ""
               }`}
             >
-              Technology
+              {label}
             </div>
-            <div className="section-1 textDesc">
-              We help young Africans explore tech opportunities and build
-              careers in tech.
+            <div className={`section-1 textDesc ${
+                activeIndex === index ? "active" : ""
+              }`}>
+              {body}
             </div>
-          </div>
-          <div
+          </div>))}
+          {/* <div
             className={`Ourinterest-section ${
               activeIndex === 1 ? "active" : ""
             }`}
@@ -104,7 +113,7 @@ const OurInterest = () => {
               We provide resourceful leadership content for young leaders and
               working professionals to thrive in the marketplace.
             </div>
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </StyleOurInterest>
