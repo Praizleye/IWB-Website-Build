@@ -27,7 +27,7 @@ const Newsletter = () => {
   return (
     <section id="newsletter">
       <StyleCompany >
-        <h3 className="header">
+        <h3 className="header" style={{fontFamily: 'Lunema'}}>
           Our talents are top picks for leading companies and organizations around the globe.
         </h3>
         <Splide
@@ -59,7 +59,7 @@ const Newsletter = () => {
       <StyleNewsletter>
 
         <div className="Content">
-          <div className="heading">
+          <div className="heading" style={{fontFamily: 'Lunema'}}>
             The IWB Newsletter
             <span>
               Subscribe to the Blue Letters

@@ -6,7 +6,7 @@ export const StyleTestimonials = styled.section`
   background: #fff;
   div.heading {
     text-align: center;
-    color: #0e63f4;
+    color: #1A1A1A;
     letter-spacing: 0.1rem;
     line-height: 0.95;
     font-weight: 500;

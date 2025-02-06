@@ -65,10 +65,10 @@ const Hero = () => {
             variants={animateText2}
           >
             Connecting 500,000,000 young Africans to digital solutions and
-            opportunities in 2030.
+            opportunities by 2030.
           </motion.div>
           <a
-            href="https://www.linkedin.com/company/iwb-africa"
+            href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
             target="_blank"
             rel="noopener noreferrer"
           >

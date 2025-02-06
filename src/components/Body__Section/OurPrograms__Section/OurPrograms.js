@@ -42,8 +42,8 @@ const OurPrograms = () => {
       body:"Ladder seeks to enhance digital literacy and upskill thousands of talents for the future by providing tailored mentoring, resources and support to help you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
       status:{
         title:'Join the next cohort',
-        link:'http://bridge.iwbafrica.org/',
-        class:'comingSoon'
+        link:'https://forms.gle/RAzrkZuXBfSUgJ1F9',
+        class:''
       }
     },
     {
@@ -52,7 +52,7 @@ const OurPrograms = () => {
       body:"Innov8 is An unconventional, campus-led and out-of-the-box event designed to ignite innovation and showcase young innovators building models and projects for future Africa. Not just an event, Innov8 is a LEAP.",
       status:{
         title:'Coming soon',
-        link:'http://bridge.iwbafrica.org/',
+        link:'',
         class:'comingSoon'
       }
     },
@@ -61,15 +61,15 @@ const OurPrograms = () => {
 
   return (
     <StyleOurPrograms id="Programs">
-      <div className="heading">
+      <div className="heading" style={{fontFamily: 'Lunema'}}>
         Our programs
-        <motion.span
+        {/* <motion.span
           initial="hidden"
           whileInView="visible"
           variants={animateHeading}
         >
           Our programs
-        </motion.span>
+        </motion.span> */}
       </div>
 
       <Splide
@@ -111,7 +111,7 @@ const OurPrograms = () => {
                 </div>
                 <a
                   href={status.link}
-                  target="_blank"
+                  target={index === programs.length - 1 ? "_self":"_blank"}
                   rel="noopener noreferrer"
                 >
                   <button

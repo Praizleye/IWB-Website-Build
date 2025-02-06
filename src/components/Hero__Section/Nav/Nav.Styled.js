@@ -135,7 +135,7 @@ export const NavStyle = styled.div`
     }
   }
   ul.app__navbar-links li:nth-last-of-type(2) {
-    background: #f5f9ff;
+    background: transparent;
     height: 3rem;
     display: flex;
     justify-content: center;

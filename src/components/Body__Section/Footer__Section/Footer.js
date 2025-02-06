@@ -24,9 +24,9 @@ const Footer = () => {
         whileInView="visible"
         variants={animateHeading}
       >
-        <motion.span variants={animateSubheading}>Create .</motion.span>{" "}
-        <motion.span variants={animateSubheading}>Connect . </motion.span>{" "}
-        <motion.span variants={animateSubheading}>Thrive &#62;</motion.span>
+        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Create .</motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Connect . </motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Thrive &#62;</motion.span>
         <motion.div variants={animateSubtext}>
           We are building a vibrant community of emerging leaders who are driving innovation and shaping the future.
         </motion.div>
@@ -49,8 +49,8 @@ const Footer = () => {
           alt="iwb-white-logo"
           variants={animateHeading}
         />
-        <motion.ul variants={animateHeading}>
-          Quick
+        <motion.ul variants={animateHeading} >
+          <span style={{fontFamily: 'Lunema'}}>Quick</span>
           <motion.li variants={animateSubheading}>
             <a href="#About">About us</a>
           </motion.li>
@@ -80,7 +80,7 @@ const Footer = () => {
           </motion.li> */}
           <motion.li variants={animateSubheading}>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+              href="https://forms.gle/KjYu3dMaEwZAKJVj8"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -89,7 +89,7 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+              href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -100,7 +100,7 @@ const Footer = () => {
             <a href="#Store">Store</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Support">Support</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link">Support</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Blog">Blog</a>
@@ -108,7 +108,7 @@ const Footer = () => {
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-          Contact
+        <span style={{fontFamily: 'Lunema'}}>Contact</span>
           <motion.li variants={animateSubheading}>
             <a
               href="mailto:hello@iwbafrica.org?subject=Mail from our Website"
@@ -133,7 +133,7 @@ const Footer = () => {
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-          Connect
+          <span style={{fontFamily: 'Lunema'}}>Connect</span>
           <motion.li variants={animateSubheading}>
             <a
               href="https://www.linkedin.com/company/ideas-worth-billions/"
@@ -146,7 +146,7 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
-              href="https://x.com/iwb_official"
+              href="https://x.com/IWBAfrica"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -156,7 +156,7 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
-              href="https://web.facebook.com/iwb.official/"
+              href="https://www.facebook.com/iwbafrica"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -208,7 +208,7 @@ const Footer = () => {
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-          Legal
+          <span style={{fontFamily: 'Lunema'}}>Legal</span>
           <motion.li variants={animateSubheading}>
             <a href="#Programs">Terms of Service</a>
           </motion.li>

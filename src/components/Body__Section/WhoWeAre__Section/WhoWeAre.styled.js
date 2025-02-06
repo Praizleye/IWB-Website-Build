@@ -46,6 +46,10 @@ export const StyleWhoWeAre = styled.section`
     }
   }
 
+  .sub-heading{
+    font-family: 'Lunema';
+  }
+
   
 
   div.container {
@@ -60,7 +64,7 @@ export const StyleWhoWeAre = styled.section`
     }
 
     div.WhoWeAre__img {
-      margin-top: 3rem;
+      // margin-top: 3rem;
       position: relative;
       @media screen and (max-width: 590px) {
         margin-right: 2rem;
@@ -121,7 +125,8 @@ export const StyleWhoWeAre = styled.section`
       min-height: fit-content;
       padding: 0 1rem 0 4rem;
       display: flex;
-      margin-top: 2.95rem;
+      gap:1rem;
+      margin-block: 2.95rem;
       line-height: 1.9;
       letter-spacing: 0.05rem;
       justify-content: space-between;
@@ -180,9 +185,12 @@ export const StyleWhoWeAre = styled.section`
         display: block;
         margin-bottom: 1rem;
       }
+      div.About__text-description > span:last-child{
+        margin-bottom:0;
+      }
       a {
         button {
-          margin: 1rem 0;
+          // margin: 1rem 0;
           background: #0047af;
           height: 3rem;
           width: 12rem;
@@ -192,16 +200,16 @@ export const StyleWhoWeAre = styled.section`
           border: none;
           transition: transform 0.5s ease-in-out;
           cursor: pointer;
-          @media screen and (max-width: 1200px) {
-            margin: 2rem 0;
-          }
+          // @media screen and (max-width: 1200px) {
+          //   margin: 2rem 0;
+          // }
           @media screen and (max-width: 950px) {
-            margin: 1.5rem 0;
+            // margin: 1.5rem 0;
             padding: 0.8rem;
           }
           @media screen and (max-width: 768px) {
             padding: 0.5rem 0 0.5rem;
-            margin-bottom: 0.5rem;
+            // margin-bottom: 0.5rem;
             height: 2.1rem;
             width: 10rem;
             font-size: 0.9rem;
@@ -258,7 +266,7 @@ export const StyleWhoWeAre = styled.section`
         }
       }
       img {
-        height: 28.3rem;
+        height: 27.3rem;
         object-fit:cover;
         object-position:center;
         width: 25rem;

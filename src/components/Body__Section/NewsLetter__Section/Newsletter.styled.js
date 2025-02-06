@@ -17,7 +17,7 @@ export const StyleNewsletter = styled.div`
   div.Content {
     justify-self: start;
     div.heading {
-      color: #0e63f4;
+      color: #1A1A1A;
       letter-spacing: 0.05rem;
       line-height: 1.1;
       font-weight: 500;

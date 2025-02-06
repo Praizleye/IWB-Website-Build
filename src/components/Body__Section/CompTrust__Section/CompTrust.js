@@ -8,7 +8,7 @@ const CompTrust = () => {
   const companies = [
     images.kidoSchool,
     images.Tekedia,
-    images.Playbooq,
+    // images.Playbooq,
     images.julieth
   ];
 

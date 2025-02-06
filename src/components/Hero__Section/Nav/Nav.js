@@ -17,8 +17,8 @@ function Nav() {
     {title:"Programs", link:"#Programs", target:"_self"},
     {title:"Scope", link:"#Scope", target:"_self"},
     {title:"blog", link:"#home", target:"_self"},
-    {title:"Store", link:"https://t.me/iwb_official", target:"_blank"},
-    {title:"Sign Up", link:"https://forms.gle/n4nx6jrFGBVLermg6", target:"_blank"},
+    {title:"Store", link:"#home", target:"_blank"},
+    {title:"Get Started", link:"https://forms.gle/KjYu3dMaEwZAKJVj8", target:"_blank"},
     
   ]
 
@@ -35,8 +35,6 @@ function Nav() {
         const rect = section.getBoundingClientRect();
         if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
           setActiveSection(section.id);
-          console.log(section.id);
-          
         }
       });
     };

@@ -8,6 +8,8 @@ export const StyleImpactReport = styled.section`
   align-items: center;
   flex-direction: column;
   background: #fff;
+  color #0047af;
+  
 
   @media screen and (max-width: 1200px) {
     padding: 3rem 3rem;
@@ -19,9 +21,13 @@ export const StyleImpactReport = styled.section`
     padding: 2rem 1rem 6rem;
   }
   div.ImpactReport__heading {
+    span{
+      font-family: 'Lunema';
+    }  
+
     font-size: 3rem;
     font-weight: 600;
-    color: #065a8a;
+    color: #0047AF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +43,7 @@ export const StyleImpactReport = styled.section`
     img {
       display: block;
       align-self: start;
-      margin-left: 11.5rem;
+      margin-left: 12.5rem;
       @media screen and (max-width: 1200px) {
         margin-left: 7rem;
       }
@@ -49,7 +55,7 @@ export const StyleImpactReport = styled.section`
       }
     }
     div {
-      font-size: 24px;
+      font-size: 20px;
       color: #595b60;
       font-weight: 300;
       margin-top: 0.5rem;
@@ -152,6 +158,7 @@ export const StyleImpactReport = styled.section`
           }
         }
         div.subSectionReport__figure {
+          font-family: 'Lunema';
           padding-top: 1rem;
           font-size: 1.3rem;
           font-weight: 500;

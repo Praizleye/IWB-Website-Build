@@ -7,7 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { motion } from "framer-motion";
 import {
-  animateHeading,
+  // animateHeading,
   // animateImg,
   // animateImg2,
   // animateText,
@@ -18,15 +18,15 @@ import {
 const WhoWeAre = () => {
   return (
     <StyleWhoWeAre id="About">
-      <div className="heading">
-        About us{" "}
-        <motion.span
+      <div className="heading" style={{fontFamily: 'Lunema'}}>
+        About Us{" "}
+        {/* <motion.span
           initial="hidden"
           whileInView="visible"
           variants={animateHeading}
         >
           About us
-        </motion.span>
+        </motion.span> */}
       </div>
       <div className="About-body container">
         <motion.div className="WhoWeAre__img">
@@ -52,7 +52,8 @@ const WhoWeAre = () => {
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
             <span>
-              IWB Africa  is one of Africa’s leading talent development organizations. A non-profit dedicated to upskilling young Africans and professionals for the future.  
+              IWB Africa  is one of Africa’s leading talent development organizations. 
+              <br/> A non-profit dedicated to upskilling young Africans and professionals for the future.  
             </span>
             <span>
               Leveraging a Community-as-a-Service (CaaS) framework, IWB equips Africa’s top talents with in-demand skills and values to thrive in Business, Leadership, and Technology.

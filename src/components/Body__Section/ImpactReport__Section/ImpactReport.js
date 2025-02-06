@@ -11,7 +11,9 @@ const ImpactReport = () => {
   return (
     <StyleImpactReport id="Achievements">
       <div className="ImpactReport__heading">
-        Achievements
+        <span>
+          Achievements
+        </span>
         <img src={images.Line} alt="text-underline" />
         <div>
           We are making great strides across spaces and communities in Africa.

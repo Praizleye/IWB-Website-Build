@@ -96,6 +96,7 @@ export const StyleOurPrograms = styled.section`
         }
       }
       div.card-subHeading {
+        font-family: 'Lunema';
         padding: 1rem;
         font-size: 1.2rem;
         font-weight: 400;

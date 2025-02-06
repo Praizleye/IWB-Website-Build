@@ -40,15 +40,15 @@ const OurInterest = () => {
   return (
     <StyleOurInterest id="Scope">
       <div className="heading-wrapper">
-        <div className="heading" >
-          Our scope
-          <motion.span
+        <div className="heading" style={{fontFamily: 'Lunema'}}>
+          Our Scope
+          {/* <motion.span
             initial="hidden"
             whileInView="visible"
             variants={animateHeading}
           >
             Our scope
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
 
@@ -71,6 +71,7 @@ const OurInterest = () => {
               className={`section-1 subheading ${
                 activeIndex === index ? "active" : ""
               }`}
+              style={{fontFamily: 'Lunema'}}
             >
               {label}
             </div>

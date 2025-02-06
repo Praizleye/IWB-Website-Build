@@ -27,11 +27,12 @@ const Popup = () => {
         aria-label="Our Programs Carousel"
         className="Ourprograms container cards"
         options={{
-          type: "loop",
+          // type: "loop",
           gap: "1rem",
-          pagination: true,
+          // pagination: true,
           width: "28rem",
-          autoplay: true,
+          // autoplay: true,
+          arrows:false,
           resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
@@ -86,7 +87,7 @@ const Popup = () => {
             </div>
           </SplideSlide>
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <div className="card card2">
               <div className="card-img">
                 <LazyLoadImage
@@ -108,7 +109,7 @@ const Popup = () => {
               </div>
               <button>Enter Classroom</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
           {/* <SplideSlide>
             <div className="card card2">
               <div className="card-img">

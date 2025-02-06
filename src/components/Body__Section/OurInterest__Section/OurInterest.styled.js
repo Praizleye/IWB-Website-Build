@@ -61,6 +61,7 @@ export const StyleOurInterest = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height:fit-content;
 
     @media screen and (max-width: 590px) {
       flex-direction: column;
@@ -100,17 +101,17 @@ export const StyleOurInterest = styled.section`
     }
     div.Ourinterests-sections.container {
       /* background: #0047af; */
-      height: 30rem;
+      height: fit-content;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
       margin-left: 3rem;
-      @media screen and (max-width: 1200px) {
-        height: 28rem;
-      }
+      // @media screen and (max-width: 1200px) {
+      //   // height: 28rem;
+      // }
       @media screen and (max-width: 930px) {
-        height: 23rem;
+        // height: 23rem;
         margin-left: 2rem;
       }
       @media screen and (max-width: 700px) {
@@ -125,7 +126,7 @@ export const StyleOurInterest = styled.section`
         flex-direction: column;
         align-items: flex-start;
         padding-left: 2rem;
-        height: 100%;
+        // height: 100%;
         margin: 0.2rem 0;
         border-left: 3px solid #b8b8b8;
         transition: ease-in-out all 0.5s;

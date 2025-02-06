@@ -11,7 +11,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Testimonials = () => {
   return (
     <StyleTestimonials id="Testimonial">
-      <div className="heading">
+      <div className="heading" style={{fontFamily: 'Lunema'}}>
         Testimonials
         <span>
           What young people are saying
@@ -28,7 +28,7 @@ const Testimonials = () => {
           gap: "1rem",
           pagination: true,
           width: "100vw",
-          fixedWidth: false,
+          fixedWidth: true,
           fixedHeight: true,
           padding: { left: "1rem", right: "5rem" },
           autoplay: true,

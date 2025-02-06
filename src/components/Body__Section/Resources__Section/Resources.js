@@ -58,8 +58,9 @@ const Resources = () => {
           whileInView="visible"
           variants={animateText}
         >
-          <div className="heading" id="Free downloads">
-            Resources<span>Resources</span>
+          <div className="heading" id="Free downloads" style={{fontFamily: 'Lunema'}}>
+            Resources
+            {/* <span>Resources</span> */}
           </div>
           <div className="Resource-text-Desc">
             Access over $5000 worth of resources (ebooks, podcasts, videos) on
