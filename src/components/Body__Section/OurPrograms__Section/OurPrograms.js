@@ -4,26 +4,26 @@ import { StyleOurPrograms } from "./OurPrograms.styled";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const OurPrograms = () => {
-  const animateHeading = {
-    hidden: {
-      opacity: 0,
-      x: 15,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeIn",
-        delay: 0.2,
-      },
-    },
-  };
+  // const animateHeading = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: 15,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       duration: 0.8,
+  //       ease: "easeIn",
+  //       delay: 0.2,
+  //     },
+  //   },
+  // };
 
   const programs = [
     {

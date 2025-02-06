@@ -21,21 +21,21 @@ const OurInterest = () => {
     return () => clearInterval(cycle);
   }, []);
 
-  const animateHeading = {
-    hidden: {
-      opacity: 0,
-      x: 15,
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeIn",
-        delay: 0.2,
-      },
-    },
-  };
+  // const animateHeading = {
+  //   hidden: {
+  //     opacity: 0,
+  //     x: 15,
+  //   },
+  //   visible: {
+  //     opacity: 1,
+  //     x: 0,
+  //     transition: {
+  //       duration: 0.8,
+  //       ease: "easeIn",
+  //       delay: 0.2,
+  //     },
+  //   },
+  // };
 
   return (
     <StyleOurInterest id="Scope">

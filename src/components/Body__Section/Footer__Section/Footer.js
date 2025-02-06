@@ -7,8 +7,7 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import { FaXTwitter } from "react-icons/fa6"
-import {  BsWhatsapp } from "react-icons/bs";
+import {  BsWhatsapp, BsTwitter } from "react-icons/bs";
 import {
   // AiFillTwitterSquare,
   AiFillFacebook,
@@ -150,7 +149,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaXTwitter />
+              <BsTwitter />
               <span>Twitter</span>
             </a>
           </motion.li>
