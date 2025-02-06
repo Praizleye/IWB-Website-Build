@@ -9,8 +9,17 @@ body {
   overflow-x: hidden;
   line-height: 1.4;
   background: #FAFCFF;
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'monospace';
 }
+
+@font-face {
+  font-family: 'Lunema';
+  src: url('/public/fonts/Lunema\ Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+

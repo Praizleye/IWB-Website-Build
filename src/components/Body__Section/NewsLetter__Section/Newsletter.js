@@ -25,8 +25,8 @@ const Newsletter = () => {
   ]
 
   return (
-    <>
-      <StyleCompany>
+    <section id="newsletter">
+      <StyleCompany >
         <h3 className="header">
           Our talents are top picks for leading companies and organizations around the globe.
         </h3>
@@ -37,14 +37,13 @@ const Newsletter = () => {
             width:'100%',
             perPage: 3, // Show 3 slides at a time
             gap: "5rem", // Space between slides
-            padding: "2rem", // Add padding to the sides
             arrows: false,
             perMove: 1, // Moves 1 slide at a time
             interval: 3000,     // Delay between transitions (in ms)
             speed: 1000,     
             pagination: false,
             breakpoints: {
-              768: { perPage: 10, gap:"2rem", padding:"0.0rem" }, // Show 1 slide on smaller screens
+              768: { perPage: 2, gap:"2rem" }, // Show 1 slide on smaller screens
             },
           }}
         >
@@ -104,7 +103,7 @@ const Newsletter = () => {
         </div>
 
       </StyleNewsletter>
-    </>
+    </section>
   );
 };
 

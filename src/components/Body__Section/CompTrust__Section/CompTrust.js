@@ -13,7 +13,7 @@ const CompTrust = () => {
   ];
 
   return (
-    <StyleCompTrust>
+    <StyleCompTrust id="home">
       <div className="Footer__heading">
         Companies <span>that trust us</span>
       </div>

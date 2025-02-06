@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleWhoWeAre = styled.div`
+export const StyleWhoWeAre = styled.section`
   margin-top: 3rem;
   padding: 2rem 3rem;
   background-color: #f1f4fb;

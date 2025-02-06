@@ -69,7 +69,8 @@ const WhoWeAre = () => {
           </div>
 
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+            // href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+            href="https://forms.gle/n4nx6jrFGBVLermg6"
             target="_blank"
             rel="noopener noreferrer"
           >

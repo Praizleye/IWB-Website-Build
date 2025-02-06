@@ -28,7 +28,7 @@ const Testimonials = () => {
           gap: "1rem",
           pagination: true,
           width: "100vw",
-          fixedWidth: true,
+          fixedWidth: false,
           fixedHeight: true,
           padding: { left: "1rem", right: "5rem" },
           autoplay: true,
@@ -47,7 +47,7 @@ const Testimonials = () => {
                 effect="blur"
               />
               <div className="card-name">Godman, Onahi</div>
-              <div className="card-date">November, 2022.</div>
+              <div className="card-date">December, 2024.</div>
               <motion.div
                 className="card-star"
                 initial="hidden"
@@ -81,7 +81,7 @@ const Testimonials = () => {
                 />
               </motion.div>
               <div className="card-textContent">
-                IWB is at the centre of building young African minds to provide
+                IWB Africa is at the centre of building young African minds to provide
                 solutions to local problems. It is the place for everyone with a
                 great dream.
               </div>
@@ -95,7 +95,7 @@ const Testimonials = () => {
                 effect="blur"
               />
               <div className="card-name">Patience, Ukange</div>
-              <div className="card-date">March, 2022.</div>
+              <div className="card-date">February , 2024.</div>
               <motion.div
                 className="card-star"
                 initial="hidden"
@@ -129,10 +129,7 @@ const Testimonials = () => {
                 />
               </motion.div>
               <div className="card-textContent">
-                Ideas Worth Billions is known for brooding Africa’s finest
-                talents, creators and technopreneurs by equipping them with the
-                requisite tools for exploits in the marketplace. IWB is the
-                perfect place to learn, grow and explore.
+                IWB Africa is dedicated to nurturing talent and preparing individuals for the future. It's the ideal place for anyone to begin their journey.
               </div>
             </div>
           </SplideSlide>
@@ -179,7 +176,7 @@ const Testimonials = () => {
                 />
               </motion.div>
               <div className="card-textContent">
-                IWB channels her resources for self development, and exploring
+                IWB Africa channels her resources for self development, and exploring
                 potentials. You have the liberty to set up your platform, and
                 dominate. She is a priceless medium for valuable networking,
                 growth, and achievement.
@@ -194,7 +191,7 @@ const Testimonials = () => {
                 effect="blur"
               />
               <div className="card-name">Precita, Ejiroghene</div>
-              <div className="card-date">November, 2022.</div>
+              <div className="card-date">March, 2023.</div>
               <motion.div
                 className="card-star"
                 initial="hidden"
@@ -228,8 +225,8 @@ const Testimonials = () => {
                 />
               </motion.div>
               <div className="card-textContent">
-                IWB has been a great platform for me because it has helped me
-                stay relevant in my Organization through the strategies
+                IWB Africa has been a great platform for me because it has helped me
+                stay relevant in my organization through the strategies
                 highlighted on how thrive within one's workspace.
               </div>
             </div>

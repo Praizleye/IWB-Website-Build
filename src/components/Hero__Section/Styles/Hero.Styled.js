@@ -1,7 +1,7 @@
 // import framer from "framer-motion";
 import styled from "styled-components";
 
-export const StyleHero = styled.div`
+export const StyleHero = styled.section`
   height: max-content;
   background: #1b7aad;
   display: flex;
@@ -97,6 +97,7 @@ export const StyleHero = styled.div`
       font-size: 3.5rem;
       font-weight: bold;
       width: max-content;
+      font-family:'Lunema';
       @media screen and (max-width: 1086px) {
         font-size: 2.9rem;
       }
@@ -125,6 +126,7 @@ export const StyleHero = styled.div`
     }
     div:nth-of-type(2) {
       font-size: 3.5rem;
+      font-family:'Lunema';
       font-weight: bold;
       width: max-content;
       @media screen and (max-width: 1086px) {

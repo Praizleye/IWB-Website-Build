@@ -180,10 +180,10 @@ export const StyleNewsletter = styled.div`
     align-items:center;
     gap:1rem;
     margin: 1.5rem 0 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
 
     @media screen and (max-width: 760px) {
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
 
     input{
@@ -228,9 +228,10 @@ export const StyleNewsletter = styled.div`
         cursor: pointer;
         font-size: inherit;
 
-        @media screen and (max-width: 760px) {
+        @media screen and (max-width: 900px) {
           height: 2.5rem;
-          width: 10rem;
+          width: fit-content;
+          padding: 0.5rem 1rem;
         }
       }
     }

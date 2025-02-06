@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <div>
       <Nav />
-      <StyleHero id="#">
+      <StyleHero id="home">
         <div className="cta__text container">
           <motion.div initial="hidden" animate="visible" variants={animateText}>
             ...Building People{" "}
@@ -68,7 +68,7 @@ const Hero = () => {
             opportunities in 2030.
           </motion.div>
           <a
-            href="https://twitter.com/iwb_official"
+            href="https://www.linkedin.com/company/iwb-africa"
             target="_blank"
             rel="noopener noreferrer"
           >

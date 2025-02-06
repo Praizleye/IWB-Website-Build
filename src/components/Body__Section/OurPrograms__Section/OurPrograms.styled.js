@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleOurPrograms = styled.div`
+export const StyleOurPrograms = styled.section`
   background-color: #f1f4fb;
   padding: 3rem 5rem 6rem;
   @media screen and (max-width: 1200px) {
@@ -78,9 +78,9 @@ export const StyleOurPrograms = styled.div`
         img {
           width: 23rem;
           padding: 1rem;
-          height: 14rem;
+          height: 16rem;
           object-fit: cover;
-          object-position: 50% 50%;
+          object-position: top center;
           @media screen and (max-width: 1200px) {
             width: 19rem;
             height: 14rem;
@@ -109,6 +109,12 @@ export const StyleOurPrograms = styled.div`
         }
       }
       div.card-textDesc {
+        span{
+          display: block;
+          font-weight:bold;
+        }
+
+        color:#747779;
         padding: 0 1rem;
         font-size: 0.9rem;
         height: 7rem;

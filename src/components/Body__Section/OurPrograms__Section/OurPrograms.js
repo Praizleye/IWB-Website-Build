@@ -25,6 +25,40 @@ const OurPrograms = () => {
     },
   };
 
+  const programs = [
+    {
+      header:"Bridge",
+      subtitle:"Unlock  your Genius",
+      body:"Learn in-demand skills to enhance your productivity and profitability.  Get upskilled to join the top 1% of creators and young professionals shaping the future. Become the next leader in Business Tech.",
+      status:{
+        title:'Register Now',
+        link:'http://bridge.iwbafrica.org/',
+        class:''
+      }
+    },
+    {
+      header:"Ladder",
+      subtitle:"Rise from 0-1 Tech",
+      body:"Ladder seeks to enhance digital literacy and upskill thousands of talents for the future by providing tailored mentoring, resources and support to help you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
+      status:{
+        title:'Join the next cohort',
+        link:'http://bridge.iwbafrica.org/',
+        class:'comingSoon'
+      }
+    },
+    {
+      header:"Innov8",
+      subtitle:"Create the Future",
+      body:"Innov8 is An unconventional, campus-led and out-of-the-box event designed to ignite innovation and showcase young innovators building models and projects for future Africa. Not just an event, Innov8 is a LEAP.",
+      status:{
+        title:'Coming soon',
+        link:'http://bridge.iwbafrica.org/',
+        class:'comingSoon'
+      }
+    },
+  ]
+
+
   return (
     <StyleOurPrograms id="Programs">
       <div className="heading">
@@ -53,11 +87,42 @@ const OurPrograms = () => {
           resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
-          interval: 4000,
+          interval: 4000
         }}
       >
         <SplideTrack>
-          <SplideSlide>
+        {
+          programs.map(({header, subtitle, body, status}, index)=>(
+            <SplideSlide>
+              <div className="card">
+                <div className="card-img">
+                  <LazyLoadImage
+                    src={images[`Card${index + 1}`]}
+                    alt="card-figure"
+                    effect="blur"
+                    height={"14rem"}
+                    visibleByDefault={images[`Card${index + 1}`]}
+                  />
+                </div>
+                <div className="card-subHeading">{header}</div>
+                <div className="card-textDesc">
+                  <span>{subtitle}</span>
+                  {body}
+                </div>
+                <a
+                  href={status.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    className={status.class}
+                  >{status.title}</button>
+                </a>
+              </div>
+            </SplideSlide>
+          ))
+        }
+          {/* <SplideSlide>
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
@@ -129,9 +194,9 @@ const OurPrograms = () => {
               </div>
               <button className="comingSoon">Coming Soon</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
@@ -149,9 +214,9 @@ const OurPrograms = () => {
               </div>
               <button className="comingSoon">Starts this Summer</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
@@ -176,9 +241,9 @@ const OurPrograms = () => {
                 <button>Sign Up</button>
               </a>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
@@ -196,9 +261,9 @@ const OurPrograms = () => {
               </div>
               <button className="comingSoon">Opens Soon</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
 
-          <SplideSlide>
+          {/* <SplideSlide>
             <div className="card">
               <div className="card-img">
                 <LazyLoadImage
@@ -218,7 +283,7 @@ const OurPrograms = () => {
               </div>
               <button className="comingSoon">Starts Soon</button>
             </div>
-          </SplideSlide>
+          </SplideSlide> */}
         </SplideTrack>
 
         <div className="splide__arrows">

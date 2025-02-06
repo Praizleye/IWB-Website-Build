@@ -9,9 +9,9 @@ import { animateCards } from "./animateImpact";
 
 const ImpactReport = () => {
   return (
-    <StyleImpactReport id="Impact report">
+    <StyleImpactReport id="Achievements">
       <div className="ImpactReport__heading">
-        Impact Report
+        Achievements
         <img src={images.Line} alt="text-underline" />
         <div>
           We are making great strides across spaces and communities in Africa.

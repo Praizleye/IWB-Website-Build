@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleImpactReport = styled.div`
+export const StyleImpactReport = styled.section`
   margin: 5rem 0 2rem;
   padding: 3rem 5rem;
   display: flex;

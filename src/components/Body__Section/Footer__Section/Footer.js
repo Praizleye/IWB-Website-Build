@@ -7,16 +7,17 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import { BsTelegram, BsSpotify } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6"
+import {  BsWhatsapp } from "react-icons/bs";
 import {
-  AiFillTwitterSquare,
+  // AiFillTwitterSquare,
   AiFillFacebook,
-  AiFillYoutube,
+  // AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
 const Footer = () => {
   return (
-    <StyleFooter>
+    <StyleFooter id="footer">
       <motion.div
         className="heading"
         initial="hidden"
@@ -27,9 +28,7 @@ const Footer = () => {
         <motion.span variants={animateSubheading}>Connect . </motion.span>{" "}
         <motion.span variants={animateSubheading}>Thrive &#62;</motion.span>
         <motion.div variants={animateSubtext}>
-          IWB in synergy with other companies and organizations in public,
-          private and social sectors, is helping millions of youths and
-          professionals leverage on opportunities of the new economy.
+          We are building a vibrant community of emerging leaders who are driving innovation and shaping the future.
         </motion.div>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"
@@ -56,14 +55,20 @@ const Footer = () => {
             <a href="#About">About us</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Impact report">Impact report</a>
+            <a href="#Programs">Bridge</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
+            <a href="#Programs">Ladder</a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Achievements">Achievements</a>
+          </motion.li>
+          {/* <motion.li variants={animateSubheading}>
             <a href="#Resources">Resources</a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
+          </motion.li> */}
+          {/* <motion.li variants={animateSubheading}>
             <a href="#Testimonial">Testimonial</a>
-          </motion.li>
+          </motion.li> */}
           {/* <motion.li variants={animateSubheading}>
             <a
               href="https://www.linkedin.com/company/ideas-worth-billions/"
@@ -88,13 +93,31 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              i-School
+              Channels
             </a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Store">Store</a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Support">Support</a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Blog">Blog</a>
           </motion.li>
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
           Contact
+          <motion.li variants={animateSubheading}>
+            <a
+              href="mailto:hello@iwbafrica.org?subject=Mail from our Website"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              hello@iwbafrica.org
+            </a>
+          </motion.li>
           <motion.li variants={animateSubheading}>
             <a
               href="mailto:connect.iwb@gmail.com?subject=Mail from our Website"
@@ -123,6 +146,16 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
+              href="https://x.com/iwb_official"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaXTwitter />
+              <span>Twitter</span>
+            </a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a
               href="https://web.facebook.com/iwb.official/"
               target="_blank"
               rel="noopener noreferrer"
@@ -133,6 +166,16 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
+              href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsWhatsapp />
+              <span>Whatsapp</span>
+            </a>
+          </motion.li>
+          {/* <motion.li variants={animateSubheading}>
+            <a
               href="https://t.me/iwb_official"
               target="_blank"
               rel="noopener noreferrer"
@@ -140,18 +183,9 @@ const Footer = () => {
               <BsTelegram />
               <span>Telegram</span>
             </a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
-            <a
-              href="https://twitter.com/iwb_official"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillTwitterSquare />
-              <span>Twitter</span>
-            </a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
+          </motion.li> */}
+          
+          {/* <motion.li variants={animateSubheading}>
             <a
               href="https://www.youtube.com/@ideasworthbillions"
               target="_blank"
@@ -160,8 +194,8 @@ const Footer = () => {
               <AiFillYoutube />
               <span>Youtube</span>
             </a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
+          </motion.li> */}
+          {/* <motion.li variants={animateSubheading}>
             <a
               href="https://anchor.fm/ideasworthbillions"
               target="_blank"
@@ -170,13 +204,13 @@ const Footer = () => {
               <BsSpotify />
               <span>Spotify</span>
             </a>
-          </motion.li>
+          </motion.li> */}
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
           Legal
           <motion.li variants={animateSubheading}>
-            <a href="#nothing">Terms of Service</a>
+            <a href="#Programs">Terms of Service</a>
           </motion.li>
         </motion.ul>
       </motion.div>

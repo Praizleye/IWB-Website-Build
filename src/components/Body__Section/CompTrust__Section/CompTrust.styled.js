@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleCompTrust = styled.div`
+export const StyleCompTrust = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -22,9 +22,9 @@ import kidoSchool from "../assets/CompTrust__Assets/Kibo-school.png";
 import julieth from "../assets/CompTrust__Assets/julieth-logo.png";
 
 //? OurPrograms importing Section
-import Card1 from "../assets/OurPrograms__Section/Card1.png";
-import Card2 from "../assets/OurPrograms__Section/Card2.png";
-import Card3 from "../assets/OurPrograms__Section/Card3.png";
+import Card1 from "../assets/OurPrograms__Section/Card 1.png";
+import Card2 from "../assets/OurPrograms__Section/Card 2.png";
+import Card3 from "../assets/OurPrograms__Section/Card 3.png";
 import Card4 from "../assets/OurPrograms__Section/Card 4.png";
 import Card5 from "../assets/OurPrograms__Section/Card 5.png";
 import Card6 from "../assets/OurPrograms__Section/Card 6.png";

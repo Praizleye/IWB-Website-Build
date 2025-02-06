@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleFooter = styled.div`
+export const StyleFooter = styled.section`
   margin-top: 5rem;
   padding: 4rem;
   background-color: #000000;

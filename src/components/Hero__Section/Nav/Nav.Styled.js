@@ -62,13 +62,19 @@ export const NavStyle = styled.div`
         }
         a {
           text-decoration: none;
-          color: #075aa0;
+          color:rgba(7, 91, 160, 0.7);
           @media screen and (max-width: 1200px) {
             font-size: 0.9rem;
           }
           &:hover {
             border-bottom: 2px solid #0047af;
           }
+        }
+        
+        a.active {
+          text-decoration: none;
+          color: #0047af;
+          
         }
       }
 

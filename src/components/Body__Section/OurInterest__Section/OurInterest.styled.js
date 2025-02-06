@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleOurInterest = styled.div`
+export const StyleOurInterest = styled.section`
   background-color: #fafcff;
   margin-top: 7rem;
 
