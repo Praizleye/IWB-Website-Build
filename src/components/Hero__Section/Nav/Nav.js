@@ -16,7 +16,7 @@ function Nav() {
     {title:"Achievements", link:"#Achievements", target:"_self"},
     {title:"Programs", link:"#Programs", target:"_self"},
     {title:"Scope", link:"#Scope", target:"_self"},
-    {title:"blog", link:"#home", target:"_self"},
+    {title:"Blog", link:"#home", target:"_self"},
     {title:"Store", link:"#home", target:"_blank"},
     {title:"Get Started", link:"https://forms.gle/KjYu3dMaEwZAKJVj8", target:"_blank"},
     
@@ -125,7 +125,21 @@ function Nav() {
               ""
             ) : (
               <motion.ul className="app__navbar-links">
-                {[
+                {navLinks.map(({link, title, target}, index) => (
+                  <li className="app__flex" key={index}>
+                    <div />
+                    <a href={link} id="nav-link" target={target} key={title}
+                      onClick={() => {
+                        setToggle(!toggle);
+                      }}
+                      className={activeSection === title || link.includes(activeSection) ? "active" : "inactive"}
+                    >
+                      {" "}
+                      {title}
+                    </a>
+                  </li>
+                ))}
+                {/* {[
                   "About",
                   "Impact report",
                   "Programs",
@@ -146,7 +160,7 @@ function Nav() {
                       {item}
                     </a>
                   </li>
-                ))}
+                ))} */}
               </motion.ul>
             )}
           </motion.div>

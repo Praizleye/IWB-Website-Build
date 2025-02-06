@@ -78,7 +78,7 @@ const Popup = () => {
                 world.
               </div>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=sf_link"
+                href="https://forms.gle/KjYu3dMaEwZAKJVj8"
                 target="_self"
                 rel="noopener noreferrer"
               >

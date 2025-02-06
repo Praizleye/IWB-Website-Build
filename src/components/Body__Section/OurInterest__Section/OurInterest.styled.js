@@ -24,7 +24,7 @@ export const StyleOurInterest = styled.section`
     font-weight: bold;
     position: relative;
     color: #0047af;
-    letter-spacing: 0.25rem;
+    // letter-spacing: 0.25rem;
     border-left: 3px solid #ffe401;
     margin-left: 2rem;
     padding-left: 2rem;

@@ -56,7 +56,7 @@ const WhoWeAre = () => {
               <br/> A non-profit dedicated to upskilling young Africans and professionals for the future.  
             </span>
             <span>
-              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips Africa’s top talents with in-demand skills and values to thrive in Business, Leadership, and Technology.
+              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips African talents with in-demand skills and values to thrive in Business, Leadership, and Technology.
             </span>
             <span>
               We are building a vibrant community of emerging leaders who are driving innovation and shaping the continent’s future. Our vision is to connect 500 million African talents to digital solutions and opportunities by 2030.

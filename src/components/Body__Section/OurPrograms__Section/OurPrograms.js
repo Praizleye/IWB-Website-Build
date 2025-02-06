@@ -38,8 +38,8 @@ const OurPrograms = () => {
     },
     {
       header:"Ladder",
-      subtitle:"Rise from 0-1 Tech",
-      body:"Ladder seeks to enhance digital literacy and upskill thousands of talents for the future by providing tailored mentoring, resources and support to help you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
+      subtitle:"Rise from 0-1 in Tech",
+      body:"Ladder seeks to enhance digital literacy and upskill thousands of talents for the future. By providing tailored mentoring, resources and support; Ladder helps you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
       status:{
         title:'Join the next cohort',
         link:'https://forms.gle/RAzrkZuXBfSUgJ1F9',
@@ -62,7 +62,7 @@ const OurPrograms = () => {
   return (
     <StyleOurPrograms id="Programs">
       <div className="heading" style={{fontFamily: 'Lunema'}}>
-        Our programs
+        Our Programs
         {/* <motion.span
           initial="hidden"
           whileInView="visible"

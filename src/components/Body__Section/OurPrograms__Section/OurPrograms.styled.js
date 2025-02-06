@@ -14,7 +14,7 @@ export const StyleOurPrograms = styled.section`
     font-weight: bold;
     position: relative;
     color: #0047af;
-    letter-spacing: 0.25rem;
+    // letter-spacing: 0.1rem;
     border-left: 3px solid #ffe401;
     padding-left: 2rem;
     z-index: 1;
