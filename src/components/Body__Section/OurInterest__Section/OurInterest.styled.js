@@ -1,23 +1,24 @@
 import styled from "styled-components";
 
 export const StyleOurInterest = styled.section`
-  background-color: #fafcff;
-  margin-top: 7rem;
+  background-color: #000000;
+  padding-top: 7rem;
 
-  div.heading-wrapper, div.Ourinterest-body {
-    padding: 2.5rem 3rem ;
+  div.heading-wrapper,
+  div.Ourinterest-body {
+    padding: 2.5rem 3rem;
     @media screen and (max-width: 1200px) {
-      padding-inline:2rem;
+      padding-inline: 2rem;
     }
     @media screen and (max-width: 850px) {
-      padding-inline:2rem ;
+      padding-inline: 2rem;
     }
     @media screen and (max-width: 850px) {
-      padding-inline:1rem;
+      padding-inline: 1rem;
     }
   }
-  div.heading-wrapper{
-    padding-block:0;
+  div.heading-wrapper {
+    padding-block: 0;
   }
   div.heading {
     font-size: 3rem;
@@ -61,7 +62,7 @@ export const StyleOurInterest = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height:fit-content;
+    height: fit-content;
 
     @media screen and (max-width: 590px) {
       flex-direction: column;
@@ -181,8 +182,8 @@ export const StyleOurInterest = styled.section`
             padding: 0.25rem 0;
           }
         }
-        div.textDesc.active{
-          color: #ffffff
+        div.textDesc.active {
+          color: #ffffff;
         }
       }
     }
