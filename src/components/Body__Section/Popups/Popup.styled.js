@@ -32,12 +32,12 @@ export const StylePopup = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     position: relative;
 
     div.card {
       width: 28rem;
-      height: 32rem;
+      height: 30rem;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       background: #0047af;
       @media screen and (max-width: 530px) {

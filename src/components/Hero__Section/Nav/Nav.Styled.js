@@ -211,14 +211,14 @@ export const NavMenuBar = styled.div`
   .app__navbar-menu {
     position: fixed;
     right: 1rem;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     z-index: 1000;
     margin-top: 13px;
 
     svg {
-      height: 3rem;
-      width: 3rem;
+      height: 2.25rem;
+      width: 2.25rem;
       cursor: pointer;
       border-radius: 50%;
       border: 0.2rem solid #075aa0;
@@ -237,9 +237,10 @@ export const NavMenuBar = styled.div`
     .mobile-menu {
       position: fixed;
       top: 0;
-      left: 0;
       right: 0;
-      bottom: 0;
+      width: 320px; // Increased from 280px
+      height: auto;
+      max-height: 480px; // Increased from 400px
       background: rgba(255, 255, 255, 0.98);
       backdrop-filter: blur(10px);
       z-index: 999;
@@ -248,20 +249,22 @@ export const NavMenuBar = styled.div`
       justify-content: flex-start;
       opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
       pointer-events: ${({ isOpen }) => (isOpen ? "all" : "none")};
-      transition: opacity 0.3s ease-in-out;
-      padding-top: 6rem;
+      transition: all 0.3s ease-in-out;
+      padding: 4.5rem 0 2.5rem 0; // Slightly more padding
+      border-radius: 0 0 0 12px;
+      box-shadow: -2px 2px 20px rgba(0, 71, 175, 0.1);
 
       .close-button {
         position: absolute;
-        top: 1.5rem;
-        right: 1.5rem;
+        top: 1rem;
+        right: 1rem;
         background: none;
         border: none;
         cursor: pointer;
 
         svg {
-          width: 2rem;
-          height: 2rem;
+          width: 1.5rem;
+          height: 1.5rem;
           color: #075aa0;
           transition: all 0.3s ease;
           border: none;
@@ -277,17 +280,17 @@ export const NavMenuBar = styled.div`
 
       ul {
         width: 100%;
-        padding: 0 2rem;
+        padding: 0 2rem; // Increased from 1.5rem
 
         li {
-          margin: 1.5rem 0;
+          margin: 1.2rem 0; // Increased from 1rem
           opacity: 0;
           transform: translateY(20px);
-          animation: slideIn 0.5s forwards;
+          animation: slideIn 0.4s forwards;
           animation-delay: calc(var(--index) * 0.1s);
 
           a {
-            font-size: 1.5rem;
+            font-size: 1.3rem; // Increased from 1.2rem
             color: #075aa0;
             text-decoration: none;
             transition: all 0.3s ease;

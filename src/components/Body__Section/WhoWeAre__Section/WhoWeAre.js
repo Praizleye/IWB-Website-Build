@@ -18,7 +18,7 @@ import {
 const WhoWeAre = () => {
   return (
     <StyleWhoWeAre id="About">
-      <div className="heading" style={{fontFamily: 'Lunema'}}>
+      <div className="heading" style={{ fontFamily: "Lunema" }}>
         About Us{" "}
         {/* <motion.span
           initial="hidden"
@@ -52,16 +52,22 @@ const WhoWeAre = () => {
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
             <span>
-              IWB Africa  is one of Africa’s leading talent development organizations. 
-              <br/> A non-profit dedicated to upskilling young Africans and professionals for the future.  
+              IWB Africa is one of Africa's leading talent development
+              organizations, <br/> dedicated to upskilling young Africans and
+              professional for the future.
             </span>
             <span>
-              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips African talents with in-demand skills and values to thrive in Business, Leadership, and Technology.
+              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips
+              African talents with in-demand skills and values to thrive in
+              Business, Leadership, and Technology.
             </span>
             <span>
-              We are building a vibrant community of emerging leaders who are driving innovation and shaping the continent’s future. Our vision is to connect 500 million African talents to digital solutions and opportunities by 2030.
+              We are building a vibrant community of emerging leaders who are
+              driving innovation and shaping the continent’s future. Our vision
+              is to connect 500 million African talents to digital solutions and
+              opportunities by 2030.
             </span>
-              
+
             {/* Ideas Worth Billions is Africa's leading Human Capacity Development
             Network. Raising a new crop of young Africans and Professionals
             imbued with value and in-demand skills for global excellence in
@@ -105,22 +111,16 @@ const WhoWeAre = () => {
             className="About__text-description partner-description"
           >
             <span>
-              Individuals and organizations are rooting for us —supporting our mission to connect millions of talents to digital solutions. You can make an impact by:
+              Individuals and organizations are rooting for us —supporting our
+              mission to connect millions of talents to digital solutions. You
+              can make an impact by:
             </span>
             <ul>
-              <li>
-                💻 Donating laptops to enhance digital access
-              </li>
-              <li>
-                🎓 Providing scholarships to boost digital literacy
-              </li>
-              <li>
-                👩‍💻 Hiring top talents from our community
-              </li>
+              <li>💻 Donating laptops to enhance digital access</li>
+              <li>🎓 Providing scholarships to boost digital literacy</li>
+              <li>👩‍💻 Hiring top talents from our community</li>
             </ul>
-            <span>
-              Be part of a shared future—partner with us today! 
-            </span>
+            <span>Be part of a shared future—partner with us today!</span>
           </motion.div>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"
