@@ -65,11 +65,12 @@ export default function TalentsCollection() {
             {talents.map(({img, name, role})=>(
                 <TalentCard img={img} name={name} role={role} />
             ))}
-
         </motion.div>
-        <a className='hire-btn' href='#'>
+
+        <a className='hire-btn' href="https://facebook.com">
             Hire Our Talents
         </a>
+
     </TalentCollectionWrapper>
   )
 }
