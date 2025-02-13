@@ -46,11 +46,9 @@ export const StyleWhoWeAre = styled.section`
     }
   }
 
-  .sub-heading{
-    font-family: 'Lunema';
+  .sub-heading {
+    font-family: "Lunema";
   }
-
-  
 
   div.container {
     display: flex;
@@ -119,13 +117,12 @@ export const StyleWhoWeAre = styled.section`
       }
     }
     div.About__text-content {
-      
       background: #fafafa;
-      height: 25rem;
+      height: auto;
       min-height: fit-content;
-      padding: 0 1rem 0 4rem;
+      padding: 1rem 1rem 2rem 4rem;
       display: flex;
-      gap:1rem;
+      gap: 1rem;
       margin-block: 2.95rem;
       line-height: 1.9;
       letter-spacing: 0.05rem;
@@ -133,7 +130,7 @@ export const StyleWhoWeAre = styled.section`
       align-items: flex-start;
       flex-direction: column;
       @media screen and (max-width: 1200px) {
-        height: 22rem;
+        height: auto;
       }
       @media screen and (max-width: 830px) {
         height: 17.5rem;
@@ -181,12 +178,12 @@ export const StyleWhoWeAre = styled.section`
           // line-height: 1.7;
         }
       }
-      div.About__text-description > span{
+      div.About__text-description > span {
         display: block;
         margin-bottom: 1rem;
       }
-      div.About__text-description > span:last-child{
-        margin-bottom:0;
+      div.About__text-description > span:last-child {
+        margin-bottom: 0;
       }
       a {
         button {
@@ -223,23 +220,22 @@ export const StyleWhoWeAre = styled.section`
       }
     }
 
-  
-    div.About__text-content:nth-child(1){
+    div.About__text-content:nth-child(1) {
       border-right: 3px solid #ffe401;
       border-top: none;
 
       @media screen and (max-width: 590px) {
         border-top: 3px solid #ffe401;
         border-right: none;
-        order:2;
+        order: 2;
       }
 
-      ul{
+      ul {
         margin-block: 1rem;
-        list-style:none;
+        list-style: none;
       }
     }
-    div.About__text-content:nth-child(2){
+    div.About__text-content:nth-child(2) {
       border-left: 3px solid #ffe401;
 
       @media screen and (max-width: 590px) {
@@ -247,36 +243,35 @@ export const StyleWhoWeAre = styled.section`
       }
     }
 
-
     div.partner {
-      padding: 3rem 1rem;
+      padding: 1rem 1rem 2rem;
     }
     div.WhoWeAre__img.partner-img {
-      height:100%;
-      
+      height: 100%;
+
       @media screen and (max-width: 590px) {
         order: 1;
-        width:100%;
+        width: 100%;
         margin: 0 2rem 0 0;
       }
-      span{
+      span {
         @media screen and (max-width: 590px) {
-          width:100%;
+          width: 100%;
           margin: 0 2rem 0 0;
         }
       }
       img {
-        height: 27.3rem;
-        object-fit:cover;
-        object-position:center;
+        min-height: 24.3rem;
+        object-fit: cover;
+        object-position: center;
         width: 25rem;
         border: none;
         // border-left: 3px solid #ffe401;
         margin-right: 1rem;
 
         @media screen and (max-width: 590px) {
-          width:100%;
-          height:auto;
+          width: 100%;
+          height: auto;
         }
       }
     }

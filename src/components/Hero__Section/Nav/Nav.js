@@ -11,25 +11,26 @@ import ProgramDropMenu from "./Programs_Drop_Menu/Program_Drop_menu";
 // import Logo from "../../assets/Logo.svg";
 
 function Nav() {
-  const [toggle, setToggle] = useState(true);
-  const navLinks =[
-    {title:"About", link:"#About", target:"_self"},
-    {title:"Achievements", link:"#Achievements", target:"_self"},
-    {title:"Programs", link:"#Programs", target:"_self"},
-    {title:"Scope", link:"#Scope", target:"_self"},
-    {title:"Blog", link:"#home", target:"_self"},
-    {title:"Store", link:"#home", target:"_blank"},
-    {title:"Get Started", link:"https://forms.gle/KjYu3dMaEwZAKJVj8", target:"_blank"},
-    
-  ]
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navLinks = [
+    { title: "About", link: "#About", target: "_self" },
+    { title: "Achievements", link: "#Achievements", target: "_self" },
+    { title: "Programs", link: "#Programs", target: "_self" },
+    { title: "Scope", link: "#Scope", target: "_self" },
+    // { title: "Blog", link: "#home", target: "_self" },
+    // { title: "Store", link: "#home", target: "_blank" },
+    {
+      title: "Get Started",
+      link: "https://forms.gle/KjYu3dMaEwZAKJVj8",
+      target: "_blank",
+    },
+  ];
 
-  const [activeSection, setActiveSection] = useState('#');
-
+  const [activeSection, setActiveSection] = useState("#");
 
   ///track windows scroll and highlight the active section
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-
 
     const handleScroll = () => {
       sections.forEach((section) => {
@@ -41,47 +42,17 @@ function Nav() {
     };
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("load", handleScroll)
+    window.addEventListener("load", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-  // const handleBlogClick = (event) => {
-  //   // event.preventDefault();
-  //   const navLink = document.querySelectorAll("#nav-link");
-
-  //   if (event.target === navLink[4]) {
-  //     const blogNav = navLink[4];
-  //     console.log(blogNav);
-  //     console.log(event.target.innerHTML);
-  //     window.open(
-  //       "https://www.linkedin.com/company/ideas-worth-billions/",
-  //       "_blank",
-  //       "noopener,noreferrer"
-  //     );
-
-  //     blogNav.innerHTML = "LinkedIn";
-  //     return false;
-  //   }
-  // };
-  // const handleBlogClickMobile = (event) => {
-  //   // event.preventDefault();
-  //   const navLink = document.querySelectorAll("#nav-link-mobile");
-
-  //   if (event.target === navLink[4]) {
-  //     const blogNav = navLink[4];
-  //     console.log(blogNav);
-  //     console.log(event.target.innerHTML);
-  //     window.open(
-  //       "https://www.linkedin.com/company/ideas-worth-billions/",
-  //       "_blank",
-  //       "noopener,noreferrer"
-  //     );
-
-  //     blogNav.innerHTML = "Blog";
-  //     return false;
-  //   }
-  // };
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -92,11 +63,18 @@ function Nav() {
           </div>
           <ul className="app__navbar-links">
             {/* <div></div> */}
-            {navLinks.map(({link, title, target}, index) => (
+            {navLinks.map(({ link, title, target}, index) => (
               <li className="app__flex nav-link" key={index}  >
                 <div />
-                <a href={link} id="nav-link" target={target}
-                  className={ activeSection === title || link.includes(activeSection) ? "active" : "inactive"}
+                <a
+                  href={link}
+                  id="nav-link"
+                  target={target}
+                  className={
+                    activeSection === title || link.includes(activeSection)
+                      ? "active"
+                      : "inactive"
+                  }
                 >
                   {" "}
                   {title}
@@ -109,63 +87,45 @@ function Nav() {
         </nav>
       </NavStyle>
 
-      <NavMenuBar>
+      <NavMenuBar isOpen={isMenuOpen}>
         <div className="app__navbar-menu">
           <motion.div
-            whileHover={{
-              scale: 1.2,
-              transition: { duration: 1 },
-            }}
+            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            onClick={() => setToggle(!toggle)}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {toggle ? <RiMenu5Fill /> : <RiCloseFill />}
+            {!isMenuOpen ? <RiMenu5Fill /> : <RiCloseFill />}
           </motion.div>
-          {/* this div is for the nav menu bar .... */}
 
-          <motion.div>
-            {toggle ? (
-              ""
-            ) : (
-              <motion.ul className="app__navbar-links">
-                {navLinks.map(({link, title, target}, index) => (
-                  <li className="app__flex" key={index}>
-                    <div />
-                    <a href={link} id="nav-link" target={target} key={title}
-                      onClick={() => {
-                        setToggle(!toggle);
-                      }}
-                      className={activeSection === title || link.includes(activeSection) ? "active" : "inactive"}
-                    >
-                      {" "}
-                      {title}
-                    </a>
-                  </li>
-                ))}
-                {/* {[
-                  "About",
-                  "Impact report",
-                  "Programs",
-                  "Scope",
-                  "Resources",
-                  "Sign Up",
-                ].map((item, index) => (
-                  <li
-                    className="app__navbar-link"
-                    key={`menu-${index}`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                    }}
+          <motion.div
+            className="mobile-menu"
+            initial={false}
+            animate={isMenuOpen ? "open" : "closed"}
+          >
+            <button 
+              className="close-button"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <RiCloseFill />
+            </button>
+            <motion.ul>
+              {navLinks.map(({ link, title, target }, index) => (
+                <motion.li key={index} style={{ "--index": index }}>
+                  <a
+                    href={link}
+                    target={target}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={
+                      activeSection === title || link.includes(activeSection)
+                        ? "active"
+                        : ""
+                    }
                   >
-                    <div />
-                    <a href={`#${item}`} id="nav-link-mobile">
-                      {" "}
-                      {item}
-                    </a>
-                  </li>
-                ))} */}
-              </motion.ul>
-            )}
+                    {title}
+                  </a>
+                </motion.li>
+              ))}
+            </motion.ul>
           </motion.div>
         </div>
       </NavMenuBar>

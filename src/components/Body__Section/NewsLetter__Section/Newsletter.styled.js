@@ -239,13 +239,13 @@ export const StyleNewsletter = styled.div`
 `;
 
 export const StyleCompany = styled.div`
-  padding: 6rem 5rem 0rem;
+  padding: 6rem 5rem 3rem;
 
   @media screen and (max-width: 1200px) {
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 3rem;
   }
   @media screen and (max-width: 760px) {
-    padding: 5rem 1rem 5rem 2rem;
+    padding: 5rem 1rem 2.5rem 2rem;
   }
 
   .header{

@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const StyleTestimonials = styled.section`
   // margin-top: 7rem;
-  padding: 5rem 0 9rem;
+  padding: 5rem 0 8rem;
   background: #fff;
+
+
   div.heading {
     text-align: center;
     color: #1A1A1A;

@@ -4,19 +4,21 @@ export const MenuWrapper = styled.div`
     background-color: white;
     height: fit-content;
     max-height: 80vh;
-    width: 100%;
+    width: 100vw;
     padding: 4rem 5rem;
     display:flex;
     flex-wrap:wrap;
     gap:2rem;
     justify-content:space-between;
     position:absolute; 
-    top:-90vh;
+    visibility:hidden;
+    /* relative to navbar */
+    top:90%;
     left:0;
     transition: ease-in-out 0.5s;
     opacity: 0;
-    z-index:-1;
-    box-shadow: 0 -2px 16px 2px rgba(0,0,0,0.3);
+    z-index:1;
+    box-shadow:  -3px 20px 20px rgba(0,0,0,0.1);
 
     @media screen and (max-width: 1200px) {
       padding: 4rem 3rem;

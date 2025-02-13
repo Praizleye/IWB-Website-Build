@@ -10,24 +10,23 @@ export const TalentCollectionWrapper = styled.div`
     div.content{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         gap:0;
 
-        @media screen and (min-width: 1400px){ 
+        @media screen and (min-width: 1500px){ 
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
+        }
+
+        @media screen and (max-width: 1400px){ 
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
         }
         @media screen and (max-width: 1100px){ 
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         @media screen and (max-width: 760px){ 
-            grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr ;
         }
         @media screen and (max-width: 500px){ 
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
         }
     }
         
@@ -73,14 +72,29 @@ export const TalentCardWrapper = styled.div`
         transition: all 0.3s ease-in-out;
 
         h6{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight:300;
             color: white;
+
+            @media screen and (max-width: 930px) {
+                font-size: 1rem;
+            }
         }
         p{
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight:400;
             color: rgb(220,220,220);
+            
+            @media screen and (max-width: 1200px) {
+              font-size: 0.85rem;
+            }
+            @media screen and (max-width: 840px) {
+              font-size: 0.75rem;
+            }
+            @media screen and (max-width: 590px) {
+              font-size: 0.7rem;
+            }
+
         }
 
         h6, p{

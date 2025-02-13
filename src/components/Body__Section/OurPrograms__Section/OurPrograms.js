@@ -27,36 +27,36 @@ const OurPrograms = () => {
 
   const programs = [
     {
-      header:"Bridge",
-      subtitle:"Unlock  your Genius",
-      body:"Learn in-demand skills to enhance your productivity and profitability.  Get upskilled to join the top 1% of creators and young professionals shaping the future. Become the next leader in Business Tech.",
-      status:{
-        title:'Register Now',
-        link:'http://bridge.iwbafrica.org/',
-        class:''
-      }
+      header: "Bridge",
+      subtitle: "Unlock  your Genius",
+      body: "Learn in-demand skills to enhance your productivity and profitability.  Get upskilled to join the top 1% of creators and young professionals shaping the future. Become the next leader in Business Tech.",
+      status: {
+        title: "Register Now",
+        link: "https://forms.gle/dgfcA8KkWKLbLp6w9",
+        class: "",
+      },
     },
     {
-      header:"Ladder",
-      subtitle:"Rise from 0-1 in Tech",
-      body:"Ladder seeks to enhance digital literacy and upskill thousands of talents for the future. By providing tailored mentoring, resources and support; Ladder helps you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
-      status:{
-        title:'Join the next cohort',
-        link:'https://forms.gle/RAzrkZuXBfSUgJ1F9',
-        class:''
-      }
+      header: "Ladder",
+      subtitle: "Rise from 0-1 in Tech",
+      body: "Ladder seeks to enhance digital literacy and upskill thousands of talents for the future. By providing tailored mentoring, resources and support; Ladder helps you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc)",
+      status: {
+        title: "Join the next cohort",
+        link: "https://forms.gle/RAzrkZuXBfSUgJ1F9",
+        class: "",
+      },
     },
     {
-      header:"Innov8",
-      subtitle:"Create the Future",
-      body:"Innov8 is An unconventional, campus-led and out-of-the-box event designed to ignite innovation and showcase young innovators building models and projects for future Africa. Not just an event, Innov8 is a LEAP.",
-      status:{
-        title:'Coming soon',
-        link:'',
-        class:'comingSoon'
-      }
+      header: "Innov8",
+      subtitle: "Create the Future",
+      body: "Innov8 is An unconventional, campus-led and out-of-the-box event designed to ignite innovation and showcase young innovators building models and projects for future Africa. Not just an event, Innov8 is a LEAP.",
+      status: {
+        title: "Coming soon",
+        link: "",
+        class: "comingSoon",
+      },
     },
-  ]
+  ];
 
 
   return (
