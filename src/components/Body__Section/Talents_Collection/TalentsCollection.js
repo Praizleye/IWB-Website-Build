@@ -67,7 +67,7 @@ export default function TalentsCollection() {
             ))}
 
         </motion.div>
-        <a className='hire-btn'>
+        <a className='hire-btn' href='#'>
             Hire Our Talents
         </a>
     </TalentCollectionWrapper>

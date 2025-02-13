@@ -14,7 +14,7 @@ export default function ProgramCollection({Icon, header, programs}){
             {
                 programs.map(({title, link}) =>(
                     <li>
-                        <a href={link} target="_blank" className="program">
+                        <a href={link} target="_blank" rel="noreferrer" className="program">
                             {title}
                         </a>
                     </li>

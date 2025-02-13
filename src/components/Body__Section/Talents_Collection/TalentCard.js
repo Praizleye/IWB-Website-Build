@@ -4,7 +4,7 @@ import { TalentCardWrapper } from './TalentsCollection.styled'
 export default function TalentCard({img, name, role}) {
   return (
     <TalentCardWrapper>
-        <img src={img} alt={`${name}'s picture`} />
+        <img src={img} alt={`${name}`} />
         <div className='talent-info'>
             <h6>
                 {name}
