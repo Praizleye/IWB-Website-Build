@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const NavStyle = styled.div`
-  position: fixed;
+  position: sticky;
+  top:0;
   width: 100%;
-  height: 4.5rem;
+  height: fit-content;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   z-index: 10;
@@ -12,21 +13,24 @@ export const NavStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4.5rem;
+    height: fit-content;
     padding: 0 1rem;
+
+    @media screen and (max-width: 760px) {
+      padding-block: 1rem;
+    }
+
     .app__navbar-logo {
       flex: 1;
       padding-left: 4rem;
       @media screen and (max-width: 1200px) {
-        padding-left: 2rem;
+        padding-left: 2rem;s
       }
       @media screen and (max-width: 960px) {
         padding-left: 2rem;
-        height: 1.8rem;
       }
       @media screen and (max-width: 850px) {
         padding-left: 1rem;
-        height: 1.8rem;
       }
       img {
         height: 2.3rem;
@@ -49,29 +53,50 @@ export const NavStyle = styled.div`
 
     ul.app__navbar-links {
       display: flex;
+      align-items:center;
 
-      li {
+      li.nav-link {
+        display:block;
         margin-right: 1rem;
         list-style-type: none;
-        height: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
         @media screen and (max-width: 1200px) {
           margin: 0;
         }
-        a {
+        a:not(.program) {
           text-decoration: none;
           color:rgba(7, 91, 160, 0.7);
+          border-bottom:  2px solid transparent;
           @media screen and (max-width: 1200px) {
             font-size: 0.9rem;
           }
+
           &:hover {
-            border-bottom: 2px solid #0047af;
+            border-bottom-color: #0047af;
           }
         }
-        
-        a.active {
+
+        :not(:nth-last-of-type(1)){
+          padding-block: 1.5rem;
+        }
+
+        :has(.drop-menu-wrapper){
+         :has(a:not(.program):hover), :has(.drop-menu-wrapper:hover){
+
+            a:not(.program){
+              border-bottom-color: #0047af;
+            } 
+            
+            .drop-menu-wrapper{
+              top:100%;
+              opacity:1;
+            }
+          }
+        }
+
+        a:not(.program).active {
           text-decoration: none;
           color: #0047af;
           
@@ -83,11 +108,11 @@ export const NavStyle = styled.div`
       }
     }
   }
-  ul.app__navbar-links li:nth-of-type(1),
-  ul.app__navbar-links li:nth-of-type(2),
-  ul.app__navbar-links li:nth-of-type(3),
-  ul.app__navbar-links li:nth-of-type(4),
-  ul.app__navbar-links li:nth-of-type(5) {
+  ul.app__navbar-links > li.nav-link:nth-of-type(1),
+  ul.app__navbar-links > li.nav-link:nth-of-type(2),
+  ul.app__navbar-links > li.nav-link:nth-of-type(3),
+  ul.app__navbar-links > li.nav-link:nth-of-type(4),
+  ul.app__navbar-links > li.nav-link:nth-of-type(5) {
     margin-right: 3rem;
     @media screen and (max-width: 1200px) {
       margin-right: 2rem;
@@ -99,7 +124,7 @@ export const NavStyle = styled.div`
       margin-right: 1rem;
     }
   }
-  ul.app__navbar-links li:nth-last-of-type(1) {
+  ul.app__navbar-links > li.nav-link:nth-last-of-type(1) {
     background: #0047af;
     height: 3rem;
     display: flex;
@@ -119,7 +144,7 @@ export const NavStyle = styled.div`
     @media screen and (max-width: 780px) {
       margin-right: 0.5rem;
     }
-    a {
+    a:not(.program) {
       color: #fafafa;
       padding: 0.11rem 0.5rem 0 0.5rem;
       text-decoration: none;
@@ -133,8 +158,9 @@ export const NavStyle = styled.div`
         border: none;
       }
     }
+
   }
-  ul.app__navbar-links li:nth-last-of-type(2) {
+  ul.app__navbar-links li.nav-link:nth-last-of-type(2) {
     background: transparent;
     height: 3rem;
     display: flex;
@@ -168,7 +194,8 @@ export const NavStyle = styled.div`
 export const NavMenuBar = styled.div`
   .app__navbar-menu {
     position: fixed;
-    right: 1rem;
+    left:calc(100% - 50px - 1rem);
+    top:0;
     height: 50px;
     width: 50px;
     z-index: 10;

@@ -239,7 +239,7 @@ export const StyleNewsletter = styled.div`
 `;
 
 export const StyleCompany = styled.div`
-  padding: 6rem 5rem 3rem;
+  padding: 6rem 5rem 0rem;
 
   @media screen and (max-width: 1200px) {
     padding: 6rem 3rem;

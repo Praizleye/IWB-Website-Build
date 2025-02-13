@@ -73,7 +73,27 @@ import Microsoft from "../assets/HiringCompanies__Assets/microsoft.svg";
 import Paystack from "../assets/HiringCompanies__Assets/paystack.svg";
 import Andela from "../assets/HiringCompanies__Assets/andela.svg";
 
+
+import Knimi from '../assets/Talents_Assets/Knimi.png';
+import Benjamin from '../assets/Talents_Assets/Benjamin.png';
+import Ethelberth from '../assets/Talents_Assets/Ethelberth.png';
+import Gracefield from '../assets/Talents_Assets/Gracefield.png';
+import Hope from '../assets/Talents_Assets/Hope.png';
+import Onyinye from '../assets/Talents_Assets/Onyinye.png';
+import Timi from '../assets/Talents_Assets/Timi.png';
+import Victoria from '../assets/Talents_Assets/Victoria.png';
+
 const assets = {
+
+  Knimi,
+  Benjamin,
+  Ethelberth,
+  Gracefield,
+  Hope,
+  Onyinye,
+  Timi,
+  Victoria,
+
   Amazon,
   Apple,
   Flutterwave,

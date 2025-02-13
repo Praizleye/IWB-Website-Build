@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyleTestimonials = styled.section`
-  margin-top: 7rem;
+  // margin-top: 7rem;
   padding: 5rem 0 9rem;
   background: #fff;
   div.heading {

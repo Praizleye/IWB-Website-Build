@@ -2,7 +2,7 @@ import React from "react";
 
 //? importing Styles
 import { StyleHero } from "./Styles/Hero.Styled";
-import Nav from "./Nav/Nav";
+// import Nav from "./Nav/Nav";
 import images from "../../constants/images";
 
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Hero = () => {
   return (
     <div>
-      <Nav />
+      {/* <Nav /> */}
       <StyleHero id="home">
         <div className="cta__text container">
           <motion.div initial="hidden" animate="visible" variants={animateText}>

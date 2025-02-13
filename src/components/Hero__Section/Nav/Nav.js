@@ -6,6 +6,7 @@ import { RiMenu5Fill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { NavMenuBar, NavStyle } from "./Nav.Styled";
 import images from "../../../constants/images";
+import ProgramDropMenu from "./Programs_Drop_Menu/Program_Drop_menu";
 
 // import Logo from "../../assets/Logo.svg";
 
@@ -92,14 +93,16 @@ function Nav() {
           <ul className="app__navbar-links">
             {/* <div></div> */}
             {navLinks.map(({link, title, target}, index) => (
-              <li className="app__flex" key={index}>
+              <li className="app__flex nav-link" key={index}  >
                 <div />
                 <a href={link} id="nav-link" target={target}
-                  className={activeSection === title || link.includes(activeSection) ? "active" : "inactive"}
+                  className={ activeSection === title || link.includes(activeSection) ? "active" : "inactive"}
                 >
                   {" "}
                   {title}
                 </a>
+
+                {title === 'Programs' &&(<ProgramDropMenu />)}
               </li>
             ))}
           </ul>

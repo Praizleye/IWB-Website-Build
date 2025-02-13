@@ -13,6 +13,8 @@ import OurInterest from "./components/Body__Section/OurInterest__Section/OurInte
 import Testimonials from "./components/Body__Section/Testimonials__Section/Testimonials";
 import Newsletter from "./components/Body__Section/NewsLetter__Section/Newsletter";
 import Footer from "./components/Body__Section/Footer__Section/Footer";
+import Nav from "./components/Hero__Section/Nav/Nav";
+import OurTalent from "./components/Body__Section/Our_Talent/OurTalent";
 
 function App() {
   const [showPopup, setshowPopup] = useState(false);
@@ -26,12 +28,14 @@ function App() {
   return (
     <div className="App">
       {showPopup ? <Popup /> : ""}
+      <Nav />
       <Hero />
       <CompTrust />
       <WhoWeAre />
       <ImpactReport />
       <OurPrograms />
       <OurInterest />
+      <OurTalent />
       {/* <Resources /> */}
       <Testimonials />
       <Newsletter />
