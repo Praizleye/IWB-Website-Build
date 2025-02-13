@@ -19,7 +19,7 @@ export const TalentCollectionWrapper = styled.div`
         @media screen and (max-width: 1400px){ 
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
         }
-        @media screen and (max-width: 1100px){ 
+        @media screen and (max-width: 14001px){ 
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
         @media screen and (max-width: 760px){ 
