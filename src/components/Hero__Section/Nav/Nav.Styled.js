@@ -67,6 +67,7 @@ export const NavStyle = styled.div`
         margin-right: 1rem;
         list-style-type: none;
         display: flex;
+        font-family:'Lunema';
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;
@@ -316,6 +317,7 @@ export const NavMenuBar = styled.div`
       ul {
         width: 100%;
         padding: 0 2rem; // Increased from 1.5rem
+        list-style-type: none;
 
         li {
           margin: 1.2rem 0; // Increased from 1rem
@@ -323,6 +325,7 @@ export const NavMenuBar = styled.div`
           transform: translateY(20px);
           animation: slideIn 0.4s forwards;
           animation-delay: calc(var(--index) * 0.1s);
+          font-family:'Lunema';
 
           a {
             font-size: 1.3rem; // Increased from 1.2rem

@@ -7,7 +7,7 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import {  BsWhatsapp, BsTwitter, BsX } from "react-icons/bs";
+import {  BsWhatsapp, BsTwitter} from "react-icons/bs";
 import {
   // AiFillTwitterSquare,
   AiFillFacebook,
