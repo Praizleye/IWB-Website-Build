@@ -66,6 +66,7 @@ export const StyleOurInterest = styled.section`
 
     @media screen and (max-width: 590px) {
       flex-direction: column;
+      padding-bottom: 7rem;
     }
     div.Ourinterest-img {
       img {

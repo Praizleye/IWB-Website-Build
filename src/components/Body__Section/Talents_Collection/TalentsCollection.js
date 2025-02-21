@@ -68,7 +68,7 @@ export default function TalentsCollection() {
         </motion.div>
 
         <a className='hire-btn' href="https://facebook.com">
-            Hire Our Talents
+            Hire Our Top Talent
         </a>
 
     </TalentCollectionWrapper>

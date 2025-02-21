@@ -7,7 +7,7 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import {  BsWhatsapp, BsTwitter } from "react-icons/bs";
+import {  BsWhatsapp, BsTwitter, BsX } from "react-icons/bs";
 import {
   // AiFillTwitterSquare,
   AiFillFacebook,
@@ -96,13 +96,15 @@ const Footer = () => {
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Store">Store</a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link">Support</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link">
+              Support
+            </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Blog">Blog</a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Store">Store</a>
           </motion.li>
         </motion.ul>
 

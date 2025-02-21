@@ -40,7 +40,7 @@ const ImpactReport = () => {
             </div> */}
           </div>
           <div className="subSectionReport__text">
-          Through Ladder by IWB, over 210 scholars across the globe have been funded to study Business Innovation at Tekedia.
+            Through Ladder by IWB, over 210 scholars across Africa have been funded to study Business Innovation at Tekedia.
           </div>
         </motion.div>
 
@@ -52,10 +52,10 @@ const ImpactReport = () => {
         >
           <div className="subSectionReport__icon">
             <img src={images.TrainingTalents} alt="descriptive figure" />
-            <div className="subSectionReport__figure">5000<sup>+</sup> Talents</div>
+            <div className="subSectionReport__figure">5000<sup>+</sup> Talent</div>
           </div>
-          <div className="subSectionReport__text">
-            Our community programs have impacted over 5000 talents in Africa, covering digital technology, leadership and business innovation.
+          <div className="subSectionReport__text">            
+            Our community programs have impacted and provided opportunities for over 5000 African Talent, covering digital technology, leadership and business innovation.
           </div>
         </motion.div>
 
@@ -88,7 +88,7 @@ const ImpactReport = () => {
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 3000 subscribers available on our mail-list, looking forward to finding the right offers and updates in business and tech.
+            Over 3000 subscribers available on our mailing-list, looking forward to finding the right offers in business and tech
           </div>
         </motion.div>
 
@@ -118,11 +118,11 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.StartupProjects} alt="descriptive figure" />
             <div className="subSectionReport__figure">
-              150<sup>+</sup> Bridge Alums
+              200<sup>+</sup> Bridge Alums
             </div>
           </div>
           <div className="subSectionReport__text">
-            Our Bridge Program has upskilled over 150 learners who are shaping the future and steering innovation in Business/Tech.
+            Our Bridge Program has upskilled over 200 learners who are shaping the future and steering innovation in Business/Tech.
           </div>
         </motion.div>
       </div>

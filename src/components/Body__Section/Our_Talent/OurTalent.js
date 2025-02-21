@@ -22,7 +22,7 @@ export default function OurTalent() {
     return (
         <StyleCompany >
             <h3 className="header" style={{fontFamily: 'Lunema'}}>
-              Our talents are top picks for leading companies and organizations around the globe.
+              Our Talent are top picks for leading companies and organizations around the globe.
             </h3>
             <Splide
               options={{
