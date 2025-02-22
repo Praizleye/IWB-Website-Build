@@ -56,33 +56,39 @@ const ladder_programs = [
     }
 ]
 
-export default function ProgramDropMenu() {
+//should be broken-down in the future, to make it more reuseable
+export default function ProgramDropMenu( {children='', className=''} ) {
   return (
-    <MenuWrapper className="drop-menu-wrapper">
-        <div className="collection">
-            <h6>
-                Bridge
-            </h6>
-            <p>
-                Become the next leader  
-                <br />
-                in Business/Tech ( 8weeks )
-            </p>
-        </div>
+    <MenuWrapper className={"drop-menu-wrapper " + className} >
+        {
+            children === 'bridge' ? (
+                <div className="collection">
+                    {/* <h6>
+                        Bridge
+                    </h6> */}
+                    <p>
+                        Become the next leader  
+                        <br />
+                        in Business/Tech ( 8weeks )
+                    </p>
+                </div>
+            ):
+            (
+                <div className="collection">
+                    {/* <h6>
+                        Ladder
+                    </h6> */}
+                    <div className="main-collection">
+                        {
+                            ladder_programs.map(({header, programs, Icon})=>(
+                                <ProgramCollection header={header} programs={programs} Icon={Icon} />
+                            ))
+                        }
+                    </div>
+                </div>
+            )
 
-        <div className="collection">
-            <h6>
-                Ladder
-            </h6>
-            <div className="main-collection">
-                {
-                    ladder_programs.map(({header, programs, Icon})=>(
-                        <ProgramCollection header={header} programs={programs} Icon={Icon}>
-                        </ProgramCollection>
-                    ))
-                }
-            </div>
-        </div>
+        }
     </MenuWrapper>
   )
 }

@@ -4,31 +4,50 @@ export const MenuWrapper = styled.div`
     background-color: white;
     height: fit-content;
     max-height: 80vh;
-    width: 100vw;
-    padding: 4rem 5rem;
+    width: fit-content;
+    max-width:100vw;
+    box-sizing:content-box;
+    text-wrap:nowrap;
+    padding: 2rem 3rem;
     display:flex;
     flex-wrap:wrap;
     gap:2rem;
     justify-content:space-between;
     position:absolute; 
-    visibility:hidden;
     /* relative to navbar */
     top:90%;
-    left:0;
+    right:0;
     transition: ease-in-out 0.5s;
     opacity: 0;
     z-index:1;
+    border-radius:0.25rem;
     box-shadow:  -3px 20px 20px rgba(0,0,0,0.1);
 
     @media screen and (max-width: 1200px) {
       padding: 4rem 3rem;
     }
 
-    @media screen and (max-width: 850px) {
-      padding: 3rem 2rem;
+    @media screen and (max-width: 1060px) and (min-width:760px) {
+        width: calc(100vw - 6rem );
+        right: 0;
     }
-    @media screen and (max-width: 590px) {
-      padding: 2rem 1rem;
+
+    @media screen and (max-width: 760px) {
+        opacity:1;
+        flex-direction:column;
+        width:fit-content !important;
+        height:100vh !important;
+        max-height:100vh;
+        right: -100vw;
+        top: 100%;
+        box-shadow:unset;
+        width: fit-content;
+        z-index:1000;
+        padding: 2rem 1rem;
+
+        &.active{
+            right: -3rem;
+        }
     }
 
     .collection > h6{
@@ -40,10 +59,18 @@ export const MenuWrapper = styled.div`
         
     .collection:has(.main-collection) > .main-collection {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
         gap: 1.5rem;
-        @media screen and (max-width: 1380px) and (min-width:1200px) {
-            grid-template-columns: 1fr 1fr;
+        // @media screen and (max-width: 1380px) and (min-width:1200px) {
+        //     grid-template-columns: 1fr 1fr;
+        // }
+        @media screen and (max-width:760px) {
+            grid-template-columns:1fr;
+        }
+
+        @media screen and (min-width: 1380px) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     
@@ -73,7 +100,7 @@ export const CollectionWrapper = styled.div`
         padding-left: 1rem; 
 
         li{
-            padding:0.5rem;
+            padding:0.25rem;
         }
 
         li a.program{
@@ -81,7 +108,7 @@ export const CollectionWrapper = styled.div`
             display: block;
             text-decoration: none;
             color: #1A1A1A;
-            font-weight: 400;
+            font-weight: 300;
             transition: all 0.5s ease-in-out;
             border-bottom: 1px dashed transparent;
             width:fit-content;

@@ -63,7 +63,7 @@ export const NavStyle = styled.div`
       align-items:center;
 
       li.nav-link {
-        // position: relative;
+        position: relative;
         margin-right: 1rem;
         list-style-type: none;
         display: flex;
@@ -74,15 +74,32 @@ export const NavStyle = styled.div`
         @media screen and (max-width: 1200px) {
           margin: 0;
         }
+        @media screen and (max-width: 1060px) and (min-width:760px) {
+          position:static;
+        }
 
+        button#nav-link{
+          background-color: unset;
+          border:none;
+          display:flex;
+          align-items: center;
+          gap:0.5rem;
+        }
 
-        a:not(.program) {
+        a:not(.program), button#nav-link  {
+          font-family: inherit;
+          font-size: inherit;
           text-decoration: none;
           color:rgba(7, 91, 160, 0.7);
           font-weight: 500;
           transition: all 0.3s ease;
           padding: 0.25rem 0rem;
           position: relative;
+          cursor:pointer;
+
+          .icon{
+            transition: all 0.3s ease;
+          }
 
           &:before {
             content: "";
@@ -104,6 +121,11 @@ export const NavStyle = styled.div`
             &:before {
               width: 100%;
             }
+            
+            .icon{
+              transform: rotate(180deg);
+              transform-origin: center;
+            }
           }
         }
 
@@ -117,7 +139,7 @@ export const NavStyle = styled.div`
         }
 
         :has(.drop-menu-wrapper){
-         :has(a:not(.program):hover), :has(.drop-menu-wrapper:hover){
+         :has(button:not(.program):hover), :has(.drop-menu-wrapper:hover){
 
             a:not(.program){
               border-bottom-color: #0047af;
@@ -131,7 +153,7 @@ export const NavStyle = styled.div`
           }
         }
 
-        a:not(.program).active {
+        a:not(.program).active, button.active {
           text-decoration: none;
           color: #0047af;
           font-weight: 600;
@@ -257,7 +279,7 @@ export const NavMenuBar = styled.div`
       width: 2.25rem;
       cursor: pointer;
       border-radius: 50%;
-      border: 0.2rem solid #075aa0;
+      // border: 0.2rem solid #075aa0;
       padding: 0.5rem;
       color: #075aa0;
       background: white;
@@ -274,9 +296,9 @@ export const NavMenuBar = styled.div`
       position: fixed;
       top: 0;
       right: 0;
-      width: 320px; // Increased from 280px
-      height: auto;
-      max-height: 480px; // Increased from 400px
+      width: fit-content; // Increased from 280px
+      height: 100vh;
+      max-height: 100vh; // Increased from 400px
       background: rgba(255, 255, 255, 0.98);
       backdrop-filter: blur(10px);
       z-index: 999;
@@ -319,7 +341,7 @@ export const NavMenuBar = styled.div`
         padding: 0 2rem; // Increased from 1.5rem
         list-style-type: none;
 
-        li {
+        li.nav-link {
           margin: 1.2rem 0; // Increased from 1rem
           opacity: 0;
           transform: translateY(20px);
@@ -327,7 +349,22 @@ export const NavMenuBar = styled.div`
           animation-delay: calc(var(--index) * 0.1s);
           font-family:'Lunema';
 
-          a {
+          button#nav-link{
+            background-color: unset !important;
+            border:none !important;
+            display:flex !important;
+            align-items: center!important;
+            gap:0.5rem;
+
+            .icon{
+              box-shadow:none;
+              transform: rotate(270deg);
+              transform-origin: center;
+            }
+          }
+
+          a:not(.program), button#nav-link{
+            font-family:inherit;
             font-size: 1.3rem; // Increased from 1.2rem
             color: #075aa0;
             text-decoration: none;
