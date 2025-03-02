@@ -58,10 +58,9 @@ const OurPrograms = () => {
     },
   ];
 
-
   return (
     <StyleOurPrograms id="Programs">
-      <div className="heading" style={{fontFamily: 'Lunema'}}>
+      <div className="heading" style={{ fontFamily: "Lunema" }}>
         Our Programs
         {/* <motion.span
           initial="hidden"
@@ -87,13 +86,12 @@ const OurPrograms = () => {
           resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
-          interval: 4000
+          interval: 4000,
         }}
       >
         <SplideTrack>
-        {
-          programs.map(({header, subtitle, body, status}, index)=>(
-            <SplideSlide>
+          {programs.map(({ header, subtitle, body, status }, index) => (
+            <SplideSlide key={header}>
               <div className="card">
                 <div className="card-img">
                   <LazyLoadImage
@@ -111,17 +109,14 @@ const OurPrograms = () => {
                 </div>
                 <a
                   href={status.link}
-                  target={index === programs.length - 1 ? "_self":"_blank"}
+                  target={index === programs.length - 1 ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                 >
-                  <button
-                    className={status.class}
-                  >{status.title}</button>
+                  <button className={status.class}>{status.title}</button>
                 </a>
               </div>
             </SplideSlide>
-          ))
-        }
+          ))}
           {/* <SplideSlide>
             <div className="card">
               <div className="card-img">

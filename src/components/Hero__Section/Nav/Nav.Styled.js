@@ -67,7 +67,7 @@ export const NavStyle = styled.div`
         margin-right: 1rem;
         list-style-type: none;
         display: flex;
-        font-family:'Lunema';
+        // font-family:'Lunema';
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;
@@ -91,9 +91,9 @@ export const NavStyle = styled.div`
           font-size: inherit;
           text-decoration: none;
           color:rgba(7, 91, 160, 0.7);
-          font-weight: 500;
+          // font-weight: 500;
           transition: all 0.3s ease;
-          padding: 0.25rem 0rem;
+          padding: 0.35rem 0rem;
           position: relative;
           cursor:pointer;
 
@@ -104,7 +104,7 @@ export const NavStyle = styled.div`
           &:before {
             content: "";
             position: absolute;
-            bottom: -2px;
+            bottom: 0;
             left: 0;
             width: 0;
             height: 2px;
@@ -129,28 +129,19 @@ export const NavStyle = styled.div`
           }
         }
 
-        // a.active {
-        //     border-bottom-color: #0047af;
-        // }
+        a:not(.program).active, button.active {
+          text-decoration: none;
+          color: #0047af;
+          font-weight: 600;
+
+          &:before {
+            width: 100%;
+          }
+        }
 
 
         :not(:nth-last-of-type(1)){
           padding-block: 1.5rem;
-        }
-
-        :has(.drop-menu-wrapper){
-         :has(button:not(.program):hover), :has(.drop-menu-wrapper:hover){
-
-            a:not(.program){
-              border-bottom-color: #0047af;
-            } 
-            
-            .drop-menu-wrapper{
-              visibility:visible;
-              top:calc(100% - 0.8rem);
-              opacity:1;
-            }
-          }
         }
 
         a:not(.program).active, button.active {
@@ -166,6 +157,32 @@ export const NavStyle = styled.div`
 
       @media screen and (max-width: 760px) {
         display: none;
+      }
+
+      // for more drop down menu, add selectors or make code mor dynamic
+      .Bridge-btn:has(.drop-menu-wrapper), .Ladder-btn:has(.drop-menu-wrapper){
+        :has(a:not(.program):hover), :has(button:hover), :has(.drop-menu-wrapper:hover){
+          a:not(.program), button{
+            color: #0047af !important;
+
+            &:before {
+              width: 100%;
+            }
+            
+            .icon{
+              transform: rotate(180deg);
+              transform-origin: center;
+            }
+          } 
+          
+          .drop-menu-wrapper{
+            visibility:visible;
+            display:flex;
+            top:calc(100% - 1.5rem);
+            opacity:1;
+            z-index:1;
+          }
+        }
       }
     }
   }
@@ -267,8 +284,9 @@ export const NavStyle = styled.div`
 export const NavMenuBar = styled.div`
   .app__navbar-menu {
     position: fixed;
-    left:calc(100% - 50px - 1rem);
-    top:0;
+    // left: calc(100% - 50px - 1rem);
+    right: 1rem;
+    top: 0;
     height: 30px;
     width: 30px;
     z-index: 1000;
@@ -278,18 +296,18 @@ export const NavMenuBar = styled.div`
       height: 2.25rem;
       width: 2.25rem;
       cursor: pointer;
-      border-radius: 50%;
+      // border-radius: 50%;
       // border: 0.2rem solid #075aa0;
-      padding: 0.5rem;
+      padding: 0.25rem;
       color: #075aa0;
       background: white;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0, 71, 175, 0.1);
+      // box-shadow: 0 2px 10px rgba(0, 71, 175, 0.1);
 
-      &:hover {
-        transform: rotate(90deg);
-        color: #0047af;
-      }
+      // &:hover {
+      //   transform: rotate(90deg);
+      //   color: #0047af;
+      // }
     }
 
     .mobile-menu {
@@ -319,20 +337,21 @@ export const NavMenuBar = styled.div`
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 1000;
 
         svg {
-          width: 1.5rem;
-          height: 1.5rem;
+          height: 2.25rem;
+          width: 2.25rem;
           color: #075aa0;
           transition: all 0.3s ease;
           border: none;
           box-shadow: none;
           padding: 0;
 
-          &:hover {
-            color: #0047af;
-            transform: rotate(90deg);
-          }
+          // &:hover {
+          //   color: #0047af;
+          //   transform: rotate(90deg);
+          // }
         }
       }
 
@@ -347,24 +366,25 @@ export const NavMenuBar = styled.div`
           transform: translateY(20px);
           animation: slideIn 0.4s forwards;
           animation-delay: calc(var(--index) * 0.1s);
-          font-family:'Lunema';
+          font-family: "Lunema";
 
-          button#nav-link{
+          button#nav-link {
             background-color: unset !important;
-            border:none !important;
-            display:flex !important;
-            align-items: center!important;
-            gap:0.5rem;
+            border: none !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 0.5rem;
 
-            .icon{
-              box-shadow:none;
+            .icon {
+              box-shadow: none;
               transform: rotate(270deg);
               transform-origin: center;
             }
           }
 
-          a:not(.program), button#nav-link{
-            font-family:inherit;
+          a:not(.program),
+          button#nav-link {
+            font-family: inherit;
             font-size: 1.3rem; // Increased from 1.2rem
             color: #075aa0;
             text-decoration: none;

@@ -12,14 +12,14 @@ import ProgramDropMenu from "./Programs_Drop_Menu/Program_Drop_menu";
 
 // import Logo from "../../assets/Logo.svg";
 
-function Nav() {
+function Nav({ appRef }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { title: "About", link: "#About", target: "_self" },
+    { title: "Bridge", link: "#Bridge", children: "bridge" },
+    { title: "Ladder", link: "#ladder", children: "ladder" },
     { title: "Achievements", link: "#Achievements", target: "_self" },
     // { title: "Programs", link: "#Programs", target: "_self" },
-    { title: "Bridge", link: "#Bridge", children: 'bridge'},
-    { title: "Ladder", link: "#ladder", children: 'ladder'},
     // { title: "Programs", link: "#Programs", target: "_self" },
     { title: "Scope", link: "#Scope", target: "_self" },
     // { title: "Blog", link: "#home", target: "_self" },
@@ -34,40 +34,43 @@ function Nav() {
   const [activeSection, setActiveSection] = useState("#");
   const [progMenu, setProgMenu] = useState(null);
 
-  const handleMobileNavLink = (children) =>{
-  
-    if(children){
-      setProgMenu(o => {
-        if(o === children) return null;
-        else return children
-      })
-    }
-    else{
+  const handleMobileNavLink = (children) => {
+    if (children) {
+      setProgMenu((o) => {
+        if (o === children) return null;
+        else return children;
+      });
+    } else {
       setIsMenuOpen(false);
     }
-  }
+  };
 
-  const handleMobileNavClose = () =>{
-    if(progMenu !== null) setProgMenu(null)
+  const handleMobileNavClose = () => {
+    if (progMenu !== null) setProgMenu(null);
     else setIsMenuOpen(false);
-  }
+  };
 
   ///track windows scroll and highlight the active section
   useEffect(() => {
     const sections = document.querySelectorAll("section");
-
     const handleScroll = () => {
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
+
         if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
           setActiveSection(section.id);
         }
       });
     };
+
+    appRef.current.addEventListener("scroll", handleScroll);
+    appRef.current.addEventListener("load", handleScroll);
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    window.addEventListener("load", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    return () => {
+      appRef.current.removeEventListener("scroll", handleScroll);
+      appRef.current.removeEventListener("load", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -88,9 +91,13 @@ function Nav() {
           <ul className="app__navbar-links">
             {/* <div></div> */}
             {navLinks.map((navInfo, index) => (
-              <NavLink {...navInfo} key={index} 
+              <NavLink
+                {...navInfo}
+                key={index}
+                func={() => setActiveSection(navInfo.title)}
                 className={
-                  activeSection === navInfo.title || navInfo.link.includes(activeSection)
+                  activeSection === navInfo.title ||
+                  navInfo.link.includes(activeSection)
                     ? "active"
                     : "inactive"
                 }
@@ -126,7 +133,8 @@ function Nav() {
             whileTap={{ scale: 0.9 }}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {!isMenuOpen ? <FaBars /> : <RiCloseFill />}
+            <FaBars />
+            {/* {!isMenuOpen ? <FaBars /> : <RiCloseFill />} */}
           </motion.div>
 
           <motion.div
@@ -134,20 +142,22 @@ function Nav() {
             initial={false}
             animate={isMenuOpen ? "open" : "closed"}
           >
-            <button 
-              className="close-button"
-              onClick={handleMobileNavClose}
-            >
+            <button className="close-button" onClick={handleMobileNavClose}>
               <RiCloseFill />
             </button>
             <motion.ul>
               {navLinks.map((navInfo, index) => (
-                <NavLink {...navInfo} key={index}  style={{ "--index": index }}
+                <NavLink
+                  {...navInfo}
+                  key={index}
+                  style={{ "--index": index }}
                   className={
-                    activeSection === navInfo.title || navInfo.link.includes(activeSection)
+                    activeSection === navInfo.title ||
+                    navInfo.link.includes(activeSection)
                       ? "active"
                       : "inactive"
                   }
+                  mobile
                   func={() => handleMobileNavLink(navInfo.children)}
                 />
               ))}
@@ -169,9 +179,15 @@ function Nav() {
                 </motion.li>
               ))} */}
             </motion.ul>
+            <ProgramDropMenu
+              children="bridge"
+              className={progMenu === "bridge" && "active"}
+            />
+            <ProgramDropMenu
+              children="ladder"
+              className={progMenu === "ladder" && "active"}
+            />
           </motion.div>
-          <ProgramDropMenu children="bridge"  className={progMenu === 'bridge' && 'active'} />
-          <ProgramDropMenu children="ladder" className={progMenu === 'ladder' && 'active'} />
         </div>
       </NavMenuBar>
     </>

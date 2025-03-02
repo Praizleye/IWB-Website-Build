@@ -9,10 +9,19 @@ const OurInterest = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const interests = [
-    {label:"Business Development", body:"We empower entrepreneurs in our community by providing programs and resources that help them scale their businesses and develop impactful products, driving positive social change." },
-    {label:"Digital Technology", body:"Our talents are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape." },
-    {label:"Leadership Development", body:"Our community is home to some of the finest thought leaders  and  change makers in the continent, who are steering innovation and shaping the future." },
-  ]
+    {
+      label: "Business Development",
+      body: "We empower entrepreneurs in our community by providing programs and resources that help them scale their businesses and develop impactful products, driving positive social change.",
+    },
+    {
+      label: "Digital Technology",
+      body: "Our talents are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape.",
+    },
+    {
+      label: "Leadership Development",
+      body: "Our community is home to some of the finest thought leaders  and  change makers in the continent, who are steering innovation and shaping the future.",
+    },
+  ];
 
   useEffect(() => {
     const cycle = setInterval(() => {
@@ -40,7 +49,7 @@ const OurInterest = () => {
   return (
     <StyleOurInterest id="Scope">
       <div className="heading-wrapper">
-        <div className="heading" style={{fontFamily: 'Lunema'}}>
+        <div className="heading" style={{ fontFamily: "Lunema" }}>
           Our Scope
           {/* <motion.span
             initial="hidden"
@@ -62,25 +71,30 @@ const OurInterest = () => {
           />
         </div>
         <div className="Ourinterests-sections container">
-          {interests.map(({label, body}, index) =>(<div
-            className={`Ourinterest-section ${
-              activeIndex === index ? "active" : ""
-            }`}
-          >
+          {interests.map(({ label, body }, index) => (
             <div
-              className={`section-1 subheading ${
+              className={`Ourinterest-section ${
                 activeIndex === index ? "active" : ""
               }`}
-              style={{fontFamily: 'Lunema'}}
+              key={label}
             >
-              {label}
+              <div
+                className={`section-1 subheading ${
+                  activeIndex === index ? "active" : ""
+                }`}
+                style={{ fontFamily: "Lunema" }}
+              >
+                {label}
+              </div>
+              <div
+                className={`section-1 textDesc ${
+                  activeIndex === index ? "active" : ""
+                }`}
+              >
+                {body}
+              </div>
             </div>
-            <div className={`section-1 textDesc ${
-                activeIndex === index ? "active" : ""
-              }`}>
-              {body}
-            </div>
-          </div>))}
+          ))}
           {/* <div
             className={`Ourinterest-section ${
               activeIndex === 1 ? "active" : ""
