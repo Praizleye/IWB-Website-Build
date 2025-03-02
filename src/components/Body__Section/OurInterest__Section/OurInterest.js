@@ -15,7 +15,7 @@ const OurInterest = () => {
     },
     {
       label: "Digital Technology",
-      body: "Our talents are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape.",
+      body: "Our Talent are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape.",
     },
     {
       label: "Leadership Development",

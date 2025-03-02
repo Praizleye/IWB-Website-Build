@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleNewsletter} from "./Newsletter.styled";
+import { StyleNewsletter } from "./Newsletter.styled";
 import images from "../../../constants/images";
 import { motion } from "framer-motion";
 import { subscribeBtn } from "./animateNewsletter";
@@ -17,9 +17,8 @@ const Newsletter = () => {
   return (
     <section id="newsletter">
       <StyleNewsletter>
-
         <div className="Content">
-          <div className="heading" style={{fontFamily: 'Lunema'}}>
+          <div className="heading" style={{ fontFamily: "Lunema" }}>
             The IWB Newsletter
             <span>
               Subscribe to the Blue Letters
@@ -27,12 +26,17 @@ const Newsletter = () => {
             </span>
           </div>
           <div className="textContent">
-            Join thounsands of young creators and professionals in Tech, Business,
-            Career and Leadership, keeping pace with valuable resources and
-            content shared regularly on the Blue Letters
+            Join thousands of young creators and professionals in Tech,
+            Business, Career and Leadership, keeping pace with valuable
+            resources and content shared regularly on the Blue Letters.
           </div>
           <div className="email-input-wrapper">
-            <input type="email" onChange={handleSignUpForm} value={userEmail} placeholder="Enter your email address here" />
+            <input
+              type="email"
+              onChange={handleSignUpForm}
+              value={userEmail}
+              placeholder="Enter your email address here"
+            />
             <a
               href="https://mailchi.mp/e975b61c4013/subscribe-to-our-newsletter"
               target="_blank"
@@ -61,7 +65,6 @@ const Newsletter = () => {
             height={images.width}
           />
         </div>
-
       </StyleNewsletter>
     </section>
   );

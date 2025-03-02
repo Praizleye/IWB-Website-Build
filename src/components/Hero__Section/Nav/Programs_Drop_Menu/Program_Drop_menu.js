@@ -17,11 +17,11 @@ const ladder_programs = [
     programs: [
       {
         title: "Python Programming  - Kibo",
-        link: "https://docs.google.com/forms…/viewform?usp=header",
+        link: "https://forms.gle/ezWyS7Ex9FwHMzz39",
       },
       {
         title: "Web Development   - Kibo",
-        link: "https://docs.google.com/forms…/viewform?usp=header",
+        link: "https://forms.gle/ezWyS7Ex9FwHMzz39",
       },
     ],
     Icon: FaCode,
@@ -55,7 +55,7 @@ export default function ProgramDropMenu({ children = "", className = "" }) {
                     </h6> */}
           <a
             className="program"
-            href="https://docs.google.com/forms…viewform?usp=sf_link"
+            href="https://forms.gle/jbWRnktXg6gt4sNc8"
             target="_blank"
             rel="noreferrer"
           >

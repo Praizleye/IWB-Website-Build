@@ -311,7 +311,7 @@ export const NavMenuBar = styled.div`
     }
 
     .mobile-menu {
-      position: fixed;
+      position: absolute;
       top: 0;
       right: 0;
       width: fit-content; // Increased from 280px
@@ -366,7 +366,7 @@ export const NavMenuBar = styled.div`
           transform: translateY(20px);
           animation: slideIn 0.4s forwards;
           animation-delay: calc(var(--index) * 0.1s);
-          font-family: "Lunema";
+          // font-family: "Lunema";
 
           button#nav-link {
             background-color: unset !important;

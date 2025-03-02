@@ -65,7 +65,7 @@ const Hero = () => {
             variants={animateText2}
           >
             Connecting 500,000,000 Africans to Digital Solutions and
-            Opportunities by 2030.
+            Opportunities by 2030.
           </motion.div>
           <a
             href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
