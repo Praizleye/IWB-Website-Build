@@ -15,7 +15,6 @@ import Newsletter from "./components/Body__Section/NewsLetter__Section/Newslette
 import Footer from "./components/Body__Section/Footer__Section/Footer";
 import Nav from "./components/Hero__Section/Nav/Nav";
 import OurTalent from "./components/Body__Section/Our_Talent/OurTalent";
-import { useRef } from "react";
 
 function App() {
   const [showPopup, setshowPopup] = useState(false);
@@ -26,12 +25,10 @@ function App() {
     }, 25000);
   }, [showPopup]);
 
-  const appRef = useRef();
-
   return (
-    <div className="App" ref={appRef}>
+    <div className="App" id="App">
       {showPopup ? <Popup /> : ""}
-      <Nav appRef={appRef} />
+      <Nav />
       <Hero />
       <CompTrust />
       <WhoWeAre />

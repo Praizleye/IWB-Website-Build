@@ -12,7 +12,7 @@ import ProgramDropMenu from "./Programs_Drop_Menu/Program_Drop_menu";
 
 // import Logo from "../../assets/Logo.svg";
 
-function Nav({ appRef }) {
+function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { title: "About", link: "#About", target: "_self" },
@@ -52,6 +52,7 @@ function Nav({ appRef }) {
 
   ///track windows scroll and highlight the active section
   useEffect(() => {
+    const app = document.getElementById("App");
     const sections = document.querySelectorAll("section");
     const handleScroll = () => {
       sections.forEach((section) => {
@@ -63,13 +64,13 @@ function Nav({ appRef }) {
       });
     };
 
-    appRef.current.addEventListener("scroll", handleScroll);
-    appRef.current.addEventListener("load", handleScroll);
+    app.addEventListener("scroll", handleScroll);
+    app.addEventListener("load", handleScroll);
     handleScroll();
 
     return () => {
-      appRef.current.removeEventListener("scroll", handleScroll);
-      appRef.current.removeEventListener("load", handleScroll);
+      app.removeEventListener("scroll", handleScroll);
+      app.removeEventListener("load", handleScroll);
     };
   }, []);
 

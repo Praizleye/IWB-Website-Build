@@ -57,6 +57,7 @@ export default function ProgramDropMenu({ children = "", className = "" }) {
             className="program"
             href="https://docs.google.com/forms…viewform?usp=sf_link"
             target="_blank"
+            rel="noreferrer"
           >
             Become the next leader
             <br />
