@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const StyleOurInterest = styled.section`
   background-color: #000000;
-  padding-top: 7rem;
-
+  padding-top: 4rem;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   div.heading-wrapper,
   div.Ourinterest-body {
     padding: 2.5rem 3rem;
@@ -58,7 +60,6 @@ export const StyleOurInterest = styled.section`
   }
   div.Ourinterest-body.container {
     background-color: #000000;
-    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

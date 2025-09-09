@@ -14,12 +14,12 @@ const OurInterest = () => {
       body: "We empower entrepreneurs in our community by providing programs and resources that help them scale their businesses and develop impactful products, driving positive social change.",
     },
     {
-      label: "Digital Technology",
-      body: "Our Talent are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape.",
-    },
-    {
       label: "Leadership Development",
       body: "Our community is home to some of the finest thought leaders  and  change makers in the continent, who are steering innovation and shaping the future.",
+    },
+    {
+      label: "Digital Technology",
+      body: "Our Talent are exposed to emerging technologies and digital trends, they are adept at navigating the new frontier and leveraging cutting-edge technologies for profitability in an ever evolving digital landscape.",
     },
   ];
 
@@ -47,10 +47,10 @@ const OurInterest = () => {
   // };
 
   return (
-    <StyleOurInterest id="Scope">
+    <StyleOurInterest id="Interests">
       <div className="heading-wrapper">
-        <div className="heading" style={{ fontFamily: "Lunema" }}>
-          Our Scope
+        <div className="heading" style={{ fontFamily: "Host Grotesk" }}>
+          Interests
           {/* <motion.span
             initial="hidden"
             whileInView="visible"
@@ -82,7 +82,7 @@ const OurInterest = () => {
                 className={`section-1 subheading ${
                   activeIndex === index ? "active" : ""
                 }`}
-                style={{ fontFamily: "Lunema" }}
+                style={{ fontFamily: "Host Grotesk" }}
               >
                 {label}
               </div>

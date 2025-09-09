@@ -8,13 +8,13 @@ const CompTrust = () => {
     images.kidoSchool,
     images.Tekedia,
     // images.Playbooq,
-    images.julieth,
+    images.nexford,
   ];
 
   return (
     <StyleCompTrust id="home">
       <div className="Footer__heading">
-        Companies <span>that trust us</span>
+        Trusted by
       </div>
       <div></div>
       {companies.map((company, index) => (

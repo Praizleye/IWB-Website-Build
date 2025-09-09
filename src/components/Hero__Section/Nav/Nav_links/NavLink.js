@@ -38,7 +38,7 @@ export default function NavLink({
           <FaChevronDown className="icon" />
         </button>
         {!mobile && (
-          <ProgramDropMenu children={children} className={`${title}-menu`} />
+          <ProgramDropMenu className={`${title}-menu`} />
         )}
       </li>
     );

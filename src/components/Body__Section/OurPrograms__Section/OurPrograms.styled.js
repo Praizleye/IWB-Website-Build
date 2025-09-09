@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyleOurPrograms = styled.section`
   background-color: #f1f4fb;
   padding: 3rem 5rem 6rem;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
     padding: 3rem 2rem 6rem;
   }
@@ -96,7 +99,7 @@ export const StyleOurPrograms = styled.section`
         }
       }
       div.card-subHeading {
-        font-family: 'Lunema';
+        font-family: '"Host Grotesk"';
         padding: 1rem;
         font-size: 1.2rem;
         font-weight: 400;

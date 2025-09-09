@@ -9,12 +9,12 @@ import { animateCards } from "./animateImpact";
 
 const ImpactReport = () => {
   return (
-    <StyleImpactReport id="Achievements">
+    <StyleImpactReport id="Milestones">
       <div className="ImpactReport__heading">
-        <span>Achievements</span>
+        <span>Milestones</span>
         <img src={images.Line} alt="text-underline" />
         <div>
-          We are making great strides across spaces and communities in Africa.
+          Some of our Proud Numbers
         </div>
       </div>
 
@@ -83,12 +83,11 @@ const ImpactReport = () => {
           <div className="subSectionReport__icon">
             <img src={images.Community} alt="descriptive figure" />
             <div className="subSectionReport__figure">
-              3,000<sup>+</sup> Reach
+              3 Startups
             </div>
           </div>
           <div className="subSectionReport__text">
-            Over 3000 subscribers available on our mailing-list, looking forward
-            to finding the right offers in business and tech
+            3+ Innovative Startups Supported through our Fellowship Program
           </div>
         </motion.div>
 
@@ -123,8 +122,7 @@ const ImpactReport = () => {
             </div>
           </div>
           <div className="subSectionReport__text">
-            Our Bridge Program has upskilled over 200 learners who are shaping
-            the future and steering innovation in Business/Tech.
+            Over 200 proud Bridge Alums, doing exceptionally across industries.
           </div>
         </motion.div>
       </div>

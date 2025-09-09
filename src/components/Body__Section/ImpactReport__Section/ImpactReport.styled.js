@@ -10,7 +10,9 @@ export const StyleImpactReport = styled.section`
   background: #fff;
   color #0047af;
   
-
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
     padding: 3rem 3rem;
   }
@@ -22,7 +24,7 @@ export const StyleImpactReport = styled.section`
   }
   div.ImpactReport__heading {
     span{
-      font-family: 'Lunema';
+      font-family: '"Host Grotesk"';
     }  
 
     font-size: 3rem;
@@ -158,7 +160,7 @@ export const StyleImpactReport = styled.section`
           }
         }
         div.subSectionReport__figure {
-          font-family: 'Lunema';
+          font-family: '"Host Grotesk"';
           padding-top: 1rem;
           font-size: 1.3rem;
           font-weight: 500;

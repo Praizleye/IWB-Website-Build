@@ -241,11 +241,36 @@ export const StyleNewsletter = styled.div`
 export const StyleCompany = styled.div`
   padding: 6rem 5rem 3rem;
 
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
+
   @media screen and (max-width: 1200px) {
     padding: 6rem 3rem 3rem;
   }
   @media screen and (max-width: 760px) {
     padding: 5rem 1rem 2.5rem 2rem;
+  }
+
+  .subheader{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1A1A1A;
+    letter-spacing: 0.1rem;
+    line-height: 0.95;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:1rem;
+  
+    @media screen and (max-width: 590px) {
+      font-size: 0.9rem;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 0.8rem;
+    }
   }
 
   .header{

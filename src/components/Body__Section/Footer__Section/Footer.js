@@ -7,25 +7,25 @@ import {
   animateSubheading,
   animateSubtext,
 } from "./animateFooter";
-import {  BsWhatsapp, BsTwitter} from "react-icons/bs";
+import {  BsWhatsapp, BsTwitter, BsX} from "react-icons/bs";
 import {
   // AiFillTwitterSquare,
   AiFillFacebook,
-  // AiFillYoutube,
+  AiFillYoutube,
   AiFillLinkedin,
 } from "react-icons/ai";
 const Footer = () => {
   return (
     <StyleFooter id="footer">
-      <motion.div
+      {/* <motion.div
         className="heading"
         initial="hidden"
         whileInView="visible"
         variants={animateHeading}
       >
-        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Create .</motion.span>{" "}
-        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Connect . </motion.span>{" "}
-        <motion.span variants={animateSubheading} style={{fontFamily: 'Lunema'}}>Thrive &#62;</motion.span>
+        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Create .</motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Connect . </motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Thrive &#62;</motion.span>
         <motion.div variants={animateSubtext}>
           We are building a vibrant community of emerging leaders who are driving innovation and shaping the future.
         </motion.div>
@@ -36,7 +36,7 @@ const Footer = () => {
         >
           <button>Get Involved</button>
         </a>
-      </motion.div>
+      </motion.div> */}
       <motion.div
         className="links"
         initial="hidden"
@@ -49,9 +49,9 @@ const Footer = () => {
           variants={animateHeading}
         />
         <motion.ul variants={animateHeading} >
-          <span style={{fontFamily: 'Lunema'}}>Quick</span>
+          <span style={{fontFamily: '"Host Grotesk"'}}>Quick</span>
           <motion.li variants={animateSubheading}>
-            <a href="#About">About us</a>
+            <a href="#About">About</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Programs">Bridge</a>
@@ -60,56 +60,31 @@ const Footer = () => {
             <a href="#Programs">Ladder</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#Achievements">Achievements</a>
-          </motion.li>
-          {/* <motion.li variants={animateSubheading}>
-            <a href="#Resources">Resources</a>
-          </motion.li> */}
-          {/* <motion.li variants={animateSubheading}>
-            <a href="#Testimonial">Testimonial</a>
-          </motion.li> */}
-          {/* <motion.li variants={animateSubheading}>
-            <a
-              href="https://www.linkedin.com/company/ideas-worth-billions/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Blog(LinkedIn)
-            </a>
-          </motion.li> */}
-          <motion.li variants={animateSubheading}>
-            <a
-              href="https://forms.gle/KjYu3dMaEwZAKJVj8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Community
-            </a>
+            <a href="#Programs">Fellowship</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a
-              href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Channels
-            </a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link">
-              Support
-            </a>
+            <a href="#Achievements">Events</a>
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a href="#Blog">Blog</a>
           </motion.li>
+        </motion.ul>
+
+        <motion.ul variants={animateHeading}>
+          <span style={{fontFamily: '"Host Grotesk"'}}>Legal</span>
           <motion.li variants={animateSubheading}>
-            <a href="#Store">Store</a>
+            <a href="#Programs">Privacy Policy</a>
+          </motion.li>
+          <motion.li variants={animateSubheading}>
+            <a href="#Programs">Terms of use</a>
           </motion.li>
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-        <span style={{fontFamily: 'Lunema'}}>Contact</span>
+        <span style={{fontFamily: '"Host Grotesk"'}}>Contact</span>
+          <motion.li variants={animateSubheading}>
+            <a href="#number">+234 812 0611 858</a>
+          </motion.li>
           <motion.li variants={animateSubheading}>
             <a
               href="mailto:hello@iwbafrica.org?subject=Mail from our Website"
@@ -129,12 +104,61 @@ const Footer = () => {
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a href="#number">+234 812 0611 858</a>
+             Gwarinpa, Abuja, Nigeria
+          </motion.li>
+          {/* SOCIAL MEDIA LINKS */}
+        <motion.li variants={animateHeading} className="socials">
+          <motion.div variants={animateSubheading} className="social-icon">
+            <a
+              href="https://www.facebook.com/iwbafrica"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillFacebook />
+            </a>
+          </motion.div>
+            <motion.div variants={animateSubheading} className="social-icon">
+              <a
+                href="https://www.linkedin.com/company/ideas-worth-billions/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin />
+              </a>
+            </motion.div>
+            <motion.div variants={animateSubheading} className="social-icon">
+              <a
+                href="https://x.com/IWBAfrica"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsX />
+              </a>
+            </motion.div>
+            <motion.div variants={animateSubheading} className="social-icon">
+              <a
+                href="https://www.youtube.com/@ideasworthbillions"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillYoutube />
+              </a>
+            </motion.div>
           </motion.li>
         </motion.ul>
 
-        <motion.ul variants={animateHeading}>
-          <span style={{fontFamily: 'Lunema'}}>Connect</span>
+        {/* <motion.ul variants={animateHeading}>
+          <span style={{fontFamily: '"Host Grotesk"'}}>Connect</span>
+          <motion.li variants={animateSubheading}>
+            <a
+              href="https://www.facebook.com/iwbafrica"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiFillFacebook />
+              <span>Facebook</span>
+            </a>
+          </motion.li>
           <motion.li variants={animateSubheading}>
             <a
               href="https://www.linkedin.com/company/ideas-worth-billions/"
@@ -151,42 +175,11 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsTwitter />
-              <span>Twitter</span>
+              <BsX />
+              <span>X</span>
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
-            <a
-              href="https://www.facebook.com/iwbafrica"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillFacebook />
-              <span>Facebook</span>
-            </a>
-          </motion.li>
-          <motion.li variants={animateSubheading}>
-            <a
-              href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsWhatsapp />
-              <span>Whatsapp</span>
-            </a>
-          </motion.li>
-          {/* <motion.li variants={animateSubheading}>
-            <a
-              href="https://t.me/iwb_official"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsTelegram />
-              <span>Telegram</span>
-            </a>
-          </motion.li> */}
-          
-          {/* <motion.li variants={animateSubheading}>
             <a
               href="https://www.youtube.com/@ideasworthbillions"
               target="_blank"
@@ -195,25 +188,9 @@ const Footer = () => {
               <AiFillYoutube />
               <span>Youtube</span>
             </a>
-          </motion.li> */}
-          {/* <motion.li variants={animateSubheading}>
-            <a
-              href="https://anchor.fm/ideasworthbillions"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsSpotify />
-              <span>Spotify</span>
-            </a>
-          </motion.li> */}
-        </motion.ul>
-
-        <motion.ul variants={animateHeading}>
-          <span style={{fontFamily: 'Lunema'}}>Legal</span>
-          <motion.li variants={animateSubheading}>
-            <a href="#Programs">Terms of Service</a>
           </motion.li>
-        </motion.ul>
+          
+        </motion.ul> */}
       </motion.div>
     </StyleFooter>
   );

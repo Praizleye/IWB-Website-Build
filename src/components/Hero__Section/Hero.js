@@ -27,7 +27,7 @@ const Hero = () => {
             ...Building People{" "}
           </motion.div>
           <motion.div initial="hidden" animate="visible" variants={animateText}>
-            Creating Solutions
+            Shaping futures
           </motion.div>
           <div>
             <motion.svg
@@ -64,8 +64,7 @@ const Hero = () => {
             animate="visible"
             variants={animateText2}
           >
-            Connecting 500,000,000 Africans to Digital Solutions and
-            Opportunities by 2030.
+            Connecting 500M African Talent to Digital Solutions and opportunities by 2030 through Ladder
           </motion.div>
           <a
             href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"

@@ -15,20 +15,22 @@ import Newsletter from "./components/Body__Section/NewsLetter__Section/Newslette
 import Footer from "./components/Body__Section/Footer__Section/Footer";
 import Nav from "./components/Hero__Section/Nav/Nav";
 import OurTalent from "./components/Body__Section/Our_Talent/OurTalent";
+import NavBar from "./components/Hero__Section/Nav/NavCopy";
 
 function App() {
-  const [showPopup, setshowPopup] = useState(false);
+  // const [showPopup, setshowPopup] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setshowPopup(true);
-    }, 25000);
-  }, [showPopup]);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setshowPopup(true);
+  //   }, 25000);
+  // }, [showPopup]);
 
   return (
     <div className="App" id="App">
-      {showPopup ? <Popup /> : ""}
-      <Nav />
+      {/* {showPopup ? <Popup /> : ""} */}
+      <NavBar />
+      {/* <Nav /> */}
       <Hero />
       <CompTrust />
       <WhoWeAre />
@@ -38,7 +40,7 @@ function App() {
       <OurTalent />
       {/* <Resources /> */}
       <Testimonials />
-      <Newsletter />
+      {/* <Newsletter /> */}
       <Footer />
     </div>
   );

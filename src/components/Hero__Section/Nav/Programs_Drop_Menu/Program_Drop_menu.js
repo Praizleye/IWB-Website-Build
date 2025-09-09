@@ -2,7 +2,7 @@ import { MenuWrapper } from "./Programs_Drop_Menu.styled";
 import ProgramCollection from "./Program_Collection";
 import { MdBusinessCenter } from "react-icons/md";
 // import { GiArtificialIntelligence } from "react-icons/gi";
-import { FaDatabase, FaCode, FaShapes } from "react-icons/fa";
+import { FaDatabase, FaCode, FaShapes, FaChevronRight } from "react-icons/fa";
 
 import React from "react";
 
@@ -45,42 +45,64 @@ const ladder_programs = [
 ];
 
 //should be broken-down in the future, to make it more reuseable
-export default function ProgramDropMenu({ children = "", className = "" }) {
+export default function ProgramDropMenu({className = "" }) {
   return (
     <MenuWrapper className={"drop-menu-wrapper " + className}>
-      {children === "bridge" ? (
-        <div className="collection">
-          {/* <h6>
-                        Bridge
-                    </h6> */}
-          <a
-            className="program"
-            href="https://forms.gle/jbWRnktXg6gt4sNc8"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Become the next leader
-            <br />
-            in Business/Tech ( 8weeks )
-          </a>
+      <div className="main-container">
+        <div className="header">
+          <h6>
+            <span>
+              Ladder
+            </span>
+            <FaChevronRight />
+          </h6>
+          <MiniMenu>
+            <div className="collection">
+              <a
+                className="program"
+                href="https://forms.gle/jbWRnktXg6gt4sNc8"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Become the next leader
+                <br />
+                in Business/Tech ( 8weeks )
+              </a>
+            </div>
+          </MiniMenu>
         </div>
-      ) : (
-        <div className="collection">
-          {/* <h6>
-                        Ladder
-                    </h6> */}
-          <div className="main-collection">
-            {ladder_programs.map(({ header, programs, Icon }) => (
-              <ProgramCollection
-                header={header}
-                programs={programs}
-                Icon={Icon}
-                key={header}
-              />
-            ))}
-          </div>
+        <div className="header">
+          <h6>
+            <span>
+              Bridge
+            </span>
+            <FaChevronRight />
+          </h6>
+          <MiniMenu>
+            <div className="main-collection">
+              {ladder_programs.map(({ header, programs, Icon }) => (
+                <ProgramCollection
+                  header={header}
+                  programs={programs}
+                  Icon={Icon}
+                  key={header}
+                />
+              ))}
+            </div>
+          </MiniMenu>
         </div>
-      )}
+      </div>
+      
     </MenuWrapper>
   );
+}
+
+
+const MiniMenu = ({children}) => {
+  if(!children) return;
+  return (
+    <div className="mini-menu">
+      {children}
+    </div>
+  )
 }

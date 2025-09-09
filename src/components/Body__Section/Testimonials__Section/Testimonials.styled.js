@@ -4,7 +4,9 @@ export const StyleTestimonials = styled.section`
   // margin-top: 7rem;
   padding: 5rem 0 8rem;
   background: #fff;
-
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
 
   div.heading {
     text-align: center;

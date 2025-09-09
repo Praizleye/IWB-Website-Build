@@ -20,6 +20,7 @@ import Tekedia from "../assets/CompTrust__Assets/Tekedia.png";
 import Playbooq from "../assets/CompTrust__Assets/Playbooq.png";
 import kidoSchool from "../assets/CompTrust__Assets/Kibo-school.png";
 import julieth from "../assets/CompTrust__Assets/julieth-logo.png";
+import nexford from "../assets/CompTrust__Assets/Nexford.png"
 
 //? OurPrograms importing Section
 import Card1 from "../assets/OurPrograms__Section/Card 1.png";
@@ -72,6 +73,7 @@ import Meta from "../assets/HiringCompanies__Assets/meta.svg";
 import Microsoft from "../assets/HiringCompanies__Assets/microsoft.svg";
 import Paystack from "../assets/HiringCompanies__Assets/paystack.svg";
 import Andela from "../assets/HiringCompanies__Assets/andela.svg";
+import NNPC from "../assets/HiringCompanies__Assets/NNPC_Logo.png";
 
 
 import Knimi from '../assets/Talents_Assets/Knimi.png';
@@ -103,6 +105,7 @@ const assets = {
   Microsoft,
   Paystack,
   Andela,
+  NNPC,
 
   Popup1,
   Popup2,
@@ -121,6 +124,7 @@ const assets = {
   Playbooq,
   kidoSchool,
   julieth,
+  nexford,
 
   WhoWeAre,
   WhoWeAreTwo,
