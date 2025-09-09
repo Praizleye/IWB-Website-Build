@@ -206,17 +206,17 @@ const navData = [
   {
     title: "Programs",
     items: [
-      { label: "Bridge" },
+      { label: "Bridge", href:" https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=dialog" },
       {
         label: "Ladder",
         children: [
-          { label: "MiniMBA - Tekedia" },
-          { label: "MBA - Nexford" },
-          { label: "MS in Data Analytics - Nexford" },
-          { label: "MS in Digital Transformation - Nexford" },
+          { label: "MiniMBA - Tekedia", href:"https://docs.google.com/forms/d/e/1FAIpQLSd6Grndgwnkl88LGbiU3PYsGZXyu86DskbTmHnPCOF6yDErCw/viewform?usp=dialog" },
+          { label: "MBA - Nexford", href:"http://blog.iwbafrica.org" },
+          { label: "MS in Data Analytics - Nexford", href:"http://blog.iwbafrica.org"  },
+          { label: "MS in Digital Transformation - Nexford", href:"http://blog.iwbafrica.org"  },
         ],
       },
-      { label: "Future Founders Fellowship" },
+      { label: "Future Founders Fellowship", href:"https://docs.google.com/forms/d/e/1FAIpQLSeP1ghQ5UKQjlsF0IhFv6SJSsNdP6pOhOU1CkgsJN2-0q_OXw/viewform?usp=dialog" },
     ],
     isSection: true,
   },
@@ -225,9 +225,9 @@ const navData = [
   {
     title: "Resources",
     items: [
-      { label: "Insights" },
-      { label: "Stories" },
-      { label: "Opportunities" },
+      { label: "Insights", href:"http://blog.iwbafrica.org" },
+      { label: "Stories", href:"http://blog.iwbafrica.org" },
+      { label: "Opportunities", href:"http://blog.iwbafrica.org" },
     ],
     isSection: false,
   },
