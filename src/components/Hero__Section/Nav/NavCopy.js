@@ -5,8 +5,8 @@ import styled from "styled-components";
 import images from "../../../constants/images";
 
 /* ---------- helpers ---------- */
-const slug = (title = "") =>
-  title.toString().toLowerCase().trim().replace(/\s+/g, "-");
+// const slug = (title = "") =>
+//   title.toString().toLowerCase().trim().replace(/\s+/g, "-");
 
 /* ---------- styled ---------- */
 const NavContainer = styled.nav`

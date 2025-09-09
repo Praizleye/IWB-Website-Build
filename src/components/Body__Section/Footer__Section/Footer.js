@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import {
   animateHeading,
   animateSubheading,
-  animateSubtext,
+  //animateSubtext,
 } from "./animateFooter";
-import {  BsWhatsapp, BsTwitter, BsX} from "react-icons/bs";
+import {BsX} from "react-icons/bs";
 import {
   // AiFillTwitterSquare,
   AiFillFacebook,
