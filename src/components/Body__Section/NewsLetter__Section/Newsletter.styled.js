@@ -278,7 +278,6 @@ export const StyleCompany = styled.div`
     text-align:center;
     font-weight:300;
     color: #0047AF;
-    letter-spacing: 0.05rem;
     line-height: 1.1;
     font-size: 2rem;
     width: 70%;

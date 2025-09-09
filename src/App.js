@@ -34,8 +34,8 @@ function App() {
       <Hero />
       <CompTrust />
       <WhoWeAre />
-      <ImpactReport />
       <OurPrograms />
+      <ImpactReport />
       <OurInterest />
       <OurTalent />
       {/* <Resources /> */}

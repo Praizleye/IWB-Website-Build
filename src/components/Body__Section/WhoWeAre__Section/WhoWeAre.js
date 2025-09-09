@@ -117,7 +117,9 @@ const WhoWeAre = () => {
             <span>
               Individuals and Organizations are rooting for us. Join us in bridging skills, creating ladders of opportunity, and supporting future founders:
             </span>
-            <ul>
+            <ul style={{
+              marginLeft:"1rem"
+            }}>
               {
                 actionPoints.map(action=>(
                   <li>

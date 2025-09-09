@@ -19,9 +19,9 @@ const NavContainer = styled.nav`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   @media (max-width:768px) {
-    padding: 0.5rem 2rem;
+    padding: 1.5rem 2rem;
   }
   @media screen and (min-width: 1500px){
     padding-inline: calc((100% - 1300px) / 2);
@@ -33,7 +33,7 @@ const Logo = styled.div`
     height: 2.5rem;
     
     @media screen and (max-width: 768px){
-      height:1.5rem;
+      height:2rem;
     }
   }
 `;
@@ -84,7 +84,7 @@ const NavLink = styled.span`
   gap:0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  color: rgba(7,91,160,0.7);
+  color: #0047af;
   border-bottom: ${({ active }) =>
     active ? "2px solid #0047af" : "2px solid transparent"};
   padding: 0.5rem 0;
@@ -92,7 +92,7 @@ const NavLink = styled.span`
   a {
     text-decoration: none;
     cursor: pointer;
-    color: ${({ active }) => (active ? "#0047af" : "rgba(7,91,160,0.7)")};
+    color: #0047af;
   }
 
   svg {
@@ -100,9 +100,9 @@ const NavLink = styled.span`
   }
 
   @media (max-width: 768px){
-    font-size: 0.85rem
+    font-size: 0.85rem;
     svg{
-      transform: rotate(180deg);
+      transform: ${({isOpen})=>!isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
     }
   }
 
@@ -146,7 +146,7 @@ const DropdownItem = styled.div`
 
   &:hover {
     background: #f5f5f5;
-    color: #007bff;
+    color: #0047af;
   }
 
   &:last-child {
@@ -190,7 +190,7 @@ const Hamburger = styled.div`
   span {
     height: 3px;
     width: 25px;
-    background: #007bff;
+    background: #0047af;
     margin: 2px 0;
     border-radius: 2px;
   }
@@ -203,7 +203,6 @@ const Hamburger = styled.div`
 /* ---------- data ---------- */
 const navData = [
   { title: "About", items: [], isSection: true },
-  { title: "Milestones", items: [], isSection: true },
   {
     title: "Programs",
     items: [
@@ -221,6 +220,7 @@ const navData = [
     ],
     isSection: true,
   },
+  { title: "Milestones", items: [], isSection: true },
   { title: "Interests", items: [], isSection: true },
   {
     title: "Resources",
@@ -258,7 +258,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
 
   return (
     <NavItem>
-      <NavLink active={active === title} isOpen={isMobile && isOpen} onClick={handleClick}>
+      <NavLink active={active === title} isOpen={isOpen} onClick={handleClick}>
         <a href={isSection ? `#${title}` : undefined}>{title}</a>
         {items?.length > 0 && (<BsChevronUp />)}
       </NavLink>
