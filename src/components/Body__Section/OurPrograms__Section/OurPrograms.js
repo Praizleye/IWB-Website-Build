@@ -28,30 +28,30 @@ const OurPrograms = () => {
   const programs = [
     {
       header: "Bridge",
-      subtitle: "Unlock  your Genius",
-      body: "Learn in-demand skills to enhance your productivity and profitability.  Get upskilled to join the top 1% of creators and young professionals shaping the future. Become the next leader in Business Tech.",
+      subtitle: "Equipping Young Leaders and Professionals",
+      body: "An intensive 8-week course thoughtfully crafted to equip young leaders and professionals for the future. Covers AI/Web3 Adoption, Personal Finance, Digital Transformation, Personal Leadership and the Creative Economy.",
       status: {
-        title: "Register Now",
+        title: "Join Next Cohort",
         link: "https://forms.gle/dgfcA8KkWKLbLp6w9",
         class: "",
       },
     },
     {
       header: "Ladder",
-      subtitle: "Rise from 0-1 in Tech",
-      body: "Ladder seeks to enhance digital literacy and upskill thousands of Talent for the future by providing tailored mentoring, resources and support to help you rise from 0-1 in tech.  (Dev, Design, Data, Products, Marketing etc.)",
+      subtitle: "Supporting African Tech Talent to Rise",
+      body: "Designed to help African talents rise by learning the skills they need and creating the future they want. Connecting 500 million African talents to digital solutions and opportunities by 2030.",
       status: {
-        title: "Join the next cohort",
+        title: "Explore Courses",
         link: "https://forms.gle/RAzrkZuXBfSUgJ1F9",
         class: "",
       },
     },
     {
-      header: "Innov8",
-      subtitle: "Create the Future",
-      body: "Innov8 is An unconventional, campus-led and out-of-the-box event designed to ignite innovation and showcase young innovators building models and projects for future Africa. Not just an event, Innov8 is a LEAP.",
+      header: "Future Founders Fellowship",
+      subtitle: "Empowering Ambitious Founders",
+      body: "Identifying, nurturing, and supporting visionary young leaders building high-impact startups and social enterprises designed to solve Africa's most pressing challenges.",
       status: {
-        title: "Coming soon",
+        title: "Starts soon",
         link: "",
         class: "comingSoon",
       },
@@ -60,8 +60,8 @@ const OurPrograms = () => {
 
   return (
     <StyleOurPrograms id="Programs">
-      <div className="heading" style={{ fontFamily: "Lunema" }}>
-        Our Programs
+      <div className="heading" style={{ fontFamily: "Host Grotesk" }}>
+        Programs
         {/* <motion.span
           initial="hidden"
           whileInView="visible"

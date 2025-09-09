@@ -67,7 +67,7 @@ export const NavStyle = styled.div`
         margin-right: 1rem;
         list-style-type: none;
         display: flex;
-        // font-family:'Lunema';
+        // font-family:'"Host Grotesk"';
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;
@@ -90,7 +90,7 @@ export const NavStyle = styled.div`
           font-family: inherit;
           font-size: inherit;
           text-decoration: none;
-          color:rgba(7, 91, 160, 0.7);
+          color:rgba(7,91,160,0.7);
           // font-weight: 500;
           transition: all 0.3s ease;
           padding: 0.35rem 0rem;
@@ -159,8 +159,8 @@ export const NavStyle = styled.div`
         display: none;
       }
 
-      // for more drop down menu, add selectors or make code mor dynamic
-      .Bridge-btn:has(.drop-menu-wrapper), .Ladder-btn:has(.drop-menu-wrapper){
+      // for more drop down menu, add selectors or make code more dynamic
+      .nav-link:has(.drop-menu-wrapper){
         :has(a:not(.program):hover), :has(button:hover), :has(.drop-menu-wrapper:hover){
           a:not(.program), button{
             color: #0047af !important;
@@ -177,7 +177,7 @@ export const NavStyle = styled.div`
           
           .drop-menu-wrapper{
             visibility:visible;
-            display:flex;
+            display:block;
             top:calc(100% - 1.5rem);
             opacity:1;
             z-index:1;
@@ -202,54 +202,54 @@ export const NavStyle = styled.div`
       margin-right: 1rem;
     }
   }
-  ul.app__navbar-links > li.nav-link:nth-last-of-type(1) {
-    background: linear-gradient(135deg, #0047af, #075ba0);
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    margin-right: 4rem;
-    transition: all 0.3s ease;
-    transform-origin: center;
+  // ul.app__navbar-links > li.nav-link:nth-last-of-type(1) {
+  //   background: linear-gradient(135deg, #0047af, #075ba0);
+  //   height: 3rem;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 4px;
+  //   margin-right: 4rem;
+  //   transition: all 0.3s ease;
+  //   transform-origin: center;
 
-    &:hover {
-      transform: translateY(-2px);
-      background: linear-gradient(135deg, #075ba0, #0047af);
-      box-shadow: 0 4px 15px rgba(0, 71, 175, 0.2);
-    }
+  //   &:hover {
+  //     transform: translateY(-2px);
+  //     background: linear-gradient(135deg, #075ba0, #0047af);
+  //     box-shadow: 0 4px 15px rgba(0, 71, 175, 0.2);
+  //   }
 
-    @media screen and (max-width: 1200px) {
-      margin-right: 2rem;
-      height: 2.5rem;
-      margin-top: 0.25rem;
-    }
-    @media screen and (max-width: 990px) {
-      margin-right: 1rem;
-    }
-    @media screen and (max-width: 780px) {
-      margin-right: 0.5rem;
-    }
-    a:not(.program) {
-      color: #ffffff;;
-      padding: 0.11rem 0.5rem 0 0.5rem;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 0 1rem;
-      @media screen and (max-width: 990px) {
-        font-size: 0.9rem;
-      }
+  //   @media screen and (max-width: 1200px) {
+  //     margin-right: 2rem;
+  //     height: 2.5rem;
+  //     margin-top: 0.25rem;
+  //   }
+  //   @media screen and (max-width: 990px) {
+  //     margin-right: 1rem;
+  //   }
+  //   @media screen and (max-width: 780px) {
+  //     margin-right: 0.5rem;
+  //   }
+  //   a:not(.program) {
+  //     color: #ffffff;;
+  //     padding: 0.11rem 0.5rem 0 0.5rem;
+  //     text-decoration: none;
+  //     font-weight: 500;
+  //     padding: 0 1rem;
+  //     @media screen and (max-width: 990px) {
+  //       font-size: 0.9rem;
+  //     }
 
-      &:hover:before {
-        display: none;
-      }
+  //     &:hover:before {
+  //       display: none;
+  //     }
 
-      :hover {
-        border: none;
-      }
-    }
+  //     :hover {
+  //       border: none;
+  //     }
+  //   }
 
-  }
+  // }
   ul.app__navbar-links li.nav-link:nth-last-of-type(2) {
     background: transparent;
     height: 3rem;
@@ -366,7 +366,7 @@ export const NavMenuBar = styled.div`
           transform: translateY(20px);
           animation: slideIn 0.4s forwards;
           animation-delay: calc(var(--index) * 0.1s);
-          // font-family: "Lunema";
+          // font-family: "Host Grotesk";
 
           button#nav-link {
             background-color: unset !important;

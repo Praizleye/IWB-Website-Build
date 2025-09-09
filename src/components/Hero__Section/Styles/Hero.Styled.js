@@ -7,8 +7,11 @@ export const StyleHero = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 5rem 4rem;
+  padding: 5rem 5rem 4rem;
   z-index: -2;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
     padding: 4rem 3rem 4rem;
   }
@@ -97,7 +100,7 @@ export const StyleHero = styled.section`
       font-size: 3.5rem;
       font-weight: bold;
       width: max-content;
-      font-family:'Lunema';
+      font-family:"Host Grotesk";
       @media screen and (max-width: 1086px) {
         font-size: 2.9rem;
       }
@@ -126,7 +129,7 @@ export const StyleHero = styled.section`
     }
     div:nth-of-type(2) {
       font-size: 3.5rem;
-      font-family:'Lunema';
+      font-family:'"Host Grotesk"';
       font-weight: bold;
       width: max-content;
       @media screen and (max-width: 1086px) {

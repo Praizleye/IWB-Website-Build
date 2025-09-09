@@ -15,11 +15,22 @@ import {
   // animateText2,
 } from "./animateAbout";
 
+
+const actionPoints = [
+  { text: "Sponsor more Learners to take the Bridge Program", emoji: "💻" },
+  { text: "Support talents on Ladder", emoji: "🎓" },
+  { text: "Hire top talents from Ladder", emoji: "👩‍💻" },
+  { text: "Provide digital tools (like laptops or software) to enhance Ladder’s vision.", emoji: "🛠️" },
+  { text: "Fund Founders building solutions for future Africa.", emoji: "🌍" },
+  { text: "Offer incubation support, expertise, or networks to help startups grow.", emoji: "🚀" }
+];
+
+
 const WhoWeAre = () => {
   return (
     <StyleWhoWeAre id="About">
-      <div className="heading" style={{ fontFamily: "Lunema" }}>
-        About Us{" "}
+      <div className="heading" style={{ fontFamily: "Host Grotesk" }}>
+        About
         {/* <motion.span
           initial="hidden"
           whileInView="visible"
@@ -52,20 +63,13 @@ const WhoWeAre = () => {
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
             <span>
-              IWB Africa is one of Africa’s Leading Talent Development
-              Organizations, dedicated to upskilling young Africans and
-              professionals for the future.
+              IWB is one of Africa's foremost people development organizations, dedicated to sharing insights and upskilling young talents, founders and professionals for the new era—shaping the future of the continent.
             </span>
             <span>
-              Leveraging a Community-as-a-Service (CaaS) framework, IWB equips
-              African Talent with in-demand skills and values to thrive in
-              Business, Leadership, and Technology.
+              IWB; where the right ideas meet the right people to create a bright future. 
             </span>
             <span>
-              We are building a vibrant community of emerging leaders who are
-              driving innovation and shaping the continent’s future. Our vision
-              is to connect 500 million Africans to digital solutions and
-              opportunities by 2030.
+              Our programs Bridge, Ladder, and Future Founders Fellowship are designed to equip leaders, support talents and empower entrepreneurs to lead the future and drive change across spaces. 
             </span>
 
             {/* Ideas Worth Billions is Africa's leading Human Capacity Development
@@ -102,7 +106,7 @@ const WhoWeAre = () => {
         // viewport={{ once: true }}
       >
         <div className="About__text-content partner">
-          <div className="sub-heading ">Partner with Us</div>
+          <div className="sub-heading ">Partner with us</div>
           <motion.div
             // initial="hidden"
             // whileInView="visible"
@@ -111,16 +115,19 @@ const WhoWeAre = () => {
             className="About__text-description partner-description"
           >
             <span>
-              Individuals and organizations are rooting for us —supporting our
-              mission to connect millions of Africans to digital solutions. You
-              can make an impact by:
+              Individuals and Organizations are rooting for us. Join us in bridging skills, creating ladders of opportunity, and supporting future founders:
             </span>
             <ul>
-              <li>💻 Donating Laptops to enhance Digital Access</li>
-              <li>🎓 Providing Scholarships to boost Digital Literacy</li>
-              <li>👩‍💻 Hiring Top Talent from our Community</li>
+              {
+                actionPoints.map(action=>(
+                  <li>
+                    {`${action.emoji} ${action.text}`}
+                  </li>
+                ))
+              }
+
             </ul>
-            <span>Be part of a shared future-partner with us today!</span>
+            <span>Be part of a shared future—partner with us today!</span>
           </motion.div>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf43YuTt11OdiILbQHftQsxV8Gu7Fjb9lsAyBtLaDwFr5pyOg/viewform?usp=sf_link"

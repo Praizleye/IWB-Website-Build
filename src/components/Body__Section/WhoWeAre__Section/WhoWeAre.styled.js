@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 export const StyleWhoWeAre = styled.section`
-  margin-top: 3rem;
+  padding-top:5rem;
   padding: 2rem 3rem;
   background-color: #f1f4fb;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
+    padding-top:5rem;
     padding: 2rem 1rem;
   }
   @media screen and (max-width: 850px) {
+    padding-top:5rem;
     padding: 2rem 0;
   }
   div.heading {
@@ -47,7 +52,7 @@ export const StyleWhoWeAre = styled.section`
   }
 
   .sub-heading {
-    font-family: "Lunema";
+    font-family: "Host Grotesk";
   }
 
   div.container {
@@ -57,7 +62,13 @@ export const StyleWhoWeAre = styled.section`
     align-items: center;
     margin-left: 2rem;
 
-    @media screen and (max-width: 590px) {
+    &:nth-of-type(2){
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
       flex-direction: column;
     }
 
@@ -83,13 +94,10 @@ export const StyleWhoWeAre = styled.section`
           width: 18rem;
         }
         @media screen and (max-width: 768px) {
-          height: 15rem;
-          width: 15rem;
-        }
-        @media screen and (max-width: 590px) {
           height: auto;
           width: 100%;
         }
+        
       }
       div.img-cover {
         height: 25rem;
@@ -133,16 +141,15 @@ export const StyleWhoWeAre = styled.section`
         height: auto;
       }
       @media screen and (max-width: 830px) {
-        height: 17.5rem;
+        height: fit-content;
         line-height: 1.5;
       }
       @media screen and (max-width: 768px) {
-        height: 15rem;
         line-height: 1.3;
-        padding: 0 0 0 1rem;
+        margin: 0 2rem 0 0;
+        padding: 2rem 1rem;
       }
       @media screen and (max-width: 590px) {
-        margin: 0 2rem 0 0;
         padding: 1rem 1rem;
         height: max-content;
       }
@@ -224,7 +231,8 @@ export const StyleWhoWeAre = styled.section`
       border-right: 3px solid #ffe401;
       border-top: none;
 
-      @media screen and (max-width: 590px) {
+      @media screen and (max-width: 768px) {
+        padding-inline:2rem;
         border-top: 3px solid #ffe401;
         border-right: none;
         order: 2;
@@ -238,7 +246,7 @@ export const StyleWhoWeAre = styled.section`
     div.About__text-content:nth-child(2) {
       border-left: 3px solid #ffe401;
 
-      @media screen and (max-width: 590px) {
+      @media screen and (max-width: 768px) {
         border-left: none;
       }
     }
@@ -247,9 +255,9 @@ export const StyleWhoWeAre = styled.section`
       padding: 1rem 1rem 2rem;
     }
     div.WhoWeAre__img.partner-img {
-      height: 100%;
 
-      @media screen and (max-width: 590px) {
+      @media screen and (max-width: 768px) {
+        padding-inline:1rem;
         order: 1;
         width: 100%;
         margin: 0 2rem 0 0;
@@ -261,7 +269,7 @@ export const StyleWhoWeAre = styled.section`
         }
       }
       img {
-        min-height: 24.3rem;
+        height: 100%;
         object-fit: cover;
         object-position: center;
         width: 25rem;
@@ -269,7 +277,7 @@ export const StyleWhoWeAre = styled.section`
         // border-left: 3px solid #ffe401;
         margin-right: 1rem;
 
-        @media screen and (max-width: 590px) {
+        @media screen and (max-width: 768px) {
           width: 100%;
           height: auto;
         }

@@ -16,19 +16,19 @@ function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
     { title: "About", link: "#About", target: "_self" },
-    { title: "Bridge", link: "#Bridge", children: "bridge" },
-    { title: "Ladder", link: "#ladder", children: "ladder" },
-    { title: "Achievements", link: "#Achievements", target: "_self" },
+    { title: "Programs", link: "#Programs", children: "programs" },
+    { title: "Milestones", link: "#Milestones", target: "_self" },
+    { title: "Resources", link: "#Resources", children: "bridge" },
     // { title: "Programs", link: "#Programs", target: "_self" },
     // { title: "Programs", link: "#Programs", target: "_self" },
     { title: "Scope", link: "#Scope", target: "_self" },
     // { title: "Blog", link: "#home", target: "_self" },
     // { title: "Store", link: "#home", target: "_blank" },
-    {
-      title: "Get Started",
-      link: "https://forms.gle/KjYu3dMaEwZAKJVj8",
-      target: "_blank",
-    },
+    // {
+    //   title: "Get Started",
+    //   link: "https://forms.gle/KjYu3dMaEwZAKJVj8",
+    //   target: "_blank",
+    // },
   ];
 
   const [activeSection, setActiveSection] = useState("#");
@@ -103,25 +103,6 @@ function Nav() {
                     : "inactive"
                 }
               />
-
-              // <li className="app__flex nav-link" key={index}  >
-              //   <div />
-              //   <a
-              //     href={link}
-              //     id="nav-link"
-              //     target={target}
-              //     className={
-              //       activeSection === title || link.includes(activeSection)
-              //         ? "active"
-              //         : "inactive"
-              //     }
-              //   >
-              //     {" "}
-              //     {title}
-              //   </a>
-
-              //   {title === 'Programs' &&(<ProgramDropMenu />)}
-              // </li>
             ))}
           </ul>
         </nav>
@@ -162,32 +143,15 @@ function Nav() {
                   func={() => handleMobileNavLink(navInfo.children)}
                 />
               ))}
-
-              {/* {navLinks.map(({ link, title, target }, index) => (
-                <motion.li key={index} style={{ "--index": index }}>
-                  <a
-                    href={link}
-                    target={target}
-                    onClick={() => setIsMenuOpen(false)}
-                    className={
-                      activeSection === title || link.includes(activeSection)
-                        ? "active"
-                        : ""
-                    }
-                  >
-                    {title}
-                  </a>
-                </motion.li>
-              ))} */}
             </motion.ul>
             <ProgramDropMenu
-              children="bridge"
-              className={progMenu === "bridge" && "active"}
+              children="programs"
+              className={progMenu === "Programs" && "active"}
             />
-            <ProgramDropMenu
+            {/* <ProgramDropMenu
               children="ladder"
               className={progMenu === "ladder" && "active"}
-            />
+            /> */}
           </motion.div>
         </div>
       </NavMenuBar>

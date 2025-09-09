@@ -8,19 +8,23 @@ import images from "../../../constants/images";
 const companies = [
   { title: "google", image: images.Google },
   { title: "microsoft", image: images.Microsoft },
-  { title: "apple", image: images.Apple },
+  { title: "nnpc", image: images.NNPC },
+  // { title: "apple", image: images.Apple },
   { title: "stripe", image: images.Stripe },
   { title: "flutterwave", image: images.Flutterwave },
   { title: "andela", image: images.Andela },
   { title: "paystack", image: images.Paystack },
   { title: "meta", image: images.Meta },
-  { title: "amazon", image: images.Amazon },
+  // { title: "amazon", image: images.Amazon },
 ];
 
 export default function OurTalent() {
   return (
     <StyleCompany>
-      <h3 className="header" style={{ fontFamily: "Lunema" }}>
+      <h6 className="subheader">
+        Featured Talents on Ladder
+      </h6>
+      <h3 className="header" style={{ fontFamily: "Host Grotesk" }}>
         Our Talent are top picks for leading companies and organizations around
         the globe.
       </h3>

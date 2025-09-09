@@ -18,7 +18,7 @@ const Newsletter = () => {
     <section id="newsletter">
       <StyleNewsletter>
         <div className="Content">
-          <div className="heading" style={{ fontFamily: "Lunema" }}>
+          <div className="heading" style={{ fontFamily: "Host Grotesk" }}>
             The IWB Newsletter
             <span>
               Subscribe to the Blue Letters

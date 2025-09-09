@@ -5,8 +5,11 @@ export const StyleFooter = styled.section`
   padding: 4rem;
   background-color: #000000;
   color: #fafafa;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
-    padding: 2rem 1rem;
+    padding: 2rem ;
   }
   div.heading {
     text-align: center;
@@ -56,11 +59,13 @@ export const StyleFooter = styled.section`
   div.links {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(4, auto);
     place-items: center;
     @media screen and (max-width: 700px) {
-      grid-template-columns: repeat(4, auto);
+      grid-template-columns: repeat(3, auto);
       grid-template-rows: repeat(2, auto);
+      place-items: start;
+      justify-content: space-between;
     }
     @media screen and (max-width: 590px) {
       display: grid;
@@ -74,19 +79,17 @@ export const StyleFooter = styled.section`
     img {
       align-self: start;
       @media screen and (max-width: 780px) {
-        height: 1.5rem;
+        height: 2rem;
         width: auto;
         margin-top: 0.25rem;
       }
       @media screen and (max-width: 700px) {
         grid-column: 1 / 5;
         justify-self: start;
-        margin-left: 1.5rem;
         margin-bottom: 1rem;
       }
       @media screen and (max-width: 590px) {
         grid-column: 1 / 3;
-        margin-left: 0.5rem;
       }
     }
     ul {
@@ -133,9 +136,22 @@ export const StyleFooter = styled.section`
         }
       }
     }
-    ul:nth-of-type(4) {
+    ul:nth-of-type(3) {
       @media screen and (max-width: 590px) {
         justify-self: start;
+      }
+    }
+    ul > .socials{
+      display:flex;
+      gap:0.5rem;
+
+      &>div{
+        width:fit-content;
+
+        svg {
+          height: auto;
+          width: 1.5rem;
+        }
       }
     }
   }

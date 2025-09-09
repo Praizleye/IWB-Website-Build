@@ -4,10 +4,12 @@ export const StyleCompTrust = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
   padding: 1rem 5rem;
   background: #fff;
   flex-wrap: nowrap;
+  @media screen and (min-width: 1500px){
+    padding-inline: calc((100% - 1300px) / 2);
+  }
   @media screen and (max-width: 1200px) {
     padding: 1rem 3rem;
   }
@@ -77,15 +79,15 @@ export const StyleCompTrust = styled.section`
   //   }
   // }
   div.divider {
-    width: 2.5px;
-    min-width:2.5px;
-    height: 8rem;
+    width: 2px;
+    min-width:2px;
+    height: 6rem;
     border-radius: 12px;
     @media screen and (max-width: 910px) {
-      height: 6.5rem;
+      height: 4.5rem;
     }
     @media screen and (max-width: 700px) {
-      height: 3.5rem;
+      height: 2.5rem;
     }
     background: #e7e6e6;
   }
@@ -101,21 +103,16 @@ export const StyleCompTrust = styled.section`
       padding: 0 1rem;
     }
     img {
-      height: 5rem;
+      height: 4rem;
       width: auto;
       @media screen and (max-width: 1200px) {
-        height: 4rem;
-      }
-      @media screen and (max-width: 910px) {
         height: 3rem;
       }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 910px) {
         height: 2rem;
       }
+      
       @media screen and (max-width: 590px) {
-        height: 1.5rem;
-      }
-      @media screen and (max-width: 380px) {
         height: 1.5rem;
       }
       @media screen and (max-width: 337px) {

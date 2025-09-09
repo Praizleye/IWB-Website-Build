@@ -11,8 +11,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Testimonials = () => {
   return (
     <StyleTestimonials id="Testimonial">
-      <div className="heading" style={{fontFamily: 'Lunema'}}>
-        Testimonials
+      <div className="heading" style={{fontFamily: '"Host Grotesk"'}}>
+        Wall of Love
         <span>
           What young people are saying
           <img src={images.Line} alt="text-underline" />
@@ -129,7 +129,7 @@ const Testimonials = () => {
                 />
               </motion.div>
               <div className="card-textContent">
-                IWB Africa is dedicated to nurturing talent and preparing individuals for the future. It's the ideal place for anyone to begin their journey.
+                IWB is dedicated to providing practical insights and frameworks for personal growth and startup success. It's the ideal place for African Founders, Leaders and Tech Talent.
               </div>
             </div>
           </SplideSlide>
