@@ -183,20 +183,38 @@ const SubDropdown = styled.div`
 
 const Hamburger = styled.div`
   display: none;
-  flex-direction: column;
+  width: 30px;
+  height: 24px;
+  position: relative;
   cursor: pointer;
-
-  span {
-    height: 3px;
-    width: 25px;
-    background: #0047af;
-    margin: 2px 0;
-    border-radius: 2px;
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width:768px){
     display: flex;
   }
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const Bar = styled.span`
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #0047af;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+
+  ${({ isOpen, index }) =>
+    isOpen &&
+    (index === 0
+      ? `
+        transform: rotate(45deg) translate(5px, 10px);
+      `
+      : index === 1
+      ? `
+        opacity: 0;
+      `
+      : `
+        transform: rotate(-45deg) translate(5px, -10px);
+      `)}
 `;
 
 /* ---------- data ---------- */
@@ -331,10 +349,10 @@ export default function NavBar() {
         <img src={images.Logo} alt="My-Logo" />
       </Logo>
 
-      <Hamburger onClick={() => setOpen((s) => !s)} aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <Hamburger onClick={() => setOpen((s) => !s)}>
+        {[0, 1, 2].map((i) => (
+          <Bar key={i} isOpen={open} index={i} />
+        ))}
       </Hamburger>
 
       <NavMenu open={open}>
