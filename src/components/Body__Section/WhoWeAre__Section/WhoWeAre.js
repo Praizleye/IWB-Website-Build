@@ -117,13 +117,18 @@ const WhoWeAre = () => {
             <span>
               Individuals and Organizations are rooting for us. Join us in bridging skills, creating ladders of opportunity, and supporting future founders:
             </span>
-            <ul style={{
-              marginLeft:"1rem"
-            }}>
+            <ul>
               {
                 actionPoints.map(action=>(
                   <li>
-                    {`${action.emoji} ${action.text}`}
+                    <span style={{
+                      marginRight:"1rem"
+                    }}>
+                        {action.emoji}
+                    </span>
+                    <span>
+                      {action.text}
+                    </span>
                   </li>
                 ))
               }

@@ -36,8 +36,8 @@ function App() {
       <WhoWeAre />
       <OurPrograms />
       <ImpactReport />
-      <OurInterest />
       <OurTalent />
+      <OurInterest />
       {/* <Resources /> */}
       <Testimonials />
       {/* <Newsletter /> */}

@@ -51,6 +51,7 @@ export const StyleWhoWeAre = styled.section`
   }
 
   .sub-heading {
+    font-weight: bold;
     font-family: "Host Grotesk";
   }
 

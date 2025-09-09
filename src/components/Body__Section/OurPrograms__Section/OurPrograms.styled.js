@@ -64,15 +64,13 @@ export const StyleOurPrograms = styled.section`
       background-color: #fff;
       @media screen and (max-width: 1200px) {
         width: 20rem;
-        height: 26rem;
+       
       }
       @media screen and (max-width: 470px) {
         width: 17rem;
-        height: 27rem;
       }
       @media screen and (max-width: 410px) {
         width: 15rem;
-        height: 27rem;
       }
       div.card-img {
         display: flex;
@@ -105,11 +103,11 @@ export const StyleOurPrograms = styled.section`
         font-weight: 400;
         color: #0047af;
         @media screen and (max-width: 1200px) {
-          padding: 0 1.5rem;
+          padding: 1rem 1.5rem;
         }
         @media screen and (max-width: 410px) {
           font-size: 1.05rem;
-          padding: 0 0.5rem;
+          padding: 1rem 0.5rem;
         }
       }
       div.card-textDesc {

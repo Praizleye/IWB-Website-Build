@@ -100,7 +100,6 @@ const NavLink = styled.span`
   }
 
   @media (max-width: 768px){
-    font-size: 0.85rem;
     svg{
       transform: ${({isOpen})=>!isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
     }
@@ -156,7 +155,7 @@ const DropdownItem = styled.div`
   @media (max-width: 768px) {
     border-bottom: none;
     padding: 0.5rem;
-    font-size:0.75rem;
+    font-size:1rem;
   }
 `;
 
