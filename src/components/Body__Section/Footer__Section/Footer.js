@@ -44,7 +44,7 @@ const Footer = () => {
         variants={animateHeading}
       >
         <motion.img
-          src={images.FooterLogo}
+          src={images.Logo}
           alt="iwb-white-logo"
           variants={animateHeading}
         />

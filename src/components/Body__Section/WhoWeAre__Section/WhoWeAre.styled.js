@@ -20,7 +20,6 @@ export const StyleWhoWeAre = styled.section`
     font-weight: bold;
     position: relative;
     color: #0047af;
-    // letter-spacing: 0.25rem;
     border-left: 3px solid #ffe401;
     margin-left: 2rem;
     padding-left: 2rem;
@@ -52,6 +51,7 @@ export const StyleWhoWeAre = styled.section`
   }
 
   .sub-heading {
+    font-weight: bold;
     font-family: "Host Grotesk";
   }
 
@@ -133,7 +133,6 @@ export const StyleWhoWeAre = styled.section`
       gap: 1rem;
       margin-block: 2.95rem;
       line-height: 1.9;
-      letter-spacing: 0.05rem;
       justify-content: space-between;
       align-items: flex-start;
       flex-direction: column;

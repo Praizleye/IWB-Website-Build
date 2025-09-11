@@ -11,7 +11,6 @@ export const StyleTestimonials = styled.section`
   div.heading {
     text-align: center;
     color: #1A1A1A;
-    letter-spacing: 0.1rem;
     line-height: 0.95;
     font-weight: 500;
     display: flex;

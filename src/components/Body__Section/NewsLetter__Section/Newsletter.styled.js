@@ -256,7 +256,6 @@ export const StyleCompany = styled.div`
     text-align: center;
     margin-bottom: 10px;
     color: #1A1A1A;
-    letter-spacing: 0.1rem;
     line-height: 0.95;
     font-weight: 500;
     display: flex;
@@ -276,9 +275,8 @@ export const StyleCompany = styled.div`
   .header{
     margin-bottom:2.5rem;
     text-align:center;
-    font-weight:300;
+    font-weight:400;
     color: #0047AF;
-    letter-spacing: 0.05rem;
     line-height: 1.1;
     font-size: 2rem;
     width: 70%;

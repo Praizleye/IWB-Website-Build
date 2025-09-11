@@ -22,7 +22,7 @@ export default function OurTalent() {
   return (
     <StyleCompany>
       <h6 className="subheader">
-        Featured Talents on Ladder
+        Featured talents on Ladder
       </h6>
       <h3 className="header" style={{ fontFamily: "Host Grotesk" }}>
         Our Talent are top picks for leading companies and organizations around

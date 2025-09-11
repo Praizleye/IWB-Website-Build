@@ -29,7 +29,7 @@ const OurPrograms = () => {
     {
       header: "Bridge",
       subtitle: "Equipping Young Leaders and Professionals",
-      body: "An intensive 8-week course thoughtfully crafted to equip young leaders and professionals for the future. Covers AI/Web3 Adoption, Personal Finance, Digital Transformation, Personal Leadership and the Creative Economy.",
+      body: "An intensive 8-week course thoughtfully crafted to equip young leaders and professionals for the future.",
       status: {
         title: "Join Next Cohort",
         link: "https://forms.gle/dgfcA8KkWKLbLp6w9",
@@ -102,7 +102,9 @@ const OurPrograms = () => {
                     visibleByDefault={images[`Card${index + 1}`]}
                   />
                 </div>
-                <div className="card-subHeading">{header}</div>
+                <div className="card-subHeading" style={{
+                   fontFamily: "Host Grotesk"
+                }}>{header}</div>
                 <div className="card-textDesc">
                   <span>{subtitle}</span>
                   {body}

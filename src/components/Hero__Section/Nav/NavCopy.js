@@ -19,9 +19,9 @@ const NavContainer = styled.nav`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   @media (max-width:768px) {
-    padding: 0.5rem 2rem;
+    padding: 1.5rem 2rem;
   }
   @media screen and (min-width: 1500px){
     padding-inline: calc((100% - 1300px) / 2);
@@ -33,7 +33,7 @@ const Logo = styled.div`
     height: 2.5rem;
     
     @media screen and (max-width: 768px){
-      height:1.5rem;
+      height:2rem;
     }
   }
 `;
@@ -84,7 +84,7 @@ const NavLink = styled.span`
   gap:0.5rem;
   font-size: 1rem;
   font-weight: 500;
-  color: rgba(7,91,160,0.7);
+  color: #0047af;
   border-bottom: ${({ active }) =>
     active ? "2px solid #0047af" : "2px solid transparent"};
   padding: 0.5rem 0;
@@ -92,7 +92,7 @@ const NavLink = styled.span`
   a {
     text-decoration: none;
     cursor: pointer;
-    color: ${({ active }) => (active ? "#0047af" : "rgba(7,91,160,0.7)")};
+    color: #0047af;
   }
 
   svg {
@@ -100,9 +100,8 @@ const NavLink = styled.span`
   }
 
   @media (max-width: 768px){
-    font-size: 0.85rem
     svg{
-      transform: rotate(180deg);
+      transform: ${({isOpen})=>!isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
     }
   }
 
@@ -146,7 +145,7 @@ const DropdownItem = styled.div`
 
   &:hover {
     background: #f5f5f5;
-    color: #007bff;
+    color: #0047af;
   }
 
   &:last-child {
@@ -156,7 +155,7 @@ const DropdownItem = styled.div`
   @media (max-width: 768px) {
     border-bottom: none;
     padding: 0.5rem;
-    font-size:0.75rem;
+    font-size:1rem;
   }
 `;
 
@@ -184,50 +183,68 @@ const SubDropdown = styled.div`
 
 const Hamburger = styled.div`
   display: none;
-  flex-direction: column;
+  width: 30px;
+  height: 24px;
+  position: relative;
   cursor: pointer;
-
-  span {
-    height: 3px;
-    width: 25px;
-    background: #007bff;
-    margin: 2px 0;
-    border-radius: 2px;
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width:768px){
     display: flex;
   }
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const Bar = styled.span`
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #0047af;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+
+  ${({ isOpen, index }) =>
+    isOpen &&
+    (index === 0
+      ? `
+        transform: rotate(45deg) translate(5px, 10px);
+      `
+      : index === 1
+      ? `
+        opacity: 0;
+      `
+      : `
+        transform: rotate(-45deg) translate(5px, -10px);
+      `)}
 `;
 
 /* ---------- data ---------- */
 const navData = [
   { title: "About", items: [], isSection: true },
-  { title: "Milestones", items: [], isSection: true },
   {
     title: "Programs",
     items: [
-      { label: "Bridge" },
+      { label: "Bridge", href:" https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=dialog" },
       {
         label: "Ladder",
         children: [
-          { label: "MiniMBA - Tekedia" },
-          { label: "MBA - Nexford" },
-          { label: "MS in Data Analytics - Nexford" },
-          { label: "MS in Digital Transformation - Nexford" },
+          { label: "MiniMBA - Tekedia", href:"https://docs.google.com/forms/d/e/1FAIpQLSd6Grndgwnkl88LGbiU3PYsGZXyu86DskbTmHnPCOF6yDErCw/viewform?usp=dialog" },
+          { label: "MBA - Nexford", href:"http://blog.iwbafrica.org" },
+          { label: "MS in Data Analytics - Nexford", href:"http://blog.iwbafrica.org"  },
+          { label: "MS in Digital Transformation - Nexford", href:"http://blog.iwbafrica.org"  },
         ],
       },
-      { label: "Future Founders Fellowship" },
+      { label: "Future Founders Fellowship", href:"https://docs.google.com/forms/d/e/1FAIpQLSeP1ghQ5UKQjlsF0IhFv6SJSsNdP6pOhOU1CkgsJN2-0q_OXw/viewform?usp=dialog" },
     ],
     isSection: true,
   },
+  { title: "Milestones", items: [], isSection: true },
   { title: "Interests", items: [], isSection: true },
   {
     title: "Resources",
     items: [
-      { label: "Insights" },
-      { label: "Stories" },
-      { label: "Opportunities" },
+      { label: "Insights", href:"http://blog.iwbafrica.org" },
+      { label: "Stories", href:"http://blog.iwbafrica.org" },
+      { label: "Opportunities", href:"http://blog.iwbafrica.org" },
     ],
     isSection: false,
   },
@@ -258,7 +275,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
 
   return (
     <NavItem>
-      <NavLink active={active === title} isOpen={isMobile && isOpen} onClick={handleClick}>
+      <NavLink active={active === title} isOpen={isOpen} onClick={handleClick}>
         <a href={isSection ? `#${title}` : undefined}>{title}</a>
         {items?.length > 0 && (<BsChevronUp />)}
       </NavLink>
@@ -332,10 +349,10 @@ export default function NavBar() {
         <img src={images.Logo} alt="My-Logo" />
       </Logo>
 
-      <Hamburger onClick={() => setOpen((s) => !s)} aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <Hamburger onClick={() => setOpen((s) => !s)}>
+        {[0, 1, 2].map((i) => (
+          <Bar key={i} isOpen={open} index={i} />
+        ))}
       </Hamburger>
 
       <NavMenu open={open}>

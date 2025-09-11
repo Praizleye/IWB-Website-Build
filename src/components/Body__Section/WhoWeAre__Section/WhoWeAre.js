@@ -121,7 +121,14 @@ const WhoWeAre = () => {
               {
                 actionPoints.map(action=>(
                   <li>
-                    {`${action.emoji} ${action.text}`}
+                    <span style={{
+                      marginRight:"1rem"
+                    }}>
+                        {action.emoji}
+                    </span>
+                    <span>
+                      {action.text}
+                    </span>
                   </li>
                 ))
               }

@@ -34,10 +34,10 @@ function App() {
       <Hero />
       <CompTrust />
       <WhoWeAre />
-      <ImpactReport />
       <OurPrograms />
-      <OurInterest />
+      <ImpactReport />
       <OurTalent />
+      <OurInterest />
       {/* <Resources /> */}
       <Testimonials />
       {/* <Newsletter /> */}
