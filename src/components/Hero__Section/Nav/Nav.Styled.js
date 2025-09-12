@@ -67,7 +67,7 @@ export const NavStyle = styled.div`
         margin-right: 1rem;
         list-style-type: none;
         display: flex;
-        // font-family:'"Host Grotesk"';
+        // font-family:"Host Grotesk";
         justify-content: center;
         align-items: center;
         transition: all 0.3s ease;

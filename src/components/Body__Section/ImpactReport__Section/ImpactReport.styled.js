@@ -24,7 +24,7 @@ export const StyleImpactReport = styled.section`
   }
   div.ImpactReport__heading {
     span{
-      font-family: '"Host Grotesk"';
+      font-family: "Host Grotesk";
     }  
 
     font-size: 3rem;

@@ -78,11 +78,12 @@ export const StyleFooter = styled.section`
 
     img {
       align-self: start;
+      filter: brightness(0) invert(1);
+      height: 3rem;
       @media screen and (max-width: 780px) {
         height: 2rem;
         width: auto;
         margin-top: 0.25rem;
-        filter: brightness(0) invert(1);
       }
       @media screen and (max-width: 700px) {
         grid-column: 1 / 5;

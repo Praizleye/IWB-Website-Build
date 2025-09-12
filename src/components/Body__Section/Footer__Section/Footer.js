@@ -23,9 +23,9 @@ const Footer = () => {
         whileInView="visible"
         variants={animateHeading}
       >
-        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Create .</motion.span>{" "}
-        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Connect . </motion.span>{" "}
-        <motion.span variants={animateSubheading} style={{fontFamily: '"Host Grotesk"'}}>Thrive &#62;</motion.span>
+        <motion.span variants={animateSubheading} style={{fontFamily: "Host Grotesk"}}>Create .</motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: "Host Grotesk"}}>Connect . </motion.span>{" "}
+        <motion.span variants={animateSubheading} style={{fontFamily: "Host Grotesk"}}>Thrive &#62;</motion.span>
         <motion.div variants={animateSubtext}>
           We are building a vibrant community of emerging leaders who are driving innovation and shaping the future.
         </motion.div>
@@ -49,7 +49,7 @@ const Footer = () => {
           variants={animateHeading}
         />
         <motion.ul variants={animateHeading} >
-          <span style={{fontFamily: '"Host Grotesk"'}}>Quick</span>
+          <span style={{fontFamily: "Host Grotesk"}}>Quick</span>
           <motion.li variants={animateSubheading}>
             <a href="#About">About</a>
           </motion.li>
@@ -71,7 +71,7 @@ const Footer = () => {
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-          <span style={{fontFamily: '"Host Grotesk"'}}>Legal</span>
+          <span style={{fontFamily: "Host Grotesk"}}>Legal</span>
           <motion.li variants={animateSubheading}>
             <a href="#Programs">Privacy Policy</a>
           </motion.li>
@@ -81,7 +81,7 @@ const Footer = () => {
         </motion.ul>
 
         <motion.ul variants={animateHeading}>
-        <span style={{fontFamily: '"Host Grotesk"'}}>Contact</span>
+        <span style={{fontFamily: "Host Grotesk"}}>Contact</span>
           <motion.li variants={animateSubheading}>
             <a href="#number">+234 812 0611 858</a>
           </motion.li>
@@ -148,7 +148,7 @@ const Footer = () => {
         </motion.ul>
 
         {/* <motion.ul variants={animateHeading}>
-          <span style={{fontFamily: '"Host Grotesk"'}}>Connect</span>
+          <span style={{fontFamily: "Host Grotesk"}}>Connect</span>
           <motion.li variants={animateSubheading}>
             <a
               href="https://www.facebook.com/iwbafrica"

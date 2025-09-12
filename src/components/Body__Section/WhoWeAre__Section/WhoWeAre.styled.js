@@ -171,17 +171,10 @@ export const StyleWhoWeAre = styled.section`
         }
         @media screen and (max-width: 950px) {
           font-size: 0.9rem;
-          // line-height: 1.7;
           padding-right: 1rem;
         }
         @media screen and (max-width: 768px) {
-          font-size: 0.8rem;
-          // line-height: 1.5;
           padding-right: 0.5rem;
-        }
-        @media screen and (max-width: 590px) {
-          font-size: 0.9rem;
-          // line-height: 1.7;
         }
       }
       div.About__text-description > span {

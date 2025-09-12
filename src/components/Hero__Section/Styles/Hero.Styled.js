@@ -129,7 +129,7 @@ export const StyleHero = styled.section`
     }
     div:nth-of-type(2) {
       font-size: 3.5rem;
-      font-family:'"Host Grotesk"';
+      font-family:"Host Grotesk";
       font-weight: bold;
       width: max-content;
       @media screen and (max-width: 1086px) {

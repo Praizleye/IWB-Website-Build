@@ -97,10 +97,10 @@ export const StyleOurPrograms = styled.section`
         }
       }
       div.card-subHeading {
-        font-family: '"Host Grotesk"';
+        font-family: "Host Grotesk";
         padding: 1rem;
         font-size: 1.2rem;
-        font-weight: 400;
+        font-weight: 500;
         color: #0047af;
         @media screen and (max-width: 1200px) {
           padding: 1rem 1.5rem;

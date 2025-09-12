@@ -86,7 +86,7 @@ const OurPrograms = () => {
           resetProgress: true,
           easing: "cubic-bezier(.44,.65,.07,1.01)",
           hasAutoplayProgress: true,
-          interval: 4000,
+          interval: 5000,
         }}
       >
         <SplideTrack>

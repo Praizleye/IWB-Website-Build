@@ -71,14 +71,15 @@ const NavItem = styled.div`
   }
 
   @media (min-width: 768px) {
-    &:hover > span svg {
+    &:hover > a svg {
       transform: rotate(180deg);
     }
   }
 `;
 
-const NavLink = styled.span`
+const NavLink = styled.a`
   display: flex;
+  text-decoration:none;
   justify-content: space-between;
   align-items: center;
   gap:0.5rem;
@@ -88,13 +89,9 @@ const NavLink = styled.span`
   border-bottom: ${({ active }) =>
     active ? "2px solid #0047af" : "2px solid transparent"};
   padding: 0.5rem 0;
+  cursor: pointer;
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #0047af;
-  }
-
+  
   svg {
     transition: transform 300ms;
   }
@@ -134,7 +131,9 @@ const Dropdown = styled.div`
   }
 `;
 
-const DropdownItem = styled.div`
+const DropdownItem = styled.a`
+  display: block;
+  text-decoration:none;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   color: #333;
@@ -219,9 +218,10 @@ const Bar = styled.span`
 
 /* ---------- data ---------- */
 const navData = [
-  { title: "About", items: [], isSection: true },
+  { title: "About", href:"#About", items: [], isSection: true },
   {
     title: "Programs",
+    href:"#Programs",
     items: [
       { label: "Bridge", href:" https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=dialog" },
       {
@@ -235,28 +235,25 @@ const navData = [
       },
       { label: "Future Founders Fellowship", href:"https://docs.google.com/forms/d/e/1FAIpQLSeP1ghQ5UKQjlsF0IhFv6SJSsNdP6pOhOU1CkgsJN2-0q_OXw/viewform?usp=dialog" },
     ],
-    isSection: true,
   },
-  { title: "Milestones", items: [], isSection: true },
-  { title: "Interests", items: [], isSection: true },
+  { title: "Milestones", href:"#Milestones", items: []},
+  { title: "Interests", href:"#Interests", items: []},
   {
     title: "Resources",
     items: [
       { label: "Insights", href:"http://blog.iwbafrica.org" },
       { label: "Stories", href:"http://blog.iwbafrica.org" },
       { label: "Opportunities", href:"http://blog.iwbafrica.org" },
-    ],
-    isSection: false,
+    ]
   },
   {
     title: "Events",
     items: [{ label: "MeetUps" }, { label: "Conferences" }],
-    isSection: false,
   },
 ];
 
 /* ---------- components ---------- */
-const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, isSection, switchMenuTray }) => {
+const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, isSection, switchMenuTray, href }) => {
   const isMobile = window.innerWidth <= 768;
   const isOpen = openMenu === title;
 
@@ -275,8 +272,8 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
 
   return (
     <NavItem>
-      <NavLink active={active === title} isOpen={isOpen} onClick={handleClick}>
-        <a href={isSection ? `#${title}` : undefined}>{title}</a>
+      <NavLink href={href} active={active === title} isOpen={isOpen} onClick={handleClick}>
+        <span>{title}</span>
         {items?.length > 0 && (<BsChevronUp />)}
       </NavLink>
 
@@ -286,6 +283,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
             item.children ? (
               <DropdownItem
                 key={i}
+                href={item.href}
                 onClick={() =>
                   setOpenSub(openSub === item.label ? null : item.label)
                 }
@@ -296,7 +294,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
                 </span>
                 <SubDropdown isOpen={openSub === item.label}>
                   {item.children.map((sub, subIndex) => (
-                    <DropdownItem key={subIndex}>{sub.label}</DropdownItem>
+                    <DropdownItem href={sub.href} key={subIndex}>{sub.label}</DropdownItem>
                   ))}
                 </SubDropdown>
               </DropdownItem>
