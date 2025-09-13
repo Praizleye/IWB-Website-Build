@@ -58,7 +58,7 @@ const Resources = () => {
           whileInView="visible"
           variants={animateText}
         >
-          <div className="heading" id="Free downloads" style={{fontFamily: '"Host Grotesk"'}}>
+          <div className="heading" id="Free downloads" style={{fontFamily: "Host Grotesk"}}>
             Resources
             {/* <span>Resources</span> */}
           </div>

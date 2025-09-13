@@ -11,7 +11,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Testimonials = () => {
   return (
     <StyleTestimonials id="Testimonial">
-      <div className="heading" style={{fontFamily: '"Host Grotesk"'}}>
+      <div className="heading" style={{fontFamily: "Host Grotesk"}}>
         Wall of Love
         <span>
           What young people are saying
