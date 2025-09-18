@@ -223,7 +223,7 @@ const navData = [
     title: "Programs",
     href:"#Programs",
     items: [
-      { label: "Bridge", href:" https://docs.google.com/forms/d/e/1FAIpQLSc9jK0Q30ugk64JYEhPBqa36xHi4Y42XFYcsSNixihUR1mabg/viewform?usp=dialog" },
+      { label: "Bridge", href:"https://forms.gle/NJJdtB4AQrKxLTgy6" },
       {
         label: "Ladder",
         children: [
@@ -233,7 +233,7 @@ const navData = [
           { label: "MS in Digital Transformation - Nexford", href:"http://blog.iwbafrica.org"  },
         ],
       },
-      { label: "Future Founders Fellowship", href:"https://docs.google.com/forms/d/e/1FAIpQLSeP1ghQ5UKQjlsF0IhFv6SJSsNdP6pOhOU1CkgsJN2-0q_OXw/viewform?usp=dialog" },
+      { label: "Future Founders Fellowship", href:"https://forms.gle/AAdV8t75yW44tQGw7" },
     ],
   },
   { title: "Milestones", href:"#Milestones", items: []},
@@ -243,7 +243,7 @@ const navData = [
     items: [
       { label: "Insights", href:"http://blog.iwbafrica.org" },
       { label: "Stories", href:"http://blog.iwbafrica.org" },
-      { label: "Opportunities", href:"http://blog.iwbafrica.org" },
+      { label: "Opportunities", href:"https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z" },
     ]
   },
   {

@@ -116,7 +116,7 @@ export const StyleOurPrograms = styled.section`
           font-weight:bold;
         }
 
-        color:#747779;
+        color: #0d0d0dff;
         padding: 0 1rem;
         font-size: 0.9rem;
         height: 7rem;

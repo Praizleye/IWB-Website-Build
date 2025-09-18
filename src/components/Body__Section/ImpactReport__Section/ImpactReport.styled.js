@@ -193,7 +193,7 @@ export const StyleImpactReport = styled.section`
         }
       }
       div.subSectionReport__text {
-        color: #747779;
+        color: #0d0d0dff;
         font-size: 1.2rem;
         padding: 0 3rem 2rem 3rem;
         justify-self: center;

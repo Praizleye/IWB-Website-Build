@@ -110,7 +110,7 @@ export const StyleTestimonials = styled.section`
       div.card-date {
         grid-area: cardDate;
         padding-left: 1rem;
-        color: #4e6269;
+        color: #0d0d0dff;
       }
       div.card-star {
         grid-area: cardStar;
@@ -153,7 +153,7 @@ export const StyleTestimonials = styled.section`
       div.card-textContent {
         grid-area: cardText;
         padding-left: 1rem;
-        color: #4e6269;
+        color: #0d0d0dff;
         @media screen and (max-width: 1200px) {
           padding-top: 0.5rem;
         }
