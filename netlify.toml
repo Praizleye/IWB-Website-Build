@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/blog/*"
+  to = "http://iwb.42web.io/:splat"
+  status = 200
+  force = true
