@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/blog/*"
-  to = "http://iwb.42web.io/:splat"
+  to = "https://blog.iwbafrica.com"
   status = 200
   force = true
