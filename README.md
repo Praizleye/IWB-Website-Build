@@ -1,1 +1,1 @@
-This is an app built with react js for a tech company targetted at reaching out to young aspiring Africans. Built mainly using react, framer motion, styled components, react splide. The site can be viewed at https://iwb.org.ng
+This is an app built with react js for a tech company targetted at reaching out to young aspiring Africans. Built mainly using react, framer motion, styled components, react splide. The site can be viewed at https://iwbafrica.org
