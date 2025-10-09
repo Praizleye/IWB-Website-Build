@@ -24,10 +24,10 @@ const Hero = () => {
       <StyleHero id="home">
         <div className="cta__text container">
           <motion.div initial="hidden" animate="visible" variants={animateText}>
-            ...Building People{" "}
+            Building People{", "}
           </motion.div>
           <motion.div initial="hidden" animate="visible" variants={animateText}>
-            Shaping futures
+            Shaping Futures.
           </motion.div>
           <div>
             <motion.svg
