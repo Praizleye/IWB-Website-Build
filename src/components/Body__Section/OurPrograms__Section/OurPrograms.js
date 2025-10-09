@@ -28,8 +28,8 @@ const OurPrograms = () => {
   const programs = [
     {
       header: "Bridge",
-      subtitle: "Equipping Young Leaders and Professionals",
-      body: "An intensive 8-week course thoughtfully crafted to equip young leaders and professionals for the future.",
+      subtitle: "Equipping Future Leaders",
+      body: "The Bridge Leadership Program is an 8-week intensive course designed to equip leaders and professional for the future.  Bridge is that missing piece you need to step up your game.",
       status: {
         title: "Join Next Cohort",
         link: "https://forms.gle/dgfcA8KkWKLbLp6w9",
@@ -38,8 +38,8 @@ const OurPrograms = () => {
     },
     {
       header: "Ladder",
-      subtitle: "Supporting African Tech Talent to Rise",
-      body: "Designed to help African talents rise by learning the skills they need and creating the future they want. Connecting 500 million African talents to digital solutions and opportunities by 2030.",
+      subtitle: "Supporting Tech Talent",
+      body: "Get supported to learn the most relevant skills defining the new era on Ladder. Ladder seeks to connect 500Million Digital Talents to Opportunities by 2030.",
       status: {
         title: "Explore Courses",
         link: "https://forms.gle/RAzrkZuXBfSUgJ1F9",
@@ -47,9 +47,9 @@ const OurPrograms = () => {
       },
     },
     {
-      header: "Future Founders Fellowship",
-      subtitle: "Empowering Ambitious Founders",
-      body: "Identifying, nurturing, and supporting visionary young leaders building high-impact startups and social enterprises designed to solve Africa's most pressing challenges.",
+      header: "Build for Africa Fellowship",
+      subtitle: "Equipping Ambitious Founders",
+      body: "The BFA Fellowship identifies, nurtures and supports ambitious founders seeking to solve Africa's most critical challenges—building solutions for future Africa.",
       status: {
         title: "Starts soon",
         link: "",
@@ -92,31 +92,43 @@ const OurPrograms = () => {
         <SplideTrack>
           {programs.map(({ header, subtitle, body, status }, index) => (
             <SplideSlide key={header}>
-              <div className="card">
-                <div className="card-img">
-                  <LazyLoadImage
-                    src={images[`Card${index + 1}`]}
-                    alt="card-figure"
-                    effect="blur"
-                    height={"14rem"}
-                    visibleByDefault={images[`Card${index + 1}`]}
-                  />
+              <article 
+                key={`bp-${index}`} 
+                className="blog-card featured-card"
+                onClick={() => window.open(status.link)}
+              >
+                <div className="featured-badge">Featured</div>
+                <div className="blog-card-image">
+                  <img src={images[`Card${index + 1}`]} alt={subtitle} />
+                  <div className="blog-card-overlay">
+                    <span className="read-more">{subtitle}</span>
+                  </div>
                 </div>
-                <div className="card-subHeading" style={{
-                   fontFamily: "Host Grotesk"
-                }}>{header}</div>
-                <div className="card-textDesc">
-                  <span>{subtitle}</span>
-                  {body}
+                
+                <div className="blog-card-content">
+                  {/* <div className="blog-meta">
+                    <span className="blog-date">{post.date}</span>
+                    <span className="blog-read-time">{post.readTime}</span>
+                  </div> */}
+                  
+                  <h2 className="blog-title">{header}</h2>
+                  <p className="blog-excerpt">{body}</p>
+                  
+                  {/* <div className="blog-tags">
+                    {post.tags.map((tag, index) => (
+                      <span key={index} className="blog-tag">{tag}</span>
+                    ))}
+                  </div> */}
+                  
+                  {/* <div className="blog-author">
+                    <img src={post.author.avatar} alt={post.author.name} className="author-avatar" />
+                    <div className="author-info">
+                      <span className="author-name">{post.author.name}</span>
+                      <span className="author-bio">{post.author.bio}</span>
+                    </div>
+                  </div> */}
                 </div>
-                <a
-                  href={status.link}
-                  target={index === programs.length - 1 ? "_self" : "_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <button className={status.class}>{status.title}</button>
-                </a>
-              </div>
+              </article>
             </SplideSlide>
           ))}
           {/* <SplideSlide>

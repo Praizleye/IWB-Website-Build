@@ -58,8 +58,9 @@ export const StyleOurPrograms = styled.section`
     position: relative;
 
     div.card {
+      border-radius: 8px;
       width: 23rem;
-      padding-block:0.5rem; 
+      padding: 0;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       background-color: #fff;
       @media screen and (max-width: 1200px) {
@@ -76,6 +77,8 @@ export const StyleOurPrograms = styled.section`
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 8px;
+        overflow: hidden;
         img {
           width: 23rem;
           padding: 1rem;
@@ -83,11 +86,11 @@ export const StyleOurPrograms = styled.section`
           object-fit: cover;
           object-position: top center;
           @media screen and (max-width: 1200px) {
-            width: 19rem;
+            width: 20rem;
             height: 14rem;
           }
           @media screen and (max-width: 470px) {
-            width: 16rem;
+            width: 17rem;
             height: 14rem;
           }
           @media screen and (max-width: 410px) {

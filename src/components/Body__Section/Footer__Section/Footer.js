@@ -104,7 +104,12 @@ const Footer = () => {
             </a>
           </motion.li>
           <motion.li variants={animateSubheading}>
+            <a
+              href="#"
+              rel="noopener noreferrer"
+            >
              Gwarinpa, Abuja, Nigeria
+            </a>
           </motion.li>
           {/* SOCIAL MEDIA LINKS */}
         <motion.li variants={animateHeading} className="socials">

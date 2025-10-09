@@ -233,7 +233,7 @@ const navData = [
           { label: "MS in Digital Transformation - Nexford", href:"http://blog.iwbafrica.org"  },
         ],
       },
-      { label: "Future Founders Fellowship", href:"https://forms.gle/AAdV8t75yW44tQGw7" },
+      { label: "Build for Africa Fellowship", href:"https://forms.gle/AAdV8t75yW44tQGw7" },
     ],
   },
   { title: "Milestones", href:"#Milestones", items: []},
@@ -243,7 +243,8 @@ const navData = [
     items: [
       { label: "Insights", href:"http://blog.iwbafrica.org" },
       { label: "Stories", href:"http://blog.iwbafrica.org" },
-      { label: "Opportunities", href:"https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z" },
+      // { label: "Opportunities", href:"https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z" },
+      { label: "Opportunities", href:"http://blog.iwbafrica.org" },
     ]
   },
   {
@@ -263,7 +264,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
     if (isMobile && items?.length > 0) {
       e.preventDefault();
       setOpenMenu(isOpen ? null : title);
-    }else{
+    } else{
       switchMenuTray();
     }
 
@@ -299,7 +300,7 @@ const DropdownMenu = ({ title, items, active, setActive, openMenu, setOpenMenu, 
                 </SubDropdown>
               </DropdownItem>
             ) : (
-              <DropdownItem key={i}>{item.label}</DropdownItem>
+              <DropdownItem href={item.href} key={i}>{item.label}</DropdownItem>
             )
           )}
         </Dropdown>
