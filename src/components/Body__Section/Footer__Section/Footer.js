@@ -105,7 +105,7 @@ const Footer = () => {
           </motion.li>
           <motion.li variants={animateSubheading}>
             <a
-              href="#"
+              href={window.location}
               rel="noopener noreferrer"
             >
              Gwarinpa, Abuja, Nigeria
