@@ -64,7 +64,7 @@ const Hero = () => {
             animate="visible"
             variants={animateText2}
           >
-            Connecting 500M African Talent to Digital Solutions and Opportunities by 2030 through Ladder
+            <p style={{lineHeight: "1.8rem"}}>Connecting 500M African Talent to Digital Solutions and Opportunities by 2030 through Ladder</p>
           </motion.div>
           <a
             href="https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z"

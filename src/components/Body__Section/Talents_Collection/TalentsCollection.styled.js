@@ -81,7 +81,7 @@ export const TalentCardWrapper = styled.div`
             }
         }
         p{
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight:400;
             color: rgb(220,220,220);
             
