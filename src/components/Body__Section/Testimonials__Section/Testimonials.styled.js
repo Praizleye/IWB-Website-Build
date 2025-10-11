@@ -153,7 +153,8 @@ export const StyleTestimonials = styled.section`
       div.card-textContent {
         grid-area: cardText;
         padding-left: 1rem;
-        color: #0d0d0dff;
+        color: #555;
+        line-height: 1.6rem;
         @media screen and (max-width: 1200px) {
           padding-top: 0.5rem;
         }

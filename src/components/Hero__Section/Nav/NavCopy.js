@@ -244,7 +244,7 @@ const navData = [
       { label: "Insights", href:"http://blog.iwbafrica.org" },
       { label: "Stories", href:"http://blog.iwbafrica.org" },
       // { label: "Opportunities", href:"https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z" },
-      { label: "Opportunities", href:"http://blog.iwbafrica.org" },
+      { label: "Opportunities", href:"https://whatsapp.com/channel/0029VaNQdGFLikg7MCCHRM0Z" },
     ]
   },
   {

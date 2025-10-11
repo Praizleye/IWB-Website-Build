@@ -162,8 +162,8 @@ export const StyleWhoWeAre = styled.section`
 
       div.About__text-description {
         font-size: 1.1rem;
-        color: #0d0d0dff;
-        line-height: 1.5;
+        color: #555;
+        line-height: 1.6;
         @media screen and (max-width: 1200px) {
           font-size: 1rem;
           // line-height: 1.9;
