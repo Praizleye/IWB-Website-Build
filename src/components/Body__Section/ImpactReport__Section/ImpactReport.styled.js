@@ -22,6 +22,7 @@ export const StyleImpactReport = styled.section`
   @media screen and (max-width: 590px) {
     padding: 2rem 1rem 6rem;
   }
+
   div.ImpactReport__heading {
     span{
       font-family: "Host Grotesk";
@@ -57,17 +58,17 @@ export const StyleImpactReport = styled.section`
       }
     }
     div {
-      font-size: 20px;
-      color: #595b60;
-      font-weight: 300;
+      font-size: 1rem;
+      color: #000;
+      line-height: 0.95;
+      font-weight: 500;
       margin-top: 0.5rem;
       @media screen and (max-width: 1200px) {
-        font-size: 18px;
+        font-size: 0.9rem;
       }
       @media screen and (max-width: 590px) {
-        font-size: 14px;
+        font-size: 0.8rem;
       }
-    
     }
   }
   div.sectionReport__1 {
@@ -192,8 +193,10 @@ export const StyleImpactReport = styled.section`
           // }
         }
       }
+
       div.subSectionReport__text {
-        color: #0d0d0dff;
+        color: #555;
+        line-height: 1.8;
         font-size: 1.2rem;
         padding: 0 3rem 2rem 3rem;
         justify-self: center;

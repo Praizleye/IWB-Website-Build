@@ -29,11 +29,11 @@ const OurPrograms = () => {
     {
       header: "Bridge",
       subtitle: "Equipping Future Leaders",
-      body: "The Bridge Leadership Program is an 8-week intensive course designed to equip leaders and professional for the future.  Bridge is that missing piece you need to step up your game.",
+      body: "The Bridge Leadership Program is an 8-week intensive course designed to equip leaders and professionals for the future.  Bridge is that missing piece you need to thrive.",
       status: {
         title: "Join Next Cohort",
         link: "https://forms.gle/dgfcA8KkWKLbLp6w9",
-        class: "",
+        class: "blog-button",
       },
     },
     {
@@ -43,7 +43,7 @@ const OurPrograms = () => {
       status: {
         title: "Explore Courses",
         link: "https://forms.gle/RAzrkZuXBfSUgJ1F9",
-        class: "",
+        class: "blog-button",
       },
     },
     {
@@ -52,8 +52,8 @@ const OurPrograms = () => {
       body: "The BFA Fellowship identifies, nurtures and supports ambitious founders seeking to solve Africa's most critical challenges—building solutions for future Africa.",
       status: {
         title: "Starts soon",
-        link: "",
-        class: "comingSoon",
+        link: "https://forms.gle/AAdV8t75yW44tQGw7",
+        class: "blog-button comingSoon",
       },
     },
   ];
@@ -97,7 +97,7 @@ const OurPrograms = () => {
                 className="blog-card featured-card"
                 onClick={() => window.open(status.link)}
               >
-                <div className="featured-badge">Featured</div>
+                {/* <div className="featured-badge">Featured</div> */}
                 <div className="blog-card-image">
                   <img src={images[`Card${index + 1}`]} alt={subtitle} />
                   <div className="blog-card-overlay">
@@ -112,6 +112,7 @@ const OurPrograms = () => {
                   </div> */}
                   
                   <h2 className="blog-title">{header}</h2>
+                  <h3 className="blog-subtitle">{subtitle}</h3>
                   <p className="blog-excerpt">{body}</p>
                   
                   {/* <div className="blog-tags">
@@ -128,6 +129,15 @@ const OurPrograms = () => {
                     </div>
                   </div> */}
                 </div>
+
+                <a
+                  href={status.link}
+                  target={index === programs.length - 1 ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  style={{position: 'absolute', width: '100%', bottom: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', textDecoration: 'none'}}
+                >
+                  <button className={status.class}>{status.title}</button>
+                </a>
               </article>
             </SplideSlide>
           ))}

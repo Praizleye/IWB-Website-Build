@@ -13,7 +13,7 @@ const ImpactReport = () => {
       <div className="ImpactReport__heading">
         <span>Milestones</span>
         <img src={images.Line} alt="text-underline" />
-        <div style={{color: "#0d0d0dff"}}>
+        <div className="subbheading">
           Some of our Proud Numbers
         </div>
       </div>
