@@ -23,6 +23,10 @@ export const StyleImpactReport = styled.section`
     padding: 2rem 1rem 6rem;
   }
 
+  div.ImpactReport__subbheading {
+    color: #555;
+  }
+
   div.ImpactReport__heading {
     span{
       font-family: "Host Grotesk";
@@ -95,7 +99,7 @@ export const StyleImpactReport = styled.section`
     div.subSectionReport__5,
     div.subSectionReport__6 {
       width: 23rem;
-      height: 19rem;
+      height: 20rem;
       padding-block:1rem;
       box-sizing:content-box;
       box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
@@ -196,7 +200,7 @@ export const StyleImpactReport = styled.section`
 
       div.subSectionReport__text {
         color: #555;
-        line-height: 1.8;
+        line-height: 1.6;
         font-size: 1.2rem;
         padding: 0 3rem 2rem 3rem;
         justify-self: center;
