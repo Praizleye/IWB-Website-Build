@@ -13,7 +13,7 @@ const ImpactReport = () => {
       <div className="ImpactReport__heading">
         <span>Milestones</span>
         <img src={images.Line} alt="text-underline" />
-        <div className="subbheading">
+        <div className="ImpactReport__subbheading" style={{color: "#555"}}>
           Some of our Proud Numbers
         </div>
       </div>
@@ -37,7 +37,7 @@ const ImpactReport = () => {
           </div>
           <div className="subSectionReport__text">
             Through Ladder by IWB, over 210 scholars across Africa have been
-            funded to study Business Innovation at Tekedia.
+            funded to study Business Innovation with Tekedia.
           </div>
         </motion.div>
 
@@ -74,6 +74,7 @@ const ImpactReport = () => {
             via Channels.
           </div>
         </motion.div>
+
         <motion.div
           initial="hidden"
           whileInView="visible"

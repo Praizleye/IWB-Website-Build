@@ -69,7 +69,7 @@ const WhoWeAre = () => {
               IWB; where the right ideas meet the right people to create a bright future. 
             </span>
             <span>
-              Our programs Bridge, Ladder, and Future Founders Fellowship are designed to equip leaders, support talents and empower entrepreneurs to lead the future and drive change across spaces. 
+              Our programs Bridge, Ladder, and Build for Africa are designed to equip leaders, support talents and empower entrepreneurs to lead the future and drive change across spaces. 
             </span>
 
             {/* Ideas Worth Billions is Africa's leading Human Capacity Development

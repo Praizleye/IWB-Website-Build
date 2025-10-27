@@ -21,7 +21,7 @@ const companies = [
 export default function OurTalent() {
   return (
     <StyleCompany>
-      <h6 className="subheader">
+      <h6 className="subheader" style={{color: "#555"}}>
         Featured talents on Ladder
       </h6>
       <h3 className="header" style={{ fontFamily: "Host Grotesk" }}>
