@@ -62,7 +62,11 @@ const WhoWeAre = () => {
         >
           <div className="sub-heading">Our Story</div>
           <div className="About__text-description">
-            <span>
+            <p style={{paddingBottom: "10px"}}>IWB is one of Africa's foremost People Development Organizations, dedicated to sharing insights and upskilling young talents, founders and professionals for the new era—shaping the future of the continent.</p>
+            <p style={{paddingBottom: "10px"}}>IWB; where the right ideas meet the right people to create a bright future.</p>
+            <p>Our flagship programs—Bridge, Ladder, and Build for Africa Fellowship are designed to develop leaders, accelerate talent pipelines, and empower entrepreneurs to lead change, scale impact, and redefine Africa’s future across industries and communities.</p>
+
+            {/* <span>
               IWB is one of Africa's foremost people development organizations, dedicated to sharing insights and upskilling young talents, founders and professionals for the new era—shaping the future of the continent.
             </span>
             <span>
@@ -70,7 +74,7 @@ const WhoWeAre = () => {
             </span>
             <span>
               Our programs Bridge, Ladder, and Build for Africa are designed to equip leaders, support talents and empower entrepreneurs to lead the future and drive change across spaces. 
-            </span>
+            </span> */}
 
             {/* Ideas Worth Billions is Africa's leading Human Capacity Development
             Network. Raising a new crop of young Africans and Professionals

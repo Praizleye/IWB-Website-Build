@@ -3,6 +3,15 @@ import { TalentCollectionWrapper } from "./TalentsCollection.styled";
 import TalentCard from "./TalentCard";
 import images from "../../../constants/images";
 import { motion } from "framer-motion";
+import {
+  // animateHeading,
+  // animateImg,
+  // animateImg2,
+  // animateText,
+  animateBtn,
+  // animateText2,
+} from "../WhoWeAre__Section/animateAbout";
+
 
 const talents = [
   {
@@ -66,10 +75,23 @@ export default function TalentsCollection() {
           <TalentCard img={img} name={name} role={role} key={name} />
         ))}
       </motion.div>
-
-      <a className="hire-btn" href="https://facebook.com">
-        Hire Top Talent on Ladder
-      </a>
+      <center>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8Jx6uphig_7Enhk1gE0ks543u0JveDdUttdVzJAWYDD3gLw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              initial="hidden"
+              whileInView="visible"
+              variants={animateBtn}
+              className="hire-btn"
+              whileHover={{ scale: 1.1 }}
+            >
+              Hire Top Talent on Ladder
+            </motion.button>
+          </a>
+        </center>
     </TalentCollectionWrapper>
   );
 }
