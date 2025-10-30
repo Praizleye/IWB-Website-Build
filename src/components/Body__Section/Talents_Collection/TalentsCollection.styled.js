@@ -31,18 +31,38 @@ export const TalentCollectionWrapper = styled.div`
     }
         
     }
-    a.hire-btn{
-        display: block;
-        width:fit-content;
-        text-decoration:none;
-        font-weight:400;
-        padding: 0.5rem 1rem;
-        background-color:red;
-        color:white;
-        margin-inline:auto;
-        margin-top:2.5rem;
-        border-radius: 0.2rem;
-      background-color: #0047af;
+    .hire-btn{
+          // margin: 1rem 0;
+          background: #0047af;
+          height: 3rem;
+          border-radius: 4px;
+          color: #fafafa;
+          font-size: 1.05rem;
+          padding-left: 15px;
+          padding-right: 15px;
+          border: none;
+          transition: transform 0.5s ease-in-out;
+          cursor: pointer;
+          // @media screen and (max-width: 1200px) {
+          //   margin: 2rem 0;
+          // }
+          @media screen and (max-width: 950px) {
+            // margin: 1.5rem 0;
+            padding: 0.8rem;
+          }
+          @media screen and (max-width: 768px) {
+            padding: 0.5rem 0 0.5rem;
+            // margin-bottom: 0.5rem;
+            height: 2.1rem;
+            font-size: 0.9rem;
+          }
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          text-decoration: none;
+            margin-inline:auto;
+            margin-top:2.5rem;
     }
 `
 
